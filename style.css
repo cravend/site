@@ -8,5 +8,16 @@ img {
 }
 body {
     text-align: center;
-    font-family: "Arial";
+    font-family: Avenir Next, Helvetica, sans-serif;
+}
+h1 {
+    color: #e42d40;
+}
+#project {
+    width: 95%;
+    height: 150px;
+    border-color: black;
+    background-color: #e42d40;
+    font-size: 50px;
+    color: white;
 }
