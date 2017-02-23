@@ -7,3 +7,28 @@
     font-size: 50px;
     color: white;
 }
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e42d40;
+}
+ul.nav li {float: left;}
+
+ul.nav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.nav li a:hover {background-color: #333;}
+
+ul.nav li .active {
+    background-color: #555;
+}
