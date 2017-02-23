@@ -2,6 +2,12 @@ html {
     font-family: Avenir Next, Helvetica, sans-serif;
 }
 
+#content {
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 10px;
+}
+
 #news a {
     text-decoration: none;
     color: #000;
@@ -23,7 +29,7 @@ h1, h2, #news {
 
 ul.nav {
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
     background-color: #e42d40;
