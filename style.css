@@ -38,13 +38,3 @@ ul.nav li a:hover {background-color: #333;}
 ul.nav li .active {
     background-color: #555;
 }
-
-#project {
-    
-    width: 95%;
-    height: 150px;
-    border-color: black;
-    background-color: #e42d40;
-    font-size: 50px;
-    color: white;
-}
