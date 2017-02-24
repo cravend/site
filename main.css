@@ -1,52 +1,19 @@
-body {
-    font-family: Avenir Next, Helvetica, sans-serif;
-}
+/* Table of Contents
+1.0: Global
+ 1.1: Nav Bar
+2.0: Homepage Specific
+3.0: Dashboard Specific
+4.0: Easy Button Specific
+*/
 
-#left {
-    float: left;
-    width: 50%;
-}
 
-#right {
-    float: right;
-    width: 50%;
-}
-
-#easy {
-    width: 300px;
-    height: 300px;
-    border-radius: 150px;
-    border-color: black;
-    background-color: red;
-    font-size: 50px;
-    color: white;
-}
-
-#content {
-    max-width: 50em;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-#news a {
-    text-decoration: none;
-    color: #000;
-    border-bottom: 2px solid #e42d40;
-}
-
-#news a:hover {
-    font-style: italic;
-}
-
-h1, h2, #news {
+/* 1.0: Global */
+html {
+    font-family: "Avenir Next", Helvetica, sans-serif;
     font-weight: 300;
 }
 
-#news {
-    font-size: 1.5em;
-    line-height: 1.5em;
-}
-
+/* 1.1: Nav Bar */
 .nav {
     list-style-type: none;
     margin: 0;
@@ -55,9 +22,9 @@ h1, h2, #news {
     background-color: #e42d40;
 }
 
-li {float: left;}
+.nav li {float: left;}
 
-li a {
+.nav li a {
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
@@ -67,9 +34,9 @@ li a {
   font-size: 17px;
 }
 
-li a:hover, .dropdown:hover {background-color: #555;}
+.nav li a:hover, .dropdown:hover {background-color: #555;}
 
-li.dropdown {display: inline-block;}
+.nav li.dropdown {display: inline-block;}
 
 .dropdown-content {
     display: none;
@@ -91,3 +58,49 @@ li.dropdown {display: inline-block;}
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {display: block;}
+
+/* 2.0: Homepage Specific */
+#content {
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#left {
+    float: left;
+    width: 50%;
+}
+
+#right {
+    float: right;
+    width: 50%;
+}
+
+/* 3.0: Dashboard Specific */
+#news {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#news a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #e42d40;
+}
+
+#news a:hover {font-style: italic;}
+
+/* 4.0: Easy Button Specific */
+#easy {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border-color: black;
+    background-color: red;
+    font-size: 50px;
+    color: white;
+}
+
+
+
+
