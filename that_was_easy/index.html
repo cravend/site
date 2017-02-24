@@ -7,9 +7,14 @@
     </head>
     <body>
         <ul class="nav">
-            <li><a href="/index.html">Home</a></li>
-            <li><a class="active" href="#">That was Easy</a></li>
-            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a class="active" href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Projects</a>
+                <div class="dropdown-content">
+                    <a href="/that_was_easy">That was Easy</a>
+                    <a href="/dashboard">Dashboard</a>
+                </div>
+            </li>
         </ul>
         <button id="easy">Easy</button>
         <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
