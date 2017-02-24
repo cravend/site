@@ -10,8 +10,9 @@
 /* 1.0: Global */
 html {
     font-family: "Avenir Next", Helvetica, sans-serif;
-    font-weight: 300;
 }
+
+h1, h2 {font-weight: 100;}
 
 /* 1.1: Nav Bar */
 .nav {
@@ -22,9 +23,9 @@ html {
     background-color: #e42d40;
 }
 
-.nav li {float: left;}
+li {float: left;}
 
-.nav li a {
+li a {
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
@@ -34,9 +35,9 @@ html {
   font-size: 17px;
 }
 
-.nav li a:hover, .dropdown:hover {background-color: #555;}
+li a:hover, .dropdown:hover {background-color: #555;}
 
-.nav li.dropdown {display: inline-block;}
+li.dropdown {display: inline-block;}
 
 .dropdown-content {
     display: none;
@@ -80,6 +81,7 @@ html {
 #news {
     font-size: 1.5em;
     line-height: 1.5em;
+    font-weight: 300;
 }
 
 #news a {
