@@ -9,9 +9,12 @@ function setup() {
 
 function draw() {
     var isShifted = false;
-    var y = 0;
+    var y = height;
+    var rVal = 255;
+    var gVal = 0;
+    var bVal = 0;
     
-    while (y <= height) {
+    while (y >= 0) {
         var x;
         if (isShifted) {
             x = circleRadius;
@@ -20,11 +23,16 @@ function draw() {
         }
         
         while (x <= width) {
+            fill(color(rVal, gVal, bVal));
+            stroke(color(rVal, gVal, bVal));
             ellipse(x, y, circleDiameter, circleDiameter);
             x = x + circleDiameter;
         }
         
-        y = y + circleRadius;
+        y = y - circleRadius;
         isShifted = !isShifted;
+        rVal = rVal - 2;
+        gVal = gVal + 7;
+        bVal = bVal + 3;
     }
 }
