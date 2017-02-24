@@ -1,5 +1,25 @@
-html {
+body {
     font-family: Avenir Next, Helvetica, sans-serif;
+}
+
+#left {
+    float: left;
+    width: 50%;
+}
+
+#right {
+    float: right;
+    width: 50%;
+}
+
+#easy {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border-color: black;
+    background-color: red;
+    font-size: 50px;
+    color: white;
 }
 
 #content {
