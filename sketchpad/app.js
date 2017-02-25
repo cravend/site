@@ -1,3 +1,5 @@
+$(function(){$("#nav").load("../nav.html");});
+
 var config = {
     apiKey: "AIzaSyDzWbmDmEHjl3QI8rWhYmLeueJVslkISc0",
     authDomain: "collaborative-sketch-d9e2d.firebaseapp.com",
@@ -9,6 +11,8 @@ firebase.initializeApp(config);
 
 var pointsData = firebase.database().ref();
 var points = [];
+var toolType = 'dot';
+
 function setup() {
     var canvas = createCanvas(400, 400);
     background(255);
@@ -22,12 +26,21 @@ function setup() {
 function draw() {
     background(255);
     for (var i = 0; i < points.length; i++) {
-    var point = points[i];
-    ellipse(point.x, point.y, 5, 5);
+        var point = points[i];
+        ellipse(point.x, point.y, 5, 5);
+        if (point.type == "dot") {
+            ellipse(point.x, point.y, point.width, point.width);
+        } else if (i > 0 && point.type == "line" && points[i - 1].type == "line") {
+            var previous = points[i - 1];
+            line(point.x, point.y, previous.x, previous.y);
+        }
     }
 }
 
-function drawPoint() {pointsData.push({x: mouseX, y: mouseY});}
+function drawPoint() {
+  pointsData.push({x: mouseX, y: mouseY, type: toolType});
+}
+
 
 function drawPointIfMousePressed() {if (mouseIsPressed) {drawPoint();}}
 
@@ -40,5 +53,14 @@ function clearDrawing() {
     if (result) {
         pointsData.remove();
         points = [];
+    }
+}
+
+$("#line").change(changeType);
+function changeType() {
+    if($("#line").is(':checked')) {
+        toolType = "line";  // checked
+    } else {
+        toolType = "dot";  // unchecked
     }
 }

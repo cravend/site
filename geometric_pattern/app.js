@@ -1,3 +1,5 @@
+$(function(){$("#nav").load("../nav.html");});
+
 var numCircles = 12;
 var circleDiameter;
 var circleRadius;

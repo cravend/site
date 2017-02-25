@@ -1,3 +1,5 @@
+$(function(){$("#nav").load("../nav.html");});
+
 var config = {
     apiKey: "AIzaSyDze0aMzD5JUYnXMK6uFwcP4ngxb8mPfSQ",
     authDomain: "hackclub-chat.firebaseapp.com",
