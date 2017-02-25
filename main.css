@@ -114,7 +114,7 @@ li.dropdown {display: inline-block;}
 #sketch {
     width: 500px;
     height: 500px;
-    border: 1px;
+    border: 2px;
     border-style: solid;
     border-color: black;
     margin: auto;
