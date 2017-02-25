@@ -14,7 +14,8 @@ var points = [];
 var toolType = 'dot';
 
 function setup() {
-    var canvas = createCanvas(400, 400);
+    var canvas = createCanvas(500,500);
+    canvas.parent('sketch');
     background(255);
     fill(0);
     pointsData.on("child_added", function (point) {points.push(point.val());});
@@ -24,23 +25,28 @@ function setup() {
 }
 
 function draw() {
-    background(255);
-    for (var i = 0; i < points.length; i++) {
-        var point = points[i];
-        ellipse(point.x, point.y, 5, 5);
-        if (point.type == "dot") {
-            ellipse(point.x, point.y, point.width, point.width);
-        } else if (i > 0 && point.type == "line" && points[i - 1].type == "line") {
-            var previous = points[i - 1];
-            line(point.x, point.y, previous.x, previous.y);
-        }
+  background(255);
+  for (var i = 0; i < points.length; i++) {
+    var point = points[i];
+    if (point.type == "dot") {
+      strokeWeight(0);
+      ellipse(point.x, point.y, point.width, point.width);
+    } else if (i > 0 && point.type == "line" && points[i - 1].type == "line") {
+      var previous = points[i - 1];
+      strokeWeight(point.width);
+      line(point.x, point.y, previous.x, previous.y);
     }
+  }
 }
 
 function drawPoint() {
-  pointsData.push({x: mouseX, y: mouseY, type: toolType});
+  pointsData.push({
+      x: mouseX, 
+      y: mouseY, 
+      type: toolType, 
+      width: document.getElementById('slideWidth').value()
+  });
 }
-
 
 function drawPointIfMousePressed() {if (mouseIsPressed) {drawPoint();}}
 
@@ -56,11 +62,15 @@ function clearDrawing() {
     }
 }
 
-$("#line").change(changeType);
+$("#test").on("click", test);
+function test() {
+  alert(document.getElementbyId('slideWidth').val);
+}
+
 function changeType() {
-    if($("#line").is(':checked')) {
-        toolType = "line";  // checked
+    if(document.getElementById('checkLine').checked) {
+        toolType = "line";
     } else {
-        toolType = "dot";  // unchecked
+        toolType = "dot";
     }
 }

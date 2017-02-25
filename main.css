@@ -4,6 +4,7 @@
 2.0: Homepage Specific
 3.0: Dashboard Specific
 4.0: Easy Button Specific
+5.0: Sketchpad Specific
 */
 
 
@@ -109,6 +110,17 @@ li.dropdown {display: inline-block;}
     color: white;
 }
 
+/* 5.0: Sketchpad Specific */
+#sketch {
+    width: 500px;
+    height: 500px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+}
 
-
-
+#controls {
+    width: 400px;
+    margin: auto;
+}
