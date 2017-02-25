@@ -8,6 +8,9 @@
 
 
 /* 1.0: Global */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css");
+
 html {font-family: "Avenir Next", Helvetica, sans-serif;}
 
 #content {
@@ -21,6 +24,8 @@ a {
     color: #000;
     border-bottom: 2px solid #e42d40;
 }
+
+h1, h3 {color: #e42d40;}
 
 h1, h2 {font-weight: 100;}
 

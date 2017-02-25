@@ -1,25 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dalton Craven | Dashboard</title>
+        <title>Dashboard // Dalton Craven</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel="stylesheet" href="../main.css">
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script>$(function(){$("#nav").load("../nav.html");});</script> 
     </head>
     <body>
-        <ul class="nav">
-            <li><a href="/index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#">Projects</a>
-                <div class="dropdown-content">
-                    <a href="/that_was_easy">That was Easy</a>
-                    <a href="/dashboard">Dashboard</a>
-                    <a href="/geometric_pattern">Geometric Pattern</a>
-                </div>
-            </li>
-        </ul>
+        <div id="nav"></div>
         <div id="content">
             <div id="dash">
                 <h1>Hello! Today is <span id="date"></span></h1>
