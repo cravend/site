@@ -3,27 +3,26 @@
     <head>
         <title>Dashboard // Dalton Craven</title>
         <link rel="stylesheet" href="../main.css">
-        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-        <script>$(function(){$("#nav").load("../nav.html");});</script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="nav"></div>
         <div id="content">
             <div id="dash">
-                <h1>Hello! Today is <span id="date"></span></h1>
+                <h1>Hello! Today is <span id="date"></span>.</h1>
                 <hr>
                 <h2><span id="weather"></span></h2>
                 <hr>
-                <h2>Latest News</h2>
-                <div id="news"></div>
+                <h3>Latest News</h3>
+                <p><div id="news"></div></p>
                 <p>Powered by <a href="https://newsapi.org/">NewsAPI</a> and <a href="https://darksky.net/poweredby/">Dark Sky</a></p>
             </div>
         </div>
-        <script
-            src="https://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous">
-        </script>
-        <script type="text/javascript" src="app.js"></script>
+        <script src="app.js"></script>
     </body>
 </html>
