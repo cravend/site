@@ -7,18 +7,21 @@
     <body>
         <div id="nav"></div>
         <div id="content">
-            <div id="sketch"></div><br />
+            <div id="sketch"></div>
+            <hr>
             <div id="controls">
-                <button id="test">test</button>
                 <button id="saveDrawing">Save to Computer</button>
-                <button id="clearDrawing">Delete Drawing</button><br /><br />
+                <button id="clearDrawing">Clear Canvas</button><br /><br />
                 <input id="checkLine" type="checkbox" onclick="changeType()"> Draw as Line</input><br /><br />
-                Width <input id="slideWidth" type="range" min="1" max="10" value="1" />
+                <div id="labelWidth">Width: 4px</div>
+                <input id="inputWidth" type="range" min="1" max="10" value="4" onchange="changeWidth()"></input><br /><br />
+                <div id="labelColor">Current Color: #000000</div>
+                <input id="inputColor" type="color" onchange="changeColor()"></input><br /><br />
             </div>
             <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
             <script src="app.js"></script>
         </div>
-        </body>
+    </body>
 </html>

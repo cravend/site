@@ -28,11 +28,13 @@ function draw() {
   background(255);
   for (var i = 0; i < points.length; i++) {
     var point = points[i];
+    fill(point.color);
     if (point.type == "dot") {
       strokeWeight(0);
       ellipse(point.x, point.y, point.width, point.width);
     } else if (i > 0 && point.type == "line" && points[i - 1].type == "line") {
       var previous = points[i - 1];
+      stroke(point.color);
       strokeWeight(point.width);
       line(point.x, point.y, previous.x, previous.y);
     }
@@ -44,14 +46,18 @@ function drawPoint() {
       x: mouseX, 
       y: mouseY, 
       type: toolType, 
-      width: document.getElementById('slideWidth').value()
+      color: $("#inputColor").val(),
+      width: $("#inputWidth").val()
   });
 }
 
 function drawPointIfMousePressed() {if (mouseIsPressed) {drawPoint();}}
 
 $("#saveDrawing").on("click", saveDrawing);
-function saveDrawing() {saveCanvas();}
+function saveDrawing() {
+  var fileName = window.prompt("What do you want your picture to be called?");
+  if (fileName.length != 0) {saveCanvas(fileName);}
+}
 
 $("#clearDrawing").on("click", clearDrawing);
 function clearDrawing() {
@@ -64,13 +70,28 @@ function clearDrawing() {
 
 $("#test").on("click", test);
 function test() {
-  alert(document.getElementbyId('slideWidth').val);
+  alert($("#inputColor").val());
+}
+
+function changeWidth() {
+  $("#labelWidth").text("Width: " + ($("#inputWidth").val()) + "px");
+}
+
+function changeColor() {
+  $("#labelColor").text("Current Color: " + ($("#inputColor").val()));
 }
 
 function changeType() {
-    if(document.getElementById('checkLine').checked) {
-        toolType = "line";
-    } else {
-        toolType = "dot";
-    }
+  /*
+  if(document.getElementById('checkLine').checked) {
+    toolType = "line";
+  } else {
+    toolType = "dot";
+  }
+  */
+  if($("#checkLine").val) {
+    toolType = "line";
+  } else {
+    toolType = "dot";
+  }
 }
