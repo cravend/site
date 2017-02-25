@@ -1,9 +1,9 @@
+$(function(){$("#nav").load("../nav.html");});
+
 function loadDate() {
-    var currentDate = new Date();
-    var dateString = currentDate.toString()
-        .split(" ")
-        .splice(0, 4) // string only contains first four words]
-        .join(" ");
+    var today = new Date();
+    var date = (today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
+    var dateString = date.toString()
     $("#date").text(dateString);
 }
 
@@ -17,13 +17,11 @@ function loadWeather() {
         var longitude = position.coords.longitude; // Geolocation Longitude
         
         $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
-            weather.text("Based on your current location, it is " + data.currently.temperature + "°F right now.");
+            weather.text("Based on your current location, it is " + data.currently.temperature + " degrees F right now.");
         });
     }
     
-    function error() {
-        alert("Unable to retrieve location for weather!");
-    }
+    function error() {alert("Unable to retrieve location for weather!");}
     
     navigator.geolocation.getCurrentPosition(success, error);
     
