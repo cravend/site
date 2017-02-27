@@ -4,6 +4,7 @@ var GRAVITY = 0.3;
 var JUMP = -5;
 
 var groundSprites;
+var decorationSprites;
 var GROUND_SPRITE_WIDTH = 50;
 var GROUND_SPRITE_HEIGHT = 50;
 var numGroundSprites;
@@ -12,9 +13,11 @@ var player;
 var isGameOver;
 var isGameStarted;
 var score;
+var screenWidth = document.getElementById('flex').getClientRects()[0].width;
+var screenHeight = Math.round(screenWidth * .8);
 
 function setup() {
-    var canvas = createCanvas(500, 400);
+    var canvas = createCanvas(screenWidth, screenHeight);
     canvas.parent('flex');
     isGameOver = false;
     score=0;
@@ -27,6 +30,7 @@ function setup() {
     }
     player = createSprite(100, height-75, 50, 50);
     obstacleSprites = new Group();
+    decorationSprites = new Group();
     var firstGroundSprite = groundSprites[0];
     if (firstGroundSprite.position.x <= camera.position.x - (width/2 + firstGroundSprite.width/2)) {
         groundSprites.remove(firstGroundSprite);
@@ -61,15 +65,26 @@ function draw() {
                 firstGroundSprite.position.x = firstGroundSprite.position.x + numGroundSprites*firstGroundSprite.width;
                 groundSprites.add(firstGroundSprite);
             }
-            
+            if (player.position.y <= 25) {
+                player.position.y = 25;
+                player.velocity.y = GRAVITY;
+            }
             if (groundSprites.overlap(player)) {
                 player.velocity.y = 0;
                 player.position.y = (height-50) - (player.height/2);
             }
             if (random() > 0.95) {
+                var decoration = createSprite(camera.position.x + width,  random(0, (height-50)-50), 5, 5);
+                decorationSprites.add(decoration);
+            }
+            if (random() > 0.95) {
                 var obstacle = createSprite(camera.position.x + width,  random(0, (height-50)-15), 30, 30);
                 obstacleSprites.add(obstacle);
-            }   
+            }
+            var firstDecoration = decorationSprites[0];
+            if (decorationSprites.length > 0 && firstDecoration.position.x <= camera.position.x - (width/2 + firstDecoration.width/2)) {
+                removeSprite(firstDecoration);
+            }
             var firstObstacle = obstacleSprites[0];
             if (obstacleSprites.length > 0 && firstObstacle.position.x <= camera.position.x - (width/2 + firstObstacle.width/2)) {
                 removeSprite(firstObstacle);
