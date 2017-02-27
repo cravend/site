@@ -19,9 +19,6 @@ html {font-family: "Avenir Next", Helvetica, sans-serif;}
     max-width: 50em;
     margin: 0 auto;
     padding: 10px;
-    display: flex;
-    align-items: center; /*replace with align-content: center if this soesnt work*/
-    justify-content: center;
 }
 
 a {
@@ -140,4 +137,10 @@ li.dropdown {display: inline-block;}
 
 #startButton {
     position: absolute;
+}
+
+#game {
+    display: flex;
+    align-items: center; /*replace with align-content: center if this soesnt work*/
+    justify-content: center;
 }
