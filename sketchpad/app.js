@@ -12,6 +12,7 @@ firebase.initializeApp(config);
 var pointsData = firebase.database().ref();
 var points = [];
 var toolType = 'dot';
+var connectLine;
 
 function setup() {
     var canvas = createCanvas(500,500);
@@ -24,6 +25,14 @@ function setup() {
     canvas.mouseMoved(drawPointIfMousePressed);
 }
 
+function mousePressed() {
+  connectLine = true;
+}
+
+function mouseReleased() {
+  connectLine = false;
+}
+
 function draw() {
   background(255);
   for (var i = 0; i < points.length; i++) {
@@ -32,7 +41,7 @@ function draw() {
     if (point.type == "dot") {
       strokeWeight(0);
       ellipse(point.x, point.y, point.width, point.width);
-    } else if (i > 0 && point.type == "line" && points[i - 1].type == "line") {
+    } else if (i > 0 && point.type == "line" && point.connected == true && points[i - 1].type == "line" ) {
       var previous = points[i - 1];
       stroke(point.color);
       strokeWeight(point.width);
@@ -47,7 +56,8 @@ function drawPoint() {
       y: mouseY, 
       type: toolType, 
       color: $("#inputColor").val(),
-      width: $("#inputWidth").val()
+      width: $("#inputWidth").val(),
+      connected: connectLine
   });
 }
 
@@ -89,7 +99,7 @@ function changeType() {
     toolType = "dot";
   }
   */
-  if($("#checkLine").val) {
+  if(document.getElementById('checkLine').checked) {
     toolType = "line";
   } else {
     toolType = "dot";
