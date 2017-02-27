@@ -10,16 +10,30 @@
 
 
 /* 1.0: Global */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700");
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css");
+html {font-family: "Roboto", sans-serif;}
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400,400i,500,500i,700,700i");
+body {margin: 0;}
 
-html { font-family: "Roboto", sans-serif;}
 #content {
     max-width: 50em;
     margin: 0 auto;
     padding: 10px;
+}
+
+h1 {
+    font-weight: 100 !important;
+    color: #e42d40;
+}
+
+h2 {
+    font-weight: 400 !important;
+}
+
+h3 {
+    font-weight: 700 !important;
+    color: #e42d40;
 }
 
 a {
@@ -27,10 +41,6 @@ a {
     color: #000;
     border-bottom: 2px solid #e42d40;
 }
-
-h1, h3 {color: #e42d40;}
-
-h1, h2 {font-weight: 100;}
 
 /* 1.1: Nav Bar */
 .nav {
@@ -51,6 +61,7 @@ li a {
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
+    font-weight: 300;
     border-bottom: 0;
 }
 
@@ -81,7 +92,6 @@ li.dropdown {display: inline-block;}
 .dropdown:hover .dropdown-content {display: block;}
 
 /* 2.0: Homepage Specific */
-
 #left {
     float: left;
     width: 50%;
