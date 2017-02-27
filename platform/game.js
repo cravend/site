@@ -15,7 +15,7 @@ var score;
 
 function setup() {
     var canvas = createCanvas(500, 400);
-    canvas.parent('game');
+    canvas.parent('flex');
     isGameOver = false;
     score=0;
     background(150, 200, 250);
@@ -73,10 +73,10 @@ function draw() {
             var firstObstacle = obstacleSprites[0];
             if (obstacleSprites.length > 0 && firstObstacle.position.x <= camera.position.x - (width/2 + firstObstacle.width/2)) {
                 removeSprite(firstObstacle);
+                score = score + 1;
             }
             obstacleSprites.overlap(player, endGame);
             drawSprites();
-            score = score + 1;
             textAlign(CENTER);
             text(score, camera.position.x, 10);
             if (keyDown(UP_ARROW)) {
