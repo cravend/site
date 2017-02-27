@@ -1,15 +1,15 @@
 $(function(){$("#nav").load("../nav.html");});
 
-// var numCircles = 12;
+var numCircles = 12;
 var circleDiameter;
 var circleRadius;
-var screenSize;
+var screenWidth = document.getElementById('flex').getClientRects()[0].width;
+var screenHeight = Math.round(screenWidth * .8);
 
 function setup() {
-    var canvas = createCanvas(500,400);
+    var canvas = createCanvas(screenWidth, screenHeight);
     canvas.parent('flex');
-    console.log(canvas.parent.getClientRect[0]);
-    circleDiameter = 50;
+    circleDiameter = width/numCircles;
     circleRadius = circleDiameter/2;
 }
 
