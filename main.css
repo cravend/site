@@ -150,7 +150,7 @@ li.dropdown {display: inline-block;}
     position: absolute;
 }
 
-#game {
+#flex {
     display: flex;
     align-items: center;
     justify-content: center;

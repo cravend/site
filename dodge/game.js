@@ -4,6 +4,7 @@ var player;
 var playerImage;
 var enemy;
 var enemyImage;
+var isGameStarted;
 var isGameOver;
 var backgroundImage;
 
@@ -15,40 +16,50 @@ function preload() {
 
 
 function setup() {
-    var canvas = createCanvas(256, 256);
-    canvas.parent('content');
+    var canvas = createCanvas(512, 512);
+    canvas.parent('flex');
     player = createSprite(width/2, height-(playerImage.height/2), 0, 0);
     player.addImage(playerImage);
-    enemy = createSprite(width/2, 0, 0, 0);
+    enemy = createSprite(width/2, -10, 0, 0);
     enemy.addImage(enemyImage);
     enemy.rotationSpeed = 4.0;
+    background(backgroundImage);
     isGameOver = false;
+    isGameStarted = false;
+    drawSprites();
 }
 
 function draw() {
-    if (isGameOver) {
-        gameOver();
-    } else {
-        if (enemy.overlap(player)) {
-            isGameOver = true;
+    if (isGameStarted) {
+        if (isGameOver) {
+            gameOver();
+        } else {
+            if (enemy.overlap(player)) {
+                isGameOver = true;
+            }
+            background(backgroundImage);
+            
+            if(keyDown(RIGHT_ARROW) && player.position.x < (width - (playerImage.width/2))) {
+                player.position.x += 2;
+            }
+            if (keyDown(LEFT_ARROW) && player.position.x > playerImage.width/2) {
+                player.position.x -= 2;
+            }
+            enemy.position.y = enemy.position.y + 5;
+            
+            if (enemy.position.y > height) {
+                enemy.position.x = random(5, width-5);
+                enemy.position.y = 0;
+            }
+            
+            drawSprites();
         }
-        background(backgroundImage);
-        
-        if(keyDown(RIGHT_ARROW) && player.position.x < (width - (playerImage.width/2))) {
-            player.position.x += 2;
-        }
-        if (keyDown(LEFT_ARROW) && player.position.x > playerImage.width/2) {
-            player.position.x -= 2;
-        }
-        enemy.position.y = enemy.position.y + 5;
-        
-        if (enemy.position.y > height) {
-            enemy.position.x = random(5, width-5);
-            enemy.position.y = 0;
-        }
-        
-        drawSprites();
     }
+}
+
+function startGame() {
+    $("#startButton").hide();
+    isGameStarted = true;
 }
 
 function gameOver() {
