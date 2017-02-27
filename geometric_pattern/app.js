@@ -1,25 +1,24 @@
 $(function(){$("#nav").load("../nav.html");});
 
-var numCircles = 12;
+// var numCircles = 12;
 var circleDiameter;
 var circleRadius;
+var screenSize;
+
 function setup() {
-    createCanvas(480, 600);
-    circleDiameter = width/numCircles;
+    var canvas = createCanvas(500,400);
+    canvas.parent('flex');
+    console.log(canvas.parent.getClientRect[0]);
+    circleDiameter = 50;
     circleRadius = circleDiameter/2;
 }
 
 function draw() {
     var isShifted = false;
     var y = height;
-    var rVal = 84;
-    var gVal = 21;
-    var bVal = 16;
-    
-    // 228  ->  180 +6      156,21,16
-    // 45  -> 21 +1
-    // 64  -> 16 -2 
-    
+    var rVal = 166;
+    var gVal = -17;
+    var bVal = 2;
     
     while (y >= 0) {
         var x;
@@ -27,16 +26,14 @@ function draw() {
         
         while (x <= width) {
             fill(color(rVal, gVal, bVal));
-            // stroke(color(rVal, gVal, bVal));
+            stroke(color(rVal-10, gVal-10, bVal-10));
             ellipse(x, y, circleDiameter, circleDiameter);
             x = x + circleDiameter;
         }
-        // 24 circles
         y = y - circleRadius;
         isShifted = !isShifted;
-        rVal = rVal + 12;
+        rVal = rVal + 2;
         gVal = gVal + 2;
-        bVal = bVal + 4;
-        
+        bVal = bVal + 2;
     }
 }
