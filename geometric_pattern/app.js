@@ -3,12 +3,15 @@ $(function(){$("#nav").load("../nav.html");});
 var numCircles = 12;
 var circleDiameter;
 var circleRadius;
-var screenWidth = document.getElementById('flex').getClientRects()[0].width;
-var screenHeight = Math.round(screenWidth * .8);
 
 function setup() {
+    // $("#pattern").height(($(window).height()-50));
+    // $("#pattern").width($(window).width());
+    
+    var screenWidth = $(window).width();
+    var screenHeight = ($(window).height()-100);
     var canvas = createCanvas(screenWidth, screenHeight);
-    canvas.parent('flex');
+    canvas.parent("pattern");
     circleDiameter = width/numCircles;
     circleRadius = circleDiameter/2;
 }
