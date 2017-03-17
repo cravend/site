@@ -28,7 +28,7 @@ function showMessage(msg) {
     var messageContent = message.text;
     
     var messageE1 = $("<div/>").addClass("message");
-    var senderE1 = $("<span/>").text(messageSender + ": ");
+    var senderE1 = $("<span style='font-weight: 700;'/>").text(messageSender + ": ");
     var contentE1 = $("<span/>").text(messageContent);
     
     messageE1.append(senderE1);
