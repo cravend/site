@@ -14,11 +14,13 @@
 
 html {font-family: "Roboto", sans-serif;}
 
-body {margin: 0;}
+body {
+    margin: 0;
+}
 
 #content {
     max-width: 50em;
-    margin: 0 auto;
+    margin: auto;
     padding: 10px;
     text-align: center;
 }
@@ -101,6 +103,7 @@ a {
 /* 2.0: Homepage Specific */
 #left {
     float: left;
+    padding-bottom: 10px;
 }
 
 #right {
