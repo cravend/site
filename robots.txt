@@ -1,2 +1,6 @@
 Sitemap: /sitemap.txt
 Disallow: /nav.html
+Disallow: /mail/
+Disallow: /.c9/
+Disallow: /.git/
+Disallow: /CNAME
