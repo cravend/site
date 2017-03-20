@@ -1,6 +1,6 @@
-Sitemap: /sitemap.txt
-Disallow: /nav.html
-Disallow: /mail/
-Disallow: /.c9/
-Disallow: /.git/
-Disallow: /CNAME
+Sitemap: https://daltoncraven.tech/sitemap.txt
+Disallow: https://daltoncraven.tech/nav.html
+Disallow: https://daltoncraven.tech/mail/
+Disallow: https://daltoncraven.tech/.c9/
+Disallow: https://daltoncraven.tech/.git/
+Disallow: https://daltoncraven.tech/CNAME
