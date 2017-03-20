@@ -1,0 +1,2 @@
+Sitemap: /sitemap.txt
+Disallow: /nav.html
