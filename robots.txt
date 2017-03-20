@@ -1,4 +1,5 @@
-Sitemap: https://daltoncraven.tech/sitemap.txt
+User-agent: Googlebot
+Sitemap: https://daltoncraven.tech/sitemap.txt	
 Disallow: https://daltoncraven.tech/nav.html
 Disallow: https://daltoncraven.tech/mail/
 Disallow: https://daltoncraven.tech/.c9/
