@@ -14,9 +14,7 @@
 
 html {font-family: "Roboto", sans-serif;}
 
-body {
-    margin: 0;
-}
+body {margin: 0;}
 
 #content {
     max-width: 50em;
@@ -26,16 +24,16 @@ body {
 }
 
 h1 {
-    font-weight: 100 !important;
+    font-weight: 100;
     color: #e42d40;
 }
 
 h2 {
-    font-weight: 400 !important;
+    font-weight: 400;
 }
 
 h3 {
-    font-weight: 700 !important;
+    font-weight: 700;
     color: #e42d40;
 }
 
@@ -75,7 +73,7 @@ a {
 
 .nav-top:hover .nav-dropdown-content {display: block;}
 
-.nav-top a:hover, .nav-dropdown:hover {
+.nav-top a:hover {
     background-color: #555;
     color: #fff;
 }
@@ -98,7 +96,11 @@ a {
     border-bottom: 2px solid #e42d40;
 }
 
-.nav-dropdown-content a:hover{background-color: #f1f1f1;}
+.nav-dropdown-content a:hover{
+    background-color: #EDEDED;
+    color: #000;
+    
+}
 
 /* 2.0: Homepage Specific */
 #left {
@@ -154,9 +156,7 @@ a {
     
 }
 
-#startButton {
-    position: absolute;
-}
+#startButton {position: absolute;}
 
 #flex {
     display: flex;
