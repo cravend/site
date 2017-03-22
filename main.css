@@ -1,7 +1,6 @@
 /* Table of Contents
 1.0: Global
- 1.1: Media
- 1.2: Nav Bar
+ 1.1: Nav Bar
 2.0: Homepage Specific
 3.0: Dashboard Specific
 4.0: Easy Button Specific
@@ -20,7 +19,7 @@ body {margin: 0;}
 #content {
     max-width: 50em;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 10px 10px;
 }
 
 h1 {
@@ -44,15 +43,7 @@ a {
     border-bottom: 2px solid #e42d40;
 }
 
-/* 1.1: Media */
-@media (max-width: 50em) {
-    .main, .alt {width: 100%;}
-    .mobile {display: block;}
-    .inline-image {max-width: 150px;}
-    h1 {font-size: 3em}
-}
-
-/* 1.2: Nav Bar */
+/* 1.1: Nav Bar */
 .nav {
     list-style-type: none;
     margin: 0;
@@ -70,7 +61,7 @@ a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;
     border-bottom: 0;
 }
@@ -97,6 +88,7 @@ a {
     text-decoration: none;
     display: block;
     text-align: left;
+    font-size: 17px;
     border-bottom: 2px solid #e42d40;
 }
 
@@ -123,6 +115,13 @@ a {
     float: left;
     margin-right: 10px;
     width: 40%;
+}
+
+@media (max-width: 50em) {
+    .main, .alt {width: 100%;}
+    .mobile {display: block;}
+    .inline-image {max-width: 150px;}
+    h1 {font-size: 3em}
 }
 
 /* 3.0: Dashboard Specific */
