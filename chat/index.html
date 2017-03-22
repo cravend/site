@@ -3,6 +3,10 @@
     <head>
         <title>Chat // Dalton Craven</title>
         <link rel="stylesheet" href="../main.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script>$(function(){$("#nav").load("../nav.html");});</script>
+        <script>$(function(){$("#footer").load("../footer.html");});</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div id="nav"></div>
@@ -13,7 +17,6 @@
             <input type="text" id="messageInput" placeholder="Message">
         </div>
         <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="app.js"></script>
     </body>
 </html>
