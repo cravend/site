@@ -5,42 +5,48 @@
         <link rel="stylesheet" href="main.css">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script>$(function(){$("#nav").load("nav.html");});</script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div id="nav"></div>
         <div id="content">
             <h1>Dalton Craven</h1>
             <h2>MHS Student</h2>
-            <div id="left" style="width: 59%">
+            <div class="left main">
                 <h3>About Me</h3>
-                <img src="assets/my-face.jpg" alt="my smiling mug" style="float: left; margin-right: 10px; width: 40%">
-                <p style="text-align: left;">Hi! My name is Dalton Craven. I'm a 10<sup>th</sup> grader at Mason High School. I've been interested in computers my whole life, and taking programming my freshman year helped me decide that was what I wanted to do. I'm currently working with the <a href="http://masonacm.org/">Mason ACM</a> as their official webmaster. I'm also in <a href="http://hackclub.masonacm.org/">Mason Hack Club</a> as a web designer and game programmer. I'm also learning basic server management & web design through the Integrated Media Internship program, and I've interned with the City of Mason's IT team to get some hands-on experience in a real-life workplace. Outside of school, I'm a staff member on a Minecraft server called <a href="https://www.superfuntime.org/">SuperFunTime</a>. I also own a <a href="/comet.html">1963 Mercury Comet Custom</a> that I enjoy working on with my free time.</p>
+                <div class="block">
+                    <img class="inline-image" src="assets/my-face.jpg" alt="my smiling mug">
+                    <p style="text-align: left;">Hi! My name is Dalton Craven. I'm a 10<sup>th</sup> grader at Mason High School. I've been interested in computers my whole life, and taking programming my freshman year helped me decide that was what I wanted to do. I'm currently working with the <a href="http://masonacm.org/">Mason ACM</a> as their official webmaster. I'm also in <a href="http://hackclub.masonacm.org/">Mason Hack Club</a> as a web designer and game programmer. I'm also learning basic server management & web design through the Integrated Media Internship program, and I've interned with the City of Mason's IT team to get some hands-on experience in a real-life workplace. Outside of school, I'm a staff member on a Minecraft server called <a href="https://www.superfuntime.org/">SuperFunTime</a>. I also own a <a href="/comet.html">1963 Mercury Comet Custom</a> that I enjoy working on with my free time.</p>
+                </div>
                 <hr />
-                <h3>Projects</h3>
-                <ul class="bullets" style="text-align: left;">
-                    <li><a href="http://masonacm.org">Mason ACM Website</a>
-                        <ul>
-                            <li>I'm in the process of redoing the Mason ACM's website--check back to see when it's finished!</li>
-                        </ul>
-                    </li>
-                    <li><a href="http://masonhackclub.tech">Mason Hack Club Website</a>
-                        <ul>
-                            <li>I wrote this website from scratch, using Cloud9 and other tools Hack Club provided.</li>
-                        </ul>
-                    </li>
-                    <li><a href="https://activities.masoncomets.org">Mason Student Activities Website</a>
-                        <ul>
-                            <li>I created this Wordpress website for our student activities office, through IMI.</li>
-                        </ul>
-                    </li>
-                    <li><a href="https://workshops.hackclub.com">Hack Club Workshops</a>
-                        <ul>
-                            <li>Hover over the Workshops tab on the menu to see all the Hack Club workshops I've done!</li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="block">
+                    <h3>Projects</h3>
+                    <ul class="bullets" style="text-align: left;">
+                        <li><a href="http://masonacm.org">Mason ACM Website</a>
+                            <ul>
+                                <li>I'm in the process of redoing the Mason ACM's website--check back to see when it's finished!</li>
+                            </ul>
+                        </li>
+                        <li><a href="http://masonhackclub.tech">Mason Hack Club Website</a>
+                            <ul>
+                                <li>I wrote this website from scratch, using Cloud9 and other tools Hack Club provided.</li>
+                            </ul>
+                        </li>
+                        <li><a href="https://activities.masoncomets.org">Mason Student Activities Website</a>
+                            <ul>
+                                <li>I created this Wordpress website for our student activities office, through IMI.</li>
+                            </ul>
+                        </li>
+                        <li><a href="https://workshops.hackclub.com">Hack Club Workshops</a>
+                            <ul>
+                                <li>Hover over the Workshops tab on the menu to see all the Hack Club workshops I've done!</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="mobile" />
             </div>
-            <div id="right" style="width: 39%;">
+            <div class="right alt">
                 <h3>Contact & Links</h3>
                 <ul class="bullets" style="text-align: left;">
                     <li><a href="https://www.github.com/cravend">Personal Github</a>
