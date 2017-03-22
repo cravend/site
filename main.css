@@ -1,6 +1,7 @@
 /* Table of Contents
 1.0: Global
- 1.1: Nav Bar
+ 1.1: Media
+ 1.2: Nav Bar
 2.0: Homepage Specific
 3.0: Dashboard Specific
 4.0: Easy Button Specific
@@ -18,19 +19,20 @@ body {margin: 0;}
 
 #content {
     max-width: 50em;
-    margin: auto;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 0 10px;
     text-align: center;
 }
 
 h1 {
     font-weight: 100;
+    margin: 10px 0 0 0;
+    font-size: 5em;
     color: #e42d40;
+    text-align: center;
 }
 
-h2 {
-    font-weight: 400;
-}
+h2 {font-weight: 400;}
 
 h3 {
     font-weight: 700;
@@ -43,45 +45,15 @@ a {
     border-bottom: 2px solid #e42d40;
 }
 
-.bullets li {
-    padding-top: 5px;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.main {
-    width: 59%;
-}
-
-.alt {
-    width: 39%;
-}
-
-.mobile {
-    display: none;
-}
-
-.inline-image {
-    float: left;
-    margin-right: 10px;
-    width: 40%;
-}
-
-@media (max-width: 720px) {
+/* 1.1: Media */
+@media (max-width: 50em) {
     .main, .alt {width: 100%;}
     .mobile {display: block;}
     .inline-image {max-width: 150px;}
+    h1 {font-size: 3em}
 }
 
-
-/* 1.1: Nav Bar */
-
+/* 1.2: Nav Bar */
 .nav {
     list-style-type: none;
     margin: 0;
@@ -136,6 +108,23 @@ a {
 }
 
 /* 2.0: Homepage Specific */
+.bullets li {padding-top: 5px;}
+
+.left {float: left;}
+
+.right {float: right;}
+
+.main {width: 59%;}
+
+.alt {width: 39%;}
+
+.mobile {display: none;}
+
+.inline-image {
+    float: left;
+    margin-right: 10px;
+    width: 40%;
+}
 
 /* 3.0: Dashboard Specific */
 #news {
