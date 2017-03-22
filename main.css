@@ -47,6 +47,39 @@ a {
     padding-top: 5px;
 }
 
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.main {
+    width: 59%;
+}
+
+.alt {
+    width: 39%;
+}
+
+.mobile {
+    display: none;
+}
+
+.inline-image {
+    float: left;
+    margin-right: 10px;
+    width: 40%;
+}
+
+@media (max-width: 720px) {
+    .main, .alt {width: 100%;}
+    .mobile {display: block;}
+    .inline-image {max-width: 150px;}
+}
+
+
 /* 1.1: Nav Bar */
 
 .nav {
@@ -103,14 +136,6 @@ a {
 }
 
 /* 2.0: Homepage Specific */
-#left {
-    float: left;
-    padding-bottom: 10px;
-}
-
-#right {
-    float: right;
-}
 
 /* 3.0: Dashboard Specific */
 #news {
