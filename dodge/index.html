@@ -3,10 +3,14 @@
     <head>
         <title>Dodge // Dalton Craven</title>
         <link rel="stylesheet" href="../main.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script>$(function(){$("#nav").load("../nav.html");});</script>
+        <script>$(function(){$("#footer").load("../footer.html");});</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div id="nav"></div>
-        <div id="content" style="width: 512px">
+        <div id="content">
             <div id="flex">
                 <button id="startButton" onClick="startGame()">Start Game!</button>
             </div>
@@ -14,9 +18,9 @@
             <h3>Instructions</h3>
             <p>Watch out! Use the left and right arrow keys to move Prophet Orpheus around the screen and avoid the meteors!</p>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.12/p5.js"></script>
         <script src="https://cdn.rawgit.com/molleindustria/p5.play/master/lib/p5.play.js"></script>
         <script src="game.js"></script>
+        <div id="footer"></div>
     </body>
 </html>
