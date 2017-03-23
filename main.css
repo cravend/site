@@ -12,14 +12,26 @@
 /* 1.0: Global */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700");
 
-html {font-family: "Roboto", sans-serif;}
+html {
+    font-family: "Roboto", sans-serif;
+}
 
-body {margin: 0;}
+body {
+    margin: 0;
+}
 
 #content {
     max-width: 50em;
     margin: 0 auto;
     padding: 10px 10px;
+    overflow: hidden;
+}
+
+#footer {
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 10px 10px;
+/*    position: relative;*/
 }
 
 h1 {
@@ -29,7 +41,9 @@ h1 {
     text-align: center;
 }
 
-h2 {font-weight: 400;}
+h2 {
+    font-weight: 400;
+}
 
 h3 {
     font-weight: 700;
@@ -52,7 +66,9 @@ a {
     background-color: #e42d40;
 }
 
-.nav-top {float: left;}
+.nav-top {
+    float: left;
+}
 
 .nav-top a {
     display: inline-block;
@@ -66,7 +82,9 @@ a {
     border-bottom: 0;
 }
 
-.nav-top:hover .nav-dropdown-content {display: block;}
+.nav-top:hover .nav-dropdown-content {
+    display: block;
+}
 
 .nav-top a:hover {
     background-color: #555;
@@ -99,17 +117,29 @@ a {
 }
 
 /* 2.0: Homepage Specific */
-.bullets li {padding-top: 5px;}
+.bullets li {
+    padding-top: 5px;
+}
 
-.left {float: left;}
+.left {
+    float: left;
+}
 
-.right {float: right;}
+.right {
+    float: right;
+}
 
-.main {width: 59%;}
+.main {
+    width: 59%;
+}
 
-.alt {width: 39%;}
+.alt {
+    width: 39%;
+}
 
-.mobile {display: none;}
+.mobile {
+    display: none;
+}
 
 .inline-image {
     float: left;
@@ -166,7 +196,9 @@ a {
     
 }
 
-#startButton {position: absolute;}
+#startButton {
+    position: absolute;
+}
 
 #flex {
     display: flex;
