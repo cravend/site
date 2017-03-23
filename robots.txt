@@ -5,3 +5,4 @@ Disallow: https://daltoncraven.tech/mail/
 Disallow: https://daltoncraven.tech/.c9/
 Disallow: https://daltoncraven.tech/.git/
 Disallow: https://daltoncraven.tech/CNAME
+Disallow: https://daltoncraven.tech/cdn-cgi/
