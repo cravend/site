@@ -136,10 +136,21 @@ a {
 }
 
 @media (max-width: 50em) {
-    .main, .alt {width: 100%;}
-    .mobile {display: block;}
-    .inline-image {max-width: 150px;}
-    h1 {font-size: 3em}
+    .main, .alt {
+        width: 100%;
+    }
+    
+    .mobile {
+        display: block;
+    }
+    
+    .inline-image {
+        max-width: 150px;
+    }
+    
+    h1 {
+        font-size: 3em
+    }
 }
 
 /* 3.0: Dashboard Specific */
