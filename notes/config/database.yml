@@ -22,12 +22,12 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
  development:
-   adapter: postgresql
-   encoding: SQL_ASCII
-   database: notes_development
-   pool: 5
-   username: ubuntu
-   password: password
+  adapter: postgresql
+  encoding: SQL_ASCII
+  database: notes_development
+  pool: 5
+  username: ubuntu
+  password: password
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
