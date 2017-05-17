@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Home // Dalton Craven</title>
-        <link rel="stylesheet" href="main.css" />
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script>$(function(){$("#nav").load("nav.html");});</script>
-        <script>$(function(){$("#footer").load("footer.html");});</script>
+        <link rel="stylesheet" href="/main.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
         <meta name="description" content="Hi! My name is Dalton Craven. I'm a high school developer interested in websites and other technology!" />
         <meta name="keywords" content="code, coding, tech, technology, programming, web, website, web design, dalton, craven, dalton craven" />
     </head>
     <body>
-        <div id="nav"></div>
+        <ul class="nav">
+            <li class="nav-top"><a href="/">Home</a></li>
+            <li class="nav-top"><a href="">Workshops</a>
+                <div class="nav-dropdown-content">
+                    <a href="/dodge">Meteor Dodge</a>
+                    <a href="/platform">Platform Runner</a>
+                    <a href="/sketchpad">Collaborative Sketchpad</a>
+                    <a href="/chat">Chat</a>
+                    <a href="/bigfoot">Bigfoot</a>
+                    <a href="/geometric_pattern">Geometric Pattern</a>
+                    <a href="/dashboard">Dashboard</a>
+                    <a href="/that_was_easy">That was Easy</a>
+                </div>
+            </li>
+        </ul>
         <h1>Dalton Craven</h1>
         <div id="content" style="padding: 0 10px;">
             <div class="left main">
                 <h3>About Me</h3>
                 <div class="block">
-                    <img class="inline-image" src="assets/my-face.jpg" alt="my smiling mug">
-                    <p style="text-align: left;">Hi! My name is Dalton Craven. I'm a 10<sup>th</sup> grader at Mason High School. I've been interested in computers my whole life, and taking programming my freshman year helped me decide that was what I wanted to do. I'm currently working with the <a href="http://masonacm.org/">Mason ACM</a> as their official webmaster. I'm also in <a href="http://hackclub.masonacm.org/">Mason Hack Club</a> as a web designer and game programmer. I'm also learning basic server management & web design through the Integrated Media Internship program, and I've interned with the City of Mason's IT team to get some hands-on experience in a real-life workplace. Outside of school, I like working on my <a href="/comet.html">1963 Mercury Comet</a>, reading, and working at Kings Island.</p>
+                    <img class="inline-image" src="/assets/my-face.jpg" alt="my smiling mug">
+                    <p style="text-align: left;">Hi! My name is Dalton Craven. I'm a 10<sup>th</sup> grader at Mason High School. I've been interested in computers my whole life, and taking programming my freshman year helped me decide that was what I wanted to do. I'm currently working with the <a href="http://masonacm.org/">Mason ACM</a> as their official webmaster. I'm also in <a href="http://masonhackclub.tech/">Mason Hack Club</a> as a web designer and game programmer. I'm also learning basic server management & web design through the Integrated Media Internship program, and I've interned with the City of Mason's IT team to get some hands-on experience in a real-life workplace. Outside of school, I like working on my <a href="/comet.html">1963 Mercury Comet</a>, reading, and working at Kings Island.</p>
                 </div>
                 <hr />
                 <div class="block">
