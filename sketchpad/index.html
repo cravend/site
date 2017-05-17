@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Sketchpad // Dalton Craven</title>
-        <link rel="stylesheet" href="../main.css">
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script>$(function(){$("#nav").load("../nav.html");});</script>
-        <script>$(function(){$("#footer").load("../footer.html");});</script>
+        <title>Home // Dalton Craven</title>
+        <link rel="stylesheet" href="/main.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
         <meta name="description" content="Hi! My name is Dalton Craven. I'm a high school developer interested in websites and other technology!" />
         <meta name="keywords" content="code, coding, tech, technology, programming, web, website, web design, dalton, craven, dalton craven" />
     </head>
     <body>
-        <div id="nav"></div>
+        <ul class="nav">
+            <li class="nav-top"><a href="/">Home</a></li>
+            <li class="nav-top"><a href="">Workshops</a>
+                <div class="nav-dropdown-content">
+                    <a href="/dodge">Meteor Dodge</a>
+                    <a href="/platform">Platform Runner</a>
+                    <a href="/sketchpad">Collaborative Sketchpad</a>
+                    <a href="/chat">Chat</a>
+                    <a href="/bigfoot">Bigfoot</a>
+                    <a href="/geometric_pattern">Geometric Pattern</a>
+                    <a href="/dashboard">Dashboard</a>
+                    <a href="/that_was_easy">That was Easy</a>
+                </div>
+            </li>
+        </ul>
         <div id="content">
             <div id="sketch"></div>
             <hr style="width: 504px;">
@@ -28,7 +39,8 @@
             <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.min.js"></script>
             <script src="app.js"></script>
-            <div id="footer"></div>
+            <hr>
+            <p>Copyright 2017 | Dalton Craven | Check me out on <a href="https://github.com/cravend/">GitHub</a>!</p>
         </div>
     </body>
 </html>

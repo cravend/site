@@ -1,5 +1,3 @@
-$(function(){$("#nav").load("../nav.html");});
-
 function loadDate() {
     var today = new Date();
     var date = (today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
