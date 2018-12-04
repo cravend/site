@@ -2,8 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import Project from "../components/project"
 
-import "../components/css/main.scss"
-
 export default () => (
   <Layout>
     <div id="about">
