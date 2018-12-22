@@ -5,13 +5,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: './src/images/dalton-craven-round.png',
-        injectHTML: true
-      }
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -41,7 +34,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#a8dcd9`,
         theme_color: `#000000`,
-        icon: `src/images/dalton-craven.jpg`,
+        icon: `src/images/dalton-craven-round.png`,
         display: 'browser'
       }
     },
