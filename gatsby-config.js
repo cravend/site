@@ -7,7 +7,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: './src/images/dalton-craven.jpg',
+        logo: './src/images/dalton-craven-round.png',
         injectHTML: true
       }
     },
@@ -32,6 +32,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -40,7 +41,8 @@ module.exports = {
         start_url: `/`,
         background_color: `#a8dcd9`,
         theme_color: `#000000`,
-        icon: `src/images/dalton-craven.jpg`
+        icon: `src/images/dalton-craven.jpg`,
+        display: 'browser'
       }
     },
     `gatsby-plugin-offline`
