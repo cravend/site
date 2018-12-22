@@ -14,7 +14,7 @@ const Card = styled.a`
 
   @media (max-width: 600px) {
     width: 48%;
-    margin: 5px 0;
+    margin: 5px 1%;
   }
 `
 
