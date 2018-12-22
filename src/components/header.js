@@ -1,15 +1,56 @@
 import React from "react"
 import Profile from "../components/profile.js"
-import "../components/css/header.scss"
+import styled from "styled-components"
+
+const Header = styled.div`
+  background: #A8DCD9;
+  background: linear-gradient(291.27deg, #A8DCD9 0%, #FBFFFE 100%);
+  width: 100%;
+  height: 220px;
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  margin: 0;
+  padding: 0;
+`
+
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 650px;
+  height: 220px;
+  padding: 3rem 1rem;
+`
+
+const Text = styled.div`
+  width: 75%;
+  float:right;
+  text-align: right;
+  text-transform: uppercase;
+  @media (max-width: 400px) {
+    width: 100%;
+    text-align: center;
+  }
+`
+
+const Picture = styled(Profile)`
+  width: 25%;
+  max-width: 125px;
+  float: left;
+  border-radius: 50%;
+  /* Smaller than mobile */
+  @media (max-width: 400px) {
+    display: none;
+  }
+`
 
 export default () => (
-  <div className="trapezoid">
-    <div style={{ margin: "0 auto", maxWidth: 650, padding: "3rem 1rem" }}>
-      <Profile />
-      <div style={{ float: "right" }}>
-        <h1 style={{ textTransform: "uppercase" }}>Dalton Craven</h1>
-        <p style={{ textTransform: "lowercase" }}>Web developer, high school student</p>
+  <Header>
+    <Content>
+      <div>
+        <Picture />
       </div>
-    </div>
-  </div>
+      <Text>
+        <h1>Dalton Craven</h1>
+        <p style={{ textTransform: "lowercase" }}>Web developer, high school student</p>
+      </Text>
+    </Content>
+  </Header>
 )
