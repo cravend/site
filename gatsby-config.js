@@ -36,7 +36,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Dalton Craven`,
-        short_name: `Dalton Craven`,
+        short_name: `DaltonCraven`,
         start_url: `/`,
         background_color: `#a8dcd9`,
         theme_color: `#000000`,
