@@ -13,20 +13,20 @@ import Img from 'gatsby-image'
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Profile = () => (
+const Profile = ({ className }) => (
   <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "dalton-craven.jpg" }) {
+        profile: file(relativePath: { eq: "dalton-craven.jpg" }) {
           childImageSharp {
-            fixed(width: 125, height: 125) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 125) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
       }
     `}
-    render={data => <Img fixed={data.file.childImageSharp.fixed} style={{borderRadius: "50%", float: 'left'}} />}
+    render={data => <Img fluid={data.profile.childImageSharp.fluid} className={className} />}
   />
 )
 export default Profile
