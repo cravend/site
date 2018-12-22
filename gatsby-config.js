@@ -37,7 +37,6 @@ module.exports = {
         icon: `src/images/dalton-craven-round.png`,
         display: 'browser'
       }
-    },
-    `gatsby-plugin-remove-serviceworker`
+    }
   ]
 }
