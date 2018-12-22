@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Card = styled.a`
   padding: 10px;
@@ -7,7 +7,7 @@ const Card = styled.a`
   color: inherit;
   text-decoration: none;
   display: block;
-  background-color: #EAF8F7;
+  background-color: #eaf8f7;
   width: 48%;
   margin: 1%;
   height: 125px;
@@ -18,9 +18,9 @@ const Card = styled.a`
   }
 `
 
-export default ( {name, description, url} ) => (
+export default ({ name, description, url }) => (
   <Card href={url}>
-      <h3>{name}</h3>
-      <p>{description}</p>
+    <h3>{name}</h3>
+    <p>{description}</p>
   </Card>
 )

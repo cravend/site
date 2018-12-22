@@ -1,10 +1,10 @@
-import React from "react"
-import Profile from "../components/profile.js"
-import styled from "styled-components"
+import React from 'react'
+import Profile from '../components/profile.js'
+import styled from 'styled-components'
 
 const Header = styled.div`
-  background: #A8DCD9;
-  background: linear-gradient(291.27deg, #A8DCD9 0%, #FBFFFE 100%);
+  background: #a8dcd9;
+  background: linear-gradient(291.27deg, #a8dcd9 0%, #fbfffe 100%);
   width: 100%;
   height: 220px;
   clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
@@ -21,7 +21,7 @@ const Content = styled.div`
 
 const Text = styled.div`
   width: 75%;
-  float:right;
+  float: right;
   text-align: right;
   text-transform: uppercase;
   @media (max-width: 400px) {
@@ -49,7 +49,9 @@ export default () => (
       </div>
       <Text>
         <h1>Dalton Craven</h1>
-        <p style={{ textTransform: "lowercase" }}>Web developer, high school student</p>
+        <p style={{ textTransform: 'lowercase' }}>
+          Web developer, high school student
+        </p>
       </Text>
     </Content>
   </Header>

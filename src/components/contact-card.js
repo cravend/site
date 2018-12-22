@@ -1,6 +1,11 @@
-import React from "react"
-import styled from "styled-components"
-import "@fortawesome/fontawesome-pro/css/all.min.css"
+import React from 'react'
+import styled from 'styled-components'
+
+import { Github } from 'styled-icons/fa-brands/Github'
+import { LinkedinIn } from 'styled-icons/fa-brands/LinkedinIn'
+import { Phone } from 'styled-icons/fa-solid/Phone'
+import { Question } from 'styled-icons/fa-solid/Question'
+import { Envelope } from 'styled-icons/fa-solid/Envelope'
 
 const Card = styled.a`
   display: block;
@@ -10,7 +15,7 @@ const Card = styled.a`
   border-radius: 10px;
   color: inherit;
   text-decoration: none;
-  background-color: #EAF8F7;
+  background-color: #eaf8f7;
   text-align: center;
 
   @media (max-width: 600px) {
@@ -19,9 +24,21 @@ const Card = styled.a`
   }
 `
 
-export default ( {name, url, icon} ) => (
+const Icon = ({ iconName = 'default', ...props }) => {
+  const Component = {
+    Email: Envelope,
+    Phone: Phone,
+    GitHub: Github,
+    LinkedIn: LinkedinIn,
+    default: Question
+  }[iconName]
+  return <Component {...props} />
+}
+Icon.defaultProps = { size: 50 }
+
+export default ({ name, url }) => (
   <Card href={url}>
-    <i className={icon}></i>
-    <p style={{margin: 0}}>{name}</p>
+    <Icon iconName={name} />
+    <p style={{ margin: 0 }}>{name}</p>
   </Card>
 )
