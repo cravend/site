@@ -1,22 +1,18 @@
 [
   {
     "contact": "Email",
-    "url": "mailto:daltonjcraven@gmail.com",
-    "icon": "fas fa-envelope fa-3x"
+    "url": "mailto:daltonjcraven@gmail.com"
   },
   {
     "contact": "Phone",
-    "url": "tel:5138136421",
-    "icon": "fas fa-phone fa-3x"
+    "url": "tel:5138136421"
   },
   {
     "contact": "GitHub",
-    "url": "https://github.com/cravend",
-    "icon": "fab fa-github fa-3x"
+    "url": "https://github.com/cravend"
   },
   {
     "contact": "LinkedIn",
-    "url": "https://www.linkedin.com/in/dalton-craven/",
-    "icon": "fab fa-linkedin-in fa-3x"
+    "url": "https://www.linkedin.com/in/dalton-craven/"
   }
 ]
