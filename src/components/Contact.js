@@ -23,6 +23,7 @@ export default () => (
         return (
         <Contact key={index}
           name={item["contact"]}
+          icon={item["icon"]}
           url={item["url"]} />
         )
       })}
