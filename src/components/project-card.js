@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-const Card = styled.a`
+const Card = styled(OutboundLink)`
   padding: 10px;
   border-radius: 20px;
   color: inherit;
