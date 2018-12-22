@@ -26,7 +26,9 @@ const Profile = ({ className }) => (
         }
       }
     `}
-    render={data => <Img fluid={data.profile.childImageSharp.fluid} className={className} />}
+    render={data => (
+      <Img fluid={data.profile.childImageSharp.fluid} className={className} />
+    )}
   />
 )
 export default Profile

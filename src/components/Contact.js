@@ -1,8 +1,8 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-import Contact from "../components/contact-card"
-import contacts from "../contact.json"
+import Contact from '../components/contact-card'
+import contacts from '../contact.json'
 
 const Flex = styled.div`
   display: flex;
@@ -15,17 +15,10 @@ const Flex = styled.div`
 
 export default () => (
   <div>
-    <h2 style={{ textTransform: "uppercase" }}>
-      Contact Me
-    </h2>
+    <h2 style={{ textTransform: 'uppercase' }}>Contact Me</h2>
     <Flex>
       {contacts.map((item, index) => {
-        return (
-        <Contact key={index}
-          name={item["contact"]}
-          icon={item["icon"]}
-          url={item["url"]} />
-        )
+        return <Contact key={index} name={item['contact']} url={item['url']} />
       })}
     </Flex>
   </div>
