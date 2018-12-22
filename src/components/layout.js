@@ -28,6 +28,10 @@ export default ({ children }) => (
         name="viewport"
         content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"
       />
+      <meta
+        name="google-site-verification"
+        content="_c1_yEb71UBmjlzuIulT64zHDVHf_2YORhCw48AnHW8"
+      />
       <link rel="canonical" href="https://www.daltoncraven.me" />
       <title>Dalton Craven</title>
     </Helmet>
