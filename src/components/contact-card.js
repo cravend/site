@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import "@fortawesome/fontawesome-pro/css/all.min.css"
 
 const Card = styled.a`
   display: block;
@@ -18,8 +19,9 @@ const Card = styled.a`
   }
 `
 
-export default ( {name, url} ) => (
+export default ( {name, url, icon} ) => (
   <Card href={url}>
-    <h3 style={{margin: 0}}>{name}</h3>
+    <i className={icon}></i>
+    <p style={{margin: 0}}>{name}</p>
   </Card>
 )
