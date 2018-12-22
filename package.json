@@ -1,6 +1,4 @@
 {
-  "description": "Dalton Craven's Personal Website",
-  "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
