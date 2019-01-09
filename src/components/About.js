@@ -69,9 +69,7 @@ export default () => (
         Mason Hack Club
       </StyledOutboundLink>{' '}
       (not knowing much about website development), then became the{' '}
-      <Highlight>webmaster and finance director</Highlight>. I've been able to
-      run a lot of events through the club &mdash; a full list of events is
-      detailed here.
+      <Highlight>webmaster and finance director</Highlight>.
     </p>
     <p>
       Along with that, I have become increasingly involved with the Integrated
