@@ -136,7 +136,7 @@ export default () => (
       I worked with a team to <Highlight>update and modernize</Highlight> their
       website. I also interned with the{' '}
       <StyledOutboundLink
-        href="https://imaginemason.org"
+        href="https://www.imaginemason.org"
         target="_blank"
         rel="noopener noreferrer"
       >
