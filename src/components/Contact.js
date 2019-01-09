@@ -15,7 +15,7 @@ const Flex = styled.div`
 
 export default () => (
   <div>
-    <h2 style={{ textTransform: 'uppercase' }}>Contact Me</h2>
+    <h2>Contact Me</h2>
     <Flex>
       {contacts.map((item, index) => {
         return <Contact key={index} name={item['contact']} url={item['url']} />

@@ -1,22 +1,23 @@
-import React from "react"
-import Layout from "../components/layout"
+import React from 'react'
+import Layout from '../components/layout'
 
-import About from "../components/About"
-import Projects from "../components/Projects"
-import Contact from "../components/Contact"
-import Footer from "../components/Footer"
+import About from '../components/About'
+import Projects from '../components/Projects'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 class Index extends React.Component {
-  render () {
+  render() {
     return (
       <Layout>
         <About />
+        <hr />
         <Contact />
         <hr />
         <Footer />
       </Layout>
     )
   }
-};
+}
 
-export default Index;
+export default Index
