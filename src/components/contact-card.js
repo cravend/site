@@ -16,6 +16,7 @@ const Card = styled.a`
   color: inherit;
   text-decoration: none;
   background-color: #eaf8f7;
+  background: linear-gradient(300deg, #c0e6e4 0%, #eaf8f7 100%);
   text-align: center;
 
   @media (max-width: 600px) {
