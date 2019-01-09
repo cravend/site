@@ -9,6 +9,7 @@ const Card = styled(OutboundLink)`
   text-decoration: none;
   display: block;
   background-color: #eaf8f7;
+  background: linear-gradient(300deg, #c0e6e4 0%, #eaf8f7 100%);
   width: 48%;
   margin: 1%;
   height: 125px;
