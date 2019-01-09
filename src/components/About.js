@@ -59,7 +59,8 @@ export default () => (
     </h3>
     <p>
       Freshman year, I decided to take an introduction to programming class. The
-      class sparked my passion — I immediately got involved in coding. I joined{' '}
+      class sparked my passion &mdash; I immediately got involved in coding. I
+      joined{' '}
       <StyledOutboundLink
         href="https://masonhackclub.com"
         target="_blank"
@@ -69,8 +70,8 @@ export default () => (
       </StyledOutboundLink>{' '}
       (not knowing much about website development), then became the{' '}
       <Highlight>webmaster and finance director</Highlight>. I've been able to
-      run a lot of events through the club -- a full list of events is detailed
-      here.
+      run a lot of events through the club &mdash; a full list of events is
+      detailed here.
     </p>
     <p>
       Along with that, I have become increasingly involved with the Integrated
@@ -108,7 +109,7 @@ export default () => (
         I recently transferred all of our website data over to a completely new
         server
       </Highlight>{' '}
-      — with no downtime. I’m additionally leading a team that to create a
+      &mdash; with no downtime. I’m additionally leading a team that to create a
       brand-new, modern website that will be the face of Mason High School for
       years to come.
     </p>
