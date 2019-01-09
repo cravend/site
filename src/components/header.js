@@ -52,9 +52,6 @@ const Text = styled.div`
 const Picture = styled(Profile)`
   width: 125px;
   border-radius: 50%;
-  @media (max-width: 500px) {
-    width: 100px;
-  }
 `
 
 export default () => (
