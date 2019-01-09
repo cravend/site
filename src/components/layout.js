@@ -9,8 +9,21 @@ const Container = styled.div`
   max-width: 650px;
   margin: 0 auto;
 
-  @media (max-width: 600px) {
-    padding: 10px;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  @media (max-width: 650px) {
+    padding: 20px;
   }
 `
 

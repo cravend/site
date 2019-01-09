@@ -17,7 +17,7 @@ module.exports = {
         fonts: [
           {
             family: `Poppins`,
-            variants: [`300`, `700`]
+            variants: [`300`, `600`, `700`]
           }
         ]
       }
@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-38154009-2',
+        trackingId: 'UA-38154009-2'
       }
     },
     `gatsby-transformer-sharp`,

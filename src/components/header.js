@@ -4,40 +4,56 @@ import styled from 'styled-components'
 
 const Header = styled.div`
   background: #a8dcd9;
-  background: linear-gradient(291.27deg, #a8dcd9 0%, #fbfffe 100%);
+  background: linear-gradient(60deg, #fbfffe 0%, #a8dcd9 100%);
   width: 100%;
-  height: 220px;
+  height: 250px;
   clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
   margin: 0;
   padding: 0;
+
+  display: flex;
+
+  @media (max-width: 500px) {
+    clip-path: inherit;
+  }
 `
 
 const Content = styled.div`
   margin: 0 auto;
-  max-width: 650px;
-  height: 220px;
-  padding: 3rem 1rem;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 500px) {
+    align-items: normal;
+  }
 `
 
 const Text = styled.div`
-  width: 75%;
-  float: right;
   text-align: right;
-  text-transform: uppercase;
-  @media (max-width: 400px) {
-    width: 100%;
-    text-align: center;
+  margin-left: 20px;
+
+  h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-transform: lowercase;
   }
 `
 
 const Picture = styled(Profile)`
-  width: 25%;
-  max-width: 125px;
-  float: left;
+  width: 125px;
   border-radius: 50%;
-  /* Smaller than mobile */
-  @media (max-width: 400px) {
-    display: none;
+  @media (max-width: 500px) {
+    width: 100px;
   }
 `
 
@@ -49,9 +65,7 @@ export default () => (
       </div>
       <Text>
         <h1>Dalton Craven</h1>
-        <p style={{ textTransform: 'lowercase' }}>
-          Web developer, high school student
-        </p>
+        <p>Web developer, high school student</p>
       </Text>
     </Content>
   </Header>
