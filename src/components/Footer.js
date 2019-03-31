@@ -34,13 +34,28 @@ const StyledOutboundLink = styled(OutboundLink)`
   }
 `
 
+const First = styled.p`
+  margin-bottom: 0;
+  @media (min-width: 500px) {
+    float: left;
+    display: block;
+  }
+`
+const Second = styled.p`
+  @media (min-width: 500px) {
+    float: right;
+    display: block;
+    /* float: left; */
+  }
+`
+
 export default () => (
   <div>
-    <p style={{ float: 'left' }}>&copy; 2019 Dalton Craven</p>
-    <p style={{ float: 'right' }}>
+    <First>&copy; 2019 Dalton Craven</First>
+    <Second>
       <StyledOutboundLink href="https://github.com/cravend/site">
         View Source on GitHub
       </StyledOutboundLink>
-    </p>
+    </Second>
   </div>
 )
