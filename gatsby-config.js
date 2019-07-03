@@ -31,18 +31,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-netlify`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Dalton Craven`,
-        short_name: `DJC`,
-        start_url: `/`,
-        background_color: `#a8dcd9`,
-        theme_color: `#000000`,
-        icon: `src/images/dalton-craven-round.png`,
-        display: 'browser'
-      }
-    }
+    `gatsby-plugin-netlify`
   ]
 }
