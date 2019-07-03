@@ -1,31 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Header from '../components/header'
-import styled from 'styled-components'
-import './layout.css'
-
-const Container = styled.div`
-  width: 100%;
-  max-width: 650px;
-  margin: 0 auto;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: 600;
-  }
-
-  p {
-    font-weight: 300;
-  }
-
-  @media (max-width: 650px) {
-    padding: 20px;
-  }
-`
+import { GlobalStyles, Container } from '../components/Theme'
 
 export default ({ children }) => (
   <>
@@ -48,6 +24,7 @@ export default ({ children }) => (
       <link rel="canonical" href="https://www.daltoncraven.me" />
       <title>Dalton Craven</title>
     </Helmet>
+    <GlobalStyles />
     <Header />
     <Container>{children}</Container>
   </>
