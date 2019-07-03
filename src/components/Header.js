@@ -1,5 +1,5 @@
 import React from 'react'
-import Profile from '../components/profile.js'
+import ProfilePicture from '../components/ProfilePicture.js'
 import styled from 'styled-components'
 
 const Header = styled.div`
@@ -49,7 +49,7 @@ const Text = styled.div`
   }
 `
 
-const Picture = styled(Profile)`
+const Picture = styled(ProfilePicture)`
   width: 125px;
   border-radius: 50%;
 `
@@ -62,7 +62,7 @@ export default () => (
       </div>
       <Text>
         <h1>Dalton Craven</h1>
-        <p>Web developer, high school student</p>
+        <p>student & web developer</p>
       </Text>
     </Content>
   </Header>
