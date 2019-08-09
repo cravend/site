@@ -45,6 +45,7 @@ const Text = styled.div`
   }
 
   p {
+    margin: 0;
     text-transform: lowercase;
   }
 `
