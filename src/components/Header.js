@@ -68,7 +68,7 @@ export default () => (
       </div>
       <Text>
         <h1>Dalton Craven</h1>
-        <p>Student & Web Developer</p>
+        <p>Student & web developer</p>
       </Text>
     </Content>
   </Header>
