@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 export const breakpoints = {
   mobile: '480px',
-  desktop: '650px'
+  desktop: '700px'
 }
 
 export const colors = {
