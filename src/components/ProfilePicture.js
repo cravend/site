@@ -16,7 +16,11 @@ export default ({ className }) => (
       }
     `}
     render={data => (
-      <Img fluid={data.profile.childImageSharp.fluid} className={className} />
+      <Img
+        width="125"
+        fluid={data.profile.childImageSharp.fluid}
+        className={className}
+      />
     )}
   />
 )
