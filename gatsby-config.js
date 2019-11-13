@@ -12,14 +12,9 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-typography`,
       options: {
-        fonts: [
-          {
-            family: `Poppins`,
-            variants: [`300`, `600`, `700`]
-          }
-        ]
+        pathToConfigModule: `src/utils/typography`
       }
     },
     {
@@ -30,7 +25,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-emotion`,
     `gatsby-plugin-netlify`
   ]
 }
