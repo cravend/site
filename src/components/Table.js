@@ -1,14 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
-import { breakpoints, StyledOutboundLink } from '../components/Theme'
+import { StyledLink } from '../components/Link'
 
 export const NameCol = ({ item }) => (
   <td>
     {item['link'] ? (
-      <StyledOutboundLink href={item['link']}>
-        {item['name']}
-      </StyledOutboundLink>
+      <StyledLink to={item['link']}>{item['name']}</StyledLink>
     ) : (
       item['name']
     )}
@@ -20,19 +18,19 @@ const StyledHeading = styled.h3`
 `
 
 const StyledNameCol = styled(NameCol)`
-  @media (min-width: ${breakpoints.desktop}) {
+  @media (min-width: ${({ theme }) => theme.breakpoint}) {
     width: 230px;
   }
 `
 const RoleCol = styled.td`
-  @media (min-width: ${breakpoints.desktop}) {
+  @media (min-width: ${({ theme }) => theme.breakpoint}) {
     width: 350px;
   }
 `
 
 const DateCol = styled.td`
   text-align: right;
-  @media (min-width: ${breakpoints.desktop}) {
+  @media (min-width: ${({ theme }) => theme.breakpoint}) {
     width: 120px;
   }
 `
