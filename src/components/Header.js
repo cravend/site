@@ -5,7 +5,11 @@ import ProfilePicture from '../components/ProfilePicture'
 
 const Header = styled.header`
   background: #a8dcd9;
-  background: linear-gradient(60deg, #fbfffe 0%, #a8dcd9 100%);
+  background: linear-gradient(
+    60deg,
+    ${({ theme }) => theme.colors.inverse} 0%,
+    #a8dcd9 100%
+  );
   width: 100%;
   height: 250px;
   clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
@@ -14,7 +18,7 @@ const Header = styled.header`
 
   display: flex;
 
-  @media (max-width: 500px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint}) {
     clip-path: inherit;
   }
 `
@@ -30,7 +34,7 @@ const Content = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 500px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint}) {
     align-items: normal;
   }
 `
