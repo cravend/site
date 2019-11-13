@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Dalton Craven'
+    title: 'Dalton Craven',
+    description: 'The digital home of Dalton Craven, student and developer.',
+    author: '@cravend123',
+    siteUrl: 'https://daltoncraven.me',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
