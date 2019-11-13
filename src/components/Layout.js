@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Header from '../components/header'
-import { GlobalStyles, Container } from '../components/Theme'
+import Container from '../components/Container'
 
 export default ({ children }) => (
   <>
@@ -24,7 +24,6 @@ export default ({ children }) => (
       <link rel="canonical" href="https://www.daltoncraven.me" />
       <title>Dalton Craven</title>
     </Helmet>
-    <GlobalStyles />
     <Header />
     <Container>{children}</Container>
   </>
