@@ -1,8 +1,9 @@
 import React from 'react'
-import ProfilePicture from '../components/ProfilePicture.js'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
-const Header = styled.div`
+import ProfilePicture from '../components/ProfilePicture'
+
+const Header = styled.header`
   background: #a8dcd9;
   background: linear-gradient(60deg, #fbfffe 0%, #a8dcd9 100%);
   width: 100%;
@@ -39,7 +40,6 @@ const Text = styled.div`
   margin-left: 20px;
 
   h1 {
-    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
   }

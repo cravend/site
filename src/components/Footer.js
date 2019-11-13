@@ -1,28 +1,25 @@
 import React from 'react'
-import styled from 'styled-components'
-import { StyledOutboundLink } from '../components/Theme'
+import { css } from '@emotion/core'
 
-const First = styled.p`
-  margin-bottom: 0;
-  @media (min-width: 500px) {
-    float: left;
-    display: block;
-  }
-`
-const Second = styled.p`
-  @media (min-width: 500px) {
-    float: right;
-    display: block;
-  }
-`
+import Container from '../components/Container'
+import { StyledLink } from '../components/Link'
 
 export default () => (
-  <div>
-    <First>&copy; 2019 Dalton Craven</First>
-    <Second>
-      <StyledOutboundLink href="https://github.com/cravend/site">
-        View Source on GitHub
-      </StyledOutboundLink>
-    </Second>
-  </div>
+  <footer>
+    <Container
+      css={css`
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+      `}
+    >
+      <p>&copy; 2019 Dalton Craven</p>
+      <p>
+        <StyledLink to="https://github.com/cravend/site">
+          View Source on GitHub
+        </StyledLink>
+      </p>
+    </Container>
+  </footer>
 )
