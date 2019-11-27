@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/cravend123
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://daltoncraven.me
+  * I am cravend123 (https://keybase.io/cravend123) on keybase.
+  * I have a public key ASBPZzhh_GZxv61T6FJRfuEsNJvWcM8LR1GXKZw3mqSbAwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204f673861fc6671bfad53e852517ee12c349bd670cf0b475197299c379aa49b030a",
+      "host": "keybase.io",
+      "kid": "01204f673861fc6671bfad53e852517ee12c349bd670cf0b475197299c379aa49b030a",
+      "uid": "9a224cf41a8216003cca00c3084ccf19",
+      "username": "cravend123"
+    },
+    "merkle_root": {
+      "ctime": 1574819877,
+      "hash": "405d475d7fad165fca15de099e95e11d71ab1326a7de150febd93ce67b6bb650aa14d8add3f4420f7d8c9f62d839c3d6dca74b5573997195ed87f6a2c8ddaf6a",
+      "hash_meta": "52c15560ab7c0b4cb97016e9939440dcf2cf8785f5aee665be9c9ebca518d5d1",
+      "seqno": 11004993
+    },
+    "service": {
+      "entropy": "BVszHldcjRiN7DELKeW6HHL3",
+      "hostname": "daltoncraven.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.0.0"
+  },
+  "ctime": 1574819899,
+  "expire_in": 504576000,
+  "prev": "f5f3879088df02e64d7c918dd96049322a45c7ab2ba7cc89bbe1c806e174cb17",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgT2c4Yfxmcb+tU+hSUX7hLDSb1nDPC0dRlymcN5qkmwMKp3BheWxvYWTESpcCC8Qg9fOHkIjfAuZNfJGN2WBJMipFx6srp8yJu+HIBuF0yxfEII1jTZJVXntTXNqsPJS/ux2tvdeHhbjtTMzI0csn+Y1BAgHCo3NpZ8RAOEgPRDwgqVIF4M/XIAe6AsnwO0hJThP3iYIt2uw5ZoN9Sf7Rtj1iltBAjfjAyONCgyl3ZwCzMTfObaFWouZFDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHqtiDfCXUYIefAHcXgkQgsDRyfMcCWR4UuuUvqALWngo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cravend123
+
+==================================================================
