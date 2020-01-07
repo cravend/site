@@ -3,14 +3,21 @@ import styled from '@emotion/styled'
 
 import { StyledLink } from '../components/Link'
 
+const StyledHeader = styled.th`
+  border-color: ${({ theme }) => theme.colors.primary};
+`
+const StyledData = styled.td`
+  border-color: ${({ theme }) => theme.colors.primary};
+`
+
 export const NameCol = ({ item }) => (
-  <td>
+  <StyledData>
     {item['link'] ? (
       <StyledLink to={item['link']}>{item['name']}</StyledLink>
     ) : (
       item['name']
     )}
-  </td>
+  </StyledData>
 )
 
 const StyledHeading = styled.h3`
@@ -22,13 +29,13 @@ const StyledNameCol = styled(NameCol)`
     width: 230px;
   }
 `
-const RoleCol = styled.td`
+const RoleCol = styled(StyledData)`
   @media (min-width: ${({ theme }) => theme.breakpoint}) {
     width: 350px;
   }
 `
 
-const DateCol = styled.td`
+const DateCol = styled(StyledData)`
   text-align: right;
   @media (min-width: ${({ theme }) => theme.breakpoint}) {
     width: 120px;
@@ -41,9 +48,9 @@ export default ({ title, data }) => (
     <table>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Role</th>
-          <th style={{ textAlign: 'right' }}>Date</th>
+          <StyledHeader>Name</StyledHeader>
+          <StyledHeader>Role</StyledHeader>
+          <StyledHeader style={{ textAlign: 'right' }}>Date</StyledHeader>
         </tr>
       </thead>
       <tbody>
