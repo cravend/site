@@ -43,23 +43,36 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   font-weight: 600;
   color: inherit;
+  border-bottom: 2px solid;
+  :hover,
+  :focus,
+  :active {
+    border-bottom: 3px solid #a8dcd9;
+  }
+`
+
+export const StyledLinkOld = styled(Link)`
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
   position: relative;
   overflow: hidden;
   :before {
     content: '';
     position: absolute;
-    left: 51%;
-    right: 51%;
+    left: 0;
+    right: 0;
     bottom: -1px;
-    background-color: #a8dcd9;
-    height: 4px;
-    transition-property: left, right;
+    background-color: #fff;
+    height: 2px;
+    transition-property: background-color;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
   }
   :hover:before,
   :focus:before,
   :active:before {
+    background-color: #a8dcd9;
     left: 0;
     right: 0;
   }
