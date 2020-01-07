@@ -6,9 +6,9 @@ import ProfilePicture from '../components/ProfilePicture'
 const Header = styled.header`
   background: #a8dcd9;
   background: linear-gradient(
-    60deg,
-    ${({ theme }) => theme.colors.inverse} 0%,
-    #a8dcd9 100%
+    ${({ theme }) => theme.direction},
+    ${({ theme }) => theme.colors.inverse} -30%,
+    #a8dcd9 80%
   );
   width: 100%;
   height: 250px;
@@ -46,6 +46,7 @@ const Text = styled.div`
   h1 {
     text-transform: uppercase;
     margin-bottom: 10px;
+    font-size: 2.5rem;
   }
 
   p {
@@ -67,7 +68,7 @@ export default () => (
       </div>
       <Text>
         <h1>Dalton Craven</h1>
-        <p>student & web developer</p>
+        <p>Student & Web Developer</p>
       </Text>
     </Content>
   </Header>

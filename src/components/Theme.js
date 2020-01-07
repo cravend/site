@@ -4,7 +4,8 @@ export const lightTheme = {
     primary: '#363534',
     inverse: '#fbfffe',
     accent: '#a8dcd9'
-  }
+  },
+  direction: '60deg'
 }
 export const darkTheme = {
   breakpoint: '768px',
@@ -12,5 +13,6 @@ export const darkTheme = {
     primary: '#FAFAFA',
     inverse: '#363537',
     accent: '#FAFAFA'
-  }
+  },
+  direction: '-60deg'
 }
