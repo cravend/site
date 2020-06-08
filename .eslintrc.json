@@ -4,8 +4,10 @@
         "es6": true
     },
     "extends": [
-        "plugin:react/recommended",
         "airbnb",
+        "plugin:react/recommended",
+        "plugin:testing-library/react",
+        "plugin:jest-dom/recommended",
         "plugin:jsx-a11y/strict"
     ],
     "globals": {
@@ -20,10 +22,13 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "testing-library",
+        "jest-dom"
     ],
     "rules": {
         "indent": ["error", 2],
+        "arrow-body-style": ["error", "as-needed"],
         "object-curly-newline": ["error", {
             "minProperties": 5,
             "multiline": true,
@@ -36,6 +41,7 @@
         }],
         "brace-style": ["error", "stroustrup"],
         "react/jsx-one-expression-per-line": [0],
+        "react/jsx-props-no-spreading": [0],
         "max-len": [
         "error",
         {
