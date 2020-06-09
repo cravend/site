@@ -1,50 +1,16 @@
 {
-<<<<<<< HEAD
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve"
-  },
-  "dependencies": {
-    "@emotion/core": "^10.0.27",
-    "@emotion/styled": "^10.0.27",
-    "emotion-theming": "^10.0.27",
-    "gatsby": "^2.18.18",
-    "gatsby-image": "^2.2.37",
-    "gatsby-plugin-emotion": "^4.1.18",
-    "gatsby-plugin-google-analytics": "^2.1.31",
-    "gatsby-plugin-matomo": "^0.8.3",
-    "gatsby-plugin-netlify": "^2.1.30",
-    "gatsby-plugin-react-helmet": "^3.1.18",
-    "gatsby-plugin-sharp": "^2.3.10",
-    "gatsby-plugin-typography": "^2.3.20",
-    "gatsby-source-filesystem": "^2.1.43",
-    "gatsby-transformer-sharp": "^2.3.9",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "react-typography": "^0.16.19",
-    "typography": "^0.16.19",
-    "typography-theme-elk-glen": "^0.16.19"
-  },
-  "devDependencies": {
-    "gatsby-cli": "^2.8.23",
-    "prettier": "^1.19.1"
-  }
-=======
-  "name": "nextjs-hello-world",
-  "version": "1.0.0",
+  "name": "me.daltoncraven",
+  "version": "3.0.0",
   "scripts": {
     "build": "next build",
     "start": "next start",
     "start:dev": "next",
-    "export": "next export",
     "lint": "./node_modules/.bin/eslint --ext .jsx,.js .",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "export": "next export"
   },
   "dependencies": {
+    "@hackclub/theme": "^0.1.1",
+    "@theme-ui/style-guide": "^0.3.0",
     "next": "^9.4.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -54,17 +20,11 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "@testing-library/dom": "^7.11.0",
-    "@testing-library/jest-dom": "^5.9.0",
-    "@testing-library/react": "^10.2.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.21.1",
-    "eslint-plugin-jest-dom": "^2.1.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^2.5.1",
-    "eslint-plugin-testing-library": "^3.2.0",
-    "jest": "^26.0.1"
+    "eslint-plugin-react-hooks": "^2.5.1"
   }
 }
