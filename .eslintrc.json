@@ -1,51 +1,62 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/strict",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "airbnb",
-        "plugin:react/recommended",
-        "plugin:jsx-a11y/strict"
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "indent": ["error", 2],
+    "arrow-body-style": ["error", "as-needed"],
+    "object-curly-newline": ["error", {
+      "minProperties": 5,
+      "multiline": true,
+      "consistent": true
+    }],
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "hrefLeft", "hrefRight" ],
+      "aspects": [ "invalidHref", "preferButton" ]
+    }],
+    "brace-style": ["error", "stroustrup"],
+    "react/no-unescaped-entities": ["error", {"forbid": [">", "}"]}],
+    "react/jsx-one-expression-per-line": [0],
+    "react/jsx-props-no-spreading": [0],
+    "max-len": ["error", {
+      "code": 120,
+      "ignoreComments": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true
+      }
     ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "indent": ["error", 2],
-        "arrow-body-style": ["error", "as-needed"],
-        "object-curly-newline": ["error", {
-            "minProperties": 5,
-            "multiline": true,
-            "consistent": true
-        }],
-        "jsx-a11y/anchor-is-valid": [ "error", {
-            "components": [ "Link" ],
-            "specialLink": [ "hrefLeft", "hrefRight" ],
-            "aspects": [ "invalidHref", "preferButton" ]
-        }],
-        "brace-style": ["error", "stroustrup"],
-        "react/no-unescaped-entities": ["error", {"forbid": [">", "}"]}],
-        "react/jsx-one-expression-per-line": [0],
-        "react/jsx-props-no-spreading": [0],
-        "max-len": [
-        "error",
-        {
-            "code": 120,
-            "ignoreComments": true,
-            "ignoreStrings": true,
-            "ignoreTemplateLiterals": true
-        }
-        ],
-        "arrow-parens": [2, "as-needed", {
-            "requireForBlockBody": true
-        }]
+    "arrow-parens": [2, "as-needed", {
+      "requireForBlockBody": true
+    }],
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+    "react/prop-types": [0],
+    "import/extensions": [0]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
     }
+  }
 }
