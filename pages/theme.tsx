@@ -1,5 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, { FC } from 'react';
 import {
   Box,
   Button,
@@ -16,21 +15,20 @@ import { TypeScale, ColorPalette } from '@theme-ui/style-guide';
 import theme from '../theme';
 import Hero from '../components/Hero';
 
-const ThemePage = () => (
+const ThemePage: FC = () => (
   <>
     <Head>
       <title>Hack Club Theme</title>
     </Head>
     <Hero>
-      <Flex sx={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '0 auto' }}>
+      <Flex sx={{
+        flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '0 auto',
+      }}
+      >
         <Heading as="h1" variant="title" sx={{ textAlign: 'center' }}>
           <Text
             as="span"
-            sx={{
-              WebkitTextStroke: 'currentColor',
-              WebkitTextStrokeWidth: '2px',
-              WebkitTextFillColor: 'white',
-            }}
+            variant="outline"
           >
             Dalton's
           </Text>{' '}
@@ -52,11 +50,13 @@ const ThemePage = () => (
       </Flex>
     </Hero>
     <Box as="main" sx={{ bg: 'background', py: 4 }}>
-      {Object.keys(theme.layout).map(key => (
+      {Object.keys(theme.layout).map((key) => (
         <Container
           key={key}
           variant={key}
-          sx={{ my: 3, py: 3, bg: 'sunken', borderRadius: 'default' }}
+          sx={{
+            my: 3, py: 3, bg: 'sunken', borderRadius: 'default',
+          }}
         >
           {key}
         </Container>
@@ -70,7 +70,7 @@ const ThemePage = () => (
             </Component>
           );
         })}
-        {Object.keys(theme.buttons).map(key => (
+        {Object.keys(theme.buttons).map((key) => (
           <Button
             key={key}
             variant={key}
@@ -79,7 +79,7 @@ const ThemePage = () => (
             {key}
           </Button>
         ))}
-        {Object.keys(theme.cards).map(key => (
+        {Object.keys(theme.cards).map((key) => (
           <Card
             key={key}
             variant={key}

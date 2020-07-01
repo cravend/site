@@ -1,10 +1,11 @@
 /** @jsx jsx */
+import { FC } from 'react';
 import {
   jsx, Box, Image, Heading, Container,
 } from 'theme-ui';
 import Hero from './Hero';
 
-const Header = () => (
+const Header: FC = () => (
   <Hero>
     <Container
       variant="copy"
@@ -26,13 +27,21 @@ const Header = () => (
           width: 150,
         }}
       />
-      <Box ml={[0, 20]} p={0} sx={{ marginLeft: [0, 2], marginTop: [2, 0], textAlign: ['center', 'right'], color: 'white' }}>
+      <Box
+        ml={[0, 20]}
+        p={0}
+        sx={{
+          marginLeft: [0, 2],
+          marginTop: [2, 0],
+          textAlign: ['center', 'right'],
+          color: 'white',
+        }}
+      >
         <Heading as="h1" variant="title">Dalton Craven</Heading>
         <Heading as="h2" variant="subtitle" sx={{ textTransform: 'lowercase' }}>Student &amp; Developer</Heading>
       </Box>
     </Container>
   </Hero>
 );
-
 
 export default Header;
