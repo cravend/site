@@ -11,7 +11,7 @@ const Hero = ({ children }) => (
     mb={4}
     sx={{
       backgroundColor: 'primary',
-      background: theme => `${theme.gradient}`,
+      background: theme => `${theme.background.gradient}`,
       height: 250,
       paddingBottom: [0, 37.5],
       clipPath: ['normal', 'polygon(0 0, 100% 0%, 100% 85%, 0% 100%)'],

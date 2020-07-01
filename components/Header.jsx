@@ -19,7 +19,7 @@ const Header = () => (
       }}
     >
       <Image
-        src="https://daltoncraven.me/static/02a52574366648a352d992448c6b620b/8be41/dalton-craven.jpg"
+        src="/images/dalton-craven.jpg"
         alt="pfp"
         sx={{
           borderRadius: '50%',
