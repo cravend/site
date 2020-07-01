@@ -1,8 +1,9 @@
 /** @jsx jsx */
+import { FC } from 'react';
 import { jsx, Container } from 'theme-ui';
-import { node } from 'prop-types';
+import { ThemeType } from '../theme';
 
-const Hero = ({ children }) => (
+const Hero: FC = ({ children }) => (
   <Container
     variant="wide"
     as="header"
@@ -11,7 +12,7 @@ const Hero = ({ children }) => (
     mb={4}
     sx={{
       backgroundColor: 'primary',
-      background: theme => `${theme.background.gradient}`,
+      background: (theme : ThemeType) => `${theme.background.gradient}`,
       height: 250,
       paddingBottom: [0, 37.5],
       clipPath: ['normal', 'polygon(0 0, 100% 0%, 100% 85%, 0% 100%)'],
@@ -21,11 +22,6 @@ const Hero = ({ children }) => (
   >
     {children}
   </Container>
-
 );
-
-Hero.propTypes = {
-  children: node.isRequired,
-};
 
 export default Hero;

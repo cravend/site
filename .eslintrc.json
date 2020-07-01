@@ -1,62 +1,43 @@
 {
-  "env": {
-    "browser": true,
-    "es6": true
-  },
-  "parser": "@typescript-eslint/parser",
-  "extends": [
-    "airbnb",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/strict",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+    "env": {
+        "browser": true,
+        "es2020": true
     },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
-  "plugins": [
-    "react",
-    "@typescript-eslint"
-  ],
-  "rules": {
-    "indent": ["error", 2],
-    "arrow-body-style": ["error", "as-needed"],
-    "object-curly-newline": ["error", {
-      "minProperties": 5,
-      "multiline": true,
-      "consistent": true
-    }],
-    "jsx-a11y/anchor-is-valid": [ "error", {
-      "components": [ "Link" ],
-      "specialLink": [ "hrefLeft", "hrefRight" ],
-      "aspects": [ "invalidHref", "preferButton" ]
-    }],
-    "brace-style": ["error", "stroustrup"],
-    "react/no-unescaped-entities": ["error", {"forbid": [">", "}"]}],
-    "react/jsx-one-expression-per-line": [0],
-    "react/jsx-props-no-spreading": [0],
-    "max-len": ["error", {
-      "code": 120,
-      "ignoreComments": true,
-      "ignoreStrings": true,
-      "ignoreTemplateLiterals": true
-      }
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
     ],
-    "arrow-parens": [2, "as-needed", {
-      "requireForBlockBody": true
-    }],
-    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
-    "react/prop-types": [0],
-    "import/extensions": [0]
-  },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+        "react/jsx-one-expression-per-line": [0],
+        "react/no-unescaped-entities": ["error", {"forbid": [">", "}"]}],
+        "react/prop-types": [2, {"ignore": ["children"]}],
+        "import/extensions": [2, {"ts": "never", "tsx": "never"}],
+        "@typescript-eslint/restrict-template-expressions": [2, { "allowAny": true }]
+    },
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true
+            }
+        }
     }
-  }
 }
