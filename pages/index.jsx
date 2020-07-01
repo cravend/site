@@ -1,8 +1,11 @@
 import React from 'react';
-import { Container } from 'theme-ui';
+import {
+  Container, Card, Grid, Heading,
+} from 'theme-ui';
 import Head from '../components/Head';
 import Header from '../components/Header';
 import Text from '../components/Text';
+import Link from '../components/Link';
 
 const IndexPage = () => (
   <>
@@ -10,11 +13,57 @@ const IndexPage = () => (
     <Header />
     <Container>
       <Text>
-        {/* TODO: actually make this break properly (but look normal for screenreaders) */}
-        <Text as="span" variant="subheadline">Hello! My name is <Text as="span" variant="gradient">Dalton Craven</Text>, and I'm a student at the University of South Carolina.</Text>
-        as a sanity check, here is some more about me:
+        <Text as="span" variant="headline" sx={{ display: 'block' }}>
+          Hello! My name is <Text as="span" variant="rainbow">Dalton Craven</Text>.{' '}
+        </Text>
+        It's hard for me to introduce myself over the internet, but here's a little bit about myself:
       </Text>
-
+      <Grid
+        gap={3}
+        columns={[1, 2]}
+      >
+        <Card variant="interactive">
+          <Heading as="h3">Coding</Heading>
+          <Text>
+            I'm currently entering my sophomore year at the University of South Carolina, pursuing a Bachelor of Science in Computer Science in Computer Science (weird, right?). I'm also a web developer at <Link to="https://cloverleaf.me">Cloverleaf</Link>.
+          </Text>
+        </Card>
+        <Card
+          variant="interactive"
+          sx={{
+            // background: theme => `${theme.background.cornerRainbow}`,
+          }}
+        >
+          <Heading as="h3">Activism</Heading>
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare augue quis nisl varius rhoncus.
+            Donec quis massa vel est mollis imperdiet. Fusce et mauris eleifend, tristique mi varius, luctus purus.
+            Nulla placerat, lacus luctus mollis facilisis, leo metus tempus tellus, et interdum est tortor ac justo.
+            Aenean aliquam magna eu vehicula porta. Sed in molestie lectus, et tristique odio.
+            Donec eu urna id purus lacinia iaculis.
+          </Text>
+        </Card>
+        <Card variant="interactive">
+          <Heading as="h3">Computer Science</Heading>
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare augue quis nisl varius rhoncus.
+            Donec quis massa vel est mollis imperdiet. Fusce et mauris eleifend, tristique mi varius, luctus purus.
+            Nulla placerat, lacus luctus mollis facilisis, leo metus tempus tellus, et interdum est tortor ac justo.
+            Aenean aliquam magna eu vehicula porta. Sed in molestie lectus, et tristique odio.
+            Donec eu urna id purus lacinia iaculis.
+          </Text>
+        </Card>
+        <Card variant="interactive">
+          <Heading as="h3">Computer Science</Heading>
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare augue quis nisl varius rhoncus.
+            Donec quis massa vel est mollis imperdiet. Fusce et mauris eleifend, tristique mi varius, luctus purus.
+            Nulla placerat, lacus luctus mollis facilisis, leo metus tempus tellus, et interdum est tortor ac justo.
+            Aenean aliquam magna eu vehicula porta. Sed in molestie lectus, et tristique odio.
+            Donec eu urna id purus lacinia iaculis.
+          </Text>
+        </Card>
+      </Grid>
       <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare augue quis nisl varius rhoncus.
         Donec quis massa vel est mollis imperdiet. Fusce et mauris eleifend, tristique mi varius, luctus purus.
