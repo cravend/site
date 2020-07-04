@@ -1117,8 +1117,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@hackclub/theme@file:../hack-club-theme/packages/theme":
+"@hackclub/theme@^0.1.1":
   version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@hackclub/theme/-/theme-0.1.1.tgz#b02672cc2f28094eb79a227e160cee935cc751fe"
+  integrity sha512-P8G0OcY22NnWK2SsGupYSMxd1ScbqSrTewPVjgWLcd1qgjTHEJBafWEF75B3Ru87CRco0wLiJi3bMmEBp1LT+A==
 
 "@mdx-js/react@^1.0.0":
   version "1.6.5"
