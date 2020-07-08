@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { ThemeProvider } from 'theme-ui';
 import { AppProps } from 'next/app';
-import theme from '../theme';
+import theme from '@cravend/theme';
 
 const MyApp:FC<AppProps> = ({ Component, pageProps }: AppProps) => (
   <ThemeProvider theme={theme}>
