@@ -12,7 +12,7 @@ import {
 } from 'theme-ui';
 import Head from 'next/head';
 import { TypeScale, ColorPalette } from '@theme-ui/style-guide';
-import theme from '../theme';
+import theme from '@cravend/theme';
 import Hero from '../components/Hero';
 
 const ThemePage: FC = () => (
