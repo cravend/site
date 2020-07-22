@@ -34,6 +34,7 @@
     "node_modules"
   ],
   "include": [
+    ".eslintrc.js",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
