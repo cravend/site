@@ -96,6 +96,14 @@ module.exports = {
         trackingId: 'UA-38154009-2'
       }
     },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '1',
+        matomoUrl: 'https://daltoncraven.matomo.cloud',
+        siteUrl: 'https://daltoncraven.me'
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
