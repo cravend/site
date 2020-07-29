@@ -1,9 +1,9 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FC, ReactChild } from 'react';
 import { Card, Heading, Text } from 'theme-ui';
 
 type FeatureType = {
   heading: string,
-  body: string | ReactElement,
+  body: ReactChild,
 }
 
 const Feature:FC<FeatureType> = ({ heading, body }: FeatureType) => (
