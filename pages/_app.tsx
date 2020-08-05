@@ -5,11 +5,11 @@ import theme from '@cravend/theme';
 import { init } from '@socialgouv/matomo-next';
 
 const MyApp:FC<AppProps> = ({ Component, pageProps }: AppProps) => {
-  const MATOMO_URL = process.env.NEXT_PUBLIC_MATOMO_URL;
-  const MATOMO_SITE_ID = process.env.NEXT_PUBLIC_MATOMO_SITE_ID;
   useEffect(() => {
+    const url = process.env.NEXT_PUBLIC_MATOMO_URL;
+    const siteId = process.env.NEXT_PUBLIC_MATOMO_SITE_ID;
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-    init({ url: MATOMO_URL, siteId: MATOMO_SITE_ID });
+    init({ url, siteId });
   }, []);
   return (
     <ThemeProvider theme={theme}>
