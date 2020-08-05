@@ -1,6 +1,8 @@
 /* eslint-disable max-len */
 import React, { FC } from 'react';
-import { Container, Grid, Text } from 'theme-ui';
+import {
+  Container, Grid, Text, Heading, Box,
+} from 'theme-ui';
 import Head from '../components/Head';
 import Header from '../components/Header';
 import Link from '../components/Link';
@@ -21,7 +23,7 @@ const IndexPage: FC = () => (
       <Grid
         gap={3}
         columns={[1, 2]}
-        pt={1}
+        my={3}
       >
         <Feature heading="Education" body="I'm currently a rising sophomore at the University of South Carolina. I'm pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I'm also a McNair Scholar as part of UofSC's most prestigious scholarship program, the University Top Scholars." />
         <Feature
@@ -38,7 +40,7 @@ const IndexPage: FC = () => (
             <>
               I also do freelance web development! I work primarily with small businesses (although I’m open for anything), with an emphasis on providing resources and training to ensure long-term functionality.
               <ul>
-                <li><Link to="https://crystalclearcontractors.com">Crystal Clear Cleaning & Contracting</Link></li>
+                <li><Link to="https://crystalclearcontractors.com">Crystal Clear Cleaning &amp; Contracting</Link></li>
                 <li><Link to="https://elitepaintcincy.com">Elite Painting</Link></li>
                 <li><Link to="https://elitecontractingcincy.com">Elite Contracting</Link></li>
                 <li><Link to="https://mabbaseball.com">Mason Amateur Baseball</Link></li>
@@ -47,6 +49,31 @@ const IndexPage: FC = () => (
           )}
         />
       </Grid>
+      <Box>
+        <Heading as="h2">Skills &amp; Certifications</Heading>
+        <ul>
+          <li>
+            <strong>Languages:</strong> React, Java, C++, HTML, CSS, JavaScript, GraphQL, Visual Basic .NET, C++, PHP, SQL, Python, R
+          </li>
+          <li>
+            <strong>Tools:</strong> WordPress, Gatsby, Next, Git, GitHub, GitLab, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify
+          </li>
+          <li>
+            <strong>Certifications:</strong>
+            <ul>
+              <li>The Fundamentals of Digital Marketing, Google — <em>Certified April 2020</em></li>
+              <li>Microsoft Office Specialist (MOS) Master 2016, MOS Word 2016 Expert, MOS Excel 2016 Expert, MOS PowerPoint 2016, MOS Outlook 2016, MOS Access 2016 — <em>Certified Fall 2018</em></li>
+            </ul>
+          </li>
+        </ul>
+      </Box>
+      <Box>
+        <Heading as="h2">Contact</Heading>
+        <ul>
+          <li><strong>Phone:</strong> <Link isExternal to="tel:5138136421">513.813.6421</Link></li>
+          <li><strong>Email:</strong> <Link isExternal to="mailto:daltonjcraven@gmail.com">daltonjcraven@gmail.com</Link></li>
+        </ul>
+      </Box>
     </Container>
     <Footer />
   </Grid>
