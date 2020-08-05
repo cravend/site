@@ -1,9 +1,13 @@
 /** @jsx jsx */
-import { FC } from 'react';
+import { ReactChild, FC } from 'react';
 import { jsx, Container } from 'theme-ui';
 import { ThemeType } from '@cravend/theme';
 
-const Hero: FC = ({ children }) => (
+type HeroType = {
+  children: ReactChild,
+}
+
+const Hero: FC<HeroType> = ({ children }: HeroType) => (
   <Container
     variant="wide"
     as="header"
