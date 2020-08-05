@@ -38,7 +38,7 @@ const Header: FC = () => (
         }}
       >
         <Heading as="h1" variant="title">Dalton Craven</Heading>
-        <Heading as="h2" variant="subtitle" sx={{ textTransform: 'lowercase' }}>Student &amp; Developer</Heading>
+        <Heading as="h3" variant="subtitle" sx={{ textTransform: 'lowercase' }}>Student &amp; Developer</Heading>
       </Box>
     </Container>
   </Hero>
