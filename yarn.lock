@@ -1020,12 +1020,12 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@cravend/theme@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@cravend/theme/-/theme-1.1.1.tgz#e79b7754b8e4417fb6e8e76338be7c6a691092a3"
-  integrity sha512-6ARvlQYMYnPAEXXeaKvdEjm69XAXMZql0b+q3tIrm5GEWbt1zCTAZ6EhzyC2HUH3ctJeSdHyoz0boYma1Rs/Xw==
+"@cravend/theme@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@cravend/theme/-/theme-1.2.0.tgz#4be7243649eba1d8d734bd7dddf6edbf952d521d"
+  integrity sha512-UXfdfuhaA/8rVNO2hWdYtK33l9vrgA6LrQbvjiouwbyCkxhn3j1/jydaL761rIMCjy/mjhRvu78HNr73xfPViA==
   dependencies:
-    "@hackclub/theme" "^0.1.2"
+    "@hackclub/theme" "0.3.0"
 
 "@emotion/cache@^10.0.27":
   version "10.0.29"
@@ -1129,10 +1129,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@hackclub/theme@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@hackclub/theme/-/theme-0.1.2.tgz#60dcf1a55f71fc3255fa4315ea77928d50d35a7c"
-  integrity sha512-LmyU/fPYX5v2hq2k4VeBV1cMxnB8/80LC+NMC3Ftxgu3jZIJpk9EQRStrksDfFGLuYSTFgB+Zqj6X06Z7tEYRQ==
+"@hackclub/theme@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@hackclub/theme/-/theme-0.3.0.tgz#d1f5ae1f52aea22e732f6aad8e0a361e4979b963"
+  integrity sha512-OY2OUhFhFihG0UhhpkQWM7A2rRYWIJRtiOxNRrESw7NCcyk1DSFXDv8lAUaDKsrQ5opX16nnzctWgfpHVw1YXQ==
 
 "@mdx-js/react@^1.0.0":
   version "1.6.16"
