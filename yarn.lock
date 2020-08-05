@@ -1160,6 +1160,11 @@
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.5.1.tgz#fe257fafe1a7f1c0c6e818017fa65b5ee45c5eca"
   integrity sha512-A19z/E6f08RXfBRc2STQ+5qo7iSPif7mNcww9dZAVli3Idu4umGP5dbpL71Hz1vyRs1eMUEylXTpXsY2WzY07g==
 
+"@socialgouv/matomo-next@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@socialgouv/matomo-next/-/matomo-next-1.1.2.tgz#90c15215b6d006f7c50ea3c914802508fd507a3f"
+  integrity sha512-lyTzZ5Za+9IhwGTO5TkHG5IxQLaRx5jEZHJl3NvDqQ2Co899+Av/JEdoyeZgQ1daJRURbEcFnhqCHwM7a+EuRg==
+
 "@styled-system/background@^5.1.2":
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/@styled-system/background/-/background-5.1.2.tgz#75c63d06b497ab372b70186c0bf608d62847a2ba"
