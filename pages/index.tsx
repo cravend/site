@@ -18,7 +18,7 @@ const IndexPage: FC = () => (
         <Text as="span" variant="headline" sx={{ display: 'block' }}>
           Hello! My name is <Text as="span" variant="gradient">Dalton Craven</Text>.{' '}
         </Text>
-        It's hard for me to introduce myself over the internet, but here's a little bit about myself:
+        It's hard to introduce myself over the internet, but here's a little bit about me:
       </Text>
       <Grid
         gap={3}
@@ -32,7 +32,7 @@ const IndexPage: FC = () => (
         />
         <Feature
           heading="Extracurriculars & Fun"
-          body={<>I began taking swing dance classes last year (we’ve paused to protect the dancers' health) and hanging out at a swing dance club in Columbia. I also own a 1963 Mercury Comet Custom that I am restoring, learning a <i>ton</i> about working on classic cars in the process. I am an avid film photographer and am planning to take a photography course this fall. Finally, I am the webmaster and executive board member at <Link to="http://acm.cse.sc.edu">ACM@USC</Link>, the University of South Carolina's student chapter of the Association for Computing Machinery.</>}
+          body={<>I began taking swing dance classes last year (we’ve paused to protect the dancers' health) and hanging out at a swing dance club in Columbia. I also own a 1963 Mercury Comet Custom that I am restoring, learning a <i>ton</i> about working on classic cars in the process. I am an avid film photographer and am planning to take a photography course this fall. I am the webmaster and executive board member at <Link to="http://acm.cse.sc.edu">ACM@USC</Link>, the University of South Carolina's student chapter of the Association for Computing Machinery.</>}
         />
         <Feature
           heading="Freelancing"
