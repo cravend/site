@@ -6,7 +6,7 @@ import {
 import Hero from './Hero';
 
 const Header: FC = () => (
-  <Hero>
+  <Hero isDiagonal>
     <Container
       variant="copy"
       m="0 auto"
