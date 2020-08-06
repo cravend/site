@@ -7,7 +7,11 @@ const useAutomaticColorMode = (): string => {
   useEffect(() => {
     const switchMode = (e: MediaQueryListEvent): void => setColorMode(e.matches ? 'dark' : 'light');
     const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    darkModeMediaQuery.addEventListener('change', switchMode);
+    try {
+      darkModeMediaQuery.addEventListener('change', switchMode);
+    } catch {
+      darkModeMediaQuery.addListener(switchMode); // Safari <14 support
+    }
     return () => darkModeMediaQuery.removeEventListener('change', switchMode);
   }, [setColorMode]);
 
