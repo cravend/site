@@ -3,6 +3,7 @@ import { ThemeProvider } from 'theme-ui';
 import { AppProps } from 'next/app';
 import theme from '@cravend/theme';
 import { init } from '@socialgouv/matomo-next';
+import { withAutomaticColorMode } from '../src/useColorMode';
 
 const MyApp:FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -11,10 +12,13 @@ const MyApp:FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     init({ url, siteId });
   }, []);
+
+  const ComponentWithColorMode = withAutomaticColorMode(Component);
+
   return (
     <ThemeProvider theme={theme}>
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-      <Component {...pageProps} />
+      <ComponentWithColorMode {...pageProps} />
     </ThemeProvider>
   );
 };
