@@ -1,10 +1,10 @@
 import React, { ReactElement } from 'react';
-import Document, {
+import NextDocument, {
   Html, Head, Main, NextScript,
 } from 'next/document';
 import { InitializeColorMode } from 'theme-ui';
 
-class MyDocument extends Document {
+class Document extends NextDocument {
   render(): ReactElement {
     return (
       <Html lang="en">
@@ -22,4 +22,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default Document;
