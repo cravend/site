@@ -5,10 +5,13 @@ import theme from '@cravend/theme';
 import { init } from '@socialgouv/matomo-next';
 import { withAutomaticColorMode } from '../src/useColorMode';
 
-const MyApp:FC<AppProps> = ({ Component, pageProps }: AppProps) => {
+const App:FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     const url = process.env.NEXT_PUBLIC_MATOMO_URL;
     const siteId = process.env.NEXT_PUBLIC_MATOMO_SITE_ID;
+    if (!url || !siteId) {
+      return;
+    }
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     init({ url, siteId });
   }, []);
@@ -23,4 +26,4 @@ const MyApp:FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default MyApp;
+export default App;
