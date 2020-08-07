@@ -22,10 +22,8 @@ const Header: FC = () => (
       <Image
         src="/images/dalton-craven.jpg"
         alt="pfp"
-        sx={{
-          borderRadius: '50%',
-          width: 150,
-        }}
+        width={150}
+        sx={{ borderRadius: '50%' }}
       />
       <Box
         ml={[0, 20]}
