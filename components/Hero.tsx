@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { ReactChild, FC } from 'react';
-import { jsx, Container } from 'theme-ui';
+import { jsx, Box, Container } from 'theme-ui';
 import { ThemeType } from '@cravend/theme';
 
 type HeroType = {
@@ -26,8 +26,7 @@ const Hero: FC<HeroType> = ({ isDiagonal, children }: HeroType) => {
   };
 
   return (
-    <Container
-      variant="wide"
+    <Box
       as="header"
       m={0}
       p={0}
@@ -48,7 +47,7 @@ const Hero: FC<HeroType> = ({ isDiagonal, children }: HeroType) => {
       >
         {children}
       </Container>
-    </Container>
+    </Box>
   );
 };
 
