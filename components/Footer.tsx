@@ -1,7 +1,6 @@
-/** @jsx jsx */
-import { FC } from 'react';
+import React, { FC } from 'react';
 import {
-  jsx, Container, Text, Flex,
+  Container, Text, Flex,
 } from 'theme-ui';
 import Link from './Link';
 
@@ -27,7 +26,10 @@ const Footer: FC = () => (
     >
       <Flex>
         <Text mr={3}>&copy; 2020 Dalton Craven</Text>
-        <Text>View Source on <Link to="https://github.com/cravend/site">GitHub</Link></Text>
+        <Text>
+          View Source on{' '}
+          <Link to="https://github.com/cravend/site">GitHub</Link>
+        </Text>
       </Flex>
     </Container>
   </Container>
