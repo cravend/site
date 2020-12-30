@@ -35,5 +35,7 @@ module.exports = {
     'import/extensions': [2, { ts: 'never', tsx: 'never' }],
     '@typescript-eslint/restrict-template-expressions': [2, { allowAny: true }],
     '@typescript-eslint/no-unused-vars': [2],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
   },
 };
