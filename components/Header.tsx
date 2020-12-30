@@ -1,7 +1,6 @@
-/** @jsx jsx */
-import { FC } from 'react';
+import React, { FC } from 'react';
 import {
-  jsx, Box, Image, Heading, Container,
+  Box, Image, Heading, Container,
 } from 'theme-ui';
 import Hero from './Hero';
 
@@ -35,8 +34,12 @@ const Header: FC = () => (
           color: 'white',
         }}
       >
-        <Heading as="h1" variant="title">Dalton Craven</Heading>
-        <Heading as="h3" variant="subtitle" sx={{ textTransform: 'lowercase' }}>Student &amp; Developer</Heading>
+        <Heading as="h1" variant="title">
+          Dalton Craven
+        </Heading>
+        <Heading as="h3" variant="subtitle" sx={{ textTransform: 'lowercase' }}>
+          Student &amp; Developer
+        </Heading>
       </Box>
     </Container>
   </Hero>

@@ -10,10 +10,14 @@ type LinkType = {
 
 const Link: FC<LinkType> = ({ to, isExternal, children }: LinkType) => {
   const externalCheck = /^https?:\/\//;
-  if (externalCheck.test(to) || isExternal) {
+  if (isExternal || externalCheck.test(to)) {
     return <StyledLink href={to}>{children}</StyledLink>;
   }
   return <NextLink passHref href={to}><StyledLink>{children}</StyledLink></NextLink>;
+};
+
+Link.defaultProps = {
+  isExternal: false,
 };
 
 export default Link;
