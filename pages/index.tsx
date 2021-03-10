@@ -26,13 +26,13 @@ const IndexPage: FC = () => (
         my={3}
       >
         <Feature heading="Education">
-          <Text as="p">I'm currently a rising sophomore at the University of South Carolina. I'm pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I'm also a McNair Scholar as part of UofSC's most prestigious scholarship program, the University Top Scholars.</Text>
+          <Text as="p">I'm a sophomore at the University of South Carolina. I'm pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I'm also a McNair Scholar as part of UofSC's most prestigious scholarship program, the University Top Scholars.</Text>
+        </Feature>
+        <Feature heading="Study Abroad">
+          <Text as="p">I'm currently studying abroad at the American University of Paris! I'll be in France for the entirety of 2021. Spending an extended period of time in a different culture has been a goal of mine for a long time, and I'm looking forward to fully experiencing it <em>when</em> COVID is finally over.</Text>
         </Feature>
         <Feature heading="Work">
-          <Text as="p">I just wrapped up a full-time internship as a front-end web developer at <Link to="https://cloverleaf.me">Cloverleaf</Link>. There, I used a variety of technologies (primarily Next/React and GraphQL) in an agile development team to routinely publish production code for our application. I was also an undergraduate teaching assistant for the spring 2020 semester, running eight sections of Linux/UNIX labs for approximately 250 students.</Text>
-        </Feature>
-        <Feature heading="Extracurriculars & Fun">
-          <Text as="p">I began taking swing dance classes last year (we’ve paused to protect the dancers' health) and hanging out at a swing dance club in Columbia. I also own a 1963 Mercury Comet Custom that I am restoring, learning a <i>ton</i> about working on classic cars in the process. I am an avid film photographer and am planning to take a photography course this fall. I am the webmaster and executive board member at <Link to="http://acm.cse.sc.edu">ACM@USC</Link>, the University of South Carolina's student chapter of the Association for Computing Machinery.</Text>
+          <Text as="p">I recently wrapped up a full-time internship as a front-end web developer at <Link to="https://cloverleaf.me">Cloverleaf</Link>. There, I used a variety of technologies (primarily Next/React and GraphQL) in an agile development team to routinely publish production code for our application. I was also an undergraduate teaching assistant for the spring 2020 semester, running eight sections of Linux/UNIX labs for approximately 250 students.</Text>
         </Feature>
         <Feature heading="Freelancing">
           <Text as="p">I also do freelance web development! I work primarily with small businesses (although I’m open for anything), with an emphasis on providing resources and training to ensure long-term functionality.</Text>
@@ -48,10 +48,10 @@ const IndexPage: FC = () => (
         <Heading as="h2">Skills &amp; Certifications</Heading>
         <ul>
           <li>
-            <strong>Languages:</strong> React, Java, C++, HTML, CSS, JavaScript, GraphQL, Visual Basic .NET, C++, PHP, SQL, Python, R
+            <strong>Languages:</strong> React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
           </li>
           <li>
-            <strong>Tools:</strong> WordPress, Gatsby, Next, Git, GitHub, GitLab, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify
+            <strong>Tools:</strong> Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
           </li>
           <li>
             <strong>Certifications:</strong>
@@ -65,7 +65,8 @@ const IndexPage: FC = () => (
       <Box>
         <Heading as="h2">Contact</Heading>
         <ul>
-          <li><strong>Phone:</strong> <Link isExternal to="tel:5138136421">513.813.6421</Link></li>
+          <li><strong>American Phone:</strong> <Link isExternal to="tel:+15138136421">+1 513 813 6421</Link></li>
+          <li><strong>French Phone:</strong> <Link isExternal to="tel:+330749792094">+33 07 49 79 20 94</Link></li>
           <li><strong>Email:</strong> <Link isExternal to="mailto:daltonjcraven@gmail.com">daltonjcraven@gmail.com</Link></li>
         </ul>
       </Box>

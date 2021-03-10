@@ -8,7 +8,7 @@ type FeatureType = {
 
 const Feature:FC<FeatureType> = ({ heading, children }: FeatureType) => (
   <Card variant="interactive">
-    <Heading as="h2">{heading}</Heading>
+    <Heading pb={1} as="h2">{heading}</Heading>
     {children}
   </Card>
 );
