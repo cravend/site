@@ -34,6 +34,7 @@
     "node_modules"
   ],
   "include": [
+    ".eslintrc.js",
     "**/*.js",
     "**/*.ts",
     "**/*.tsx"
