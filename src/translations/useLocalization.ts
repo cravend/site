@@ -9,9 +9,8 @@ const useLocalization = (): Localization => {
 
   const t = (key: string): string => {
     if (!translations[locale][key]) {
-      console.warn(
-        `Translation '${key}' for locale '${locale}' not found.`,
-      );
+      // eslint-disable-next-line no-console
+      console.warn(`Translation '${key}' for locale '${locale}' not found.`);
     }
     return translations[locale][key] || '';
   };
