@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
-import translations from './strings';
-import { Localization } from './types';
-import { getLocale, toggleLocale } from './util';
+import translations from '../translations/strings';
+import { Localization } from '../translations/types';
+import { getLocale, toggleLocale } from '../translations/util';
 
 const useLocalization = (): Localization => {
   const router = useRouter();
