@@ -8,7 +8,7 @@ import Header from '../components/Header';
 import Link from '../components/Link';
 import Feature from '../components/Feature';
 import Footer from '../components/Footer';
-import useLocalization from '../src/translations/useLocalization';
+import useLocalization from '../src/hooks/useLocalization';
 import { languageNames } from '../src/translations/config';
 
 const IndexPage: FC = () => {
