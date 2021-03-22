@@ -1,13 +1,11 @@
 import { Strings } from './types';
 
 const en = {
-  tagline: 'student & developer',
-  test1: 'test',
+  tagline: 'Student & developer',
 };
 
 const fr = {
-  tagline: 'Étudiant',
-  test2: 'test',
+  tagline: 'Étudiant & développeur',
 };
 
 export default {
