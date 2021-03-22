@@ -1,5 +1,5 @@
 import React, { ReactChild, FC } from 'react';
-import { Box, Container } from 'theme-ui';
+import { Box } from 'theme-ui';
 import { ThemeType } from '@cravend/theme';
 
 type HeroType = {
@@ -27,22 +27,7 @@ const Hero: FC<HeroType> = ({ isDiagonal, children }: HeroType) => {
     };
 
   return (
-    <Box as="header" m={0} p={0} mb={4} sx={styles}>
-      <Container
-        variant="copy"
-        m="0 auto"
-        p={3}
-        sx={{
-          display: 'flex',
-          height: '100%',
-          flexDirection: ['column', 'row'],
-          alignItems: 'center',
-          justifyContent: 'space-around',
-        }}
-      >
-        {children}
-      </Container>
-    </Box>
+    <Box as="header" m={0} p={0} mb={4} sx={styles}>{children}</Box>
   );
 };
 
