@@ -2,18 +2,21 @@ import { Strings } from './types';
 
 const common = {
   name: 'Dalton Craven',
+  github: 'GitHub',
 };
 
 const en = {
   ...common,
-  tagline: 'Student & developer',
+  tagline: 'Student & Developer',
   pfp: 'Profile picture',
+  viewSource: 'View source on',
 };
 
 const fr = {
   ...common,
-  tagline: 'Étudiant & développeur',
+  tagline: 'Étudiant & Développeur',
   pfp: 'Image de profil',
+  viewSource: 'Voir le code source sur',
 };
 
 export default {
