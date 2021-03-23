@@ -14,7 +14,7 @@ const IndexPage: FC = () => {
   const [t] = useLocalization();
   return (
     <Grid variant="layout">
-      <Head title="Home" />
+      <Head title={t('homepage')} />
       <Header />
       <Container>
         <Text>
