@@ -8,6 +8,7 @@ const common = {
 
 const en = {
   ...common,
+  homepage: 'Home',
   tagline: 'Student & Developer',
   pfp: 'Profile picture',
   viewSource: 'View source on',
@@ -36,6 +37,7 @@ const en = {
 
 const fr = {
   ...common,
+  homepage: 'Page d’accueil',
   tagline: 'Étudiant & Développeur',
   pfp: 'Image de profil',
   viewSource: 'Voir le code source sur',
