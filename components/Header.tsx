@@ -13,7 +13,7 @@ const Header: FC = () => {
       <Container
         variant="copy"
         m="0 auto"
-        p={3}
+        py={4}
         sx={{
           display: 'flex',
           height: '100%',
@@ -30,7 +30,7 @@ const Header: FC = () => {
         />
         <Box
           ml={[0, 20]}
-          p={0}
+          p={1}
           sx={{
             marginLeft: [0, 2],
             marginTop: [2, 0],

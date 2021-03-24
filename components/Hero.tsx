@@ -27,7 +27,7 @@ const Hero: FC<HeroType> = ({ isDiagonal, children }: HeroType) => {
     };
 
   return (
-    <Box as="header" m={0} p={0} mb={4} sx={styles}>{children}</Box>
+    <Box as="header" m={0} p={0} mb={[0, 4]} sx={styles}>{children}</Box>
   );
 };
 
