@@ -405,15 +405,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@socialgouv/matomo-next@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@socialgouv/matomo-next@npm:1.2.1"
-  peerDependencies:
-    next: ">= 9"
-  checksum: ea26c97b209a959c8e785d181d787f208014deaa9b596c5080921521765019e4b8bb0c7e1c385c8aa03a35261fb6623e786b0cde635abbda6a812750aaaae3a3
-  languageName: node
-  linkType: hard
-
 "@styled-system/background@npm:^5.1.2":
   version: 5.1.2
   resolution: "@styled-system/background@npm:5.1.2"
@@ -3258,7 +3249,6 @@ fsevents@~2.3.1:
   resolution: "me.daltoncraven@workspace:."
   dependencies:
     "@cravend/theme": ^1.2.0
-    "@socialgouv/matomo-next": ^1.2.1
     "@types/node": ^14.14.35
     "@types/react": ^17.0.3
     "@types/theme-ui": ^0.3.7
