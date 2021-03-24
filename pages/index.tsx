@@ -9,6 +9,7 @@ import Link from '../components/Link';
 import Feature from '../components/Feature';
 import Footer from '../components/Footer';
 import useLocalization from '../src/hooks/useLocalization';
+import LanguageToggle from '../components/LanguageToggle';
 
 const IndexPage: FC = () => {
   const [t] = useLocalization();
@@ -17,6 +18,7 @@ const IndexPage: FC = () => {
       <Head title={t('homepage')} />
       <Header />
       <Container>
+        <LanguageToggle />
         <Text>
           <Text as="span" variant="headline" sx={{ display: 'block' }}>
             {t('greeting')}{' '}
