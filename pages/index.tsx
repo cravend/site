@@ -17,9 +17,9 @@ const IndexPage: FC = () => {
     <Grid variant="layout">
       <Head title={t('homepage')} />
       <Header />
-      <Container>
+      <Container as="main">
         <LanguageToggle />
-        <Text>
+        <Text as="p">
           <Text as="span" variant="headline" sx={{ display: 'block' }}>
             {t('greeting')}{' '}
             <Text as="span" variant="gradient">{t('name')}</Text>.{' '}
