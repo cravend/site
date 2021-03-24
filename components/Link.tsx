@@ -7,7 +7,7 @@ type LinkType = {
   to: string,
   isExternal?: boolean,
   locale?: Locale,
-  color?: string,
+  color?: string | string[],
   children: ReactNode
 }
 
@@ -16,14 +16,23 @@ const Link: FC<LinkType> = ({
 }: LinkType) => {
   const externalCheck = /^https?:\/\//;
   if (isExternal || externalCheck.test(to)) {
-    return <StyledLink color={color} href={to}>{children}</StyledLink>;
+    return (
+      <StyledLink
+        sx={{ color }}
+        href={to}
+      >{children}
+      </StyledLink>
+    );
   }
   return (
     <NextLink
       passHref
       locale={locale}
       href={to}
-    ><StyledLink color={color}>{children}</StyledLink>
+    >
+      <StyledLink sx={{ color }}>
+        {children}
+      </StyledLink>
     </NextLink>
   );
 };
