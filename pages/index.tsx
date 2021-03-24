@@ -22,7 +22,7 @@ const IndexPage: FC = () => {
             {t('greeting')}{' '}
             <Text as="span" variant="gradient">{t('name')}</Text>.{' '}
           </Text>
-          {t('intro')}
+          {t('intro')}{t('colon')}
         </Text>
         <Grid
           gap={3}
@@ -56,13 +56,13 @@ const IndexPage: FC = () => {
           <Heading as="h2">{t('skills')}</Heading>
           <ul>
             <li>
-              <strong>{t('languages')}</strong> React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
+              <strong>{t('languages')}{t('colon')}</strong> React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
             </li>
             <li>
-              <strong>{t('tools')}</strong> Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
+              <strong>{t('tools')}{t('colon')}</strong> Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
             </li>
             <li>
-              <strong>{t('certifications')}</strong>
+              <strong>{t('certifications')}{t('colon')}</strong>
               <ul>
                 <li>The Fundamentals of Digital Marketing, Google — <em>{t('cert_april_2020')}</em></li>
                 <li>Microsoft Office Specialist (MOS) Master 2016, MOS Word 2016 Expert, MOS Excel 2016 Expert, MOS PowerPoint 2016, MOS Outlook 2016, MOS Access 2016 — <em>{t('cert_fall_2018')}</em></li>
@@ -73,9 +73,10 @@ const IndexPage: FC = () => {
         <Box>
           <Heading as="h2">{t('contact')}</Heading>
           <ul>
-            <li><strong>{t('american_phone')}</strong> <Link isExternal to="tel:+15138136421">+1 513 813 6421</Link></li>
-            <li><strong>{t('french_phone')}</strong> <Link isExternal to="tel:+330749792094">+33 07 49 79 20 94</Link></li>
-            <li><strong>{t('email')}</strong> <Link isExternal to="mailto:daltonjcraven@gmail.com">daltonjcraven@gmail.com</Link></li>
+            <li><strong>{t('american_phone')}{t('colon')}</strong> <Link isExternal to="tel:+15138136421">+1 513 813 6421</Link></li>
+            <li><strong>{t('french_phone')}{t('colon')}</strong> <Link isExternal to="tel:+330749792094">+33 07 49 79 20 94</Link></li>
+            <li><strong>{t('email')}{t('colon')}</strong> <Link isExternal to="mailto:daltonjcraven@gmail.com">daltonjcraven@gmail.com</Link></li>
+            <li><strong>{t('github')}{t('colon')}</strong> <Link isExternal to="https://github.com/cravend">cravend</Link></li>
           </ul>
         </Box>
       </Container>
