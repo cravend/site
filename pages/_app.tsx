@@ -7,14 +7,11 @@ import { withAutomaticColorMode } from '../src/hooks/useColorMode';
 
 const App:FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
-    const url = process.env.NEXT_PUBLIC_MATOMO_URL;
-    const siteId = process.env.NEXT_PUBLIC_MATOMO_SITE_ID;
-    if (!url || !siteId) {
-      return;
-    }
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-    init({ url, siteId });
-  }, []);
+    init({
+      url: process.env.NEXT_PUBLIC_MATOMO_URL,
+      siteId: process.env.NEXT_PUBLIC_MATOMO_SITE_ID,
+    });
+  });
 
   const ComponentWithColorMode = withAutomaticColorMode(Component);
 
