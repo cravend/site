@@ -1,9 +1,9 @@
 import React, { FC, useEffect } from 'react';
 import { ThemeProvider } from 'theme-ui';
+import { ThemeProvider as ColorProvider } from 'next-themes';
 import { AppProps } from 'next/app';
 import theme from '@cravend/theme';
 import { init } from '@socialgouv/matomo-next';
-import { withAutomaticColorMode } from '../src/hooks/useColorMode';
 
 const App:FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -13,13 +13,13 @@ const App:FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     });
   });
 
-  const ComponentWithColorMode = withAutomaticColorMode(Component);
-
   return (
-    <ThemeProvider theme={theme}>
-      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-      <ComponentWithColorMode {...pageProps} />
-    </ThemeProvider>
+    <ColorProvider>
+      <ThemeProvider theme={theme}>
+        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </ColorProvider>
   );
 };
 
