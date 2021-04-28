@@ -3,6 +3,7 @@ import { Strings } from './types';
 const common = {
   name: 'Dalton Craven',
   github: 'GitHub',
+  linkedin: 'LinkedIn',
   cloverleaf: 'Cloverleaf',
 };
 
