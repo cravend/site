@@ -4,6 +4,7 @@ const common = {
   name: "Dalton Craven",
   github: "GitHub",
   gitlab: "GitLab",
+  linkedin: "LinkedIn",
   cloverleaf: "Cloverleaf",
   programming_languages:
     "React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R",
@@ -14,6 +15,7 @@ const common = {
   email_address: "daltonjcraven@gmail.com",
   github_username: "cravend",
   gitlab_username: "cravend",
+  linkedin_username: "daltonjcraven",
 };
 
 const en = {
