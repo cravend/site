@@ -58,7 +58,7 @@ const en = {
 const fr = {
   ...common,
   colon: " :",
-  homepage: "Page d’accueil",
+  homepage: "Accueil",
   toggleLocale: "Read in English",
   tagline: "Étudiant & Développeur",
   pfp: "Image de profil",
