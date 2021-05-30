@@ -3,6 +3,7 @@ import { Strings } from './types';
 const common = {
   name: 'Dalton Craven',
   github: 'GitHub',
+  gitlab: 'GitLab',
   cloverleaf: 'Cloverleaf',
 };
 
@@ -47,7 +48,7 @@ const fr = {
   viewSource: 'Voir le code source sur',
   greeting: 'Salut ! Je m’appelle',
   intro: 'Il est difficile de me présenter sur Internet, mais voici un peu de moi',
-  education_header: 'Éducation',
+  education_header: 'Formation',
   education: 'Je suis étudiant en deuxième année à l’Université de Caroline du Sud. Je poursuis un baccalauréat ès sciences en informatique avec une mineure en psychologie. Je suis également boursier McNair dans le cadre du programme de bourses le plus prestigieux, les « University Top Scholars ».',
   sa_header: 'Étudier à L’étranger',
   study_abroad: 'J’étudie actuellement à l’étranger à l’Université américaine de Paris ! Je serai en France pendant toute l’année 2021. Passer une longue période de temps dans une culture différente est un de mes objectifs depuis longtemps, et j’ai hâte de vivre pleinement lorsque COVID sera enfin terminé.',

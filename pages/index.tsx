@@ -79,6 +79,7 @@ const IndexPage: FC = () => {
             <li><strong>{t('french_phone')}{t('colon')}</strong> <Link isExternal to="tel:+330749792094">+33 07 49 79 20 94</Link></li>
             <li><strong>{t('email')}{t('colon')}</strong> <Link isExternal to="mailto:daltonjcraven@gmail.com">daltonjcraven@gmail.com</Link></li>
             <li><strong>{t('github')}{t('colon')}</strong> <Link isExternal to="https://github.com/cravend">cravend</Link></li>
+            <li><strong>{t('gitlab')}{t('colon')}</strong> <Link isExternal to="https://gitlab.com/cravend">cravend</Link></li>
           </ul>
         </Box>
       </Container>
