@@ -58,10 +58,13 @@ const IndexPage: FC = () => {
           <Heading as="h2">{t('skills')}</Heading>
           <ul>
             <li>
-              <strong>{t('languages')}{t('colon')}</strong> React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
+              <strong>{t('spoken_languages_header')}{t('colon')}</strong>{t('spoken_languages')}
             </li>
             <li>
-              <strong>{t('tools')}{t('colon')}</strong> Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
+              <strong>{t('programming_languages_header')}{t('colon')}</strong>{t('programming_languages')}
+            </li>
+            <li>
+              <strong>{t('tools_header')}{t('colon')}</strong>{t('tools')}
             </li>
             <li>
               <strong>{t('certifications')}{t('colon')}</strong>
@@ -75,11 +78,11 @@ const IndexPage: FC = () => {
         <Box>
           <Heading as="h2">{t('contact')}</Heading>
           <ul>
-            <li><strong>{t('american_phone')}{t('colon')}</strong> <Link isExternal to="tel:+15138136421">+1 513 813 6421</Link></li>
-            <li><strong>{t('french_phone')}{t('colon')}</strong> <Link isExternal to="tel:+330749792094">+33 07 49 79 20 94</Link></li>
-            <li><strong>{t('email')}{t('colon')}</strong> <Link isExternal to="mailto:daltonjcraven@gmail.com">daltonjcraven@gmail.com</Link></li>
-            <li><strong>{t('github')}{t('colon')}</strong> <Link isExternal to="https://github.com/cravend">cravend</Link></li>
-            <li><strong>{t('gitlab')}{t('colon')}</strong> <Link isExternal to="https://gitlab.com/cravend">cravend</Link></li>
+            <li><strong>{t('american_phone')}{t('colon')}</strong><Link isExternal to="tel:+15138136421">{t('american_phone_number')}</Link></li>
+            <li><strong>{t('french_phone')}{t('colon')}</strong><Link isExternal to="tel:+330749792094">{t('french_phone_number')}</Link></li>
+            <li><strong>{t('email')}{t('colon')}</strong><Link isExternal to="mailto:daltonjcraven@gmail.com">{t('email_address')}</Link></li>
+            <li><strong>{t('github')}{t('colon')}</strong><Link isExternal to="https://github.com/cravend">{t('github_username')}</Link></li>
+            <li><strong>{t('gitlab')}{t('colon')}</strong><Link isExternal to="https://gitlab.com/cravend">{t('gitlab_username')}</Link></li>
           </ul>
         </Box>
       </Container>
