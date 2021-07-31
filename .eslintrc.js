@@ -1,3 +1,3 @@
 module.exports = {
-  "extends": "next"
+  "extends": ["next", "next/core-web-vitals", "plugin:testing-library/react", "prettier"]
 }

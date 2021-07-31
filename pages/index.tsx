@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React, { FC } from 'react';
 import {
   Container, Grid, Text, Heading, Box,
