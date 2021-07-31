@@ -1,9 +1,9 @@
 import React, { FC, useEffect } from 'react';
 import { ThemeProvider } from 'theme-ui';
 import { AppProps } from 'next/app';
-import theme from '@cravend/theme';
 import { init } from '@socialgouv/matomo-next';
 import { withAutomaticColorMode } from '../src/hooks/useColorMode';
+import theme from '../src/theme';
 
 const App:FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {

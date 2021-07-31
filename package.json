@@ -5,13 +5,15 @@
   "scripts": {
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --fix .",
+    "lint": "next lint",
     "export": "next export",
     "postinstall": "husky install"
   },
   "dependencies": {
     "@cravend/theme": "^1.2.0",
+    "@next/env": "^11.0.1",
     "@socialgouv/matomo-next": "^1.2.2",
+    "encoding": "^0.1.13",
     "next": "^11.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -19,17 +21,10 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^16.0.1",
-    "@types/react": "^17.0.14",
-    "@types/theme-ui": "^0.6.0",
-    "@typescript-eslint/eslint-plugin": "^4.28.2",
-    "@typescript-eslint/parser": "^4.28.2",
+    "@types/node": "^16.4.8",
+    "@types/react": "^17.0.15",
     "eslint": "^7.30.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-config-next": "^11.0.1",
     "husky": "^7.0.1",
     "typescript": "^4.3.5"
   }
