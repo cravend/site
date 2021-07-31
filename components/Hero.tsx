@@ -1,6 +1,5 @@
 import React, { ReactChild, FC } from 'react';
-import { Box } from 'theme-ui';
-import { ThemeType } from '@cravend/theme';
+import { Box, get, ThemeUICSSObject } from 'theme-ui';
 
 type HeroType = {
   isDiagonal?: boolean
@@ -8,10 +7,10 @@ type HeroType = {
 }
 
 const Hero: FC<HeroType> = ({ isDiagonal, children }: HeroType) => {
-  const styles = isDiagonal
+  const styles: ThemeUICSSObject = isDiagonal
     ? {
       backgroundColor: 'primary',
-      background: (theme: ThemeType) => theme.background.gradient,
+      background: (theme) => get(theme, 'background.gradient') as string,
       height: 250,
       paddingBottom: [0, 37.5],
       clipPath: ['normal', 'polygon(0 0, 100% 0%, 100% 85%, 0% 100%)'],
@@ -20,7 +19,7 @@ const Hero: FC<HeroType> = ({ isDiagonal, children }: HeroType) => {
     }
     : {
       backgroundColor: 'primary',
-      background: (theme: ThemeType) => theme.background.gradient,
+      background: (theme) => get(theme, 'background.gradient') as string,
       height: 150,
       display: 'flex',
       alignItems: 'center',
