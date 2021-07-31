@@ -1,4 +1,5 @@
 import React, { ReactChild, FC } from "react";
+
 import { Box, get, ThemeUICSSObject } from "theme-ui";
 
 type HeroType = {

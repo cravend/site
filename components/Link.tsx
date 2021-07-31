@@ -1,6 +1,8 @@
 import React, { FC, ReactNode } from "react";
+
 import NextLink from "next/link";
 import { Link as StyledLink } from "theme-ui";
+
 import { Locale } from "../src/translations/types";
 
 type LinkType = {

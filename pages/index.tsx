@@ -1,12 +1,14 @@
 import React, { FC } from "react";
+
 import { Container, Grid, Text, Heading, Box } from "theme-ui";
-import Head from "../components/Head";
-import Header from "../components/Header";
-import Link from "../components/Link";
+
 import Feature from "../components/Feature";
 import Footer from "../components/Footer";
-import useLocalization from "../src/hooks/useLocalization";
+import Head from "../components/Head";
+import Header from "../components/Header";
 import LanguageToggle from "../components/LanguageToggle";
+import Link from "../components/Link";
+import useLocalization from "../src/hooks/useLocalization";
 
 const IndexPage: FC = () => {
   const [t] = useLocalization();

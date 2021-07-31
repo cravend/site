@@ -1,4 +1,5 @@
 import React, { useEffect, ComponentType, FC } from "react";
+
 import { useColorMode } from "theme-ui";
 
 const useAutomaticColorMode = (): string => {

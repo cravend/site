@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+
 import translations from "../translations/strings";
 import { Localization } from "../translations/types";
 import { getLocale, toggleLocale } from "../translations/util";

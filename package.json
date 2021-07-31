@@ -5,8 +5,8 @@
   "scripts": {
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --fix .",
-    "format": "prettier --write .",
+    "lint": "eslint .",
+    "format": "prettier --check .",
     "export": "next export",
     "postinstall": "husky install"
   },

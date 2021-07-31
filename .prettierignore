@@ -2,7 +2,7 @@
 .pnp.cjs
 /.vim
 /.vscode
-.yarn
+/.yarn
 /coverage
 /.next
 /out

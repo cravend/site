@@ -7,8 +7,10 @@ module.exports = {
     "next/core-web-vitals",
     "prettier",
   ],
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "prettier"],
   rules: {
+    "import/order": ["error"],
+    "prettier/prettier": "error",
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],

@@ -1,4 +1,5 @@
 import { NextRouter } from "next/router";
+
 import { locales, defaultLocale } from "./config";
 import { Locale } from "./types";
 
