@@ -363,7 +363,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:11.0.1":
+"@next/env@npm:11.0.1, @next/env@npm:^11.0.1":
   version: 11.0.1
   resolution: "@next/env@npm:11.0.1"
   checksum: 56fc85a19f5754e38db7e4bb7cff627f9addbdc12bad60bf1bbdbc744ab294ede5fdfc890579aeb6c1b185af538e3aa93ad5139931b76bb5432055ccf92ad8e6
@@ -1871,7 +1871,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"encoding@npm:0.1.13, encoding@npm:^0.1.12":
+"encoding@npm:0.1.13, encoding@npm:^0.1.12, encoding@npm:^0.1.13":
   version: 0.1.13
   resolution: "encoding@npm:0.1.13"
   dependencies:
@@ -3320,9 +3320,11 @@ fsevents@~2.3.1:
   resolution: "me.daltoncraven@workspace:."
   dependencies:
     "@cravend/theme": ^1.2.0
+    "@next/env": ^11.0.1
     "@socialgouv/matomo-next": ^1.2.2
     "@types/node": ^16.4.8
     "@types/react": ^17.0.15
+    encoding: ^0.1.13
     eslint: ^7.30.0
     eslint-config-next: ^11.0.1
     husky: ^7.0.1

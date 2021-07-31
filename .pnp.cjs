@@ -36,9 +36,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@cravend/theme", "npm:1.2.0"],
+            ["@next/env", "npm:11.0.1"],
             ["@socialgouv/matomo-next", "virtual:cc3f8ac09390ab1099d62e6563184c3693d2034af5d6eb90337cff83c0cca5213f9a21524ccc66c61b64d79c930b27fc12290f60a4a9771fa95859204f8ad109#npm:1.2.2"],
             ["@types/node", "npm:16.4.8"],
             ["@types/react", "npm:17.0.15"],
+            ["encoding", "npm:0.1.13"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-next", "virtual:cc3f8ac09390ab1099d62e6563184c3693d2034af5d6eb90337cff83c0cca5213f9a21524ccc66c61b64d79c930b27fc12290f60a4a9771fa95859204f8ad109#npm:11.0.1"],
             ["husky", "npm:7.0.1"],
@@ -4096,9 +4098,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["me.daltoncraven", "workspace:."],
             ["@cravend/theme", "npm:1.2.0"],
+            ["@next/env", "npm:11.0.1"],
             ["@socialgouv/matomo-next", "virtual:cc3f8ac09390ab1099d62e6563184c3693d2034af5d6eb90337cff83c0cca5213f9a21524ccc66c61b64d79c930b27fc12290f60a4a9771fa95859204f8ad109#npm:1.2.2"],
             ["@types/node", "npm:16.4.8"],
             ["@types/react", "npm:17.0.15"],
+            ["encoding", "npm:0.1.13"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-next", "virtual:cc3f8ac09390ab1099d62e6563184c3693d2034af5d6eb90337cff83c0cca5213f9a21524ccc66c61b64d79c930b27fc12290f60a4a9771fa95859204f8ad109#npm:11.0.1"],
             ["husky", "npm:7.0.1"],
