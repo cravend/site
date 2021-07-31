@@ -1,14 +1,16 @@
-import React, { FC, ReactNode } from 'react';
-import { Card, Heading } from 'theme-ui';
+import React, { FC, ReactNode } from "react";
+import { Card, Heading } from "theme-ui";
 
 type FeatureType = {
-  heading: string,
-  children: ReactNode,
-}
+  heading: string;
+  children: ReactNode;
+};
 
-const Feature:FC<FeatureType> = ({ heading, children }: FeatureType) => (
+const Feature: FC<FeatureType> = ({ heading, children }: FeatureType) => (
   <Card variant="interactive">
-    <Heading pb={1} as="h2">{heading}</Heading>
+    <Heading pb={1} as="h2">
+      {heading}
+    </Heading>
     {children}
   </Card>
 );

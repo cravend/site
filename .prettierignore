@@ -1,0 +1,9 @@
+/.next
+.pnp.cjs
+/.vim
+/.vscode
+.yarn
+/coverage
+/.next
+/out
+/build
