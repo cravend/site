@@ -1,8 +1,6 @@
-import React, { ReactElement } from 'react';
-import NextDocument, {
-  Html, Head, Main, NextScript,
-} from 'next/document';
-import { InitializeColorMode } from 'theme-ui';
+import React, { ReactElement } from "react";
+import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+import { InitializeColorMode } from "theme-ui";
 
 class Document extends NextDocument {
   render(): ReactElement {
@@ -11,7 +9,10 @@ class Document extends NextDocument {
         <Head>
           <meta name="color-scheme" content="light dark" />
           {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-          <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <InitializeColorMode />
