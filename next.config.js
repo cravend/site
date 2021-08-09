@@ -4,4 +4,7 @@ module.exports = {
     defaultLocale: 'en',
   },
   target: 'serverless',
+  eslint: {
+    ignoreDuringBuilds: true,
+  }
 };
