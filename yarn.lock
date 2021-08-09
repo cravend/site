@@ -370,6 +370,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/eslint-plugin-next@npm:^11.0.1":
+  version: 11.0.1
+  resolution: "@next/eslint-plugin-next@npm:11.0.1"
+  checksum: 8b1c99780cabe7e941f034a3fc1e492d4f42d45065d1016b2c730649e4757ed293c71c2b36da650ddc7b317b42d9f8f7fa600c4a698946e57bd26d5d56f4ffff
+  languageName: node
+  linkType: hard
+
 "@next/polyfill-module@npm:11.0.1":
   version: 11.0.1
   resolution: "@next/polyfill-module@npm:11.0.1"
@@ -3570,6 +3577,7 @@ fsevents@~2.3.1:
   dependencies:
     "@cravend/theme": ^1.2.0
     "@next/env": ^11.0.1
+    "@next/eslint-plugin-next": ^11.0.1
     "@socialgouv/matomo-next": ^1.2.2
     "@types/node": ^16.4.8
     "@types/react": ^17.0.15

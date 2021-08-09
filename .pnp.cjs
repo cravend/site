@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@cravend/theme", "npm:1.2.0"],
             ["@next/env", "npm:11.0.1"],
+            ["@next/eslint-plugin-next", "npm:11.0.1"],
             ["@socialgouv/matomo-next", "virtual:cc3f8ac09390ab1099d62e6563184c3693d2034af5d6eb90337cff83c0cca5213f9a21524ccc66c61b64d79c930b27fc12290f60a4a9771fa95859204f8ad109#npm:1.2.2"],
             ["@types/node", "npm:16.4.8"],
             ["@types/react", "npm:17.0.15"],
@@ -542,6 +543,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@next-env-npm-11.0.1-319a456799-56fc85a19f.zip/node_modules/@next/env/",
           "packageDependencies": [
             ["@next/env", "npm:11.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@next/eslint-plugin-next", [
+        ["npm:11.0.1", {
+          "packageLocation": "./.yarn/cache/@next-eslint-plugin-next-npm-11.0.1-bd614b31b7-8b1c99780c.zip/node_modules/@next/eslint-plugin-next/",
+          "packageDependencies": [
+            ["@next/eslint-plugin-next", "npm:11.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -4481,6 +4491,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["me.daltoncraven", "workspace:."],
             ["@cravend/theme", "npm:1.2.0"],
             ["@next/env", "npm:11.0.1"],
+            ["@next/eslint-plugin-next", "npm:11.0.1"],
             ["@socialgouv/matomo-next", "virtual:cc3f8ac09390ab1099d62e6563184c3693d2034af5d6eb90337cff83c0cca5213f9a21524ccc66c61b64d79c930b27fc12290f60a4a9771fa95859204f8ad109#npm:1.2.2"],
             ["@types/node", "npm:16.4.8"],
             ["@types/react", "npm:17.0.15"],
