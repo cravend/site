@@ -1,11 +1,11 @@
-import React, { FC, useEffect } from 'react';
-import { ThemeProvider } from 'theme-ui';
-import { AppProps } from 'next/app';
-import { init } from '@socialgouv/matomo-next';
-import { withAutomaticColorMode } from '../src/hooks/useColorMode';
-import theme from '../src/theme';
+import React, { FC, useEffect } from "react";
+import { ThemeProvider } from "theme-ui";
+import { AppProps } from "next/app";
+import { init } from "@socialgouv/matomo-next";
+import { withAutomaticColorMode } from "../src/hooks/useColorMode";
+import theme from "../src/theme";
 
-const App:FC<AppProps> = ({ Component, pageProps }: AppProps) => {
+const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     init({
       url: process.env.NEXT_PUBLIC_MATOMO_URL,
