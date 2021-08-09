@@ -1,9 +1,9 @@
-import React, { FC } from 'react';
-import NextHead from 'next/head';
+import React, { FC } from "react";
+import NextHead from "next/head";
 
 type HeadType = {
-  title: string,
-}
+  title: string;
+};
 
 const Head: FC<HeadType> = ({ title }: HeadType) => (
   <NextHead>

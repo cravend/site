@@ -1,9 +1,7 @@
-import React, { FC } from 'react';
-import {
-  Box, Image, Heading, Container,
-} from 'theme-ui';
-import useLocalization from '../src/hooks/useLocalization';
-import Hero from './Hero';
+import React, { FC } from "react";
+import { Box, Image, Heading, Container } from "theme-ui";
+import useLocalization from "../src/hooks/useLocalization";
+import Hero from "./Hero";
 
 const Header: FC = () => {
   const [t] = useLocalization();
@@ -15,18 +13,18 @@ const Header: FC = () => {
         m="0 auto"
         py={4}
         sx={{
-          display: 'flex',
-          height: '100%',
-          flexDirection: ['column', 'row'],
-          alignItems: 'center',
-          justifyContent: 'space-around',
+          display: "flex",
+          height: "100%",
+          flexDirection: ["column", "row"],
+          alignItems: "center",
+          justifyContent: "space-around",
         }}
       >
         <Image
           src="/images/dalton-craven.jpg"
-          alt={t('pfp')}
+          alt={t("pfp")}
           width={150}
-          sx={{ borderRadius: '50%' }}
+          sx={{ borderRadius: "50%" }}
         />
         <Box
           ml={[0, 20]}
@@ -34,12 +32,20 @@ const Header: FC = () => {
           sx={{
             marginLeft: [0, 2],
             marginTop: [2, 0],
-            textAlign: ['center', 'right'],
-            color: 'white',
+            textAlign: ["center", "right"],
+            color: "white",
           }}
         >
-          <Heading as="h1" variant="title">{t('name')}</Heading>
-          <Heading as="h3" variant="subtitle" sx={{ textTransform: 'lowercase' }}>{t('tagline')}</Heading>
+          <Heading as="h1" variant="title">
+            {t("name")}
+          </Heading>
+          <Heading
+            as="h3"
+            variant="subtitle"
+            sx={{ textTransform: "lowercase" }}
+          >
+            {t("tagline")}
+          </Heading>
         </Box>
       </Container>
     </Hero>
