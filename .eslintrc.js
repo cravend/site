@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["plugin:react/recommended", "airbnb", "prettier"],
+  extends: [
+    "plugin:@next/next/recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
@@ -14,6 +19,8 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint", "prettier"],
   rules: {
+    "@next/next/no-sync-scripts": "error",
+    "@next/next/no-html-link-for-pages": "error",
     "import/order": ["error"],
     "prettier/prettier": "error",
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
