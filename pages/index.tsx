@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React, { FC } from "react";
 import { Container, Grid, Text, Heading, Box } from "theme-ui";
 import Head from "../components/Head";
@@ -11,6 +10,7 @@ import LanguageToggle from "../components/LanguageToggle";
 
 const IndexPage: FC = () => {
   const [t] = useLocalization();
+
   return (
     <Grid variant="layout">
       <Head title={t("homepage")} />
