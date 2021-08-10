@@ -26,6 +26,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": [".eslintrc.js", "next.config.js", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
