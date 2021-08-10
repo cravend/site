@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   extends: [
     "eslint:recommended",
@@ -9,6 +10,7 @@ module.exports = {
     "plugin:@next/next/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:jest/all",
     "airbnb",
     "prettier",
   ],
@@ -22,6 +24,7 @@ module.exports = {
     project: "tsconfig.json",
   },
   plugins: ["react", "@typescript-eslint", "prettier"],
+  ignorePatterns: "/coverage/**/*.js",
   rules: {
     "@next/next/no-sync-scripts": "error",
     "@next/next/no-html-link-for-pages": "error",
