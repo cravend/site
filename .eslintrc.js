@@ -12,6 +12,8 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:jest/all",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
     "airbnb",
     "prettier",
   ],
