@@ -6,9 +6,10 @@ import theme from "../src/theme";
 
 const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
+    const { NEXT_PUBLIC_MATOMO_URL, NEXT_PUBLIC_MATOMO_SITE_ID } = process.env;
     init({
-      url: process.env.NEXT_PUBLIC_MATOMO_URL,
-      siteId: process.env.NEXT_PUBLIC_MATOMO_SITE_ID,
+      url: NEXT_PUBLIC_MATOMO_URL || "",
+      siteId: NEXT_PUBLIC_MATOMO_SITE_ID || "",
     });
   }, []);
 
