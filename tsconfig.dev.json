@@ -3,6 +3,12 @@
   "compilerOptions": {
     "jsx": "react"
   },
-  "include": [".eslintrc.js", "next.config.js", "**/*.ts", "**/*.tsx"],
+  "include": [
+    ".eslintrc.js",
+    "next.config.js",
+    "commitlint.config.js",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
   "exclude": ["node_modules"]
 }
