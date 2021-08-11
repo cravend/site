@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LanguageToggle /> { locale: "en" } should render 1`] = `
+<div>
+  <div
+    class="css-hckpid"
+  >
+    <a
+      class="css-lml9fj"
+      href="/"
+    >
+      Lire en français
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<LanguageToggle /> { locale: "fr" } should render 1`] = `
+<div>
+  <div
+    class="css-hckpid"
+  >
+    <a
+      class="css-lml9fj"
+      href="/"
+    >
+      Read in English
+    </a>
+  </div>
+</div>
+`;
