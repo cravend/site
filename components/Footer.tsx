@@ -32,7 +32,7 @@ const Footer: FC = () => {
             &copy; {year} {t("name")}
           </Text>
           <Text>
-            {t("viewSource")}{" "}
+            {t("view_source")}{" "}
             <Link to="https://github.com/cravend/site">{t("github")}</Link>
           </Text>
         </Flex>

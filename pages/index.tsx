@@ -155,6 +155,15 @@ const IndexPage: FC = () => {
                 {t("gitlab_username")}
               </Link>
             </li>
+            <li>
+              <strong>
+                {t("linkedin")}
+                {t("colon")}
+              </strong>
+              <Link isExternal to="https://linkedin.com/in/daltonjcraven">
+                {t("linkedin_username")}
+              </Link>
+            </li>
           </ul>
         </Box>
       </Container>
