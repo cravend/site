@@ -16,7 +16,7 @@ const LanguageToggle: FC = () => {
       }}
     >
       <Link to="/" locale={otherLocale} color={["primary", "white"]}>
-        {t("toggleLocale")}
+        {t("toggle_locale")}
       </Link>
     </Box>
   );

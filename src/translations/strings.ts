@@ -22,10 +22,10 @@ const en = {
   ...common,
   colon: ": ",
   homepage: "Home",
-  toggleLocale: "Lire en français",
+  toggle_locale: "Lire en français",
   tagline: "Student & Developer",
   pfp: "Profile picture",
-  viewSource: "View source on",
+  view_source: "View source on",
   greeting: "Hello! My name is",
   intro:
     "It’s hard to introduce myself over the internet, but here’s a little bit about me",
@@ -59,12 +59,12 @@ const en = {
 
 const fr = {
   ...common,
-  colon: " :",
+  colon: " : ",
   homepage: "Accueil",
-  toggleLocale: "Read in English",
+  toggle_locale: "Read in English",
   tagline: "Étudiant & Développeur",
   pfp: "Image de profil",
-  viewSource: "Voir le code source sur",
+  view_source: "Voir le code source sur",
   greeting: "Salut ! Moi c’est",
   intro:
     "C’est difficile de se présenter virtuellement, mais voilà ce que je peux vous dire de moi",
@@ -83,8 +83,10 @@ const fr = {
   freelance:
     "Je fais aussi du développement web en freelance ! Je travaille principalement avec des petites entreprises (bien que je sois ouvert à tout), en mettant à disposition des ressources informatiques et en organisant des formation pour assurer un bon fonctionnement à long terme.",
   skills: "Compétences & Certifications",
-  languages: "Langues",
-  tools: "Outils",
+  spoken_languages_header: "Langues (parlées)",
+  spoken_languages: "Anglais, Français, Langue des signes américaine (ASL)",
+  programming_languages_header: "Langues (tech)",
+  tools_header: "Outils",
   certifications: "Certifications",
   cert_april_2020: "Certifié en avril 2020",
   cert_fall_2018: "Certifié à l’automne 2018",
