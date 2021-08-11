@@ -2,7 +2,7 @@ import { NextRouter } from "next/router";
 import { locales, defaultLocale } from "./config";
 import { Locale } from "./types";
 
-export function isLocale(tested: string): tested is Locale {
+export function isLocale(tested: string | undefined): tested is Locale {
   return locales.some((locale) => locale === tested);
 }
 
