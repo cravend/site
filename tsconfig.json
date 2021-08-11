@@ -80,8 +80,7 @@
     "**/*.tsx"
   ] /* Include only the following files in the compilation. */,
   "exclude": [
-    "node_modules",
-    "**/*.test.ts",
-    "**/*.test.tsx"
+    "coverage",
+    "node_modules"
   ] /* Exclude the following files from the compilation. */
 }
