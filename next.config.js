@@ -7,4 +7,7 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  experimental: {
+    cpus: 1,
+  },
 };
