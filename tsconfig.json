@@ -26,14 +26,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "include": [
-    ".eslintrc.js",
-    "next.config.js",
-    "jest.config.js",
-    "**/*.ts",
-    "**/*.tsx",
-    "jest.config.js",
-    "jest.config.js"
-  ],
+  "include": [".eslintrc.js", "next.config.js", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
