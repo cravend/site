@@ -24,10 +24,10 @@ module.exports = {
     },
     ecmaVersion: 12,
     sourceType: "module",
-    project: "tsconfig.json",
+    project: "tsconfig.dev.json",
   },
   plugins: ["react", "@typescript-eslint", "prettier"],
-  ignorePatterns: "/coverage/**/*.js",
+  ignorePatterns: ["coverage", "build"],
   rules: {
     "@next/next/no-sync-scripts": "error",
     "@next/next/no-html-link-for-pages": "error",
