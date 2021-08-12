@@ -23,10 +23,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."
       }
     ],
-    "enableTopLevelFallback": true,
+    "enableTopLevelFallback": false,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["com.daltonjcraven", ["workspace:."]]
     ],
     "fallbackPool": [
     ],
