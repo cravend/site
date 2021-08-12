@@ -1,5 +1,5 @@
-# daltoncraven.me [![Netlify Status](https://api.netlify.com/api/v1/badges/10c9197e-1e79-4dfa-b3aa-9f361519aa91/deploy-status)](https://app.netlify.com/sites/dalton/deploys)
+# daltonjcraven ![Vercel Status](https://img.shields.io/github/deployments/cravend/site/production?label=vercel&logo=vercel&logoColor=white) [![codecov](https://codecov.io/gh/cravend/site/branch/main/graph/badge.svg?token=phRdHQiHvK)](https://codecov.io/gh/cravend/site)
 
-This site was built with Next and TypeScript and is hosted on Netlify.
+This site was built with Next and TypeScript and is hosted on Vercel.
 
-To remix, fork the repository, run `yarn` to install dependencies, then run `yarn start:dev` to start a development environment.
+To remix, fork the repository, run `yarn` to install dependencies, then run `yarn next` to start a development environment.
