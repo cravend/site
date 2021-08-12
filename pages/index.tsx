@@ -1,5 +1,5 @@
-import { Container, Grid, Text, Heading, Box } from "theme-ui";
 import React, { FC } from "react";
+import { Container, Grid, Text, Heading, Box } from "theme-ui";
 import Head from "../components/Head";
 import Header from "../components/Header";
 import Link from "../components/Link";
