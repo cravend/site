@@ -1,0 +1,19 @@
+on: ["push", "pull_request"]
+
+name: Test Coveralls
+
+jobs:
+  upload:
+    name: Upload
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up repo
+        uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn
+      - name: Run tests
+        run: yarn test --coverage
+      - name: Upload coverage
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
