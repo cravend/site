@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link /> renders 1`] = `
+<div>
+  <a
+    class="css-vurnku"
+    href="/"
+  >
+    Hello, world!
+  </a>
+</div>
+`;

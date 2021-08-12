@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Feature /> renders 1`] = `
+<div>
+  <div
+    class="css-vurnku"
+  >
+    <h2
+      class="css-qyfm59"
+    >
+      Feature heading
+    </h2>
+    <p>
+      Hello, world!
+    </p>
+  </div>
+</div>
+`;

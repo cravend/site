@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> displays children 1`] = `
+<p>
+  Hello, world!
+</p>
+`;
+
+exports[`<Header /> renders 1`] = `
+<div>
+  <header
+    class="css-10r473c"
+  >
+    <p>
+      Hello, world!
+    </p>
+  </header>
+</div>
+`;
+
+exports[`<Header /> renders with a diagonal when isDiagonal is true 1`] = `
+<div>
+  <header
+    class="css-10r473c"
+  >
+    <p>
+      Hello, world!
+    </p>
+  </header>
+</div>
+`;
