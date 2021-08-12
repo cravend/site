@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "yarn lint:files && yarn lint:types",
-    "lint:files": "next lint --dirs .",
+    "lint:files": "next lint --dir .",
     "lint:types": "tsc",
     "format": "prettier --check .",
     "format:write": "prettier --write .",
