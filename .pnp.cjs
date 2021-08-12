@@ -43,8 +43,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@socialgouv/matomo-next", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:1.2.2"],
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:12.0.0"],
-            ["@types/jest", "npm:27.0.0"],
-            ["@types/node", "npm:16.4.8"],
+            ["@types/jest", "npm:26.0.24"],
+            ["@types/node", "npm:16.6.0"],
             ["@types/react", "npm:17.0.15"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
             ["@typescript-eslint/eslint-plugin", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:4.29.1"],
@@ -541,6 +541,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@babel-plugin-syntax-jsx-virtual-264cb9272f/0/cache/@babel-plugin-syntax-jsx-npm-7.14.5-14192e29dd-3a2ba87534.zip/node_modules/@babel/plugin-syntax-jsx/",
           "packageDependencies": [
             ["@babel/plugin-syntax-jsx", "virtual:209cbb4a6af4891f3b1a30320f7b146a5015faa16b456be8a682682ce09d8e7500ab82a0acdad33f6c5aa7d42a7e61b5f9ce020ac82927eedc0b30f3f44f1084#npm:7.14.5"],
+            ["@babel/core", "npm:7.15.0"],
+            ["@babel/helper-plugin-utils", "npm:7.14.5"],
+            ["@types/babel__core", null]
+          ],
+          "packagePeers": [
+            "@babel/core",
+            "@types/babel__core"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:f446fe46b63539d8d9040864497e1213ad5886dae085edd0b1b86240fb1a57b744bd515fc0f538da7a6be051a941547c6238ebc6b9643cbe2d22965715a540d4#npm:7.14.5", {
+          "packageLocation": "./.yarn/__virtual__/@babel-plugin-syntax-jsx-virtual-b075967568/0/cache/@babel-plugin-syntax-jsx-npm-7.14.5-14192e29dd-3a2ba87534.zip/node_modules/@babel/plugin-syntax-jsx/",
+          "packageDependencies": [
+            ["@babel/plugin-syntax-jsx", "virtual:f446fe46b63539d8d9040864497e1213ad5886dae085edd0b1b86240fb1a57b744bd515fc0f538da7a6be051a941547c6238ebc6b9643cbe2d22965715a540d4#npm:7.14.5"],
             ["@babel/core", null],
             ["@babel/helper-plugin-utils", "npm:7.14.5"],
             ["@types/babel__core", null]
@@ -1162,7 +1176,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/babel-plugin", "virtual:2c61f653f2a7645716a965d723349af180743afcbd57ad0f667b0317a43ac03a14213c02fa202ca4f19b10c47c819e17d2e572ffb1f07e2c8fd0b2f6ff57db96#npm:11.3.0"],
             ["@babel/core", null],
             ["@babel/helper-module-imports", "npm:7.14.5"],
-            ["@babel/plugin-syntax-jsx", "virtual:209cbb4a6af4891f3b1a30320f7b146a5015faa16b456be8a682682ce09d8e7500ab82a0acdad33f6c5aa7d42a7e61b5f9ce020ac82927eedc0b30f3f44f1084#npm:7.14.5"],
+            ["@babel/plugin-syntax-jsx", "virtual:f446fe46b63539d8d9040864497e1213ad5886dae085edd0b1b86240fb1a57b744bd515fc0f538da7a6be051a941547c6238ebc6b9643cbe2d22965715a540d4#npm:7.14.5"],
             ["@babel/runtime", "npm:7.14.8"],
             ["@emotion/hash", "npm:0.8.0"],
             ["@emotion/memoize", "npm:0.7.5"],
@@ -2468,6 +2482,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/jest", [
+        ["npm:26.0.24", {
+          "packageLocation": "./.yarn/cache/@types-jest-npm-26.0.24-47c570294f-ae39675412.zip/node_modules/@types/jest/",
+          "packageDependencies": [
+            ["@types/jest", "npm:26.0.24"],
+            ["jest-diff", "npm:26.6.2"],
+            ["pretty-format", "npm:26.6.2"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:27.0.0", {
           "packageLocation": "./.yarn/cache/@types-jest-npm-27.0.0-071a5f5a28-bb894a1fcc.zip/node_modules/@types/jest/",
           "packageDependencies": [
@@ -2501,6 +2524,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-16.4.8-2c6c553dbe-1d4a421b95.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:16.4.8"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:16.6.0", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.6.0-9b12d521eb-72ab4b9fb4.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:16.6.0"]
           ],
           "linkType": "HARD",
         }]
@@ -3996,8 +4026,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@socialgouv/matomo-next", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:1.2.2"],
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:12.0.0"],
-            ["@types/jest", "npm:27.0.0"],
-            ["@types/node", "npm:16.4.8"],
+            ["@types/jest", "npm:26.0.24"],
+            ["@types/node", "npm:16.6.0"],
             ["@types/react", "npm:17.0.15"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
             ["@typescript-eslint/eslint-plugin", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:4.29.1"],
@@ -10176,6 +10206,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/styled-jsx-virtual-209cbb4a6a/0/cache/styled-jsx-npm-4.0.0-a6c6fc0f1e-48ecc82c61.zip/node_modules/styled-jsx/",
           "packageDependencies": [
             ["styled-jsx", "virtual:73a48ebd71eea599b53967dc43d9d0a566fa2ba7027a1cd695487329d3293a7afb6daadd34ec8ce6564e8aeb76bf8fc0be87b01372bbcc5c4bad43c786bb2d31#npm:4.0.0"],
+            ["@babel/core", "npm:7.15.0"],
             ["@babel/plugin-syntax-jsx", "virtual:209cbb4a6af4891f3b1a30320f7b146a5015faa16b456be8a682682ce09d8e7500ab82a0acdad33f6c5aa7d42a7e61b5f9ce020ac82927eedc0b30f3f44f1084#npm:7.14.5"],
             ["@babel/types", "npm:7.15.0"],
             ["@types/react", "npm:17.0.15"],
@@ -10546,7 +10577,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", null],
             ["@types/babel-jest", null],
             ["@types/babel__core", null],
-            ["@types/jest", "npm:27.0.0"],
+            ["@types/jest", "npm:26.0.24"],
             ["@types/typescript", null],
             ["babel-jest", null],
             ["bs-logger", "npm:0.2.6"],
@@ -10594,7 +10625,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],
             ["@tsconfig/node14", "npm:1.0.1"],
             ["@tsconfig/node16", "npm:1.0.2"],
-            ["@types/node", "npm:16.4.8"],
+            ["@types/node", "npm:16.6.0"],
             ["@types/swc__core", null],
             ["@types/swc__wasm", null],
             ["@types/typescript", null],

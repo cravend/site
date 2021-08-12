@@ -27,7 +27,7 @@
     "@next/eslint-plugin-next": "^11.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
-    "@types/jest": "^27.0.0",
+    "@types/jest": "^26.0.24",
     "@types/node": "^16.4.8",
     "@types/react": "^17.0.15",
     "@types/testing-library__jest-dom": "^5.14.1",
