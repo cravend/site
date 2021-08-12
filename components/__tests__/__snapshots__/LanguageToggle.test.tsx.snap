@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<LanguageToggle /> { locale: "en" } should render 1`] = `
+exports[`<LanguageToggle /> { locale: "en" } renders 1`] = `
 <div>
   <div
     class="css-hckpid"
@@ -15,7 +15,7 @@ exports[`<LanguageToggle /> { locale: "en" } should render 1`] = `
 </div>
 `;
 
-exports[`<LanguageToggle /> { locale: "fr" } should render 1`] = `
+exports[`<LanguageToggle /> { locale: "fr" } renders 1`] = `
 <div>
   <div
     class="css-hckpid"

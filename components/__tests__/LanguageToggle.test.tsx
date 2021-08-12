@@ -3,7 +3,7 @@ import { screen, render, fireEvent } from "../../src/tests/utils";
 import LanguageToggle from "../LanguageToggle";
 
 describe('<LanguageToggle /> { locale: "en" }', () => {
-  it("should render", () => {
+  it("renders", () => {
     expect.assertions(1);
     const { container } = render(<LanguageToggle />, {
       router: { locale: "en" },
@@ -11,7 +11,7 @@ describe('<LanguageToggle /> { locale: "en" }', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should display a button in French", () => {
+  it("displays a button in French", () => {
     expect.assertions(1);
     render(<LanguageToggle />, { router: { locale: "en" } });
     expect(
@@ -19,23 +19,19 @@ describe('<LanguageToggle /> { locale: "en" }', () => {
     ).toBeInTheDocument();
   });
 
-  it("should route to French", () => {
+  it("routes to French", () => {
     expect.assertions(2);
     const pushMock = jest.fn();
     render(<LanguageToggle />, { router: { locale: "en", push: pushMock } });
 
     fireEvent.click(screen.getByRole("link", { name: "Lire en français" }));
     expect(pushMock).toHaveBeenCalledTimes(1);
-    expect(pushMock).toHaveBeenLastCalledWith("/", "/", {
-      locale: "fr",
-      scroll: undefined,
-      shallow: undefined,
-    });
+    expect(pushMock).toHaveBeenLastCalledWith("/", "/", { locale: "fr" });
   });
 });
 
 describe('<LanguageToggle /> { locale: "fr" }', () => {
-  it("should render", () => {
+  it("renders", () => {
     expect.assertions(1);
     const { container } = render(<LanguageToggle />, {
       router: { locale: "fr" },
@@ -43,7 +39,7 @@ describe('<LanguageToggle /> { locale: "fr" }', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should display a button in English", () => {
+  it("displays a button in English", () => {
     expect.assertions(1);
     render(<LanguageToggle />, { router: { locale: "fr" } });
     expect(
@@ -51,17 +47,13 @@ describe('<LanguageToggle /> { locale: "fr" }', () => {
     ).toBeInTheDocument();
   });
 
-  it("should route to English", () => {
+  it("routes to English", () => {
     expect.assertions(2);
     const pushMock = jest.fn();
     render(<LanguageToggle />, { router: { locale: "fr", push: pushMock } });
 
     fireEvent.click(screen.getByRole("link", { name: "Read in English" }));
     expect(pushMock).toHaveBeenCalledTimes(1);
-    expect(pushMock).toHaveBeenLastCalledWith("/", "/", {
-      locale: "en",
-      scroll: undefined,
-      shallow: undefined,
-    });
+    expect(pushMock).toHaveBeenLastCalledWith("/", "/", { locale: "en" });
   });
 });
