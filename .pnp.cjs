@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@commitlint/cli", "npm:13.1.0"],
             ["@commitlint/config-conventional", "npm:13.1.0"],
-            ["@cravend/theme", "npm:1.2.0"],
+            ["@cravend/theme", "npm:2.0.3"],
             ["@next/env", "npm:11.1.0"],
             ["@next/eslint-plugin-next", "npm:11.1.0"],
             ["@socialgouv/matomo-next", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:1.2.2"],
@@ -1134,11 +1134,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@cravend/theme", [
-        ["npm:1.2.0", {
-          "packageLocation": "./.yarn/cache/@cravend-theme-npm-1.2.0-b4d300149c-fbc77b79a1.zip/node_modules/@cravend/theme/",
+        ["npm:2.0.3", {
+          "packageLocation": "./.yarn/cache/@cravend-theme-npm-2.0.3-81f8f70138-1dd75181d7.zip/node_modules/@cravend/theme/",
           "packageDependencies": [
-            ["@cravend/theme", "npm:1.2.0"],
-            ["@hackclub/theme", "npm:0.3.0"]
+            ["@cravend/theme", "npm:2.0.3"],
+            ["@hackclub/theme", "npm:0.3.3"]
           ],
           "linkType": "HARD",
         }]
@@ -1414,10 +1414,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@hackclub/theme", [
-        ["npm:0.3.0", {
-          "packageLocation": "./.yarn/cache/@hackclub-theme-npm-0.3.0-6ec993cdff-f0099f5cf7.zip/node_modules/@hackclub/theme/",
+        ["npm:0.3.3", {
+          "packageLocation": "./.yarn/cache/@hackclub-theme-npm-0.3.3-e93afb7b32-be69bddc18.zip/node_modules/@hackclub/theme/",
           "packageDependencies": [
-            ["@hackclub/theme", "npm:0.3.0"]
+            ["@hackclub/theme", "npm:0.3.3"]
           ],
           "linkType": "HARD",
         }]
@@ -4020,7 +4020,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["com.daltonjcraven", "workspace:."],
             ["@commitlint/cli", "npm:13.1.0"],
             ["@commitlint/config-conventional", "npm:13.1.0"],
-            ["@cravend/theme", "npm:1.2.0"],
+            ["@cravend/theme", "npm:2.0.3"],
             ["@next/env", "npm:11.1.0"],
             ["@next/eslint-plugin-next", "npm:11.1.0"],
             ["@socialgouv/matomo-next", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:1.2.2"],

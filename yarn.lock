@@ -657,12 +657,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cravend/theme@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@cravend/theme@npm:1.2.0"
+"@cravend/theme@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@cravend/theme@npm:2.0.3"
   dependencies:
-    "@hackclub/theme": 0.3.0
-  checksum: fbc77b79a17c784515691b9ea0fcded18382cd303f42742e3d103fcec0ed00734cea501d16f16351ce3c4b9c145c3dc29c452279280f5b6258812447557333a2
+    "@hackclub/theme": 0.3.3
+  checksum: 1dd75181d70470f2738f71dbf884407f0c9fb480e9cd75c762940fd8be0a06d3d4611d8ee754667beb7e6d60fcf0e393502ba172e65514d690fb4a105e15f4df
   languageName: node
   linkType: hard
 
@@ -859,10 +859,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hackclub/theme@npm:0.3.0":
-  version: 0.3.0
-  resolution: "@hackclub/theme@npm:0.3.0"
-  checksum: f0099f5cf7ddeab392a1af7b5507fc426f86ba4ee61f0f60c899593992fc86751420e0c953b1d7753f51311aa3e17da181b267f836cca0f525e9482ea6634253
+"@hackclub/theme@npm:0.3.3":
+  version: 0.3.3
+  resolution: "@hackclub/theme@npm:0.3.3"
+  checksum: be69bddc18dd23f001423a2d40e4f67b35b4fa8fb57959d30d0871df6f470fc0cecc8e350e2f0424085fbf6b6a2683dc08bd8d7cae82d87f14208d14d7624b0d
   languageName: node
   linkType: hard
 
@@ -2961,7 +2961,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^13.1.0
     "@commitlint/config-conventional": ^13.1.0
-    "@cravend/theme": ^1.2.0
+    "@cravend/theme": ^2.0.3
     "@next/env": ^11.1.0
     "@next/eslint-plugin-next": ^11.1.0
     "@socialgouv/matomo-next": ^1.2.2

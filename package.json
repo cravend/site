@@ -12,7 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@cravend/theme": "^1.2.0",
+    "@cravend/theme": "^2.0.3",
     "@next/env": "^11.1.0",
     "@socialgouv/matomo-next": "^1.2.2",
     "next": "^11.1.0",
