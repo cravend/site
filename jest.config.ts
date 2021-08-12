@@ -26,9 +26,7 @@ export default {
   // coverageDirectory: undefined,
 
   // An array of regexp pattern strings used to skip coverage collection
-  // coveragePathIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  coveragePathIgnorePatterns: ["pages/_app.tsx", "pages/_document.tsx"],
 
   // Indicates which provider should be used to instrument code for coverage
   // coverageProvider: "babel",
