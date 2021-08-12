@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders 1`] = `
+<div>
+  <header
+    class="css-2lbenp"
+  >
+    <div
+      class="css-wzvan8"
+    >
+      <img
+        alt="Profile picture"
+        class="css-160jd8r"
+        src="/images/dalton-craven.jpg"
+        width="150"
+      />
+      <div
+        class="css-1pm03s2"
+      >
+        <h1
+          class="css-1wf7gym"
+        >
+          Dalton Craven
+        </h1>
+        <h3
+          class="css-cnftma"
+        >
+          Student & Developer
+        </h3>
+      </div>
+    </div>
+  </header>
+</div>
+`;
