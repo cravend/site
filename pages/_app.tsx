@@ -1,8 +1,8 @@
 import React, { FC, useEffect } from "react";
-import { ThemeProvider } from "theme-ui";
+import { Theme, ThemeProvider } from "theme-ui";
 import { AppProps } from "next/app";
 import { init } from "@socialgouv/matomo-next";
-import theme from "../src/theme";
+import theme from "@cravend/theme";
 
 const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -14,7 +14,7 @@ const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   }, []);
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme as Theme}>
       <Component {...pageProps} />
     </ThemeProvider>
   );
