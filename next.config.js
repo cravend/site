@@ -6,11 +6,8 @@ module.exports = {
     locales: ["en", "fr"],
     defaultLocale: "en",
   },
-  target: "serverless",
   eslint: {
     dirs: ["components", "pages", "src"],
   },
-  experimental: {
-    cpus: 1,
-  },
+  reactStrictMode: true,
 };
