@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Container, Grid, Text, Heading, Box } from "theme-ui";
-import Head from "../components/Head";
+import Head from "next/head";
 import Header from "../components/Header";
 import Link from "../components/Link";
 import Feature from "../components/Feature";
@@ -13,7 +13,12 @@ const IndexPage: FC = () => {
 
   return (
     <Grid variant="layout">
-      <Head title={t("homepage")} />
+      <Head>
+        <title>
+          {t("homepage")} | {t("name")}
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Header />
       <Container as="main">
         <LanguageToggle />
