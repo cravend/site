@@ -1,5 +1,5 @@
 import { Box, Image, Heading, Container } from "theme-ui";
-import useLocalization from "../src/hooks/useLocalization";
+import useLocalization from "../hooks/useLocalization";
 import Hero from "./Hero";
 import type { FC } from "react";
 

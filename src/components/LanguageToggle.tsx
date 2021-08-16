@@ -1,5 +1,5 @@
 import { Box } from "theme-ui";
-import useLocalization from "../src/hooks/useLocalization";
+import useLocalization from "../hooks/useLocalization";
 import Link from "./Link";
 import type { FC } from "react";
 

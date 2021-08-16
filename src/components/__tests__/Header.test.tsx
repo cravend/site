@@ -1,5 +1,5 @@
 import Header from "../Header";
-import { render } from "../../src/tests/utils";
+import { render } from "../../tests/utils";
 
 describe("<Header />", () => {
   it("renders", () => {
