@@ -1,4 +1,3 @@
-import React from "react";
 import { screen, render } from "../../src/tests/utils";
 import Feature from "../Feature";
 

@@ -1,7 +1,7 @@
 import { Box } from "theme-ui";
-import React, { FC } from "react";
 import useLocalization from "../src/hooks/useLocalization";
 import Link from "./Link";
+import type { FC } from "react";
 
 const LanguageToggle: FC = () => {
   const [t, , otherLocale] = useLocalization();
@@ -20,10 +20,6 @@ const LanguageToggle: FC = () => {
       </Link>
     </Box>
   );
-};
-
-LanguageToggle.defaultProps = {
-  color: undefined,
 };
 
 export default LanguageToggle;

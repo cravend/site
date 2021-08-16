@@ -15,6 +15,7 @@ module.exports = {
   plugins: ["prettier"],
   ignorePatterns: ["coverage", "build"],
   rules: {
+    "arrow-body-style": ["error", "as-needed"],
     "import/extensions": ["error", "never"],
     "import/order": [
       "error",
@@ -27,11 +28,13 @@ module.exports = {
           "sibling",
           "index",
           "object",
+          "type",
         ],
       },
     ],
     "no-unused-vars": "off",
     "no-use-before-define": "off",
+    "prefer-arrow-callback": "error",
     "prettier/prettier": "error",
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
   },

@@ -1,4 +1,3 @@
-import React from "react";
 import { render } from "../src/tests/utils";
 import IndexPage from "../pages/index";
 

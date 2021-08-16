@@ -1,7 +1,7 @@
-import React, { FC, ReactNode } from "react";
 import NextLink from "next/link";
 import { Link as StyledLink } from "theme-ui";
 import { Locale } from "../src/translations/types";
+import type { FC, ReactNode } from "react";
 
 type LinkType = {
   to: string;
@@ -31,12 +31,6 @@ const Link: FC<LinkType> = ({
       <StyledLink sx={{ color }}>{children}</StyledLink>
     </NextLink>
   );
-};
-
-Link.defaultProps = {
-  isExternal: false,
-  locale: undefined,
-  color: undefined,
 };
 
 export default Link;

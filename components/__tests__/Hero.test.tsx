@@ -1,4 +1,3 @@
-import React from "react";
 import Hero from "../Hero";
 import { render, screen } from "../../src/tests/utils";
 

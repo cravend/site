@@ -1,12 +1,12 @@
-import React, { ReactChild, FC } from "react";
 import { Box, get, ThemeUICSSObject } from "theme-ui";
+import type { ReactChild, FC } from "react";
 
 type HeroType = {
   isDiagonal?: boolean;
   children: ReactChild;
 };
 
-const Hero: FC<HeroType> = ({ isDiagonal, children }: HeroType) => {
+const Hero: FC<HeroType> = ({ isDiagonal = false, children }: HeroType) => {
   const styles: ThemeUICSSObject = isDiagonal
     ? {
         backgroundColor: "primary",
@@ -30,10 +30,6 @@ const Hero: FC<HeroType> = ({ isDiagonal, children }: HeroType) => {
       {children}
     </Box>
   );
-};
-
-Hero.defaultProps = {
-  isDiagonal: false,
 };
 
 export default Hero;
