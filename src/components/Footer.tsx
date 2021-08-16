@@ -1,4 +1,4 @@
-import { Container, Text, Flex, Box } from "theme-ui";
+import { Container, Box, Paragraph, Grid } from "theme-ui";
 import useLocalization from "../hooks/useLocalization";
 import Link from "./Link";
 import type { FC } from "react";
@@ -16,21 +16,18 @@ const Footer: FC = () => {
       backgroundColor="dark"
       sx={{
         height: 100,
-        width: "100%",
         display: "flex",
         alignItems: "center",
       }}
     >
-      <Container color="white">
-        <Flex>
-          <Text mr={3}>
-            &copy; {year} {t("name")}
-          </Text>
-          <Text>
+      <Container>
+        <Grid gap={2} columns={"repeat(auto-fit, 200px)"}>
+          <Paragraph>{`© ${year} ${t("name")} `}</Paragraph>
+          <Paragraph>
             {t("view_source")}{" "}
             <Link to="https://github.com/cravend/site">{t("github")}</Link>
-          </Text>
-        </Flex>
+          </Paragraph>
+        </Grid>
       </Container>
     </Box>
   );
