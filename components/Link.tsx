@@ -33,10 +33,4 @@ const Link: FC<LinkType> = ({
   );
 };
 
-Link.defaultProps = {
-  isExternal: false,
-  locale: undefined,
-  color: undefined,
-};
-
 export default Link;

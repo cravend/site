@@ -22,8 +22,4 @@ const LanguageToggle: FC = () => {
   );
 };
 
-LanguageToggle.defaultProps = {
-  color: undefined,
-};
-
 export default LanguageToggle;
