@@ -12,13 +12,13 @@ const Footer: FC = () => {
       as="footer"
       m={0}
       p={0}
+      color="white"
+      backgroundColor="dark"
       sx={{
-        backgroundColor: "dark",
         height: 100,
         width: "100%",
         display: "flex",
         alignItems: "center",
-        color: "white",
       }}
     >
       <Container color="white">
