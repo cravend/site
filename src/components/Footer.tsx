@@ -21,7 +21,7 @@ const Footer: FC = () => {
       }}
     >
       <Container>
-        <Grid gap={2} columns={"repeat(auto-fit, 200px)"}>
+        <Grid gap={2} columns="repeat(auto-fit, 200px)">
           <Paragraph>{`© ${year} ${t("name")} `}</Paragraph>
           <Paragraph>
             {t("view_source")}{" "}
