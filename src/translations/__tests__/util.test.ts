@@ -11,7 +11,7 @@ describe("isLocale()", () => {
   it("returns false for invalid locales", () => {
     expect.assertions(2);
     expect(isLocale("x")).toBeFalsy();
-    expect(isLocale(null)).toBeFalsy();
+    expect(isLocale(undefined)).toBeFalsy();
   });
 });
 
