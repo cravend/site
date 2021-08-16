@@ -18,7 +18,7 @@ exports[`<IndexPage /> renders 1`] = `
           width="150"
         />
         <div
-          class="css-1pm03s2"
+          class="css-qwgrue"
         >
           <h1
             class="css-1wf7gym"
@@ -40,14 +40,14 @@ exports[`<IndexPage /> renders 1`] = `
         class="css-hckpid"
       >
         <a
-          class="css-lml9fj"
+          class="css-zdzv7c"
           href="/"
         >
           Lire en français
         </a>
       </div>
       <p
-        class="css-vurnku"
+        class="css-mkb8ra"
       >
         <span
           class="css-gnqbje"
@@ -77,7 +77,7 @@ exports[`<IndexPage /> renders 1`] = `
             Education
           </h2>
           <p
-            class="css-vurnku"
+            class="css-mkb8ra"
           >
             I’m a sophomore at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the University Top Scholars.
           </p>
@@ -91,7 +91,7 @@ exports[`<IndexPage /> renders 1`] = `
             Study Abroad
           </h2>
           <p
-            class="css-vurnku"
+            class="css-mkb8ra"
           >
             I’m currently studying abroad at the American University of Paris! I’ll be in France for the entirety of 2021. Spending an extended period of time in a different culture has been a goal of mine for a long time, and I’m looking forward to fully experiencing it when COVID is finally over.
           </p>
@@ -105,7 +105,7 @@ exports[`<IndexPage /> renders 1`] = `
             Work
           </h2>
           <p
-            class="css-vurnku"
+            class="css-mkb8ra"
           >
             I recently wrapped up a full-time internship as a front-end web developer at
              
@@ -129,7 +129,7 @@ exports[`<IndexPage /> renders 1`] = `
             Freelancing
           </h2>
           <p
-            class="css-vurnku"
+            class="css-mkb8ra"
           >
             I also do freelance web development! I work primarily with small businesses (although I’m open for anything), with an emphasis on providing resources and training to ensure long-term functionality.
           </p>
@@ -307,24 +307,21 @@ exports[`<IndexPage /> renders 1`] = `
       </div>
     </main>
     <footer
-      class="css-1h6jvb9"
+      class="css-2vvwml"
     >
       <div
-        class="css-xhryvf"
+        class="css-1yrmf69"
       >
         <div
-          class="css-4cffwv"
+          class="css-1w7p2by"
         >
-          <span
-            class="css-1uoge8i"
+          <p
+            class="css-mkb8ra"
           >
-            © 
-            2021
-             
-            Dalton Craven
-          </span>
-          <span
-            class="css-vurnku"
+            © 2021 Dalton Craven 
+          </p>
+          <p
+            class="css-mkb8ra"
           >
             View source on
              
@@ -334,7 +331,7 @@ exports[`<IndexPage /> renders 1`] = `
             >
               GitHub
             </a>
-          </span>
+          </p>
         </div>
       </div>
     </footer>
