@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, Heading } from "theme-ui";
 import type { FC, ReactNode } from "react";
 

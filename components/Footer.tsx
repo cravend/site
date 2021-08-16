@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Text, Flex } from "theme-ui";
 import useLocalization from "../src/hooks/useLocalization";
 import Link from "./Link";

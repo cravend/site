@@ -1,4 +1,3 @@
-import React from "react";
 import { fireEvent, screen, render } from "../../src/tests/utils";
 import Link from "../Link";
 
