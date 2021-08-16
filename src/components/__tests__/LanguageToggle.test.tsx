@@ -1,4 +1,4 @@
-import { screen, render, fireEvent } from "../../src/tests/utils";
+import { screen, render, fireEvent } from "../../tests/utils";
 import LanguageToggle from "../LanguageToggle";
 
 describe('<LanguageToggle /> { locale: "en" }', () => {

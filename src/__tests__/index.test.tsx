@@ -1,4 +1,4 @@
-import { render } from "../src/tests/utils";
+import { render } from "../tests/utils";
 import IndexPage from "../pages/index";
 
 describe("<IndexPage />", () => {
