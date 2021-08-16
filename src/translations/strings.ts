@@ -1,4 +1,4 @@
-import { Strings } from "./types";
+import type { Strings } from "./types";
 
 const common = {
   name: "Dalton Craven",

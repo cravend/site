@@ -1,7 +1,9 @@
-import React, { FC } from "react";
-import { render as defaultRender, RenderResult } from "@testing-library/react";
+import React from "react";
+import { render as defaultRender } from "@testing-library/react";
 import { RouterContext } from "next/dist/shared/lib/router-context";
-import { NextRouter } from "next/router";
+import type { RenderResult } from "@testing-library/react";
+import type { NextRouter } from "next/router";
+import type { FC } from "react";
 
 export * from "@testing-library/react";
 
