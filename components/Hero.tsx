@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, get, ThemeUICSSObject } from "theme-ui";
 import type { ReactChild, FC } from "react";
 

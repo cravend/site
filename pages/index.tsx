@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Grid, Text, Heading, Box } from "theme-ui";
 import Head from "next/head";
 import Header from "../components/Header";

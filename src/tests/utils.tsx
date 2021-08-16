@@ -1,4 +1,3 @@
-import React from "react";
 import { render as defaultRender } from "@testing-library/react";
 import { RouterContext } from "next/dist/shared/lib/router-context";
 import type { RenderResult } from "@testing-library/react";
