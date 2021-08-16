@@ -1,4 +1,4 @@
-import { Container, Grid, Text, Heading, Box } from "theme-ui";
+import { Container, Grid, Text, Heading, Box, Paragraph } from "theme-ui";
 import Head from "next/head";
 import Header from "../components/Header";
 import Link from "../components/Link";
@@ -22,33 +22,29 @@ const IndexPage: FC = () => {
       <Header />
       <Container as="main">
         <LanguageToggle />
-        <Text as="p">
-          <Text as="span" variant="headline" sx={{ display: "block" }}>
-            {t("greeting")}{" "}
-            <Text as="span" variant="gradient">
-              {t("name")}
-            </Text>
-            .{" "}
+        <Paragraph>
+          <Text variant="headline" sx={{ display: "block" }}>
+            {t("greeting")} <Text variant="gradient">{t("name")}</Text>.{" "}
           </Text>
           {t("intro")}
           {t("colon")}
-        </Text>
+        </Paragraph>
         <Grid gap={3} columns={[1, 2]} my={3}>
           <Feature heading={t("education_header")}>
-            <Text as="p">{t("education")}</Text>
+            <Paragraph>{t("education")}</Paragraph>
           </Feature>
           <Feature heading={t("sa_header")}>
-            <Text as="p">{t("study_abroad")}</Text>
+            <Paragraph>{t("study_abroad")}</Paragraph>
           </Feature>
           <Feature heading={t("work_header")}>
-            <Text as="p">
+            <Paragraph>
               {t("work_1")}{" "}
               <Link to="https://cloverleaf.me">{t("cloverleaf")}</Link>.{" "}
               {t("work_2")}
-            </Text>
+            </Paragraph>
           </Feature>
           <Feature heading={t("freelance_header")}>
-            <Text as="p">{t("freelance")}</Text>
+            <Paragraph>{t("freelance")}</Paragraph>
             <ul>
               <li>
                 <Link to="https://crystalclearcontractors.com">

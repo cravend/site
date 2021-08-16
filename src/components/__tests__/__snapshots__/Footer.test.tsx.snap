@@ -1,37 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Footer /> displays the current year 1`] = `
-<span
-  class="css-1uoge8i"
+<p
+  class="css-mkb8ra"
 >
-  © 
-  2021
-   
-  Dalton Craven
-</span>
+  © 2021 Dalton Craven 
+</p>
 `;
 
 exports[`<Footer /> renders 1`] = `
 <div>
   <footer
-    class="css-1h6jvb9"
+    class="css-2vvwml"
   >
     <div
-      class="css-xhryvf"
+      class="css-1yrmf69"
     >
       <div
-        class="css-4cffwv"
+        class="css-1w7p2by"
       >
-        <span
-          class="css-1uoge8i"
+        <p
+          class="css-mkb8ra"
         >
-          © 
-          2021
-           
-          Dalton Craven
-        </span>
-        <span
-          class="css-vurnku"
+          © 2021 Dalton Craven 
+        </p>
+        <p
+          class="css-mkb8ra"
         >
           View source on
            
@@ -41,7 +35,7 @@ exports[`<Footer /> renders 1`] = `
           >
             GitHub
           </a>
-        </span>
+        </p>
       </div>
     </div>
   </footer>
