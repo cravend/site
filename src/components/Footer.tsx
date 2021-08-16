@@ -1,4 +1,4 @@
-import { Container, Text, Flex } from "theme-ui";
+import { Container, Text, Flex, Box } from "theme-ui";
 import useLocalization from "../hooks/useLocalization";
 import Link from "./Link";
 import type { FC } from "react";
@@ -8,8 +8,7 @@ const Footer: FC = () => {
   const year = new Date().getFullYear();
 
   return (
-    <Container
-      variant="wide"
+    <Box
       as="footer"
       m={0}
       p={0}
@@ -22,11 +21,7 @@ const Footer: FC = () => {
         color: "white",
       }}
     >
-      <Container
-        sx={{
-          color: "white",
-        }}
-      >
+      <Container color="white">
         <Flex>
           <Text mr={3}>
             &copy; {year} {t("name")}
@@ -37,7 +32,7 @@ const Footer: FC = () => {
           </Text>
         </Flex>
       </Container>
-    </Container>
+    </Box>
   );
 };
 
