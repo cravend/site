@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Link from "../components/Link";
 import Feature from "../components/Feature";
 import Footer from "../components/Footer";
-import useLocalization from "../src/hooks/useLocalization";
+import useLocalization from "../hooks/useLocalization";
 import LanguageToggle from "../components/LanguageToggle";
 import type { FC } from "react";
 

@@ -1,5 +1,5 @@
 import Hero from "../Hero";
-import { render, screen } from "../../src/tests/utils";
+import { render, screen } from "../../tests/utils";
 
 describe("<Header />", () => {
   it("renders", () => {
