@@ -1,7 +1,7 @@
 {
   "name": "com.daltonjcraven",
   "version": "5.0.0",
-  "license": "ISC",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
