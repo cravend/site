@@ -4,7 +4,7 @@
  */
 
 /** @type {import('@jest/types').Config.DefaultOptions} */
-const config = {
+module.exports = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -196,5 +196,3 @@ const config = {
   // Whether to use watchman for file crawling
   // watchman: true,
 };
-
-module.exports = config;
