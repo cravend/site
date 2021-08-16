@@ -6,7 +6,7 @@ type HeroType = {
   children: ReactChild;
 };
 
-const Hero: FC<HeroType> = ({ isDiagonal, children }: HeroType) => {
+const Hero: FC<HeroType> = ({ isDiagonal = false, children }: HeroType) => {
   const styles: ThemeUICSSObject = isDiagonal
     ? {
         backgroundColor: "primary",
@@ -30,10 +30,6 @@ const Hero: FC<HeroType> = ({ isDiagonal, children }: HeroType) => {
       {children}
     </Box>
   );
-};
-
-Hero.defaultProps = {
-  isDiagonal: false,
 };
 
 export default Hero;
