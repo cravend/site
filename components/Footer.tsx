@@ -1,7 +1,7 @@
-import React, { FC } from "react";
 import { Container, Text, Flex } from "theme-ui";
 import useLocalization from "../src/hooks/useLocalization";
 import Link from "./Link";
+import type { FC } from "react";
 
 const Footer: FC = () => {
   const [t] = useLocalization();
