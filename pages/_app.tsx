@@ -1,8 +1,11 @@
-import React, { FC, useEffect } from "react";
-import { Theme, ThemeProvider } from "theme-ui";
-import { AppProps } from "next/app";
+import React from "react";
+import { useEffect } from "react";
+import { ThemeProvider } from "theme-ui";
 import { init } from "@socialgouv/matomo-next";
 import theme from "@cravend/theme";
+import type { Theme } from "theme-ui";
+import type { AppProps } from "next/app";
+import type { FC } from "react";
 
 const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {

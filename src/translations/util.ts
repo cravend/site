@@ -1,6 +1,6 @@
-import { NextRouter } from "next/router";
 import { locales, defaultLocale } from "./config";
-import { Locale } from "./types";
+import type { Locale } from "./types";
+import type { NextRouter } from "next/router";
 
 /**
  * @description

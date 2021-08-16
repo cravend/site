@@ -1,6 +1,7 @@
-import React, { ReactElement } from "react";
+import React from "react";
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
 import { InitializeColorMode } from "theme-ui";
+import type { ReactElement } from "react";
 
 class Document extends NextDocument {
   render(): ReactElement {
