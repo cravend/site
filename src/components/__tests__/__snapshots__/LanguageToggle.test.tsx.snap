@@ -6,7 +6,7 @@ exports[`<LanguageToggle /> { locale: "en" } renders 1`] = `
     class="css-hckpid"
   >
     <a
-      class="css-lml9fj"
+      class="css-zdzv7c"
       href="/"
     >
       Lire en français
@@ -21,7 +21,7 @@ exports[`<LanguageToggle /> { locale: "fr" } renders 1`] = `
     class="css-hckpid"
   >
     <a
-      class="css-lml9fj"
+      class="css-zdzv7c"
       href="/"
     >
       Read in English

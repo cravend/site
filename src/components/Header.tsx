@@ -29,11 +29,11 @@ const Header: FC = () => {
         <Box
           ml={[0, 20]}
           p={1}
+          color="white"
           sx={{
             marginLeft: [0, 2],
             marginTop: [2, 0],
             textAlign: ["center", "right"],
-            color: "white",
           }}
         >
           <Heading as="h1" variant="title">
