@@ -9,9 +9,8 @@ import { Locale } from "./types";
  * @param {string} locale The string to check.
  * @returns {boolean} True if the string is a valid locale, false otherwise.
  */
-export const isLocale = (tested?: string): tested is Locale => {
-  return locales.some((locale) => locale === tested);
-};
+export const isLocale = (tested?: string): tested is Locale =>
+  locales.some((locale) => locale === tested);
 
 /**
  * @description
