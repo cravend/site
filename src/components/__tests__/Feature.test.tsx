@@ -1,4 +1,4 @@
-import { screen, render } from "../../src/tests/utils";
+import { screen, render } from "../../tests/utils";
 import Feature from "../Feature";
 
 describe("<Feature />", () => {

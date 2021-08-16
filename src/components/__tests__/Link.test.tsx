@@ -1,4 +1,4 @@
-import { fireEvent, screen, render } from "../../src/tests/utils";
+import { fireEvent, screen, render } from "../../tests/utils";
 import Link from "../Link";
 
 describe("<Link />", () => {
