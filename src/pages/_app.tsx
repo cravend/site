@@ -17,6 +17,7 @@ const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
 
   return (
     <ThemeProvider theme={theme as Theme}>
+      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Component {...pageProps} />
     </ThemeProvider>
   );
