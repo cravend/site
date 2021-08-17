@@ -1,4 +1,6 @@
 import { locales, defaultLocale } from "./config";
+import strings from "./strings";
+import type { enType, frType } from "./strings";
 import type { Locale } from "./types";
 import type { NextRouter } from "next/router";
 
@@ -11,6 +13,9 @@ import type { NextRouter } from "next/router";
  */
 export const isLocale = (tested?: string): tested is Locale =>
   locales.some((locale) => locale === tested);
+
+export const isKey = (key: string): key is keyof enType & keyof frType =>
+  key in strings.en && key in strings.fr;
 
 /**
  * @description

@@ -1,5 +1,3 @@
-import type { Strings } from "./types";
-
 const common = {
   name: "Dalton Craven",
   github: "GitHub",
@@ -16,7 +14,7 @@ const common = {
   github_username: "cravend",
   gitlab_username: "cravend",
   linkedin_username: "daltonjcraven",
-};
+} as const;
 
 const en = {
   ...common,
@@ -55,7 +53,7 @@ const en = {
   american_phone: "American Phone",
   french_phone: "French Phone",
   email: "Email",
-};
+} as const;
 
 const fr = {
   ...common,
@@ -94,9 +92,12 @@ const fr = {
   american_phone: "Numéro américain",
   french_phone: "Numéro français",
   email: "Email",
-};
+} as const;
+
+export type enType = typeof en;
+export type frType = typeof fr;
 
 export default {
   en,
   fr,
-} as Strings;
+} as const;
