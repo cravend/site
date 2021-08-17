@@ -4,7 +4,7 @@ import {
   getLocale,
   toggleLocale,
   isTranslationKey,
-} from "../translations/util";
+} from "../translations/utils";
 import type { Localization } from "../translations/types";
 
 const useLocalization = (): Localization => {
