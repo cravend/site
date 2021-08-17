@@ -1,12 +1,10 @@
 import { locales, defaultLocale } from "./config";
 import strings from "./strings";
-import type { enType, frType } from "./strings";
-import type { Locale } from "./types";
+import type { Locale, TranslationKey } from "./types";
 import type { NextRouter } from "next/router";
 
 /**
- * @description
- * This function is used to check if a string is a valid locale.
+ * @description This function is used to check if a string is a valid locale.
  *
  * @param {string} locale The string to check.
  * @returns {boolean} True if the string is a valid locale, false otherwise.
@@ -14,12 +12,17 @@ import type { NextRouter } from "next/router";
 export const isLocale = (tested?: string): tested is Locale =>
   locales.some((locale) => locale === tested);
 
-export const isKey = (key: string): key is keyof enType & keyof frType =>
+/**
+ * @description This function is used to check if a string is a valid translation key.
+ *
+ * @param {string} key The string to check.
+ * @returns {boolean} True if the string is a valid translation key, false otherwise.
+ */
+export const isTranslationKey = (key: string): key is TranslationKey =>
   key in strings.en && key in strings.fr;
 
 /**
- * @description
- * This function is used to get the current locale.
+ * @description This function is used to get the current locale.
  *
  * If a custom locale is set by \@next/router, it will be returned.
  * If no custom locale is set, the router's default locale will be returned.
@@ -35,8 +38,7 @@ export const getLocale = (router: NextRouter): Locale => {
 };
 
 /**
- * @description
- * This function is used to toggle the current locale.
+ * @description This function is used to toggle the current locale.
  *
  * @param {string} locale The current locale to be toggled.
  * @returns {string} The new locale.

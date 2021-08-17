@@ -1,5 +1,5 @@
 import { NextRouter } from "next/router";
-import { toggleLocale, isLocale, getLocale, isKey } from "../util";
+import { toggleLocale, isLocale, getLocale, isTranslationKey } from "../util";
 
 describe("isLocale()", () => {
   it("returns true for valid locales", () => {
@@ -18,12 +18,12 @@ describe("isLocale()", () => {
 describe("isKey()", () => {
   it("returns true for valid keys", () => {
     expect.assertions(1);
-    expect(isKey("colon")).toBeTruthy();
+    expect(isTranslationKey("colon")).toBeTruthy();
   });
 
   it("returns false for valid keys", () => {
     expect.assertions(1);
-    expect(isKey("abc")).toBeFalsy();
+    expect(isTranslationKey("abc")).toBeFalsy();
   });
 });
 
