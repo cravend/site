@@ -1,5 +1,5 @@
 import { NextRouter } from "next/router";
-import { toggleLocale, isLocale, getLocale, isTranslationKey } from "../util";
+import { toggleLocale, isLocale, getLocale, isTranslationKey } from "../utils";
 
 describe("isLocale()", () => {
   it("returns true for valid locales", () => {
