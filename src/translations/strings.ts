@@ -94,9 +94,6 @@ const fr = {
   email: "Email",
 } as const;
 
-export type enType = typeof en;
-export type frType = typeof fr;
-
 export default {
   en,
   fr,

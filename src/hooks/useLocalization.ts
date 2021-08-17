@@ -1,6 +1,10 @@
 import { useRouter } from "next/router";
 import translations from "../translations/strings";
-import { getLocale, toggleLocale, isKey } from "../translations/util";
+import {
+  getLocale,
+  toggleLocale,
+  isTranslationKey,
+} from "../translations/util";
 import type { Localization } from "../translations/types";
 
 const useLocalization = (): Localization => {
@@ -8,7 +12,7 @@ const useLocalization = (): Localization => {
   const locale = getLocale(router);
 
   const t = (key: string): string => {
-    if (!isKey(key)) {
+    if (!isTranslationKey(key)) {
       // eslint-disable-next-line no-console
       console.warn(`Translation '${key}' for locale '${locale}' not found.`);
       return "";
@@ -16,7 +20,7 @@ const useLocalization = (): Localization => {
 
     return translations[locale][key];
   };
-  return [t, locale, toggleLocale(locale)];
+  return [t, locale, toggleLocale(locale)] as const;
 };
 
 export default useLocalization;
