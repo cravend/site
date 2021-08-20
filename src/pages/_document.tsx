@@ -7,18 +7,19 @@ const generateCsp = (scriptSource: string): [csp: string, nonce: string] => {
   hash.update(scriptSource);
   const nonce = hash.digest("base64");
 
-  let csp = "";
-  csp += "default-src 'none';";
+  let csp = "default-src 'none';";
   csp += "base-uri 'self';";
   csp += "img-src 'self';";
   csp += "prefetch-src 'self';";
   csp += "font-src https://fonts.gstatic.com;";
   csp += "style-src https://fonts.googleapis.com 'unsafe-inline';"; // NextJS requires 'unsafe-inline'
   if (process.env.NODE_ENV === "production") {
-    csp += `script-src 'nonce-${nonce}';`;
+    csp += `script-src 'nonce-${nonce}' https://matomo.daltoncraven.me 'strict-dynamic';`; // NextJS requires 'self' and 'unsafe-eval' in dev (faster source maps)
+    csp +=
+      "connect-src https://matomo.daltoncraven.me https://vitals.vercel-insights.com;";
   } else {
-    csp += "script-src 'self' 'unsafe-eval';"; // NextJS requires 'self', 'unsafe-inline', and 'unsafe-eval' in dev (faster source maps)
-    csp += "connect-src 'self';";
+    csp += `script-src 'nonce-${nonce}' 'self' 'unsafe-eval' https://matomo.daltoncraven.me 'strict-dynamic';`; // NextJS requires 'self' and 'unsafe-eval' in dev (faster source maps)
+    csp += "connect-src 'self' https://matomo.daltoncraven.me;";
   }
 
   return [csp, nonce];
@@ -41,7 +42,7 @@ export default class MyDocument extends Document {
         </Head>
         <body>
           <Main />
-          <NextScript />
+          <NextScript nonce={nonce} />
         </body>
       </Html>
     );
