@@ -34,11 +34,6 @@ module.exports = {
     dirs: ["components", "pages", "src"],
   },
   reactStrictMode: true,
-  experimental: {
-    cpus: 3,
-  },
-  poweredByHeader: false,
-
   headers: () => [
     {
       source: "/",

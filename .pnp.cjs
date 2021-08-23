@@ -8191,7 +8191,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["image-size", "npm:1.0.0"],
             ["jest-worker", "npm:27.0.0-next.5"],
             ["native-url", "npm:0.3.4"],
-            ["node-fetch", "virtual:73a48ebd71eea599b53967dc43d9d0a566fa2ba7027a1cd695487329d3293a7afb6daadd34ec8ce6564e8aeb76bf8fc0be87b01372bbcc5c4bad43c786bb2d31#npm:2.6.1"],
+            ["node-fetch", "npm:2.6.1"],
             ["node-html-parser", "npm:1.4.9"],
             ["node-libs-browser", "npm:2.2.1"],
             ["node-sass", null],
@@ -8239,19 +8239,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/node-fetch-npm-2.6.1-46c670dbc1-91075bedd5.zip/node_modules/node-fetch/",
           "packageDependencies": [
             ["node-fetch", "npm:2.6.1"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:73a48ebd71eea599b53967dc43d9d0a566fa2ba7027a1cd695487329d3293a7afb6daadd34ec8ce6564e8aeb76bf8fc0be87b01372bbcc5c4bad43c786bb2d31#npm:2.6.1", {
-          "packageLocation": "./.yarn/__virtual__/node-fetch-virtual-979677810f/0/cache/node-fetch-npm-2.6.1-46c670dbc1-91075bedd5.zip/node_modules/node-fetch/",
-          "packageDependencies": [
-            ["node-fetch", "virtual:73a48ebd71eea599b53967dc43d9d0a566fa2ba7027a1cd695487329d3293a7afb6daadd34ec8ce6564e8aeb76bf8fc0be87b01372bbcc5c4bad43c786bb2d31#npm:2.6.1"],
-            ["@types/encoding", null],
-            ["encoding", "npm:0.1.13"]
-          ],
-          "packagePeers": [
-            "@types/encoding",
-            "encoding"
           ],
           "linkType": "HARD",
         }]
