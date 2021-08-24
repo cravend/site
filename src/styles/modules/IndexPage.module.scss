@@ -1,0 +1,31 @@
+@use '../mixins';
+@use '../variables';
+
+.container {
+  @include mixins.container-copy;
+  margin: 0 auto;
+}
+
+.greeting {
+  display: block;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.gradient {
+  background-image: variables.$primary-gradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card_grid {
+  display: grid;
+  // margin: 0 3rem;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: variables.$breakpoint-small) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
