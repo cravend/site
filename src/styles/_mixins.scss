@@ -1,10 +1,19 @@
 @use 'variables';
 
-@mixin container {
+@mixin container-copy {
   width: 100%;
   max-width: 42.5rem;
 
   @media screen and (min-width: variables.$breakpoint-large) {
     max-width: 62.25rem;
+  }
+}
+
+@mixin container-narrow {
+  width: 100%;
+  max-width: 42.5rem;
+
+  @media screen and (min-width: variables.$breakpoint-large) {
+    max-width: 48rem;
   }
 }
