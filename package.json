@@ -60,7 +60,7 @@
       "prettier --write",
       "eslint --fix"
     ],
-    "*.{yml,json}": "prettier --write"
+    "*.{yml,json,scss}": "prettier --write"
   },
   "packageManager": "yarn@3.0.1"
 }
