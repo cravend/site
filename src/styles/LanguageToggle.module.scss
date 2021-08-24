@@ -1,0 +1,9 @@
+@use "variables";
+
+.container {
+  @media screen and (min-width: variables.$breakpoint-small) {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}

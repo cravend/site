@@ -2,9 +2,7 @@
 
 exports[`<LanguageToggle /> { locale: "en" } renders 1`] = `
 <div>
-  <div
-    class="css-hckpid"
-  >
+  <div>
     <a
       class="css-zdzv7c"
       href="/"
@@ -17,9 +15,7 @@ exports[`<LanguageToggle /> { locale: "en" } renders 1`] = `
 
 exports[`<LanguageToggle /> { locale: "fr" } renders 1`] = `
 <div>
-  <div
-    class="css-hckpid"
-  >
+  <div>
     <a
       class="css-zdzv7c"
       href="/"
