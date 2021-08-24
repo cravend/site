@@ -26,13 +26,13 @@ const en = {
   view_source: "View source on",
   greeting: "Hello! My name is",
   intro:
-    "It’s hard to introduce myself over the internet, but here’s a little bit about me",
+    "It's hard to introduce myself over the internet, but here's a little bit about me",
   education_header: "Education",
   education:
-    "I’m a sophomore at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the University Top Scholars.",
+    "I'm a sophomore at the University of South Carolina. I'm pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I'm also a McNair Scholar as part of UofSC's most prestigious scholarship program, the University Top Scholars.",
   sa_header: "Study Abroad",
   study_abroad:
-    "I’m currently studying abroad at the American University of Paris! I’ll be in France for the entirety of 2021. Spending an extended period of time in a different culture has been a goal of mine for a long time, and I’m looking forward to fully experiencing it when COVID is finally over.",
+    "I'm currently studying abroad at the American University of Paris! I'll be in France for the entirety of 2021. Spending an extended period of time in a different culture has been a goal of mine for a long time, and I'm looking forward to fully experiencing it when COVID is finally over.",
   work_header: "Work",
   work_1:
     "I recently wrapped up a full-time internship as a front-end web developer at",
@@ -40,7 +40,7 @@ const en = {
     "There, I used a variety of technologies (primarily Next/React and GraphQL) in an agile development team to routinely publish production code for our application. I was also an undergraduate teaching assistant for the spring 2020 semester, running eight sections of Linux/UNIX labs for approximately 250 students.",
   freelance_header: "Freelancing",
   freelance:
-    "I also do freelance web development! I work primarily with small businesses (although I’m open for anything), with an emphasis on providing resources and training to ensure long-term functionality.",
+    "I also do freelance web development! I work primarily with small businesses (although I'm open for anything), with an emphasis on providing resources and training to ensure long-term functionality.",
   skills: "Skills & Certifications",
   spoken_languages_header: "Languages (spoken)",
   spoken_languages: "English, French, American Sign Language (ASL)",
@@ -63,23 +63,23 @@ const fr = {
   tagline: "Étudiant & Développeur",
   pfp: "Image de profil",
   view_source: "Voir le code source sur",
-  greeting: "Salut ! Moi c’est",
+  greeting: "Salut ! Moi c'est",
   intro:
-    "C’est difficile de se présenter virtuellement, mais voilà ce que je peux vous dire de moi",
+    "C'est assez compliqué de se présenter sur internet, mais voilà ce que je peux vous dire sur moi",
   education_header: "Éducation",
   education:
-    "Je suis étudiant en deuxième année à l’Université de Caroline du Sud. Je suis en licence d’informatique avec une mineure en psychologie. Je suis également récipiendaire de la bourse McNair, un des programmes de bourses les plus prestigieux des États-Unis, les « University Top Scholars ».",
-  sa_header: "Mon échange à l’étranger",
+    "Je suis étudiant en deuxième année à l'Université de Caroline du Sud. Je suis en licence d'informatique avec seconde spécialisation en psychologie (marrant non ?). Je suis également récipiendaire de la bourse McNair, un des programmes de bourses les plus prestigieux des États-Unis, les « University Top Scholars ».",
+  sa_header: "Mon année à l'étranger",
   study_abroad:
-    "J’étudie actuellement à l’Université Américaine de Paris ! Je serai en France pendant toute l’année 2021. Vivre loin de chez moi et expérimenter une culture différente de la mienne a toujours été un de mes objectifs. J’ai hâte de pouvoir en profiter pleinement une fois que la crise sanitaire sera enfin terminée.",
+    "J'étudie actuellement à l'Université Américaine de Paris ! Je serai en France toute l'année 2021. Vivre loin de chez moi et expérimenter une culture différente de la mienne a toujours été un de mes objectifs. J'ai hâte de pouvoir en profiter pleinement une fois la crise sanitaire terminée.",
   work_header: "Mes expériences professionnelles",
   work_1:
-    "J’ai récemment terminé un stage à temps plein en tant que développeur web front-end chez",
+    "J'ai récemment terminé un stage à temps plein en tant que développeur web front-end à",
   work_2:
-    "J’y ai utilisé de nombreuses technologies (principalement Next / React et GraphQL) au sein d’une équipe de développement agile et produit régulièrement des lignes de code pour notre application. J’étais également assistant d’enseignement de premier cycle au printemps 2020, enseignant huit cours sur Linux / UNIX pour environ 250 étudiants.",
+    "J'y ai utilisé de nombreuses technologies (principalement Next / React et GraphQL) au sein d'une équipe de développement agile où j'ai pu contribuer directement au code de l'application. J'étais également assistant d'enseignement de premier cycle au printemps 2020, enseignant huit cours sur Linux / UNIX à environ 250 étudiants.",
   freelance_header: "Mon travail en freelance",
   freelance:
-    "Je fais aussi du développement web en freelance ! Je travaille principalement avec des petites entreprises (bien que je sois ouvert à tout), en mettant à disposition des ressources informatiques et en organisant des formation pour assurer un bon fonctionnement à long terme.",
+    "Je fais aussi du développement web en freelance ! Je travaille principalement avec des petites entreprises (bien que je sois ouvert à tout), en mettant à disposition des ressources informatiques et en organisant des formation pour assurer une bonne productivité à long terme.",
   skills: "Compétences & Certifications",
   spoken_languages_header: "Langues (parlées)",
   spoken_languages: "Anglais, Français, Langue des signes américaine (ASL)",
@@ -87,7 +87,7 @@ const fr = {
   tools_header: "Outils",
   certifications: "Certifications",
   cert_april_2020: "Certifié en avril 2020",
-  cert_fall_2018: "Certifié à l’automne 2018",
+  cert_fall_2018: "Certifié à l'automne 2018",
   contact: "Contact",
   american_phone: "Numéro américain",
   french_phone: "Numéro français",
