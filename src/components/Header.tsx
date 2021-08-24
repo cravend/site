@@ -1,6 +1,6 @@
 import Image from "next/image";
 import useLocalization from "../hooks/useLocalization";
-import styles from "../styles/Header.module.scss";
+import styles from "../styles/modules/Header.module.scss";
 import Hero from "./Hero";
 import type { FC } from "react";
 

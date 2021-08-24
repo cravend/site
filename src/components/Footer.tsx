@@ -1,5 +1,5 @@
 import useLocalization from "../hooks/useLocalization";
-import styles from "../styles/Footer.module.scss";
+import styles from "../styles/modules/Footer.module.scss";
 import Link from "./Link";
 import type { FC } from "react";
 

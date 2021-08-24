@@ -1,5 +1,5 @@
 import useLocalization from "../hooks/useLocalization";
-import styles from "../styles/LanguageToggle.module.scss";
+import styles from "../styles/modules/LanguageToggle.module.scss";
 import Link from "./Link";
 import type { FC } from "react";
 
