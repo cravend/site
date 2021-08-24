@@ -68,7 +68,7 @@ const fr = {
     "C’est assez compliqué de se présenter sur internet, mais voilà ce que je peux vous dire sur moi",
   education_header: "Éducation",
   education:
-    "Je suis étudiant en deuxième année à l’Université de Caroline du Sud. Je suis en licence d’informatique avec seconde spécialisation en psychologie (marrant non ?). Je suis également récipiendaire de la bourse McNair, un des programmes de bourses les plus prestigieux des États-Unis, les « University Top Scholars ».",
+    "Je suis étudiant en deuxième année à l’Université de Caroline du Sud. Je suis en licence d’informatique avec seconde spécialisation en psychologie (marrant, non ?). Je suis également récipiendaire de la bourse McNair, un des programmes de bourses les plus prestigieux des États-Unis, les « University Top Scholars ».",
   sa_header: "Mon année à l’étranger",
   study_abroad:
     "J’étudie actuellement à l’Université Américaine de Paris ! Je serai en France toute l’année 2021. Vivre loin de chez moi et expérimenter une culture différente de la mienne a toujours été un de mes objectifs. J’ai hâte de pouvoir en profiter pleinement une fois la crise sanitaire terminée.",
