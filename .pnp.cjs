@@ -66,6 +66,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.3.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:17.0.2"],
+            ["sass", "npm:1.38.1"],
             ["theme-ui", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:0.10.0"],
             ["ts-jest", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:27.0.4"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"]
@@ -3855,6 +3856,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["readdirp", "npm:3.5.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:3.5.2", {
+          "packageLocation": "./.yarn/cache/chokidar-npm-3.5.2-6752340fec-d1fda32fcd.zip/node_modules/chokidar/",
+          "packageDependencies": [
+            ["chokidar", "npm:3.5.2"],
+            ["anymatch", "npm:3.1.2"],
+            ["braces", "npm:3.0.2"],
+            ["fsevents", "patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=1cc4b2"],
+            ["glob-parent", "npm:5.1.2"],
+            ["is-binary-path", "npm:2.1.0"],
+            ["is-glob", "npm:4.0.1"],
+            ["normalize-path", "npm:3.0.0"],
+            ["readdirp", "npm:3.6.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["chownr", [
@@ -4053,6 +4069,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.3.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:17.0.2"],
+            ["sass", "npm:1.38.1"],
             ["theme-ui", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:0.10.0"],
             ["ts-jest", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:27.0.4"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"]
@@ -8207,7 +8224,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:17.0.2"],
             ["react-is", "npm:17.0.2"],
             ["react-refresh", "npm:0.8.3"],
-            ["sass", null],
+            ["sass", "npm:1.38.1"],
             ["stream-browserify", "npm:3.0.0"],
             ["stream-http", "npm:3.1.1"],
             ["string_decoder", "npm:1.3.0"],
@@ -9327,6 +9344,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["picomatch", "npm:2.3.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:3.6.0", {
+          "packageLocation": "./.yarn/cache/readdirp-npm-3.6.0-f950cc74ab-1ced032e6e.zip/node_modules/readdirp/",
+          "packageDependencies": [
+            ["readdirp", "npm:3.6.0"],
+            ["picomatch", "npm:2.3.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["redent", [
@@ -9543,6 +9568,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/safer-buffer-npm-2.1.2-8d5c0b705e-cab8f25ae6.zip/node_modules/safer-buffer/",
           "packageDependencies": [
             ["safer-buffer", "npm:2.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["sass", [
+        ["npm:1.38.1", {
+          "packageLocation": "./.yarn/cache/sass-npm-1.38.1-0de90b02d1-e260889fd9.zip/node_modules/sass/",
+          "packageDependencies": [
+            ["sass", "npm:1.38.1"],
+            ["chokidar", "npm:3.5.2"]
           ],
           "linkType": "HARD",
         }]
