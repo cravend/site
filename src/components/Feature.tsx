@@ -1,4 +1,4 @@
-import styles from "../styles/Feature.module.scss";
+import styles from "../styles/modules/Feature.module.scss";
 import type { FC, ReactNode } from "react";
 
 type FeatureType = {

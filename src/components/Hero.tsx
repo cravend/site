@@ -1,4 +1,4 @@
-import styles from "../styles/Hero.module.scss";
+import styles from "../styles/modules/Hero.module.scss";
 import type { ReactChild, FC } from "react";
 
 type HeroType = {

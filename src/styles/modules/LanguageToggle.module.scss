@@ -1,4 +1,4 @@
-@use "variables";
+@use "../variables";
 
 .container {
   @media screen and (min-width: variables.$breakpoint-small) {

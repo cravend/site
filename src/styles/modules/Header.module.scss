@@ -1,5 +1,5 @@
-@use 'variables';
-@use 'mixins';
+@use '../variables';
+@use '../mixins';
 
 .container {
   @include mixins.container-narrow;
