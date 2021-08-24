@@ -2,298 +2,264 @@
 
 exports[`<IndexPage /> renders 1`] = `
 <div>
-  <div
-    class="css-1dlftso"
-  >
-    <header>
-      <div>
+  <header>
+    <div>
+      <div
+        style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+      >
         <div
-          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          style="box-sizing: border-box; display: block; max-width: 100%;"
         >
-          <div
-            style="box-sizing: border-box; display: block; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
-            />
-          </div>
-          <noscript />
           <img
-            alt="Profile picture"
-            data-nimg="true"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            alt=""
+            aria-hidden="true"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+            style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
           />
         </div>
-        <div>
-          <h1>
-            Dalton Craven
-          </h1>
-          <h3>
-            Student & Developer
-          </h3>
-        </div>
+        <noscript />
+        <img
+          alt="Profile picture"
+          data-nimg="true"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
       </div>
-    </header>
-    <main
-      class="css-1yrmf69"
-    >
       <div>
-        <a
-          href="/"
-        >
-          Lire en français
-        </a>
+        <h1>
+          Dalton Craven
+        </h1>
+        <h3>
+          Student & Developer
+        </h3>
       </div>
-      <p
-        class="css-mkb8ra"
+    </div>
+  </header>
+  <main>
+    <div>
+      <a
+        href="/"
       >
-        <span
-          class="css-gnqbje"
-        >
-          Hello! My name is
-           
-          <span
-            class="css-vurnku"
-          >
-            Dalton Craven
-          </span>
-          .
-           
+        Lire en français
+      </a>
+    </div>
+    <p>
+      <span>
+        Hello! My name is
+         
+        <span>
+          Dalton Craven
         </span>
-        It’s hard to introduce myself over the internet, but here’s a little bit about me
-        : 
-      </p>
-      <div
-        class="css-czoc5h"
-      >
-        <div>
-          <h2>
-            Education
-          </h2>
-          <p
-            class="css-mkb8ra"
-          >
-            I’m a sophomore at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the University Top Scholars.
-          </p>
-        </div>
-        <div>
-          <h2>
-            Study Abroad
-          </h2>
-          <p
-            class="css-mkb8ra"
-          >
-            I’m currently studying abroad at the American University of Paris! I’ll be in France for the entirety of 2021. Spending an extended period of time in a different culture has been a goal of mine for a long time, and I’m looking forward to fully experiencing it when COVID is finally over.
-          </p>
-        </div>
-        <div>
-          <h2>
-            Work
-          </h2>
-          <p
-            class="css-mkb8ra"
-          >
-            I recently wrapped up a full-time internship as a front-end web developer at
-             
-            <a
-              href="https://cloverleaf.me"
-            >
-              Cloverleaf
-            </a>
-            .
-             
-            There, I used a variety of technologies (primarily Next/React and GraphQL) in an agile development team to routinely publish production code for our application. I was also an undergraduate teaching assistant for the spring 2020 semester, running eight sections of Linux/UNIX labs for approximately 250 students.
-          </p>
-        </div>
-        <div>
-          <h2>
-            Freelancing
-          </h2>
-          <p
-            class="css-mkb8ra"
-          >
-            I also do freelance web development! I work primarily with small businesses (although I’m open for anything), with an emphasis on providing resources and training to ensure long-term functionality.
-          </p>
-          <ul>
-            <li>
-              <a
-                href="https://crystalclearcontractors.com"
-              >
-                Crystal Clear Cleaning & Contracting
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://elitepaintcincy.com"
-              >
-                Elite Painting
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://elitecontractingcincy.com"
-              >
-                Elite Contracting
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://mabbaseball.com"
-              >
-                Mason Amateur Baseball
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="css-vurnku"
-      >
-        <h2
-          class="css-1wf7gym"
-        >
-          Skills & Certifications
-        </h2>
-        <ul>
-          <li>
-            <strong>
-              Languages (spoken)
-              : 
-            </strong>
-            English, French, American Sign Language (ASL)
-          </li>
-          <li>
-            <strong>
-              Languages (tech)
-              : 
-            </strong>
-            React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
-          </li>
-          <li>
-            <strong>
-              Tools
-              : 
-            </strong>
-            Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
-          </li>
-          <li>
-            <strong>
-              Certifications
-              : 
-            </strong>
-            <ul>
-              <li>
-                The Fundamentals of Digital Marketing, Google —
-                 
-                <em>
-                  Certified April 2020
-                </em>
-              </li>
-              <li>
-                Microsoft Office Specialist (MOS) Master 2016, MOS Word 2016 Expert, MOS Excel 2016 Expert, MOS PowerPoint 2016, MOS Outlook 2016, MOS Access 2016 — 
-                <em>
-                  Certified Fall 2018
-                </em>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div
-        class="css-vurnku"
-      >
-        <h2
-          class="css-1wf7gym"
-        >
-          Contact
-        </h2>
-        <ul>
-          <li>
-            <strong>
-              American Phone
-              : 
-            </strong>
-            <a
-              href="tel:+15138136421"
-            >
-              +1 513 813 6421
-            </a>
-          </li>
-          <li>
-            <strong>
-              French Phone
-              : 
-            </strong>
-            <a
-              href="tel:+330749792094"
-            >
-              +33 07 49 79 20 94
-            </a>
-          </li>
-          <li>
-            <strong>
-              Email
-              : 
-            </strong>
-            <a
-              href="mailto:daltonjcraven@gmail.com"
-            >
-              daltonjcraven@gmail.com
-            </a>
-          </li>
-          <li>
-            <strong>
-              GitHub
-              : 
-            </strong>
-            <a
-              href="https://github.com/cravend"
-            >
-              cravend
-            </a>
-          </li>
-          <li>
-            <strong>
-              GitLab
-              : 
-            </strong>
-            <a
-              href="https://gitlab.com/cravend"
-            >
-              cravend
-            </a>
-          </li>
-          <li>
-            <strong>
-              LinkedIn
-              : 
-            </strong>
-            <a
-              href="https://linkedin.com/in/daltonjcraven"
-            >
-              daltonjcraven
-            </a>
-          </li>
-        </ul>
-      </div>
-    </main>
-    <footer>
+        .
+         
+      </span>
+      It’s hard to introduce myself over the internet, but here’s a little bit about me
+      : 
+    </p>
+    <div>
       <div>
+        <h2>
+          Education
+        </h2>
         <p>
-          © 2021 Dalton Craven | View source on 
-          <a
-            href="https://github.com/cravend/site"
-          >
-            GitHub
-          </a>
+          I’m a sophomore at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the University Top Scholars.
         </p>
       </div>
-    </footer>
-  </div>
+      <div>
+        <h2>
+          Study Abroad
+        </h2>
+        <p>
+          I’m currently studying abroad at the American University of Paris! I’ll be in France for the entirety of 2021. Spending an extended period of time in a different culture has been a goal of mine for a long time, and I’m looking forward to fully experiencing it when COVID is finally over.
+        </p>
+      </div>
+      <div>
+        <h2>
+          Work
+        </h2>
+        <p>
+          I recently wrapped up a full-time internship as a front-end web developer at
+           
+          <a
+            href="https://cloverleaf.me"
+          >
+            Cloverleaf
+          </a>
+          .
+           
+          There, I used a variety of technologies (primarily Next/React and GraphQL) in an agile development team to routinely publish production code for our application. I was also an undergraduate teaching assistant for the spring 2020 semester, running eight sections of Linux/UNIX labs for approximately 250 students.
+        </p>
+      </div>
+      <div>
+        <h2>
+          Freelancing
+        </h2>
+        <p>
+          I also do freelance web development! I work primarily with small businesses (although I’m open for anything), with an emphasis on providing resources and training to ensure long-term functionality.
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://crystalclearcontractors.com"
+            >
+              Crystal Clear Cleaning & Contracting
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://elitepaintcincy.com"
+            >
+              Elite Painting
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://elitecontractingcincy.com"
+            >
+              Elite Contracting
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://mabbaseball.com"
+            >
+              Mason Amateur Baseball
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h2>
+      Skills & Certifications
+    </h2>
+    <ul>
+      <li>
+        <strong>
+          Languages (spoken)
+          : 
+        </strong>
+        English, French, American Sign Language (ASL)
+      </li>
+      <li>
+        <strong>
+          Languages (tech)
+          : 
+        </strong>
+        React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
+      </li>
+      <li>
+        <strong>
+          Tools
+          : 
+        </strong>
+        Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
+      </li>
+      <li>
+        <strong>
+          Certifications
+          : 
+        </strong>
+        <ul>
+          <li>
+            The Fundamentals of Digital Marketing, Google —
+             
+            <em>
+              Certified April 2020
+            </em>
+          </li>
+          <li>
+            Microsoft Office Specialist (MOS) Master 2016, MOS Word 2016 Expert, MOS Excel 2016 Expert, MOS PowerPoint 2016, MOS Outlook 2016, MOS Access 2016 — 
+            <em>
+              Certified Fall 2018
+            </em>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2>
+      Contact
+    </h2>
+    <ul>
+      <li>
+        <strong>
+          American Phone
+          : 
+        </strong>
+        <a
+          href="tel:+15138136421"
+        >
+          +1 513 813 6421
+        </a>
+      </li>
+      <li>
+        <strong>
+          French Phone
+          : 
+        </strong>
+        <a
+          href="tel:+330749792094"
+        >
+          +33 07 49 79 20 94
+        </a>
+      </li>
+      <li>
+        <strong>
+          Email
+          : 
+        </strong>
+        <a
+          href="mailto:daltonjcraven@gmail.com"
+        >
+          daltonjcraven@gmail.com
+        </a>
+      </li>
+      <li>
+        <strong>
+          GitHub
+          : 
+        </strong>
+        <a
+          href="https://github.com/cravend"
+        >
+          cravend
+        </a>
+      </li>
+      <li>
+        <strong>
+          GitLab
+          : 
+        </strong>
+        <a
+          href="https://gitlab.com/cravend"
+        >
+          cravend
+        </a>
+      </li>
+      <li>
+        <strong>
+          LinkedIn
+          : 
+        </strong>
+        <a
+          href="https://linkedin.com/in/daltonjcraven"
+        >
+          daltonjcraven
+        </a>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <div>
+      <p>
+        © 2021 Dalton Craven | View source on 
+        <a
+          href="https://github.com/cravend/site"
+        >
+          GitHub
+        </a>
+      </p>
+    </div>
+  </footer>
 </div>
 `;
