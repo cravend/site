@@ -1,0 +1,10 @@
+@use 'variables';
+
+@mixin container {
+  width: 100%;
+  max-width: 42.5rem;
+
+  @media screen and (min-width: variables.$breakpoint-large) {
+    max-width: 62.25rem;
+  }
+}

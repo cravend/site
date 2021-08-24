@@ -1,0 +1,15 @@
+@use 'mixins';
+
+.background {
+  color: white;
+  background-color: #17171d;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  @include mixins.container;
+  padding: 0 1rem;
+}
