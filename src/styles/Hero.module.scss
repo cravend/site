@@ -1,0 +1,28 @@
+@use "variables";
+
+.normal {
+  background-color: variables.$primary-foreground;
+  background: variables.$primary-gradient;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.diagonal {
+  background-color: variables.$primary-foreground;
+  background: variables.$primary-gradient;
+  height: 250px;
+  clip-path: normal;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: variables.$breakpoint-medium) {
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  }
+}
