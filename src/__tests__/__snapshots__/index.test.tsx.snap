@@ -290,32 +290,16 @@ exports[`<IndexPage /> renders 1`] = `
         </ul>
       </div>
     </main>
-    <footer
-      class="css-2vvwml"
-    >
-      <div
-        class="css-1yrmf69"
-      >
-        <div
-          class="css-1w7p2by"
-        >
-          <p
-            class="css-mkb8ra"
+    <footer>
+      <div>
+        <p>
+          © 2021 Dalton Craven | View source on 
+          <a
+            href="https://github.com/cravend/site"
           >
-            © 2021 Dalton Craven 
-          </p>
-          <p
-            class="css-mkb8ra"
-          >
-            View source on
-             
-            <a
-              href="https://github.com/cravend/site"
-            >
-              GitHub
-            </a>
-          </p>
-        </div>
+            GitHub
+          </a>
+        </p>
       </div>
     </footer>
   </div>
