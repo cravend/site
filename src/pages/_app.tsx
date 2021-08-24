@@ -1,8 +1,5 @@
 import { useEffect } from "react";
-import { ThemeProvider } from "theme-ui";
 import { init } from "@socialgouv/matomo-next";
-import theme from "@cravend/theme";
-import type { Theme } from "theme-ui";
 import type { AppProps } from "next/app";
 import type { FC } from "react";
 import "../styles/global.scss";
@@ -17,10 +14,8 @@ const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   }, []);
 
   return (
-    <ThemeProvider theme={theme as Theme}>
-      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-      <Component {...pageProps} />
-    </ThemeProvider>
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <Component {...pageProps} />
   );
 };
 
