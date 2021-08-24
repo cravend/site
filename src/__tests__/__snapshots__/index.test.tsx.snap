@@ -36,7 +36,6 @@ exports[`<IndexPage /> renders 1`] = `
     >
       <div>
         <a
-          class="css-zdzv7c"
           href="/"
         >
           Lire en français
@@ -106,7 +105,6 @@ exports[`<IndexPage /> renders 1`] = `
             I recently wrapped up a full-time internship as a front-end web developer at
              
             <a
-              class="css-vurnku"
               href="https://cloverleaf.me"
             >
               Cloverleaf
@@ -132,7 +130,6 @@ exports[`<IndexPage /> renders 1`] = `
           <ul>
             <li>
               <a
-                class="css-vurnku"
                 href="https://crystalclearcontractors.com"
               >
                 Crystal Clear Cleaning & Contracting
@@ -140,7 +137,6 @@ exports[`<IndexPage /> renders 1`] = `
             </li>
             <li>
               <a
-                class="css-vurnku"
                 href="https://elitepaintcincy.com"
               >
                 Elite Painting
@@ -148,7 +144,6 @@ exports[`<IndexPage /> renders 1`] = `
             </li>
             <li>
               <a
-                class="css-vurnku"
                 href="https://elitecontractingcincy.com"
               >
                 Elite Contracting
@@ -156,7 +151,6 @@ exports[`<IndexPage /> renders 1`] = `
             </li>
             <li>
               <a
-                class="css-vurnku"
                 href="https://mabbaseball.com"
               >
                 Mason Amateur Baseball
@@ -233,7 +227,6 @@ exports[`<IndexPage /> renders 1`] = `
               : 
             </strong>
             <a
-              class="css-vurnku"
               href="tel:+15138136421"
             >
               +1 513 813 6421
@@ -245,7 +238,6 @@ exports[`<IndexPage /> renders 1`] = `
               : 
             </strong>
             <a
-              class="css-vurnku"
               href="tel:+330749792094"
             >
               +33 07 49 79 20 94
@@ -257,7 +249,6 @@ exports[`<IndexPage /> renders 1`] = `
               : 
             </strong>
             <a
-              class="css-vurnku"
               href="mailto:daltonjcraven@gmail.com"
             >
               daltonjcraven@gmail.com
@@ -269,7 +260,6 @@ exports[`<IndexPage /> renders 1`] = `
               : 
             </strong>
             <a
-              class="css-vurnku"
               href="https://github.com/cravend"
             >
               cravend
@@ -281,7 +271,6 @@ exports[`<IndexPage /> renders 1`] = `
               : 
             </strong>
             <a
-              class="css-vurnku"
               href="https://gitlab.com/cravend"
             >
               cravend
@@ -293,7 +282,6 @@ exports[`<IndexPage /> renders 1`] = `
               : 
             </strong>
             <a
-              class="css-vurnku"
               href="https://linkedin.com/in/daltonjcraven"
             >
               daltonjcraven
@@ -322,7 +310,6 @@ exports[`<IndexPage /> renders 1`] = `
             View source on
              
             <a
-              class="css-vurnku"
               href="https://github.com/cravend/site"
             >
               GitHub
