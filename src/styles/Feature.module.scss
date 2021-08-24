@@ -1,0 +1,25 @@
+@use "variables";
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
+  padding: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.125s ease-in-out, box-shadow 0.125s ease-in-out;
+  &:hover,
+  &:focus {
+    transform: scale(1.0625);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0625), 0 8px 12px rgba(0, 0, 0, 0.125);
+  }
+
+  @media screen and (min-width: variables.$breakpoint-medium) {
+    padding: 2rem;
+  }
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+}

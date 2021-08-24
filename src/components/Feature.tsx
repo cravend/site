@@ -1,4 +1,4 @@
-import { Card, Heading } from "theme-ui";
+import styles from "../styles/Feature.module.scss";
 import type { FC, ReactNode } from "react";
 
 type FeatureType = {
@@ -7,12 +7,10 @@ type FeatureType = {
 };
 
 const Feature: FC<FeatureType> = ({ heading, children }: FeatureType) => (
-  <Card variant="interactive">
-    <Heading pb={1} as="h2">
-      {heading}
-    </Heading>
+  <div className={styles.card}>
+    <h2 className={styles.heading}>{heading}</h2>
     {children}
-  </Card>
+  </div>
 );
 
 export default Feature;

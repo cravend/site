@@ -63,12 +63,8 @@ exports[`<IndexPage /> renders 1`] = `
       <div
         class="css-czoc5h"
       >
-        <div
-          class="css-vurnku"
-        >
-          <h2
-            class="css-qyfm59"
-          >
+        <div>
+          <h2>
             Education
           </h2>
           <p
@@ -77,12 +73,8 @@ exports[`<IndexPage /> renders 1`] = `
             I’m a sophomore at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the University Top Scholars.
           </p>
         </div>
-        <div
-          class="css-vurnku"
-        >
-          <h2
-            class="css-qyfm59"
-          >
+        <div>
+          <h2>
             Study Abroad
           </h2>
           <p
@@ -91,12 +83,8 @@ exports[`<IndexPage /> renders 1`] = `
             I’m currently studying abroad at the American University of Paris! I’ll be in France for the entirety of 2021. Spending an extended period of time in a different culture has been a goal of mine for a long time, and I’m looking forward to fully experiencing it when COVID is finally over.
           </p>
         </div>
-        <div
-          class="css-vurnku"
-        >
-          <h2
-            class="css-qyfm59"
-          >
+        <div>
+          <h2>
             Work
           </h2>
           <p
@@ -114,12 +102,8 @@ exports[`<IndexPage /> renders 1`] = `
             There, I used a variety of technologies (primarily Next/React and GraphQL) in an agile development team to routinely publish production code for our application. I was also an undergraduate teaching assistant for the spring 2020 semester, running eight sections of Linux/UNIX labs for approximately 250 students.
           </p>
         </div>
-        <div
-          class="css-vurnku"
-        >
-          <h2
-            class="css-qyfm59"
-          >
+        <div>
+          <h2>
             Freelancing
           </h2>
           <p
