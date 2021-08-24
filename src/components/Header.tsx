@@ -1,5 +1,6 @@
-import { Box, Image, Heading, Container } from "theme-ui";
+import Image from "next/image";
 import useLocalization from "../hooks/useLocalization";
+import styles from "../styles/Header.module.scss";
 import Hero from "./Hero";
 import type { FC } from "react";
 
@@ -8,46 +9,19 @@ const Header: FC = () => {
 
   return (
     <Hero isDiagonal>
-      <Container
-        variant="copy"
-        m="0 auto"
-        py={4}
-        sx={{
-          display: "flex",
-          height: "100%",
-          flexDirection: ["column", "row"],
-          alignItems: "center",
-          justifyContent: "space-around",
-        }}
-      >
+      <div className={styles.container}>
         <Image
+          width={150}
+          height={150}
+          className={styles.pfp}
           src="/images/dalton-craven.jpg"
           alt={t("pfp")}
-          width={150}
-          sx={{ borderRadius: "50%" }}
         />
-        <Box
-          ml={[0, 20]}
-          p={1}
-          color="white"
-          sx={{
-            marginLeft: [0, 2],
-            marginTop: [2, 0],
-            textAlign: ["center", "right"],
-          }}
-        >
-          <Heading as="h1" variant="title">
-            {t("name")}
-          </Heading>
-          <Heading
-            as="h3"
-            variant="subtitle"
-            sx={{ textTransform: "lowercase" }}
-          >
-            {t("tagline")}
-          </Heading>
-        </Box>
-      </Container>
+        <div className={styles.text_container}>
+          <h1 className={styles.title}>{t("name")}</h1>
+          <h3 className={styles.subtitle}>{t("tagline")}</h3>
+        </div>
+      </div>
     </Hero>
   );
 };

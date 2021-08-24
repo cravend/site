@@ -9,7 +9,7 @@ const generateCsp = (scriptSource: string): [csp: string, nonce: string] => {
 
   let csp = "default-src 'none';";
   csp += "base-uri 'self';";
-  csp += "img-src 'self';";
+  csp += "img-src 'self' data:;";
   csp += "prefetch-src 'self';";
   csp += "font-src https://fonts.gstatic.com;";
   csp += "style-src https://fonts.googleapis.com 'unsafe-inline';"; // NextJS requires 'unsafe-inline'
