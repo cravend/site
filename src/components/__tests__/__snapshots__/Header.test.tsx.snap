@@ -2,9 +2,7 @@
 
 exports[`<Header /> renders 1`] = `
 <div>
-  <header
-    class="css-2lbenp"
-  >
+  <header>
     <div
       class="css-wzvan8"
     >

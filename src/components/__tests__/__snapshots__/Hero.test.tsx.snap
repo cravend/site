@@ -8,9 +8,7 @@ exports[`<Header /> displays children 1`] = `
 
 exports[`<Header /> renders 1`] = `
 <div>
-  <header
-    class="css-10r473c"
-  >
+  <header>
     <p>
       Hello, world!
     </p>
@@ -20,9 +18,7 @@ exports[`<Header /> renders 1`] = `
 
 exports[`<Header /> renders with a diagonal when isDiagonal is true 1`] = `
 <div>
-  <header
-    class="css-10r473c"
-  >
+  <header>
     <p>
       Hello, world!
     </p>

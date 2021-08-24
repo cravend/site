@@ -5,9 +5,7 @@ exports[`<IndexPage /> renders 1`] = `
   <div
     class="css-1dlftso"
   >
-    <header
-      class="css-2lbenp"
-    >
+    <header>
       <div
         class="css-wzvan8"
       >
