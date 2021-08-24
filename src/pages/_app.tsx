@@ -5,6 +5,7 @@ import theme from "@cravend/theme";
 import type { Theme } from "theme-ui";
 import type { AppProps } from "next/app";
 import type { FC } from "react";
+import "../styles/global.scss";
 
 const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
