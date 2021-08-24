@@ -34,9 +34,7 @@ exports[`<IndexPage /> renders 1`] = `
     <main
       class="css-1yrmf69"
     >
-      <div
-        class="css-hckpid"
-      >
+      <div>
         <a
           class="css-zdzv7c"
           href="/"
