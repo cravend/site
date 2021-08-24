@@ -4,7 +4,6 @@ exports[`<LanguageToggle /> { locale: "en" } renders 1`] = `
 <div>
   <div>
     <a
-      class="css-zdzv7c"
       href="/"
     >
       Lire en français
@@ -17,7 +16,6 @@ exports[`<LanguageToggle /> { locale: "fr" } renders 1`] = `
 <div>
   <div>
     <a
-      class="css-zdzv7c"
       href="/"
     >
       Read in English

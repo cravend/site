@@ -8,7 +8,7 @@ const LanguageToggle: FC = () => {
 
   return (
     <div className={styles.container}>
-      <Link to="/" locale={otherLocale} color="white">
+      <Link to="/" locale={otherLocale}>
         {t("toggle_locale")}
       </Link>
     </div>

@@ -30,7 +30,6 @@ exports[`<Footer /> renders 1`] = `
           View source on
            
           <a
-            class="css-vurnku"
             href="https://github.com/cravend/site"
           >
             GitHub

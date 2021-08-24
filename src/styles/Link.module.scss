@@ -1,0 +1,13 @@
+@use 'variables';
+
+.primary {
+  color: variables.$primary-foreground;
+  text-decoration: underline;
+  text-underline-position: under;
+
+  &:focus,
+  &:hover,
+  &:active {
+    text-decoration-style: wavy;
+  }
+}

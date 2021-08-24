@@ -3,7 +3,6 @@
 exports[`<Link /> renders 1`] = `
 <div>
   <a
-    class="css-vurnku"
     href="/"
   >
     Hello, world!
