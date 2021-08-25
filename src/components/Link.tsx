@@ -1,34 +1,28 @@
 import NextLink from "next/link";
-import { Link as StyledLink } from "theme-ui";
 import { Locale } from "../translations/types";
+import styles from "../styles/modules/Link.module.scss";
 import type { FC, ReactNode } from "react";
 
 type LinkType = {
   to: string;
   isExternal?: boolean;
   locale?: Locale;
-  color?: string;
   children: ReactNode;
 };
 
-const Link: FC<LinkType> = ({
-  to,
-  isExternal,
-  locale,
-  color,
-  children,
-}: LinkType) => {
+const Link: FC<LinkType> = ({ to, isExternal, locale, children }: LinkType) => {
   const externalCheck = /^https?:\/\//;
   if (isExternal || externalCheck.test(to)) {
     return (
-      <StyledLink color={color} href={to}>
+      <a className={styles.primary} href={to}>
         {children}
-      </StyledLink>
+      </a>
     );
   }
   return (
-    <NextLink passHref locale={locale} href={to}>
-      <StyledLink color={color}>{children}</StyledLink>
+    <NextLink locale={locale} href={to}>
+      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+      <a className={styles.primary}>{children}</a>
     </NextLink>
   );
 };

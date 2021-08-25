@@ -2,12 +2,8 @@
 
 exports[`<Feature /> renders 1`] = `
 <div>
-  <div
-    class="css-vurnku"
-  >
-    <h2
-      class="css-qyfm59"
-    >
+  <div>
+    <h2>
       Feature heading
     </h2>
     <p>

@@ -1,0 +1,12 @@
+$primary-foreground: #16837c;
+$accent-foreground: #a8dcd9;
+
+$breakpoint-small: 32rem;
+$breakpoint-medium: 48rem;
+$breakpoint-large: 64rem;
+
+$primary-gradient: linear-gradient(
+  45deg,
+  $accent-foreground -30%,
+  $primary-foreground 110%
+);
