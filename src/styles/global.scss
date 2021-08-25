@@ -1,3 +1,15 @@
+@use './variables';
+
+html {
+  color: variables.$color-dark;
+  background-color: variables.$color-light;
+}
+
+[data-theme="dark"] {
+  color: variables.$color-light;
+  background-color: variables.$color-dark;
+}
+
 body {
   margin: 0;
   padding: 0;

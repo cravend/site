@@ -19,6 +19,7 @@
     "@next/env": "^11.1.0",
     "@socialgouv/matomo-next": "^1.2.2",
     "next": "^11.1.0",
+    "next-themes": "^0.0.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass": "^1.38.1"
