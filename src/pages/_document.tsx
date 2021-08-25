@@ -12,7 +12,7 @@ const generateCsp = (scriptSource: string): [csp: string, nonce: string] => {
   csp += "img-src 'self' data:;";
   csp += "prefetch-src 'self';";
   csp += "font-src https://fonts.gstatic.com;";
-  csp += "style-src https://fonts.googleapis.com 'unsafe-inline';"; // NextJS requires 'unsafe-inline'
+  csp += "style-src https://fonts.googleapis.com 'self' 'unsafe-inline'; "; // NextJS requires 'unsafe-inline'
   if (process.env.NODE_ENV === "production") {
     csp += `script-src 'nonce-${nonce}' https://matomo.daltoncraven.me 'strict-dynamic';`; // NextJS requires 'self' and 'unsafe-eval' in dev (faster source maps)
     csp +=
