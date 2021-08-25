@@ -2581,6 +2581,7 @@ __metadata:
     jest: ^27.0.6
     lint-staged: ^11.1.2
     next: ^11.1.0
+    next-themes: ^0.0.15
     prettier: ^2.3.2
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -6033,6 +6034,17 @@ __metadata:
   version: 1.4.0
   resolution: "natural-compare@npm:1.4.0"
   checksum: 23ad088b08f898fc9b53011d7bb78ec48e79de7627e01ab5518e806033861bef68d5b0cd0e2205c2f36690ac9571ff6bcb05eb777ced2eeda8d4ac5b44592c3d
+  languageName: node
+  linkType: hard
+
+"next-themes@npm:^0.0.15":
+  version: 0.0.15
+  resolution: "next-themes@npm:0.0.15"
+  peerDependencies:
+    next: "*"
+    react: "*"
+    react-dom: "*"
+  checksum: c85793fa07e08bb060993d4ad8b3a79a9db83d16a0256d3852676621e0ab1b8a013ef984216581d24f29b8c47da2ebfbe456229564e73edd50e89b64f307f174
   languageName: node
   linkType: hard
 
