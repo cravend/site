@@ -17,6 +17,10 @@
   @media screen and (min-width: variables.$breakpoint-medium) {
     padding: 2rem;
   }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: variables.$color-grey;
+  }
 }
 
 .heading {

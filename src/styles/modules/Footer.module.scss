@@ -1,9 +1,9 @@
 @use '../mixins';
+@use '../variables';
 
 .background {
-  color: white;
-  background-color: #17171d;
-  height: 100px;
+  color: variables.$color-light;
+  background-color: variables.$color-grey;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,5 +11,5 @@
 
 .container {
   @include mixins.container-copy;
-  padding: 0 1rem;
+  padding: 1rem;
 }

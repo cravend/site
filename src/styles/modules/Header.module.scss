@@ -20,7 +20,7 @@
 .text_container {
   margin: 0;
   text-align: center;
-  color: white;
+  color: variables.$color-light;
 
   @media screen and (min-width: variables.$breakpoint-small) {
     text-align: right;

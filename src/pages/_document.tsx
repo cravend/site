@@ -14,7 +14,7 @@ const generateCsp = (scriptSource: string): [csp: string, nonce: string] => {
   csp += "font-src https://fonts.gstatic.com;";
   csp += "style-src https://fonts.googleapis.com 'self' 'unsafe-inline'; "; // NextJS requires 'unsafe-inline'
   if (process.env.NODE_ENV === "production") {
-    csp += `script-src 'nonce-${nonce}' https://matomo.daltoncraven.me 'strict-dynamic';`; // NextJS requires 'self' and 'unsafe-eval' in dev (faster source maps)
+    csp += `script-src 'nonce-${nonce}' https://matomo.daltoncraven.me 'strict-dynamic';`;
     csp +=
       "connect-src https://matomo.daltoncraven.me https://vitals.vercel-insights.com 'self';";
   } else {
@@ -34,6 +34,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head nonce={nonce}>
+          <meta name="color-scheme" content="light dark" />
           <meta httpEquiv="Content-Security-Policy" content={csp} />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link

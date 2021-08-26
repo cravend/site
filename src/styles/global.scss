@@ -1,3 +1,15 @@
+@use './variables';
+
+:root {
+  color: variables.$color-dark;
+  background-color: variables.$color-light;
+
+  @media (prefers-color-scheme: dark) {
+    color: variables.$color-light;
+    background-color: variables.$color-dark;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
