@@ -3,11 +3,11 @@
 :root {
   color: variables.$color-dark;
   background-color: variables.$color-light;
-}
 
-[data-theme="dark"] {
-  color: variables.$color-light;
-  background-color: variables.$color-dark;
+  @media (prefers-color-scheme: dark) {
+    color: variables.$color-light;
+    background-color: variables.$color-dark;
+  }
 }
 
 body {
