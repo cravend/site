@@ -18,7 +18,7 @@
     padding: 2rem;
   }
 
-  [data-theme="dark"] & {
+  @media (prefers-color-scheme: dark) {
     background-color: variables.$color-grey;
   }
 }
