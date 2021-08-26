@@ -1,6 +1,6 @@
 @use './variables';
 
-html {
+:root {
   color: variables.$color-dark;
   background-color: variables.$color-light;
 }
