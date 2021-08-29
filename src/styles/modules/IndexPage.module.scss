@@ -4,6 +4,7 @@
 .container {
   @include mixins.container-copy;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .greeting {
@@ -22,7 +23,6 @@
 
 .card_grid {
   display: grid;
-  // margin: 0 3rem;
   gap: 1rem;
   grid-template-columns: 1fr;
   @media screen and (min-width: variables.$breakpoint-small) {
