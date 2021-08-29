@@ -35,8 +35,8 @@
 .title {
   font-size: 2rem;
   font-weight: 700;
+  line-height: 1;
   margin: 0;
-  padding: 0;
 
   @media screen and (min-width: variables.$breakpoint-small) {
     font-size: 3rem;
