@@ -3,7 +3,7 @@
 .normal {
   background-color: variables.$primary-foreground;
   background: variables.$primary-gradient;
-  height: 150px;
+  height: 10rem;
   display: flex;
   align-items: center;
   color: variables.$color-light;
@@ -14,7 +14,7 @@
 .diagonal {
   background-color: variables.$primary-foreground;
   background: variables.$primary-gradient;
-  height: 250px;
+  height: 14rem;
   clip-path: normal;
   display: flex;
   align-items: center;
