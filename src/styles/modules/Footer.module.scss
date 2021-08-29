@@ -10,6 +10,5 @@
 }
 
 .container {
-  @include mixins.container-copy;
   padding: 1rem;
 }
