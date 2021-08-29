@@ -19,6 +19,7 @@
   background-image: variables.$primary-gradient;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 
 .card_grid {
