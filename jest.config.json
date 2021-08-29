@@ -4,7 +4,7 @@
  */
 
 /** @type {import('@jest/types').Config.DefaultOptions} */
-module.exports = {
+{
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -21,13 +21,13 @@ module.exports = {
   // collectCoverage: false,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: ["{components,pages,src}/**/*.{ts,tsx}"],
+  "collectCoverageFrom": ["{components,pages,src}/**/*.{ts,tsx}"],
 
   // The directory where Jest should output its coverage files
   // coverageDirectory: undefined,
 
   // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: ["pages/_app.tsx", "pages/_document.tsx"],
+  "coveragePathIgnorePatterns": ["pages/_app.tsx", "pages/_document.tsx"],
 
   // Indicates which provider should be used to instrument code for coverage
   // coverageProvider: "babel",
@@ -59,13 +59,13 @@ module.exports = {
   // globalTeardown: undefined,
 
   // A set of global variables that need to be available in all test environments
-  globals: {
+  "globals": {
     // we must specify a custom tsconfig for tests because we need the typescript transform
     // to transform jsx into js rather than leaving it jsx such as the next build requires.  you
     // can see this setting in tsconfig.jest.json -> "jsx": "react"
     "ts-jest": {
-      tsconfig: "tsconfig.dev.json",
-    },
+      "tsconfig": "tsconfig.dev.json"
+    }
   },
 
   // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
@@ -87,8 +87,8 @@ module.exports = {
   // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  moduleNameMapper: {
-    "^.+\\.(css|sass|scss)$": "babel-jest",
+  "moduleNameMapper": {
+    "^.+\\.(css|sass|scss)$": "babel-jest"
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -101,7 +101,7 @@ module.exports = {
   // notifyMode: "failure-change",
 
   // A preset that is used as a base for Jest's configuration
-  preset: "ts-jest",
+  "preset": "ts-jest",
 
   // Run tests from one or more projects
   // projects: undefined,
@@ -136,7 +136,7 @@ module.exports = {
   // setupFiles: [],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  setupFilesAfterEnv: ["./src/tests/setup.ts"],
+  "setupFilesAfterEnv": ["./src/tests/setup.ts"],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
@@ -145,7 +145,7 @@ module.exports = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: "jsdom",
+  "testEnvironment": "jsdom",
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -160,7 +160,7 @@ module.exports = {
   // ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns: ["/build/"],
+  "testPathIgnorePatterns": ["/build/"]
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
@@ -197,4 +197,4 @@ module.exports = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
-};
+}
