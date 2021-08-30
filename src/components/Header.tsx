@@ -11,13 +11,9 @@ const Header: FC = () => {
   return (
     <Hero isDiagonal>
       <div className={styles.container}>
-        <Image
-          className={styles.pfp}
-          width={150}
-          height={150}
-          src={profilePic}
-          alt={t("pfp")}
-        />
+        <div className={styles.profile}>
+          <Image className={styles.pfp} src={profilePic} alt={t("pfp")} />
+        </div>
         <div className={styles.text_container}>
           <h1 className={styles.title}>{t("name")}</h1>
           <h3 className={styles.subtitle}>{t("tagline")}</h3>
