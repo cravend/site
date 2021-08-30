@@ -1,7 +1,9 @@
 @use "../variables";
 
 .container {
+  font-size: 0.875rem;
   @media screen and (min-width: variables.$breakpoint-small) {
+    font-size: 1rem;
     position: absolute;
     top: 1rem;
     right: 1rem;
