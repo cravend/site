@@ -61,5 +61,10 @@
     ],
     "*.{yml,json,scss}": "prettier --write"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "packageManager": "yarn@3.0.1"
 }

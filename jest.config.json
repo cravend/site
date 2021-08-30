@@ -1,0 +1,16 @@
+{
+  "collectCoverageFrom": ["**/*.{ts,tsx}"],
+  "coveragePathIgnorePatterns": ["pages/_app.tsx", "pages/_document.tsx"],
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "tsconfig.dev.json"
+    }
+  },
+  "moduleNameMapper": {
+    "^.+\\.(css|sass|scss)$": "babel-jest"
+  },
+  "preset": "ts-jest",
+  "setupFilesAfterEnv": ["./src/tests/setup.ts"],
+  "testEnvironment": "jsdom",
+  "testPathIgnorePatterns": ["/build/"]
+}
