@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem;
 
   @media screen and (min-width: variables.$breakpoint-small) {
     margin-bottom: 2rem;
@@ -22,6 +22,7 @@
   margin: 0;
   text-align: center;
   color: variables.$color-light;
+  padding: 0.5rem;
 
   @media screen and (min-width: variables.$breakpoint-small) {
     text-align: right;
