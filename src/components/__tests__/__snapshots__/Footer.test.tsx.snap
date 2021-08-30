@@ -4,6 +4,7 @@ exports[`<Footer /> displays the current year 1`] = `
 <p>
   © 2021 Dalton Craven | View source on 
   <a
+    class="primary"
     href="https://github.com/cravend/site"
   >
     GitHub
@@ -13,11 +14,16 @@ exports[`<Footer /> displays the current year 1`] = `
 
 exports[`<Footer /> renders 1`] = `
 <div>
-  <footer>
-    <div>
+  <footer
+    class="background"
+  >
+    <div
+      class="container"
+    >
       <p>
         © 2021 Dalton Craven | View source on 
         <a
+          class="primary"
           href="https://github.com/cravend/site"
         >
           GitHub
