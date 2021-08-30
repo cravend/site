@@ -1,6 +1,7 @@
 import Image from "next/image";
 import useLocalization from "../i18n/useLocalization";
 import styles from "../styles/modules/Header.module.scss";
+import profilePic from "../assets/images/dalton-craven.webp";
 import Hero from "./Hero";
 import type { FC } from "react";
 
@@ -11,10 +12,10 @@ const Header: FC = () => {
     <Hero isDiagonal>
       <div className={styles.container}>
         <Image
+          className={styles.pfp}
           width={150}
           height={150}
-          className={styles.pfp}
-          src="/images/dalton-craven.jpg"
+          src={profilePic}
           alt={t("pfp")}
         />
         <div className={styles.text_container}>
