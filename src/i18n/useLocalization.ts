@@ -1,13 +1,13 @@
 import { useRouter } from "next/router";
-import translations from "../translations/strings";
-import {
-  getLocale,
-  toggleLocale,
-  isTranslationKey,
-} from "../translations/utils";
-import type { Localization } from "../translations/types";
+import translations from "./translations";
+import { getLocale, toggleLocale, isTranslationKey } from "./utils";
+import type { Locale } from "./config";
 
-const useLocalization = (): Localization => {
+const useLocalization = (): readonly [
+  t: (key: string) => string,
+  locale: Locale,
+  otherLocale: Locale
+] => {
   const router = useRouter();
   const locale = getLocale(router);
 

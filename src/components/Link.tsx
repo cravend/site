@@ -1,6 +1,6 @@
 import NextLink from "next/link";
-import { Locale } from "../translations/types";
 import styles from "../styles/modules/Link.module.scss";
+import type { Locale } from "../i18n/config";
 import type { FC, ReactNode } from "react";
 
 type LinkType = {
