@@ -1,6 +1,6 @@
-import common from "./common";
-import en from "./en";
-import fr from "./fr";
+import common from "./common.json";
+import en from "./en.json";
+import fr from "./fr.json";
 
 export default {
   en: { ...common, ...en },
