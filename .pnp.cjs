@@ -60,6 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:4.2.0"],
             ["eslint-plugin-testing-library", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:4.10.1"],
             ["husky", "npm:7.0.1"],
+            ["identity-obj-proxy", "npm:3.0.0"],
             ["jest", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:27.0.6"],
             ["lint-staged", "npm:11.1.2"],
             ["next", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:11.1.0"],
@@ -3436,6 +3437,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:4.2.0"],
             ["eslint-plugin-testing-library", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:4.10.1"],
             ["husky", "npm:7.0.1"],
+            ["identity-obj-proxy", "npm:3.0.0"],
             ["jest", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:27.0.6"],
             ["lint-staged", "npm:11.1.2"],
             ["next", "virtual:7a58d29e69144a5af309c07fe2cb6115b037f5f7834a1a046585d8b3139a3c33007254728f1b61f9bf23d74f438b55719afefa87d018af996aa340ac0f06da8e#npm:11.1.0"],
@@ -5343,6 +5345,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["harmony-reflect", [
+        ["npm:1.6.2", {
+          "packageLocation": "./.yarn/cache/harmony-reflect-npm-1.6.2-47a9f53361-2e5bae414c.zip/node_modules/harmony-reflect/",
+          "packageDependencies": [
+            ["harmony-reflect", "npm:1.6.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["has", [
         ["npm:1.0.3", {
           "packageLocation": "./.yarn/cache/has-npm-1.0.3-b7f00631c1-b9ad53d53b.zip/node_modules/has/",
@@ -5573,6 +5584,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["iconv-lite", "npm:0.6.3"],
             ["safer-buffer", "npm:2.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["identity-obj-proxy", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/identity-obj-proxy-npm-3.0.0-080ab9ac1e-97559f8ea2.zip/node_modules/identity-obj-proxy/",
+          "packageDependencies": [
+            ["identity-obj-proxy", "npm:3.0.0"],
+            ["harmony-reflect", "npm:1.6.2"]
           ],
           "linkType": "HARD",
         }]
