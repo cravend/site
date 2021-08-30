@@ -3,6 +3,7 @@
 exports[`<Link /> renders 1`] = `
 <div>
   <a
+    class="primary"
     href="/"
   >
     Hello, world!

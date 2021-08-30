@@ -2,8 +2,12 @@
 
 exports[`<IndexPage /> renders 1`] = `
 <div>
-  <header>
-    <div>
+  <header
+    class="diagonal"
+  >
+    <div
+      class="container"
+    >
       <div
         style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
       >
@@ -20,35 +24,51 @@ exports[`<IndexPage /> renders 1`] = `
         <noscript />
         <img
           alt="Profile picture"
+          class="pfp"
           data-nimg="true"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
         />
       </div>
-      <div>
-        <h1>
+      <div
+        class="text_container"
+      >
+        <h1
+          class="title"
+        >
           Dalton Craven
         </h1>
-        <h3>
+        <h3
+          class="subtitle"
+        >
           Student & Developer
         </h3>
       </div>
     </div>
   </header>
-  <main>
-    <div>
+  <main
+    class="container"
+  >
+    <div
+      class="container"
+    >
       <a
+        class="primary"
         href="/"
       >
         Lire en français
       </a>
     </div>
     <p>
-      <span>
+      <span
+        class="greeting"
+      >
         Hello! My name is
          
-        <span>
+        <span
+          class="gradient"
+        >
           Dalton Craven
         </span>
         .
@@ -57,31 +77,46 @@ exports[`<IndexPage /> renders 1`] = `
       It’s hard to introduce myself over the internet, but here’s a little bit about me
       : 
     </p>
-    <div>
-      <div>
-        <h2>
+    <div
+      class="card_grid"
+    >
+      <div
+        class="card"
+      >
+        <h2
+          class="heading"
+        >
           Education
         </h2>
         <p>
           I’m a sophomore at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the University Top Scholars.
         </p>
       </div>
-      <div>
-        <h2>
+      <div
+        class="card"
+      >
+        <h2
+          class="heading"
+        >
           Study Abroad
         </h2>
         <p>
           I’m currently studying abroad at the American University of Paris! I’ll be in France for the entirety of 2021. Spending an extended period of time in a different culture has been a goal of mine for a long time, and I’m looking forward to fully experiencing it when COVID is finally over.
         </p>
       </div>
-      <div>
-        <h2>
+      <div
+        class="card"
+      >
+        <h2
+          class="heading"
+        >
           Work
         </h2>
         <p>
           I recently wrapped up a full-time internship as a front-end web developer at
            
           <a
+            class="primary"
             href="https://cloverleaf.me"
           >
             Cloverleaf
@@ -91,8 +126,12 @@ exports[`<IndexPage /> renders 1`] = `
           There, I used a variety of technologies (primarily Next/React and GraphQL) in an agile development team to routinely publish production code for our application. I was also an undergraduate teaching assistant for the spring 2020 semester, running eight sections of Linux/UNIX labs for approximately 250 students.
         </p>
       </div>
-      <div>
-        <h2>
+      <div
+        class="card"
+      >
+        <h2
+          class="heading"
+        >
           Freelancing
         </h2>
         <p>
@@ -101,6 +140,7 @@ exports[`<IndexPage /> renders 1`] = `
         <ul>
           <li>
             <a
+              class="primary"
               href="https://crystalclearcontractors.com"
             >
               Crystal Clear Cleaning & Contracting
@@ -108,6 +148,7 @@ exports[`<IndexPage /> renders 1`] = `
           </li>
           <li>
             <a
+              class="primary"
               href="https://elitepaintcincy.com"
             >
               Elite Painting
@@ -115,6 +156,7 @@ exports[`<IndexPage /> renders 1`] = `
           </li>
           <li>
             <a
+              class="primary"
               href="https://elitecontractingcincy.com"
             >
               Elite Contracting
@@ -122,6 +164,7 @@ exports[`<IndexPage /> renders 1`] = `
           </li>
           <li>
             <a
+              class="primary"
               href="https://mabbaseball.com"
             >
               Mason Amateur Baseball
@@ -187,6 +230,7 @@ exports[`<IndexPage /> renders 1`] = `
           : 
         </strong>
         <a
+          class="primary"
           href="tel:+15138136421"
         >
           +1 513 813 6421
@@ -198,6 +242,7 @@ exports[`<IndexPage /> renders 1`] = `
           : 
         </strong>
         <a
+          class="primary"
           href="tel:+330749792094"
         >
           +33 07 49 79 20 94
@@ -209,6 +254,7 @@ exports[`<IndexPage /> renders 1`] = `
           : 
         </strong>
         <a
+          class="primary"
           href="mailto:daltonjcraven@gmail.com"
         >
           daltonjcraven@gmail.com
@@ -220,6 +266,7 @@ exports[`<IndexPage /> renders 1`] = `
           : 
         </strong>
         <a
+          class="primary"
           href="https://github.com/cravend"
         >
           cravend
@@ -231,6 +278,7 @@ exports[`<IndexPage /> renders 1`] = `
           : 
         </strong>
         <a
+          class="primary"
           href="https://gitlab.com/cravend"
         >
           cravend
@@ -242,6 +290,7 @@ exports[`<IndexPage /> renders 1`] = `
           : 
         </strong>
         <a
+          class="primary"
           href="https://linkedin.com/in/daltonjcraven"
         >
           daltonjcraven
@@ -249,11 +298,16 @@ exports[`<IndexPage /> renders 1`] = `
       </li>
     </ul>
   </main>
-  <footer>
-    <div>
+  <footer
+    class="background"
+  >
+    <div
+      class="container"
+    >
       <p>
         © 2021 Dalton Craven | View source on 
         <a
+          class="primary"
           href="https://github.com/cravend/site"
         >
           GitHub
