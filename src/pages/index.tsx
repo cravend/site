@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Link from "../components/Link";
 import Feature from "../components/Feature";
 import Footer from "../components/Footer";
-import useLocalization from "../hooks/useLocalization";
+import useLocalization from "../i18n/useLocalization";
 import LanguageToggle from "../components/LanguageToggle";
 import styles from "../styles/modules/IndexPage.module.scss";
 import type { FC } from "react";

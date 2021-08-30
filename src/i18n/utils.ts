@@ -1,7 +1,10 @@
 import { locales, defaultLocale } from "./config";
-import strings from "./strings";
-import type { Locale, TranslationKey } from "./types";
+import translations from "./translations";
+import type { Locale } from "./config";
 import type { NextRouter } from "next/router";
+
+type TranslationKey = keyof typeof translations.en &
+  keyof typeof translations.fr;
 
 /**
  * @description This function is used to check if a string is a valid locale.
@@ -19,7 +22,7 @@ export const isLocale = (tested?: string): tested is Locale =>
  * @returns {boolean} True if the string is a valid translation key, false otherwise.
  */
 export const isTranslationKey = (key: string): key is TranslationKey =>
-  key in strings.en && key in strings.fr;
+  key in translations.en && key in translations.fr;
 
 /**
  * @description This function is used to get the current locale.
