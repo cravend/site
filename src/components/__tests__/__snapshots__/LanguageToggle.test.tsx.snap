@@ -2,8 +2,11 @@
 
 exports[`<LanguageToggle /> { locale: "en" } renders 1`] = `
 <div>
-  <div>
+  <div
+    class="container"
+  >
     <a
+      class="primary"
       href="/"
     >
       Lire en français
@@ -14,8 +17,11 @@ exports[`<LanguageToggle /> { locale: "en" } renders 1`] = `
 
 exports[`<LanguageToggle /> { locale: "fr" } renders 1`] = `
 <div>
-  <div>
+  <div
+    class="container"
+  >
     <a
+      class="primary"
       href="/"
     >
       Read in English
