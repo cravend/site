@@ -3,6 +3,12 @@
   "compilerOptions": {
     "jsx": "react-jsxdev"
   },
-  "include": ["next.config.js", "**/*.ts", "**/*.tsx", "**/*.json"],
+  "include": [
+    "next.config.js",
+    "src/tests/fileMock.js",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.json"
+  ],
   "exclude": ["node_modules"]
 }
