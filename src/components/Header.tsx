@@ -12,7 +12,13 @@ const Header: FC = () => {
     <Hero isDiagonal>
       <div className={styles.container}>
         <div className={styles.profile}>
-          <Image className={styles.pfp} src={profilePic} alt={t("pfp")} />
+          <Image
+            className={styles.pfp}
+            src={profilePic}
+            alt={t("pfp")}
+            width={150}
+            height={150}
+          />
         </div>
         <div className={styles.text_container}>
           <h1 className={styles.title}>{t("name")}</h1>
