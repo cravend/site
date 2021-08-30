@@ -1,4 +1,4 @@
-import useLocalization from "../hooks/useLocalization";
+import useLocalization from "../i18n/useLocalization";
 import styles from "../styles/modules/LanguageToggle.module.scss";
 import Link from "./Link";
 import type { FC } from "react";
