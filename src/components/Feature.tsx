@@ -1,12 +1,12 @@
 import styles from "../styles/modules/Feature.module.scss";
-import type { FC, ReactNode } from "react";
+import type { ReactNode } from "react";
 
-type FeatureType = {
+export type FeatureProps = {
   heading: string;
   children: ReactNode;
 };
 
-const Feature: FC<FeatureType> = ({ heading, children }: FeatureType) => (
+const Feature = ({ heading, children }: FeatureProps) => (
   <div className={styles.card}>
     <h2 className={styles.heading}>{heading}</h2>
     {children}

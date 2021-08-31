@@ -1,8 +1,9 @@
 import crypto from "crypto";
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import type { ReactElement } from "react";
 
-const generateCsp = (scriptSource: string): [csp: string, nonce: string] => {
+const generateCsp = (
+  scriptSource: string
+): readonly [csp: string, nonce: string] => {
   const matomoUrl = process.env.NEXT_PUBLIC_MATOMO_URL ?? "";
   const hash = crypto.createHash("sha256");
   hash.update(scriptSource);
@@ -22,11 +23,11 @@ const generateCsp = (scriptSource: string): [csp: string, nonce: string] => {
     csp += `connect-src 'self' ${matomoUrl};`;
   }
 
-  return [csp, nonce];
+  return [csp, nonce] as const;
 };
 
 export default class MyDocument extends Document {
-  render(): ReactElement {
+  render() {
     const [csp, nonce] = generateCsp(
       NextScript.getInlineScriptSource(this.props)
     );

@@ -6,9 +6,8 @@ import Footer from "../components/Footer";
 import useLocalization from "../i18n/useLocalization";
 import LanguageToggle from "../components/LanguageToggle";
 import styles from "../styles/modules/IndexPage.module.scss";
-import type { FC } from "react";
 
-const IndexPage: FC = () => {
+const IndexPage = () => {
   const [t] = useLocalization();
 
   return (
