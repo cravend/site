@@ -1,12 +1,12 @@
 import styles from "../styles/modules/Hero.module.scss";
-import type { ReactChild, FC } from "react";
+import type { ReactNode } from "react";
 
-type HeroType = {
+export type HeroProps = {
   isDiagonal?: boolean;
-  children: ReactChild;
+  children: ReactNode;
 };
 
-const Hero: FC<HeroType> = ({ isDiagonal = false, children }: HeroType) => (
+const Hero = ({ isDiagonal = false, children }: HeroProps) => (
   <header className={isDiagonal ? styles.diagonal : styles.normal}>
     {children}
   </header>

@@ -1,17 +1,12 @@
 import { useRouter } from "next/router";
 import translations from "./translations";
 import { getLocale, toggleLocale, isTranslationKey } from "./utils";
-import type { Locale } from "./config";
 
-const useLocalization = (): readonly [
-  t: (key: string) => string,
-  locale: Locale,
-  otherLocale: Locale
-] => {
+const useLocalization = () => {
   const router = useRouter();
   const locale = getLocale(router);
 
-  const t = (key: string): string => {
+  const t = (key: string) => {
     if (!isTranslationKey(key)) {
       // eslint-disable-next-line no-console
       console.warn(`Translation '${key}' for locale '${locale}' not found.`);

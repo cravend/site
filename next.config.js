@@ -1,3 +1,5 @@
+// @ts-check
+
 const securityHeaders = [
   {
     key: "X-DNS-Prefetch-Control",
