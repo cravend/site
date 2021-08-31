@@ -1,9 +1,8 @@
 import useLocalization from "../i18n/useLocalization";
 import styles from "../styles/modules/Footer.module.scss";
 import Link from "./Link";
-import type { FC } from "react";
 
-const Footer: FC = () => {
+const Footer = () => {
   const [t] = useLocalization();
   const year = new Date().getFullYear();
 

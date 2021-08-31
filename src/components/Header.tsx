@@ -3,9 +3,8 @@ import useLocalization from "../i18n/useLocalization";
 import styles from "../styles/modules/Header.module.scss";
 import profilePic from "../assets/images/dalton-craven.webp";
 import Hero from "./Hero";
-import type { FC } from "react";
 
-const Header: FC = () => {
+const Header = () => {
   const [t] = useLocalization();
 
   return (

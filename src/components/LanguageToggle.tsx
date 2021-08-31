@@ -1,9 +1,8 @@
 import useLocalization from "../i18n/useLocalization";
 import styles from "../styles/modules/LanguageToggle.module.scss";
 import Link from "./Link";
-import type { FC } from "react";
 
-const LanguageToggle: FC = () => {
+const LanguageToggle = () => {
   const [t, , otherLocale] = useLocalization();
 
   return (

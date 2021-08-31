@@ -1,16 +1,16 @@
 import NextLink from "next/link";
 import styles from "../styles/modules/Link.module.scss";
 import type { Locale } from "../i18n/config";
-import type { FC, ReactNode } from "react";
+import type { ReactNode } from "react";
 
-type LinkType = {
+export type LinkProps = {
   to: string;
   isExternal?: boolean;
   locale?: Locale;
   children: ReactNode;
 };
 
-const Link: FC<LinkType> = ({ to, isExternal, locale, children }: LinkType) => {
+const Link = ({ to, isExternal, locale, children }: LinkProps) => {
   const externalCheck = /^https?:\/\//;
   if (isExternal || externalCheck.test(to)) {
     return (
