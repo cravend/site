@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import { init } from "@socialgouv/matomo-next";
 import type { AppProps } from "next/app";
-import type { FC } from "react";
 import "../styles/global.scss";
 
-const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     const url = process.env.NEXT_PUBLIC_MATOMO_URL;
     const siteId = process.env.NEXT_PUBLIC_MATOMO_SITE_ID;

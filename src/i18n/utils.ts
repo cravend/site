@@ -3,9 +3,6 @@ import translations from "./translations";
 import type { Locale } from "./config";
 import type { NextRouter } from "next/router";
 
-type TranslationKey = keyof typeof translations.en &
-  keyof typeof translations.fr;
-
 /**
  * @description This function is used to check if a string is a valid locale.
  *
@@ -15,6 +12,8 @@ type TranslationKey = keyof typeof translations.en &
 export const isLocale = (tested?: string): tested is Locale =>
   locales.some((locale) => locale === tested);
 
+type TranslationKey = keyof typeof translations.en &
+  keyof typeof translations.fr;
 /**
  * @description This function is used to check if a string is a valid translation key.
  *
@@ -34,7 +33,7 @@ export const isTranslationKey = (key: string): key is TranslationKey =>
  * @param {NextRouter} router The NextRouter instance.
  * @returns {Locale} The current locale.
  */
-export const getLocale = (router: NextRouter): Locale => {
+export const getLocale = (router: NextRouter) => {
   if (isLocale(router.locale)) return router.locale;
   if (isLocale(router.defaultLocale)) return router.defaultLocale;
   return defaultLocale;
@@ -44,7 +43,7 @@ export const getLocale = (router: NextRouter): Locale => {
  * @description This function is used to toggle the current locale.
  *
  * @param {string} locale The current locale to be toggled.
- * @returns {string} The new locale.
+ * @returns {Locale} The new locale.
  */
-export const toggleLocale = (locale: Locale): Locale =>
+export const toggleLocale = (locale: Locale) =>
   locale === locales[0] ? locales[1] : locales[0];
