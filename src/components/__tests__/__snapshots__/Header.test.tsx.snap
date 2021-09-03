@@ -43,11 +43,13 @@ exports[`<Header /> renders 1`] = `
         >
           Dalton Craven
         </h1>
-        <h3
+        <p
           class="subtitle"
         >
-          Student & Developer
-        </h3>
+          <b>
+            Student & Developer
+          </b>
+        </p>
       </div>
     </div>
   </header>

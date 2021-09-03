@@ -43,11 +43,13 @@ exports[`<IndexPage /> renders 1`] = `
         >
           Dalton Craven
         </h1>
-        <h3
+        <p
           class="subtitle"
         >
-          Student & Developer
-        </h3>
+          <b>
+            Student & Developer
+          </b>
+        </p>
       </div>
     </div>
   </header>
@@ -270,6 +272,7 @@ exports[`<IndexPage /> renders 1`] = `
           : 
         </strong>
         <a
+          aria-label="GitHub — cravend"
           class="primary"
           href="https://github.com/cravend"
         >
@@ -282,6 +285,7 @@ exports[`<IndexPage /> renders 1`] = `
           : 
         </strong>
         <a
+          aria-label="GitLab — cravend"
           class="primary"
           href="https://gitlab.com/cravend"
         >
