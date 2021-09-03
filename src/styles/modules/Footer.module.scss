@@ -7,6 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  a {
+    color: variables.$color-light;
+  }
 }
 
 .container {
