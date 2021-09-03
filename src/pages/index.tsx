@@ -140,7 +140,11 @@ const IndexPage = () => {
               {t("github")}
               {t("colon")}
             </strong>
-            <Link isExternal to="https://github.com/cravend">
+            <Link
+              isExternal
+              to="https://github.com/cravend"
+              ariaLabel={`${t("github")} — ${t("github_username")}`}
+            >
               {t("github_username")}
             </Link>
           </li>
@@ -149,7 +153,11 @@ const IndexPage = () => {
               {t("gitlab")}
               {t("colon")}
             </strong>
-            <Link isExternal to="https://gitlab.com/cravend">
+            <Link
+              isExternal
+              to="https://gitlab.com/cravend"
+              ariaLabel={`${t("gitlab")} — ${t("gitlab_username")}`}
+            >
               {t("gitlab_username")}
             </Link>
           </li>

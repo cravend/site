@@ -7,14 +7,15 @@ export type LinkProps = {
   to: string;
   isExternal?: boolean;
   locale?: Locale;
+  ariaLabel?: string;
   children: ReactNode;
 };
 
-const Link = ({ to, isExternal, locale, children }: LinkProps) => {
+const Link = ({ to, isExternal, locale, ariaLabel, children }: LinkProps) => {
   const externalCheck = /^https?:\/\//;
   if (isExternal || externalCheck.test(to)) {
     return (
-      <a className={styles.primary} href={to}>
+      <a aria-label={ariaLabel} className={styles.primary} href={to}>
         {children}
       </a>
     );
@@ -22,7 +23,9 @@ const Link = ({ to, isExternal, locale, children }: LinkProps) => {
   return (
     <NextLink locale={locale} href={to}>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a className={styles.primary}>{children}</a>
+      <a aria-label={ariaLabel} className={styles.primary}>
+        {children}
+      </a>
     </NextLink>
   );
 };
