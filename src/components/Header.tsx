@@ -21,7 +21,9 @@ const Header = () => {
         </div>
         <div className={styles.text_container}>
           <h1 className={styles.title}>{t("name")}</h1>
-          <h3 className={styles.subtitle}>{t("tagline")}</h3>
+          <p className={styles.subtitle}>
+            <b>{t("tagline")}</b>
+          </p>
         </div>
       </div>
     </Hero>
