@@ -47,6 +47,10 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap"
             rel="stylesheet"
           />
+          <meta
+            name="description"
+            content="Student & developer, working on the web in Paris, FR. he/him. Click to learn more :-)"
+          />
         </Head>
         <body>
           <Main />
