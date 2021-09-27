@@ -131,7 +131,7 @@ const IndexPage = () => {
               {t("email")}
               {t("colon")}
             </strong>
-            <Link isExternal to="mailto:daltonjcraven@protonmail.com">
+            <Link isExternal to="mailto:daltoncraven@protonmail.com">
               {t("email_address")}
             </Link>
           </li>
@@ -166,7 +166,7 @@ const IndexPage = () => {
               {t("linkedin")}
               {t("colon")}
             </strong>
-            <Link isExternal to="https://linkedin.com/in/daltonjcraven">
+            <Link isExternal to="https://linkedin.com/in/daltoncraven">
               {t("linkedin_username")}
             </Link>
           </li>
