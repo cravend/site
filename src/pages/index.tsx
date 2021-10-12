@@ -170,6 +170,15 @@ const IndexPage = () => {
               {t("linkedin_username")}
             </Link>
           </li>
+          <li>
+            <strong>
+              {t("gpg")}
+              {t("colon")}
+            </strong>
+            <Link isExternal to="https://github.com/cravend.gpg">
+              {t("gpg_key")}
+            </Link>
+          </li>
         </ul>
       </main>
       <Footer />
