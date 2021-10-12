@@ -272,7 +272,6 @@ exports[`<IndexPage /> renders 1`] = `
           : 
         </strong>
         <a
-          aria-label="GitHub — cravend"
           class="primary"
           href="https://github.com/cravend"
         >
@@ -285,7 +284,6 @@ exports[`<IndexPage /> renders 1`] = `
           : 
         </strong>
         <a
-          aria-label="GitLab — cravend"
           class="primary"
           href="https://gitlab.com/cravend"
         >
@@ -299,9 +297,21 @@ exports[`<IndexPage /> renders 1`] = `
         </strong>
         <a
           class="primary"
-          href="https://linkedin.com/in/daltoncraven"
+          href="https://www.linkedin.com/in/daltoncraven/"
         >
           daltoncraven
+        </a>
+      </li>
+      <li>
+        <strong>
+          GPG
+          : 
+        </strong>
+        <a
+          class="primary"
+          href="https://github.com/cravend.gpg"
+        >
+          0xFF3FA75081B3B98C
         </a>
       </li>
     </ul>
