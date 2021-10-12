@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import useLocalization from "../i18n/useLocalization";
 import LanguageToggle from "../components/LanguageToggle";
 import styles from "../styles/modules/IndexPage.module.scss";
+import contacts from "../data/contacts.json";
 
 const IndexPage = () => {
   const [t] = useLocalization();
@@ -108,77 +109,17 @@ const IndexPage = () => {
         </ul>
         <h2>{t("contact")}</h2>
         <ul>
-          <li>
-            <strong>
-              {t("american_phone")}
-              {t("colon")}
-            </strong>
-            <Link isExternal to="tel:+15138136421">
-              {t("american_phone_number")}
-            </Link>
-          </li>
-          <li>
-            <strong>
-              {t("french_phone")}
-              {t("colon")}
-            </strong>
-            <Link isExternal to="tel:+330749792094">
-              {t("french_phone_number")}
-            </Link>
-          </li>
-          <li>
-            <strong>
-              {t("email")}
-              {t("colon")}
-            </strong>
-            <Link isExternal to="mailto:daltoncraven@protonmail.com">
-              {t("email_address")}
-            </Link>
-          </li>
-          <li>
-            <strong>
-              {t("github")}
-              {t("colon")}
-            </strong>
-            <Link
-              isExternal
-              to="https://github.com/cravend"
-              ariaLabel={`${t("github")} — ${t("github_username")}`}
-            >
-              {t("github_username")}
-            </Link>
-          </li>
-          <li>
-            <strong>
-              {t("gitlab")}
-              {t("colon")}
-            </strong>
-            <Link
-              isExternal
-              to="https://gitlab.com/cravend"
-              ariaLabel={`${t("gitlab")} — ${t("gitlab_username")}`}
-            >
-              {t("gitlab_username")}
-            </Link>
-          </li>
-          <li>
-            <strong>
-              {t("linkedin")}
-              {t("colon")}
-            </strong>
-            <Link isExternal to="https://linkedin.com/in/daltoncraven">
-              {t("linkedin_username")}
-            </Link>
-          </li>
-          <li>
-            <strong>
-              {t("gpg")}
-              {t("colon")}
-            </strong>
-            <Link isExternal to="https://github.com/cravend.gpg">
-              {t("gpg_key")}
-            </Link>
-          </li>
+          {contacts.map((contact) => (
+            <li key={contact.title}>
+              <strong>
+                {t(contact.title)}
+                {t("colon")}
+              </strong>
+              <Link isExternal to={contact.link}>
+                {contact.content}
+              </Link>
+            </li>
+          ))}
         </ul>
       </main>
       <Footer />
