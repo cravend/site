@@ -4,7 +4,6 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 const generateCsp = (
   scriptSource: string
 ): readonly [csp: string, nonce: string] => {
-  const matomoUrl = process.env.NEXT_PUBLIC_MATOMO_URL ?? "";
   const hash = crypto.createHash("sha256");
   hash.update(scriptSource);
   const nonce = hash.digest("base64");
@@ -16,11 +15,11 @@ const generateCsp = (
   csp += "font-src https://fonts.gstatic.com;";
   csp += "style-src https://fonts.googleapis.com 'self' 'unsafe-inline'; "; // NextJS requires 'unsafe-inline'
   if (process.env.NODE_ENV === "production") {
-    csp += `script-src 'nonce-${nonce}' ${matomoUrl} 'strict-dynamic';`;
-    csp += `connect-src ${matomoUrl} https://vitals.vercel-insights.com 'self';`;
+    csp += `script-src 'nonce-${nonce}' 'strict-dynamic';`;
+    csp += `connect-src https://vitals.vercel-insights.com 'self';`;
   } else {
-    csp += `script-src 'nonce-${nonce}' 'self' 'unsafe-eval' ${matomoUrl} 'strict-dynamic';`; // NextJS requires 'self' and 'unsafe-eval' in dev (faster source maps)
-    csp += `connect-src 'self' ${matomoUrl};`;
+    csp += `script-src 'nonce-${nonce}' 'self' 'unsafe-eval' 'strict-dynamic';`; // NextJS requires 'self' and 'unsafe-eval' in dev (faster source maps)
+    csp += `connect-src 'self';`;
   }
 
   return [csp, nonce] as const;

@@ -38,7 +38,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/config-conventional", "npm:13.1.0"],
             ["@next/env", "npm:11.1.2"],
             ["@next/eslint-plugin-next", "npm:11.1.2"],
-            ["@socialgouv/matomo-next", "virtual:d6687e1ef299a52cd2ef3c6a8dd2130a1306a82cbb87a75ae7e9bc9542d4f9e853df07c4402184d70861dd28d2cba0bfb841e115180e98969898e4e9a4b6b2cf#npm:1.2.2"],
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:d6687e1ef299a52cd2ef3c6a8dd2130a1306a82cbb87a75ae7e9bc9542d4f9e853df07c4402184d70861dd28d2cba0bfb841e115180e98969898e4e9a4b6b2cf#npm:12.0.0"],
             ["@types/jest", "npm:27.0.1"],
@@ -1658,28 +1657,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@sinonjs/fake-timers", "npm:7.1.2"],
             ["@sinonjs/commons", "npm:1.8.3"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["@socialgouv/matomo-next", [
-        ["npm:1.2.2", {
-          "packageLocation": "./.yarn/cache/@socialgouv-matomo-next-npm-1.2.2-222f8ef6dd-45495c625f.zip/node_modules/@socialgouv/matomo-next/",
-          "packageDependencies": [
-            ["@socialgouv/matomo-next", "npm:1.2.2"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:d6687e1ef299a52cd2ef3c6a8dd2130a1306a82cbb87a75ae7e9bc9542d4f9e853df07c4402184d70861dd28d2cba0bfb841e115180e98969898e4e9a4b6b2cf#npm:1.2.2", {
-          "packageLocation": "./.yarn/__virtual__/@socialgouv-matomo-next-virtual-79bfccbc6b/0/cache/@socialgouv-matomo-next-npm-1.2.2-222f8ef6dd-45495c625f.zip/node_modules/@socialgouv/matomo-next/",
-          "packageDependencies": [
-            ["@socialgouv/matomo-next", "virtual:d6687e1ef299a52cd2ef3c6a8dd2130a1306a82cbb87a75ae7e9bc9542d4f9e853df07c4402184d70861dd28d2cba0bfb841e115180e98969898e4e9a4b6b2cf#npm:1.2.2"],
-            ["@types/next", null],
-            ["next", "virtual:d6687e1ef299a52cd2ef3c6a8dd2130a1306a82cbb87a75ae7e9bc9542d4f9e853df07c4402184d70861dd28d2cba0bfb841e115180e98969898e4e9a4b6b2cf#npm:11.1.2"]
-          ],
-          "packagePeers": [
-            "@types/next",
-            "next"
           ],
           "linkType": "HARD",
         }]
@@ -3464,7 +3441,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/config-conventional", "npm:13.1.0"],
             ["@next/env", "npm:11.1.2"],
             ["@next/eslint-plugin-next", "npm:11.1.2"],
-            ["@socialgouv/matomo-next", "virtual:d6687e1ef299a52cd2ef3c6a8dd2130a1306a82cbb87a75ae7e9bc9542d4f9e853df07c4402184d70861dd28d2cba0bfb841e115180e98969898e4e9a4b6b2cf#npm:1.2.2"],
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:d6687e1ef299a52cd2ef3c6a8dd2130a1306a82cbb87a75ae7e9bc9542d4f9e853df07c4402184d70861dd28d2cba0bfb841e115180e98969898e4e9a4b6b2cf#npm:12.0.0"],
             ["@types/jest", "npm:27.0.1"],

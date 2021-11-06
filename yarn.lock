@@ -1113,15 +1113,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@socialgouv/matomo-next@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "@socialgouv/matomo-next@npm:1.2.2"
-  peerDependencies:
-    next: ">= 9.5.5"
-  checksum: 45495c625f515b123faa561d5b422e9fe5902b6161017ee4092db90693cdcaff33cde1dc38acff5d5d0fdbe6da3ff4622e7950ecf957f94e6c903121cb986891
-  languageName: node
-  linkType: hard
-
 "@testing-library/dom@npm:^7.28.1":
   version: 7.31.2
   resolution: "@testing-library/dom@npm:7.31.2"
@@ -2595,7 +2586,6 @@ __metadata:
     "@commitlint/config-conventional": ^13.1.0
     "@next/env": ^11.1.2
     "@next/eslint-plugin-next": ^11.1.2
-    "@socialgouv/matomo-next": ^1.2.2
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.0.0
     "@types/jest": ^27.0.1
