@@ -1,0 +1,37 @@
+[
+  {
+    "title": "american_phone",
+    "content": "+1 513 813 6421",
+    "link": "tel:+15138136421"
+  },
+  {
+    "title": "french_phone",
+    "content": "+33 07 49 79 20 94",
+    "link": "tel:+330749792094"
+  },
+  {
+    "title": "email",
+    "content": "daltoncraven@protonmail.com",
+    "link": "mailto:daltoncraven@protonmail.com"
+  },
+  {
+    "title": "github",
+    "content": "cravend",
+    "link": "https://github.com/cravend"
+  },
+  {
+    "title": "gitlab",
+    "content": "cravend",
+    "link": "https://gitlab.com/cravend"
+  },
+  {
+    "title": "linkedin",
+    "content": "daltoncraven",
+    "link": "https://www.linkedin.com/in/daltoncraven/"
+  },
+  {
+    "title": "gpg",
+    "content": "0xFF3FA75081B3B98C",
+    "link": "https://github.com/cravend.gpg"
+  }
+]
