@@ -19,7 +19,7 @@ const generateCsp = (
     csp += `connect-src https://vitals.vercel-insights.com 'self';`;
   } else {
     csp += `script-src 'nonce-${nonce}' 'self' 'unsafe-eval' 'strict-dynamic';`; // NextJS requires 'self' and 'unsafe-eval' in dev (faster source maps)
-    csp += `connect-src 'self';`;
+    csp += `connect-src 'self' ws:;`;
   }
 
   return [csp, nonce] as const;
