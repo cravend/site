@@ -48,6 +48,8 @@ export const render = (
   { router, ...options }: RenderOptions = {}
 ): RenderResult => {
   const wrapper: FC = ({ children }) => (
+    // TODO: fix
+    // eslint-disable-next-line react/jsx-no-constructed-context-values
     <RouterContext.Provider value={{ ...mockRouter, ...router }}>
       {children}
     </RouterContext.Provider>
