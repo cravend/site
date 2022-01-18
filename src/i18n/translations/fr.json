@@ -8,12 +8,12 @@
   "greeting": "Salut ! Moi c’est",
   "intro": "C’est assez compliqué de se présenter sur internet, mais voilà ce que je peux vous dire sur moi",
   "education_header": "Éducation",
-  "education": "Je suis étudiant en deuxième année à l’Université de Caroline du Sud. Je suis en licence d’informatique avec seconde spécialisation en psychologie (marrant, non ?). Je suis également récipiendaire de la bourse McNair, un des programmes de bourses les plus prestigieux des États-Unis, les « University Top Scholars ».",
+  "education": "Je suis étudiant en troisième année à l’Université de Caroline du Sud. Je suis en licence d’informatique avec seconde spécialisation en psychologie. Je suis également récipiendaire de la bourse McNair, un des plus prestigieux programmes de bourses, les « University Top Scholars ».",
   "sa_header": "Mon année à l’étranger",
-  "study_abroad": "J’étudie actuellement à l’Université Américaine de Paris ! Je serai en France toute l’année 2021. Vivre loin de chez moi et expérimenter une culture différente de la mienne a toujours été un de mes objectifs. J’ai hâte de pouvoir en profiter pleinement une fois la crise sanitaire terminée.",
+  "study_abroad": "Je viens de terminer un programme d’échange d’un an à l’Université américaine de Paris ! J’étais en France pendant toute l’année 2021, résistant aux confinements et aux grèves tout en acquérant une expérience de vie précieuse. J’ai suivi des cours d’informatique et de psychologie, ainsi que des cours de la langue et la culture françaises.",
   "work_header": "Mes expériences professionnelles",
-  "work_1": "J’ai récemment terminé un stage à temps plein en tant que développeur web front-end à",
-  "work_2": "J’y ai utilisé de nombreuses technologies (principalement Next / React et GraphQL) au sein d’une équipe de développement agile où j’ai pu contribuer directement au code de l’application. J’étais également assistant d’enseignement de premier cycle au printemps 2020, enseignant huit cours sur Linux / UNIX à environ 250 étudiants.",
+  "work_1": "Durant l’été 2021, j’ai effectué mon cinquième stage en tant que développeur front-end chez",
+  "work_2": "J’y ai travaillé dans un environnement de développement basé sur React, en créant de nouvelles fonctionnalités pour notre application. J’ai également participé à l’exécution d’une session d’assurance qualité (QA) rigoureuse avant d’expédier une nouvelle version de l’application. Enfin, j’ai appris les bases du développement back-end (à travers de Python et de Pandas), ce qui m’a permis de créer une nouvelle fonctionnalité pendant un mois et de l’exécuter seul.",
   "freelance_header": "Mon travail en freelance",
   "freelance": "Je fais aussi du développement web en freelance ! Je travaille principalement avec des petites entreprises (bien que je sois ouvert à tout), en mettant à disposition des ressources informatiques et en organisant des formation pour assurer une bonne productivité à long terme.",
   "skills": "Compétences & Certifications",
@@ -26,6 +26,5 @@
   "cert_fall_2018": "Certifié à l’automne 2018",
   "contact": "Contact",
   "american_phone": "Numéro américain",
-  "french_phone": "Numéro français",
   "email": "Mail"
 }
