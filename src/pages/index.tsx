@@ -48,7 +48,17 @@ const IndexPage = () => {
             <ul>
               <li>
                 <Link to="https://crystalclearcontractors.com">
-                  Crystal Clear Cleaning &amp; Contracting
+                  Crystal Clear Contracting
+                </Link>
+              </li>
+              <li>
+                <Link to="https://crystalclearconcrete.com">
+                  Crystal Clear Concrete
+                </Link>
+              </li>
+              <li>
+                <Link to="https://cleancrystalclear.com">
+                  Clean Crystal Clear
                 </Link>
               </li>
               <li>
@@ -58,9 +68,6 @@ const IndexPage = () => {
                 <Link to="https://elitecontractingcincy.com">
                   Elite Contracting
                 </Link>
-              </li>
-              <li>
-                <Link to="https://mabbaseball.com">Mason Amateur Baseball</Link>
               </li>
             </ul>
           </Feature>
