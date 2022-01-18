@@ -2,7 +2,7 @@
 
 exports[`<Footer /> displays the current year 1`] = `
 <p>
-  © 2021 Dalton Craven | View source on 
+  © 2022 Dalton Craven | View source on 
   <a
     class="primary"
     href="https://github.com/cravend/site"
@@ -21,7 +21,7 @@ exports[`<Footer /> renders 1`] = `
       class="container"
     >
       <p>
-        © 2021 Dalton Craven | View source on 
+        © 2022 Dalton Craven | View source on 
         <a
           class="primary"
           href="https://github.com/cravend/site"
