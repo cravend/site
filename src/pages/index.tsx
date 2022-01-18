@@ -39,8 +39,7 @@ const IndexPage = () => {
           </Feature>
           <Feature heading={t("work_header")}>
             <p>
-              {t("work_1")}{" "}
-              <Link to="https://cloverleaf.me">{t("cloverleaf")}</Link>.{" "}
+              {t("work_1")} <Link to="https://qantev.com">{t("qantev")}</Link>.{" "}
               {t("work_2")}
             </p>
           </Feature>
