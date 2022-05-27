@@ -1,5 +1,6 @@
 import { render as defaultRender } from "@testing-library/react";
 import { RouterContext } from "next/dist/shared/lib/router-context";
+import React from "react";
 import type { RenderResult } from "@testing-library/react";
 import type { NextRouter } from "next/router";
 import type { FC } from "react";
@@ -47,7 +48,7 @@ export const render = (
   ui: RenderUI,
   { router, ...options }: RenderOptions = {}
 ): RenderResult => {
-  const wrapper: FC = ({ children }) => (
+  const wrapper: FC<{ children: React.ReactNode }> = ({ children }) => (
     // TODO: fix
     // eslint-disable-next-line react/jsx-no-constructed-context-values
     <RouterContext.Provider value={{ ...mockRouter, ...router }}>

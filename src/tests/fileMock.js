@@ -1,5 +1,5 @@
 module.exports = {
   process() {
-    return `module.exports = '/hello-world.jpg'`;
+    return { code: `module.exports = '/hello-world.jpg'` };
   },
 };

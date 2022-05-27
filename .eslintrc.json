@@ -26,6 +26,10 @@
   "rules": {
     "arrow-body-style": ["error", "as-needed"],
     "import/extensions": ["error", "never"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.test.*", "src/tests/**/*"] }
+    ],
     "import/order": [
       "error",
       {
