@@ -26,7 +26,7 @@ const generateCsp = (
 };
 
 export default class MyDocument extends Document {
-  render() {
+  override render() {
     const [csp, nonce] = generateCsp(
       NextScript.getInlineScriptSource(this.props)
     );
