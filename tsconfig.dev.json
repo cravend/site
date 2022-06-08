@@ -2,13 +2,5 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "jsx": "react-jsxdev"
-  },
-  "include": [
-    "next.config.js",
-    "src/tests/fileMock.js",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.json"
-  ],
-  "exclude": ["node_modules"]
+  }
 }
