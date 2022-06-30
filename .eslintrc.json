@@ -4,6 +4,7 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/strict",
     "plugin:jest/all",
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
@@ -47,6 +48,7 @@
     ],
     "no-unused-vars": "off",
     "no-use-before-define": "off",
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-use-before-define": [
       "error",

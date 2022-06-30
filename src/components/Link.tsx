@@ -21,7 +21,7 @@ const Link = ({ to, isExternal, locale, ariaLabel, children }: LinkProps) => {
     );
   }
   return (
-    <NextLink locale={locale || false} href={to}>
+    <NextLink locale={locale ?? false} href={to}>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
       <a aria-label={ariaLabel} className={styles.primary}>
         {children}
