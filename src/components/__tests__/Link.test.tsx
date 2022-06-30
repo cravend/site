@@ -20,7 +20,11 @@ describe("<Link />", () => {
     fireEvent.click(screen.getByText(LINK_TEXT));
 
     expect(pushMock).toHaveBeenCalledTimes(1);
-    expect(pushMock).toHaveBeenLastCalledWith("/test", "/test", {});
+    expect(pushMock).toHaveBeenLastCalledWith("/test", "/test", {
+      locale: false,
+      scroll: undefined,
+      shallow: undefined,
+    });
   });
 
   it("renders an anchor tag for external HTTP links", () => {

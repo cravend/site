@@ -1,6 +1,18 @@
 import { NextRouter } from "next/router";
 import { toggleLocale, isLocale, getLocale, isTranslationKey } from "../utils";
 
+const BASE_ROUTER = {
+  asPath: "/",
+  basePath: "",
+  isFallback: false,
+  isLocaleDomain: false,
+  isPreview: false,
+  isReady: true,
+  pathname: "/",
+  query: {},
+  route: "/",
+} as NextRouter;
+
 describe("isLocale()", () => {
   it("returns true for valid locales", () => {
     expect.assertions(2);
@@ -30,22 +42,28 @@ describe("isKey()", () => {
 describe("getLocale()", () => {
   it("returns the router's locale if defined", () => {
     expect.assertions(1);
-    const mockRouter = { locale: "en", defaultLocale: "fr" } as NextRouter;
+    const mockRouter = {
+      ...BASE_ROUTER,
+      locale: "en",
+      defaultLocale: "fr",
+    } as const;
     expect(getLocale(mockRouter)).toBe("en");
   });
 
   it("returns the router's defaultLocale is locale is undefined", () => {
     expect.assertions(1);
-    const mockRouter = { locale: undefined, defaultLocale: "fr" } as NextRouter;
+    const mockRouter = {
+      ...BASE_ROUTER,
+      defaultLocale: "fr",
+    } as const;
     expect(getLocale(mockRouter)).toBe("fr");
   });
 
   it("returns the config's defaultLocale if the router's defaultLocale is undefined", () => {
     expect.assertions(1);
     const mockRouter = {
-      locale: undefined,
-      defaultLocale: undefined,
-    } as NextRouter;
+      ...BASE_ROUTER,
+    } as const;
     expect(getLocale(mockRouter)).toBe("en");
   });
 });
