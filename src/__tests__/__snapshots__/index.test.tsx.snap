@@ -257,9 +257,9 @@ exports[`<IndexPage /> renders 1`] = `
         </strong>
         <a
           class="primary"
-          href="mailto:daltoncraven@protonmail.com"
+          href="mailto:daltoncraven@proton.me"
         >
-          daltoncraven@protonmail.com
+          daltoncraven@proton.me
         </a>
       </li>
       <li>
