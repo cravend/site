@@ -7,17 +7,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "yarn lint:files && yarn lint:types",
-    "lint:files": "eslint .",
-    "lint:types": "tsc",
+    "lint": "next lint",
+    "test": "jest",
+    "tsc": "tsc",
     "format": "prettier --check .",
     "format:write": "prettier --write .",
-    "postinstall": "husky install",
-    "test": "jest"
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@next/env": "^12.1.6",
     "next": "^12.1.6",
+    "next-intl": "^2.7.4",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "sass": "^1.52.2"

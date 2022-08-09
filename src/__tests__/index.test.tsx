@@ -1,5 +1,5 @@
-import { render } from "../tests/utils";
 import IndexPage from "../pages/index";
+import { render } from "../tests/utils";
 
 describe("<IndexPage />", () => {
   it("renders", () => {

@@ -1,22 +1,22 @@
+import { useTranslations } from "next-intl";
 import Head from "next/head";
-import Header from "../components/Header";
-import Link from "../components/Link";
+
 import Feature from "../components/Feature";
 import Footer from "../components/Footer";
-import useLocalization from "../i18n/useLocalization";
+import Header from "../components/Header";
 import LanguageToggle from "../components/LanguageToggle";
+import Link from "../components/Link";
 import styles from "../styles/modules/IndexPage.module.scss";
-import contacts from "../data/contacts.json";
+
+import type { GetStaticProps } from "next";
 
 const IndexPage = () => {
-  const [t] = useLocalization();
+  const t = useTranslations("pages.Index");
 
   return (
     <>
       <Head>
-        <title>
-          {t("homepage")} | {t("name")}
-        </title>
+        <title>{t.rich("title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />
@@ -24,27 +24,30 @@ const IndexPage = () => {
         <LanguageToggle />
         <p>
           <span className={styles.greeting}>
-            {t("greeting")} <span className={styles.gradient}>{t("name")}</span>
-            .{" "}
+            {t.rich("greeting", {
+              Color: (children) => (
+                <span className={styles.gradient}>{children}</span>
+              ),
+            })}
           </span>
-          {t("intro")}
-          {t("colon")}
+          {t.rich("intro")}
         </p>
         <div className={styles.card_grid}>
-          <Feature heading={t("education_header")}>
-            <p>{t("education")}</p>
+          <Feature heading={t.rich("education.header")}>
+            <p>{t.rich("education.content")}</p>
           </Feature>
-          <Feature heading={t("sa_header")}>
-            <p>{t("study_abroad")}</p>
+          <Feature heading={t.rich("study_abroad.header")}>
+            <p>{t.rich("study_abroad.content")}</p>
           </Feature>
-          <Feature heading={t("work_header")}>
+          <Feature heading={t.rich("work.header")}>
             <p>
-              {t("work_1")} <Link to="https://qantev.com">{t("qantev")}</Link>.{" "}
-              {t("work_2")}
+              {t.rich("work.content", {
+                Link: (text) => <Link to="https://qantev.com">{text}</Link>,
+              })}
             </p>
           </Feature>
-          <Feature heading={t("freelance_header")}>
-            <p>{t("freelance")}</p>
+          <Feature heading={t.rich("freelance.header")}>
+            <p>{t.rich("freelance.content")}</p>
             <ul>
               <li>
                 <Link to="https://crystalclearcontractors.com">
@@ -72,60 +75,76 @@ const IndexPage = () => {
             </ul>
           </Feature>
         </div>
-        <h2>{t("skills")}</h2>
+        <h2>{t.rich("skills.header")}</h2>
         <ul>
+          <li>{t.rich("skills.languages_spoken")}</li>
+          <li>{t.rich("skills.languages_tech")}</li>
+          <li>{t.rich("skills.tools")}</li>
           <li>
-            <strong>
-              {t("spoken_languages_header")}
-              {t("colon")}
-            </strong>
-            {t("spoken_languages")}
-          </li>
-          <li>
-            <strong>
-              {t("programming_languages_header")}
-              {t("colon")}
-            </strong>
-            {t("programming_languages")}
-          </li>
-          <li>
-            <strong>
-              {t("tools_header")}
-              {t("colon")}
-            </strong>
-            {t("tools")}
-          </li>
-          <li>
-            <strong>
-              {t("certifications")}
-              {t("colon")}
-            </strong>
+            <strong>{t.rich("skills.certifications.header")}</strong>
             <ul>
-              <li>
-                The Fundamentals of Digital Marketing, Google —{" "}
-                <em>{t("cert_april_2020")}</em>
-              </li>
-              <li>
-                Microsoft Office Specialist (MOS) Master 2016, MOS Word 2016
-                Expert, MOS Excel 2016 Expert, MOS PowerPoint 2016, MOS Outlook
-                2016, MOS Access 2016 — <em>{t("cert_fall_2018")}</em>
-              </li>
+              <li>{t.rich("skills.certifications.content.0")}</li>
+              <li>{t.rich("skills.certifications.content.1")}</li>
+              <li>{t.rich("skills.certifications.content.2")}</li>
             </ul>
           </li>
         </ul>
-        <h2>{t("contact")}</h2>
+        <h2>{t.rich("contact.header")}</h2>
         <ul>
-          {contacts.map((contact) => (
-            <li key={contact.title}>
-              <strong>
-                {t(contact.title)}
-                {t("colon")}
-              </strong>
-              <Link isExternal to={contact.link}>
-                {contact.content}
-              </Link>
-            </li>
-          ))}
+          <li>
+            {t.rich("contact.content.phone", {
+              Link: (text) => (
+                <Link isExternal to="tel:+15138136421">
+                  {text}
+                </Link>
+              ),
+            })}
+          </li>
+          <li>
+            {t.rich("contact.content.email", {
+              Link: (text) => (
+                <Link isExternal to="mailto:daltoncraven@proton.me">
+                  {text}
+                </Link>
+              ),
+            })}
+          </li>
+          <li>
+            {t.rich("contact.content.github", {
+              Link: (text) => (
+                <Link isExternal to="https://github.com/cravend">
+                  {text}
+                </Link>
+              ),
+            })}
+          </li>
+          <li>
+            {t.rich("contact.content.gitlab", {
+              Link: (text) => (
+                <Link isExternal to="https://gitlab.com/cravend">
+                  {text}
+                </Link>
+              ),
+            })}
+          </li>
+          <li>
+            {t.rich("contact.content.linkedin", {
+              Link: (text) => (
+                <Link isExternal to="https://www.linkedin.com/in/daltoncraven/">
+                  {text}
+                </Link>
+              ),
+            })}
+          </li>
+          <li>
+            {t.rich("contact.content.gpg", {
+              Link: (text) => (
+                <Link isExternal to="https://github.com/cravend.gpg">
+                  {text}
+                </Link>
+              ),
+            })}
+          </li>
         </ul>
       </main>
       <Footer />
@@ -134,3 +153,13 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    // You can get the messages from anywhere you like. The recommended
+    // pattern is to put them in JSON files separated by language and read
+    // the desired one based on the `locale` received from Next.js.
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+    messages: (await import(`../i18n/translations/${locale!}.json`)).default,
+  },
+});

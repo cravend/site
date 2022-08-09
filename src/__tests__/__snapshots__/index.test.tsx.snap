@@ -70,18 +70,15 @@ exports[`<IndexPage /> renders 1`] = `
       <span
         class="greeting"
       >
-        Hello! My name is
-         
+        Hello! My name is 
         <span
           class="gradient"
         >
           Dalton Craven
         </span>
-        .
-         
+        . 
       </span>
-      It’s hard to introduce myself over the internet, but here’s a little bit about me
-      : 
+      It’s hard to introduce myself over the internet, but here’s a little bit about me:
     </p>
     <div
       class="card_grid"
@@ -119,17 +116,14 @@ exports[`<IndexPage /> renders 1`] = `
           Work
         </h2>
         <p>
-          Summer 2021, I completed my fifth internship: a frontend web developer at
-           
+          Summer 2021, I completed my fifth internship: a frontend web developer at 
           <a
             class="primary"
             href="https://qantev.com"
           >
             Qantev
           </a>
-          .
-           
-          There, I worked in a React-based development stack, creating new features for our production application. I also helped run a rigorous QA session before shipping a new version of the application. Finally, I learned the basics of back end development (using Python & Pandas), culminating in a month-long new feature that I single-handedly executed.
+          . There, I worked in a React-based development stack, creating new features for our production application. I also helped run a rigorous QA session before shipping a new version of the application. Finally, I learned the basics of back end development (using Python & Pandas), culminating in a month-long new feature that I single-handedly executed.
         </p>
       </div>
       <div
@@ -138,7 +132,7 @@ exports[`<IndexPage /> renders 1`] = `
         <h2
           class="heading"
         >
-          Freelancing
+          Freelance
         </h2>
         <p>
           I also do freelance web development! I work primarily with small businesses (although I’m open for anything), with an emphasis on providing resources and training to ensure long-term functionality.
@@ -188,47 +182,48 @@ exports[`<IndexPage /> renders 1`] = `
       </div>
     </div>
     <h2>
-      Skills & Certifications
+      Skills
     </h2>
     <ul>
       <li>
         <strong>
           Languages (spoken)
-          : 
         </strong>
-        English, French, American Sign Language (ASL)
+        : English, French, American Sign Language (ASL), Arabic
       </li>
       <li>
         <strong>
           Languages (tech)
-          : 
         </strong>
-        React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
+        : React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
       </li>
       <li>
         <strong>
           Tools
-          : 
         </strong>
-        Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
+        : Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
       </li>
       <li>
         <strong>
           Certifications
-          : 
         </strong>
         <ul>
           <li>
-            The Fundamentals of Digital Marketing, Google —
-             
+            The Fundamentals of Digital Marketing, Google — 
             <em>
               Certified April 2020
             </em>
           </li>
           <li>
-            Microsoft Office Specialist (MOS) Master 2016, MOS Word 2016 Expert, MOS Excel 2016 Expert, MOS PowerPoint 2016, MOS Outlook 2016, MOS Access 2016 — 
+            Microsoft Office Specialist (MOS) Master 2016 — 
             <em>
-              Certified Fall 2018
+              Certified fall 2018
+            </em>
+          </li>
+          <li>
+            MOS Word 2016 Expert, MOS Excel 2016 Expert — 
+            <em>
+              Certified fall 2018
             </em>
           </li>
         </ul>
@@ -240,9 +235,9 @@ exports[`<IndexPage /> renders 1`] = `
     <ul>
       <li>
         <strong>
-          Phone
-          : 
+          American Phone
         </strong>
+        : 
         <a
           class="primary"
           href="tel:+15138136421"
@@ -253,8 +248,8 @@ exports[`<IndexPage /> renders 1`] = `
       <li>
         <strong>
           Email
-          : 
         </strong>
+        : 
         <a
           class="primary"
           href="mailto:daltoncraven@proton.me"
@@ -265,8 +260,8 @@ exports[`<IndexPage /> renders 1`] = `
       <li>
         <strong>
           GitHub
-          : 
         </strong>
+        : 
         <a
           class="primary"
           href="https://github.com/cravend"
@@ -277,8 +272,8 @@ exports[`<IndexPage /> renders 1`] = `
       <li>
         <strong>
           GitLab
-          : 
         </strong>
+        : 
         <a
           class="primary"
           href="https://gitlab.com/cravend"
@@ -289,8 +284,8 @@ exports[`<IndexPage /> renders 1`] = `
       <li>
         <strong>
           LinkedIn
-          : 
         </strong>
+        : 
         <a
           class="primary"
           href="https://www.linkedin.com/in/daltoncraven/"
@@ -301,8 +296,8 @@ exports[`<IndexPage /> renders 1`] = `
       <li>
         <strong>
           GPG
-          : 
         </strong>
+        : 
         <a
           class="primary"
           href="https://github.com/cravend.gpg"

@@ -1,30 +1,61 @@
 {
-  "colon": " : ",
-  "homepage": "Accueil",
-  "toggle_locale": "Read in English",
-  "tagline": "Étudiant & Développeur",
-  "pfp": "Image de profil",
-  "view_source": "Voir le code source sur",
-  "greeting": "Salut ! Moi c’est",
-  "intro": "C’est assez compliqué de se présenter sur internet, mais voilà ce que je peux vous dire sur moi",
-  "education_header": "Éducation",
-  "education": "Je suis étudiant en troisième année à l’Université de Caroline du Sud. Je suis en licence d’informatique avec seconde spécialisation en psychologie. Je suis également récipiendaire de la bourse McNair, un des plus prestigieux programmes de bourses, les « University Top Scholars ».",
-  "sa_header": "Mon année à l’étranger",
-  "study_abroad": "Je viens de terminer un programme d’échange d’un an à l’Université américaine de Paris ! J’étais en France pendant toute l’année 2021, résistant aux confinements et aux grèves tout en acquérant une expérience de vie précieuse. J’ai suivi des cours d’informatique et de psychologie, ainsi que des cours de la langue et la culture françaises.",
-  "work_header": "Mes expériences professionnelles",
-  "work_1": "Durant l’été 2021, j’ai effectué mon cinquième stage en tant que développeur front-end chez",
-  "work_2": "J’y ai travaillé dans un environnement de développement basé sur React, en créant de nouvelles fonctionnalités pour notre application. J’ai également participé à l’exécution d’une session d’assurance qualité (QA) rigoureuse avant d’expédier une nouvelle version de l’application. Enfin, j'ai appris les bases de la programmation back-end (avec Python et Pandas), au travers du développement d'une nouvelle fonctionnalité.",
-  "freelance_header": "Mon travail en freelance",
-  "freelance": "Je fais aussi du développement web en freelance ! Je travaille principalement avec des petites entreprises (bien que je sois ouvert à tout), en mettant à disposition des ressources informatiques et en organisant des formation pour assurer une bonne productivité à long terme.",
-  "skills": "Compétences & Certifications",
-  "spoken_languages_header": "Langues (parlées)",
-  "spoken_languages": "Anglais, Français, Langue des signes américaine (ASL)",
-  "programming_languages_header": "Langues (tech)",
-  "tools_header": "Outils",
-  "certifications": "Certifications",
-  "cert_april_2020": "Certifié en avril 2020",
-  "cert_fall_2018": "Certifié à l’automne 2018",
-  "contact": "Contact",
-  "american_phone": "Numéro américain",
-  "email": "Mail"
+  "Footer": {
+    "text": "© {date, date, ::yyyy} Dalton Craven | Voir le code source sur <Link>GitHub</Link>"
+  },
+  "Header": {
+    "pfp": "Image de profil",
+    "name": "Dalton Craven",
+    "tagline": "Étudiant & développeur"
+  },
+  "LanguageToggle": {
+    "toggle_locale": "Read in English"
+  },
+  "pages": {
+    "Index": {
+      "title": "Home | Dalton Craven",
+      "greeting": "Salut ! Moi c’est <Color>Dalton Craven</Color>. ",
+      "intro": "C’est assez compliqué de se présenter sur internet, mais voilà ce que je peux vous dire sur moi :",
+      "education": {
+        "header": "Éducation",
+        "content": "Je suis étudiant en troisième année à l’Université de Caroline du Sud. Je suis en licence d’informatique avec seconde spécialisation en psychologie. Je suis également récipiendaire de la bourse McNair, un des plus prestigieux programmes de bourses, les « University Top Scholars »."
+      },
+      "study_abroad": {
+        "header": "Mon année à l’étranger",
+        "content": "Je viens de terminer un programme d’échange d’un an à l’Université américaine de Paris ! J’étais en France pendant toute l’année 2021, résistant aux confinements et aux grèves tout en acquérant une expérience de vie précieuse. J’ai suivi des cours d’informatique et de psychologie, ainsi que des cours de la langue et la culture françaises."
+      },
+      "work": {
+        "header": "Mes expériences professionnelles",
+        "content": "Durant l’été 2021, j’ai effectué mon cinquième stage en tant que développeur front-end chez <Link>Qantev</Link>. J’y ai travaillé dans un environnement de développement basé sur React, en créant de nouvelles fonctionnalités pour notre application. J’ai également participé à l’exécution d’une session d’assurance qualité (QA) rigoureuse avant d’expédier une nouvelle version de l’application. Enfin, j'ai appris les bases de la programmation back-end (avec Python et Pandas), au travers du développement d'une nouvelle fonctionnalité."
+      },
+      "freelance": {
+        "header": "Mon travail en freelance",
+        "content": "Je fais aussi du développement web en freelance ! Je travaille principalement avec des petites entreprises (bien que je sois ouvert à tout), en mettant à disposition des ressources informatiques et en organisant des formation pour assurer une bonne productivité à long terme."
+      },
+      "skills": {
+        "header": "Compétences",
+        "languages_spoken": "<strong>Langues (parlées)</strong> : Anglais, Français, Langue des signes américaine (ASL), Arabe",
+        "languages_tech": "<strong>Langues (tech)</strong> : React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R",
+        "tools": "<strong>Outils</strong> : Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress",
+        "certifications": {
+          "header": "Certifications",
+          "content": {
+            "0": "The Fundamentals of Digital Marketing, Google — <em>Certifié en avril 2020</em>",
+            "1": "Microsoft Office Specialist (MOS) Master 2016 — <em>Certifié à l’automne 2018</em>",
+            "2": "MOS Word 2016 Expert, MOS Excel 2016 Expert, MOS PowerPoint 2016 — <em>Certifié à l’automne 2018</em>"
+          }
+        }
+      },
+      "contact": {
+        "header": "Contact",
+        "content": {
+          "phone": "<strong>Numéro américain</strong> : <Link>+1 513 813 6421</Link>",
+          "email": "<strong>Mail</strong> : <Link>daltoncraven@proton.me</Link>",
+          "github": "<strong>GitHub</strong> : <Link>cravend</Link>",
+          "gitlab": "<strong>GitLab</strong> : <Link>cravend</Link>",
+          "linkedin": "<strong>LinkedIn</strong> : <Link>daltoncraven</Link>",
+          "gpg": "<strong>GPG</strong> : <Link>0xFF3FA75081B3B98C</Link>"
+        }
+      }
+    }
+  }
 }

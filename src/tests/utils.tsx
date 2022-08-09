@@ -1,9 +1,14 @@
 import { render as defaultRender } from "@testing-library/react";
+import { NextIntlProvider } from "next-intl";
 import { RouterContext } from "next/dist/shared/lib/router-context";
-import React from "react";
+import { useMemo } from "react";
+
+import { STANDARD_FORMATS } from "../i18n/config";
+import translationEn from "../i18n/translations/en.json";
+import translationFr from "../i18n/translations/fr.json";
+
 import type { RenderResult } from "@testing-library/react";
 import type { NextRouter } from "next/router";
-import type { FC } from "react";
 
 export * from "@testing-library/react";
 
@@ -48,13 +53,26 @@ export const render = (
   ui: RenderUI,
   { router, ...options }: RenderOptions = {}
 ): RenderResult => {
-  const wrapper: FC<{ children: React.ReactNode }> = ({ children }) => (
-    // TODO: fix
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <RouterContext.Provider value={{ ...mockRouter, ...router }}>
-      {children}
-    </RouterContext.Provider>
-  );
+  const wrapper = ({ children }: { children: React.ReactNode }) => {
+    const routerProviderValue = useMemo(
+      () => ({ ...mockRouter, ...router }),
+      [mockRouter, router]
+    );
+
+    const messages: IntlMessages =
+      routerProviderValue.locale === "fr" ? translationFr : translationEn;
+    return (
+      // eslint-disable-next-line react/jsx-no-constructed-context-values
+      <RouterContext.Provider value={routerProviderValue}>
+        <NextIntlProvider
+          messages={messages}
+          defaultTranslationValues={STANDARD_FORMATS}
+        >
+          {children}
+        </NextIntlProvider>
+      </RouterContext.Provider>
+    );
+  };
 
   return defaultRender(ui, { wrapper, ...options });
 };

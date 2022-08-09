@@ -1,9 +1,8 @@
 import styles from "../styles/modules/Feature.module.scss";
-import type { ReactNode } from "react";
 
 export type FeatureProps = {
-  heading: string;
-  children: ReactNode;
+  heading: React.ReactNode;
+  children: React.ReactNode;
 };
 
 const Feature = ({ heading, children }: FeatureProps) => (
