@@ -7,13 +7,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "yarn lint:files && yarn lint:types",
-    "lint:files": "eslint .",
-    "lint:types": "tsc",
+    "lint": "next lint",
+    "test": "jest",
+    "tsc": "tsc",
     "format": "prettier --check .",
     "format:write": "prettier --write .",
-    "postinstall": "husky install",
-    "test": "jest"
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@next/env": "^12.1.6",
