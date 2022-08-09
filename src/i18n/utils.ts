@@ -1,5 +1,6 @@
 import { locales, defaultLocale } from "./config";
 import translations from "./translations";
+
 import type { Locale } from "./config";
 import type { NextRouter } from "next/router";
 

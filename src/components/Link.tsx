@@ -1,14 +1,15 @@
 import NextLink from "next/link";
+
 import styles from "../styles/modules/Link.module.scss";
+
 import type { Locale } from "../i18n/config";
-import type { ReactNode } from "react";
 
 export type LinkProps = {
   to: string;
   isExternal?: boolean;
   locale?: Locale;
   ariaLabel?: string;
-  children: ReactNode;
+  children: React.ReactNode;
 };
 
 const Link = ({ to, isExternal, locale, ariaLabel, children }: LinkProps) => {

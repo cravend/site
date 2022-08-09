@@ -1,5 +1,6 @@
-import { NextRouter } from "next/router";
 import { toggleLocale, isLocale, getLocale, isTranslationKey } from "../utils";
+
+import type { NextRouter } from "next/router";
 
 const BASE_ROUTER = {
   asPath: "/",

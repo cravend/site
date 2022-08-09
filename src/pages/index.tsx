@@ -1,12 +1,13 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import Link from "../components/Link";
+
 import Feature from "../components/Feature";
 import Footer from "../components/Footer";
-import useLocalization from "../i18n/useLocalization";
+import Header from "../components/Header";
 import LanguageToggle from "../components/LanguageToggle";
-import styles from "../styles/modules/IndexPage.module.scss";
+import Link from "../components/Link";
 import contacts from "../data/contacts.json";
+import useLocalization from "../i18n/useLocalization";
+import styles from "../styles/modules/IndexPage.module.scss";
 
 const IndexPage = () => {
   const [t] = useLocalization();

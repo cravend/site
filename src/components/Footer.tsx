@@ -1,5 +1,6 @@
 import useLocalization from "../i18n/useLocalization";
 import styles from "../styles/modules/Footer.module.scss";
+
 import Link from "./Link";
 
 const Footer = () => {

@@ -1,9 +1,8 @@
 import styles from "../styles/modules/Hero.module.scss";
-import type { ReactNode } from "react";
 
 export type HeroProps = {
   isDiagonal?: boolean;
-  children: ReactNode;
+  children: React.ReactNode;
 };
 
 const Hero = ({ isDiagonal = false, children }: HeroProps) => (

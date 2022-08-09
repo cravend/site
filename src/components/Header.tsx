@@ -1,7 +1,9 @@
 import Image from "next/image";
+
+import profilePic from "../assets/images/dalton-craven.webp";
 import useLocalization from "../i18n/useLocalization";
 import styles from "../styles/modules/Header.module.scss";
-import profilePic from "../assets/images/dalton-craven.webp";
+
 import Hero from "./Hero";
 
 const Header = () => {
