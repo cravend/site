@@ -11,7 +11,6 @@ const App = ({ Component, pageProps }: AppProps) => (
     messages={pageProps.messages}
     defaultTranslationValues={STANDARD_FORMATS}
   >
-    {/* eslint-disable-next-line react/jsx-props-no-spreading */}
     <Component {...pageProps} />
   </NextIntlProvider>
 );

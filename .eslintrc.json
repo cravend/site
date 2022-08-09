@@ -80,6 +80,7 @@
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/require-default-props": "off",
     "no-undef": "off",
     "react/no-unstable-nested-components": "off"
