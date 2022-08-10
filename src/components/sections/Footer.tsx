@@ -4,7 +4,7 @@ import styles from "../../styles/modules/sections/Footer.module.scss";
 import Link from "../Link";
 
 const Footer = () => {
-  const t = useTranslations("Footer");
+  const t = useTranslations("sections.Footer");
 
   return (
     <footer className={styles.background}>

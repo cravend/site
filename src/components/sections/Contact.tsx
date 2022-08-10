@@ -3,13 +3,13 @@ import { useTranslations } from "next-intl";
 import Link from "../Link";
 
 const Contact = () => {
-  const t = useTranslations("pages.Index");
+  const t = useTranslations("sections.Contact");
   return (
     <>
-      <h2 id="contact">{t.rich("contact.header")}</h2>
+      <h2 id="contact">{t.rich("header")}</h2>
       <ul>
         <li>
-          {t.rich("contact.content.phone", {
+          {t.rich("content.phone", {
             Link: (text) => (
               <Link isExternal to="tel:+15138136421">
                 {text}
@@ -18,7 +18,7 @@ const Contact = () => {
           })}
         </li>
         <li>
-          {t.rich("contact.content.email", {
+          {t.rich("content.email", {
             Link: (text) => (
               <Link isExternal to="mailto:daltoncraven@proton.me">
                 {text}
@@ -27,7 +27,7 @@ const Contact = () => {
           })}
         </li>
         <li>
-          {t.rich("contact.content.github", {
+          {t.rich("content.github", {
             Link: (text) => (
               <Link isExternal to="https://github.com/cravend">
                 {text}
@@ -36,7 +36,7 @@ const Contact = () => {
           })}
         </li>
         <li>
-          {t.rich("contact.content.gitlab", {
+          {t.rich("content.gitlab", {
             Link: (text) => (
               <Link isExternal to="https://gitlab.com/cravend">
                 {text}
@@ -45,7 +45,7 @@ const Contact = () => {
           })}
         </li>
         <li>
-          {t.rich("contact.content.linkedin", {
+          {t.rich("content.linkedin", {
             Link: (text) => (
               <Link isExternal to="https://www.linkedin.com/in/daltoncraven/">
                 {text}
@@ -54,7 +54,7 @@ const Contact = () => {
           })}
         </li>
         <li>
-          {t.rich("contact.content.gpg", {
+          {t.rich("content.gpg", {
             Link: (text) => (
               <Link isExternal to="https://github.com/cravend.gpg">
                 {text}

@@ -4,7 +4,7 @@ import styles from "../../styles/modules/sections/Intro.module.scss";
 import LanguageToggle from "../LanguageToggle";
 
 const Intro = () => {
-  const t = useTranslations("pages.Index");
+  const t = useTranslations("sections.Intro");
 
   return (
     <>

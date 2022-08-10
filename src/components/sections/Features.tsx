@@ -5,7 +5,7 @@ import Feature from "../Feature";
 import Link from "../Link";
 
 const Features = () => {
-  const t = useTranslations("pages.Index");
+  const t = useTranslations("sections.Features");
 
   return (
     <div className={styles.grid}>

@@ -1,20 +1,17 @@
 {
-  "Footer": {
-    "text": "© {date, date, ::yyyy} Dalton Craven | View source on <Link>GitHub</Link>"
-  },
-  "Header": {
-    "pfp": "Profile picture",
-    "name": "Dalton Craven",
-    "tagline": "Student & Developer"
-  },
-  "LanguageToggle": {
-    "toggle_locale": "Lire en français"
-  },
-  "pages": {
-    "Index": {
-      "title": "Home | Dalton Craven",
-      "greeting": "Hello! My name is <Color>Dalton Craven</Color>. ",
-      "intro": "It’s hard to introduce myself over the internet, but here’s a little bit about me:",
+  "sections": {
+    "Contact": {
+      "header": "Contact",
+      "content": {
+        "phone": "<strong>American Phone</strong>: <Link>+1 513 813 6421</Link>",
+        "email": "<strong>Email</strong>: <Link>daltoncraven@proton.me</Link>",
+        "github": "<strong>GitHub</strong>: <Link>cravend</Link>",
+        "gitlab": "<strong>GitLab</strong>: <Link>cravend</Link>",
+        "linkedin": "<strong>LinkedIn</strong>: <Link>daltoncraven</Link>",
+        "gpg": "<strong>GPG</strong>: <Link>0xFF3FA75081B3B98C</Link>"
+      }
+    },
+    "Features": {
       "education": {
         "header": "Education",
         "content": "I’m a senior at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the University Top Scholars."
@@ -36,32 +33,41 @@
           "intro": "I also do freelance web development! I work primarily with small businesses (although I’m open to other opportunities), with an emphasis on providing resources and training to ensure long-term functionality.",
           "conclusion": "To learn more about my work, feel free to visit my <Resume>résumé</Resume> or contact me at the <Contact>links below</Contact>."
         }
-      },
-      "skills": {
-        "header": "Skills",
-        "languages_spoken": "<strong>Languages (spoken)</strong>: English, French, American Sign Language (ASL), Arabic",
-        "languages_tech": "<strong>Languages (tech)</strong>: React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R",
-        "tools": "<strong>Tools</strong>: Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress",
-        "certifications": {
-          "header": "Certifications",
-          "content": {
-            "0": "The Fundamentals of Digital Marketing, Google — <em>Certified April 2020</em>",
-            "1": "Microsoft Office Specialist (MOS) Master 2016 — <em>Certified fall 2018</em>",
-            "2": "MOS Word 2016 Expert, MOS Excel 2016 Expert — <em>Certified fall 2018</em>"
-          }
-        }
-      },
-      "contact": {
-        "header": "Contact",
+      }
+    },
+    "Footer": {
+      "text": "© {date, date, ::yyyy} Dalton Craven | View source on <Link>GitHub</Link>"
+    },
+    "Header": {
+      "pfp": "Profile picture",
+      "name": "Dalton Craven",
+      "tagline": "Student & Developer"
+    },
+    "Intro": {
+      "greeting": "Hello! My name is <Color>Dalton Craven</Color>. ",
+      "intro": "It’s hard to introduce myself over the internet, but here’s a little bit about me:"
+    },
+    "Skills": {
+      "header": "Skills",
+      "languages_spoken": "<strong>Languages (spoken)</strong>: English, French, American Sign Language (ASL), Arabic",
+      "languages_tech": "<strong>Languages (tech)</strong>: React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R",
+      "tools": "<strong>Tools</strong>: Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress",
+      "certifications": {
+        "header": "Certifications",
         "content": {
-          "phone": "<strong>American Phone</strong>: <Link>+1 513 813 6421</Link>",
-          "email": "<strong>Email</strong>: <Link>daltoncraven@proton.me</Link>",
-          "github": "<strong>GitHub</strong>: <Link>cravend</Link>",
-          "gitlab": "<strong>GitLab</strong>: <Link>cravend</Link>",
-          "linkedin": "<strong>LinkedIn</strong>: <Link>daltoncraven</Link>",
-          "gpg": "<strong>GPG</strong>: <Link>0xFF3FA75081B3B98C</Link>"
+          "0": "The Fundamentals of Digital Marketing, Google — <em>Certified April 2020</em>",
+          "1": "Microsoft Office Specialist (MOS) Master 2016 — <em>Certified fall 2018</em>",
+          "2": "MOS Word 2016 Expert, MOS Excel 2016 Expert — <em>Certified fall 2018</em>"
         }
       }
+    }
+  },
+  "LanguageToggle": {
+    "toggle_locale": "Lire en français"
+  },
+  "pages": {
+    "Index": {
+      "title": "Home | Dalton Craven"
     }
   }
 }
