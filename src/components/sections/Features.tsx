@@ -17,7 +17,15 @@ const Features = () => {
   return (
     <div className={styles.grid}>
       <Feature heading={t.rich("education.header")}>
-        <p>{t.rich("education.content")}</p>
+        <p>
+          {t.rich("education.content", {
+            Link: (children) => (
+              <Link to="https://sc.edu/about/offices_and_divisions/undergraduate_admissions/honors_and_scholars_programs/top_scholars/index.php">
+                {children}
+              </Link>
+            ),
+          })}
+        </p>
       </Feature>
       <Feature heading={t.rich("study_abroad.header")}>
         <p>{t.rich("study_abroad.content")}</p>

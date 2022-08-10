@@ -14,7 +14,7 @@
     "Features": {
       "education": {
         "header": "Education",
-        "content": "I’m a senior at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the University Top Scholars."
+        "content": "I’m a senior at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the <Link>University Top Scholars</Link>."
       },
       "study_abroad": {
         "header": "Study Abroad",

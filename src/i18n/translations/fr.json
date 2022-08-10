@@ -14,7 +14,7 @@
     "Features": {
       "education": {
         "header": "Éducation",
-        "content": "Je suis en quatrième et dernière année à l’Université de South Carolina. Je suis en Bachelor d’informatique avec seconde spécialisation en psychologie. Je suis également récipiendaire de la bourse McNair, le plus prestigieux programme de bourses à l’Université de South Carolina, les « University Top Scholars »"
+        "content": "Je suis en quatrième et dernière année à l’Université de South Carolina. Je suis en Bachelor d’informatique avec seconde spécialisation en psychologie. Je suis également récipiendaire de la bourse McNair, le plus prestigieux programme de bourses à l’Université de South Carolina, les « <Link>University Top Scholars</Link> »."
       },
       "study_abroad": {
         "header": "Mon année à l’étranger",
