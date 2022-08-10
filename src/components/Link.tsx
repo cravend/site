@@ -8,15 +8,31 @@ import type { LinkProps as NextLinkProps } from "next/link";
 export type LinkProps = {
   to: string;
   isExternal?: boolean;
-  locale?: Locale | undefined;
+  openInNewTab?: boolean;
+  locale?: Locale | false | undefined;
   children: React.ReactNode;
 } & Omit<NextLinkProps, "href">;
 
-const Link = ({ to, isExternal, locale, children, ...props }: LinkProps) => {
+const Link = ({
+  to,
+  isExternal,
+  locale,
+  children,
+  openInNewTab,
+  ...props
+}: LinkProps) => {
   const externalCheck = /^https?:\/\//;
+  const newTabProps = {
+    target: "_blank",
+    rel: "noopener noreferrer",
+  };
   if (isExternal || externalCheck.test(to)) {
     return (
-      <a className={styles.primary} href={to}>
+      <a
+        className={styles.primary}
+        href={to}
+        {...(openInNewTab ? newTabProps : undefined)}
+      >
         {children}
       </a>
     );
@@ -24,7 +40,12 @@ const Link = ({ to, isExternal, locale, children, ...props }: LinkProps) => {
   return (
     <NextLink locale={locale} href={to} {...props}>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a className={styles.primary}>{children}</a>
+      <a
+        className={styles.primary}
+        {...(openInNewTab ? newTabProps : undefined)}
+      >
+        {children}
+      </a>
     </NextLink>
   );
 };

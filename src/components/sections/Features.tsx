@@ -1,11 +1,18 @@
 import { useTranslations } from "next-intl";
 
+import { useLocale } from "../../i18n/hooks";
 import styles from "../../styles/modules/sections/Features.module.scss";
 import Feature from "../Feature";
 import Link from "../Link";
 
+const RESUME_MAPPING = {
+  en: "/resumes/Dalton Craven Résumé (en).pdf",
+  fr: "/resumes/Dalton Craven Résumé (en).pdf",
+} as const;
+
 const Features = () => {
   const t = useTranslations("sections.Features");
+  const [locale] = useLocale();
 
   return (
     <div className={styles.grid}>
@@ -50,7 +57,11 @@ const Features = () => {
         </ul>
         <p>
           {t.rich("freelance.content.conclusion", {
-            Resume: (text) => <Link to="/resume">{text}</Link>,
+            Resume: (text) => (
+              <Link locale={false} to={RESUME_MAPPING[locale]} openInNewTab>
+                {text}
+              </Link>
+            ),
             Contact: (text) => <Link to="#contact">{text}</Link>,
           })}
         </p>
