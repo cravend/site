@@ -1,6 +1,6 @@
 {
   "Footer": {
-    "text": "© {date, date, ::yyyy} Dalton Craven | Voir le code source sur <Link>GitHub</Link>"
+    "text": "© {date, date, ::yyyy} Dalton Craven | Voir le code sur <Link>GitHub</Link>"
   },
   "Header": {
     "pfp": "Image de profil",
@@ -17,19 +17,25 @@
       "intro": "C’est assez compliqué de se présenter sur internet, mais voilà ce que je peux vous dire sur moi :",
       "education": {
         "header": "Éducation",
-        "content": "Je suis étudiant en troisième année à l’Université de Caroline du Sud. Je suis en licence d’informatique avec seconde spécialisation en psychologie. Je suis également récipiendaire de la bourse McNair, un des plus prestigieux programmes de bourses, les « University Top Scholars »."
+        "content": "Je suis en quatrième et dernière année à l’Université de South Carolina. Je suis en Bachelor d’informatique avec seconde spécialisation en psychologie. Je suis également récipiendaire de la bourse McNair, le plus prestigieux programme de bourses à l’Université de South Carolina, les « University Top Scholars »"
       },
       "study_abroad": {
         "header": "Mon année à l’étranger",
-        "content": "Je viens de terminer un programme d’échange d’un an à l’Université américaine de Paris ! J’étais en France pendant toute l’année 2021, résistant aux confinements et aux grèves tout en acquérant une expérience de vie précieuse. J’ai suivi des cours d’informatique et de psychologie, ainsi que des cours de la langue et la culture françaises."
+        "content": "J’ai eu plusieurs expériences d’études et de travail à l’étranger pendant mes études. J’ai étudié pendant les deux semestres de l’année 2021 à l’Université américaine de Paris, résistant aux confinements et aux grèves tout en acquérant une expérience de vie précieuse. Pendant mon séjour à l’AUP, j’ai suivi des cours d’informatique et de psychologie, ainsi que des cours de la langue et la culture françaises."
       },
       "work": {
         "header": "Mes expériences professionnelles",
-        "content": "Durant l’été 2021, j’ai effectué mon cinquième stage en tant que développeur front-end chez <Link>Qantev</Link>. J’y ai travaillé dans un environnement de développement basé sur React, en créant de nouvelles fonctionnalités pour notre application. J’ai également participé à l’exécution d’une session d’assurance qualité (QA) rigoureuse avant d’expédier une nouvelle version de l’application. Enfin, j'ai appris les bases de la programmation back-end (avec Python et Pandas), au travers du développement d'une nouvelle fonctionnalité."
+        "content": {
+          "intro": "Au cours de l’été 2021, entre mes deux semestres d’études à l’étranger, j’ai effectué mon cinquième stage en tant que développeur front-end chez <Link>Qantev</Link>, travaillant principalement en tant que développeur front sur une application basée sur React. J'ai également appris Python et Pandas pour travailler sur la \"full stack\" d'une nouvelle fonctionnalité.",
+          "update": "Je suis ensuite retourné à Qantev pendant l'été 2022, pour migrer notre codebase de Javascript à Typescript. Au cours de ma période de trois mois, j'ai coordonné le refactoring de 55 % de nos composants et supervisé la mise en œuvre de nouvelles bonnes pratiques spécifiques à TypeScript."
+        }
       },
       "freelance": {
         "header": "Mon travail en freelance",
-        "content": "Je fais aussi du développement web en freelance ! Je travaille principalement avec des petites entreprises (bien que je sois ouvert à tout), en mettant à disposition des ressources informatiques et en organisant des formation pour assurer une bonne productivité à long terme."
+        "content": {
+          "intro": "Je fais aussi du développement web en freelance ! Je travaille principalement avec des petites entreprises (bien que je sois ouvert à tout), en mettant à disposition des ressources informatiques et en organisant des formation pour assurer une bonne productivité à long terme.",
+          "conclusion": "Pour en savoir plus sur mon travail, n’hésitez pas à consulter mon <Resume>résumé</Resume> ou à me contacter aux <Contact>liens ci-dessous</Contact>."
+        }
       },
       "skills": {
         "header": "Compétences",

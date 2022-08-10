@@ -17,19 +17,25 @@
       "intro": "It’s hard to introduce myself over the internet, but here’s a little bit about me:",
       "education": {
         "header": "Education",
-        "content": "I’m a junior at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the University Top Scholars."
+        "content": "I’m a senior at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the University Top Scholars."
       },
       "study_abroad": {
         "header": "Study Abroad",
-        "content": "I just wrapped up a year-long exchange program at the American University of Paris! I was in France for the entirety of 2021, weathering lockdowns & strikes while gaining valuable life experience. I completed coursework in both computer science & psychology, as well as in French language and culture."
+        "content": "I have had multiple study- and work-abroad experiences while in university. I studied for both semesters of 2021 at the American University of Paris, weathering lockdowns & strikes while gaining valuable life experience. While at AUP, I completed coursework in both computer science & psychology, as well as in French language and culture."
       },
       "work": {
         "header": "Work",
-        "content": "Summer 2021, I completed my fifth internship: a frontend web developer at <Link>Qantev</Link>. There, I worked in a React-based development stack, creating new features for our production application. I also helped run a rigorous QA session before shipping a new version of the application. Finally, I learned the basics of back end development (using Python & Pandas), culminating in a month-long new feature that I single-handedly executed."
+        "content": {
+          "intro": "In the summer of 2021, in between my two semesters of study abroad, I completed my fifth internship at <Link>Qantev</Link>, working primarily as a front-end developer on a React-based application. I also learned Python and Pandas to single-handedly work on the \"full stack\" of a new feature.",
+          "update": "I then returned to Qantev during summer 2022, focusing on migrating our codebase from Javascript to Typescript. Over my 3–month period, I coordinated the refactoring of 55% of our files and oversaw the implementation of new TypeScript-specific best practices."
+        }
       },
       "freelance": {
         "header": "Freelance",
-        "content": "I also do freelance web development! I work primarily with small businesses (although I’m open for anything), with an emphasis on providing resources and training to ensure long-term functionality."
+        "content": {
+          "intro": "I also do freelance web development! I work primarily with small businesses (although I’m open to other opportunities), with an emphasis on providing resources and training to ensure long-term functionality.",
+          "conclusion": "To learn more about my work, feel free to visit my <Resume>résumé</Resume> or contact me at the <Contact>links below</Contact>."
+        }
       },
       "skills": {
         "header": "Skills",

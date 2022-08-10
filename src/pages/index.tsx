@@ -41,13 +41,14 @@ const IndexPage = () => {
           </Feature>
           <Feature heading={t.rich("work.header")}>
             <p>
-              {t.rich("work.content", {
+              {t.rich("work.content.intro", {
                 Link: (text) => <Link to="https://qantev.com">{text}</Link>,
               })}
             </p>
+            <p>{t.rich("work.content.update")}</p>
           </Feature>
           <Feature heading={t.rich("freelance.header")}>
-            <p>{t.rich("freelance.content")}</p>
+            <p>{t.rich("freelance.content.intro")}</p>
             <ul>
               <li>
                 <Link to="https://crystalclearcontractors.com">
@@ -73,6 +74,12 @@ const IndexPage = () => {
                 </Link>
               </li>
             </ul>
+            <p>
+              {t.rich("freelance.content.conclusion", {
+                Resume: (text) => <Link to="/resume">{text}</Link>,
+                Contact: (text) => <Link to="#contact">{text}</Link>,
+              })}
+            </p>
           </Feature>
         </div>
         <h2>{t.rich("skills.header")}</h2>
@@ -89,7 +96,7 @@ const IndexPage = () => {
             </ul>
           </li>
         </ul>
-        <h2>{t.rich("contact.header")}</h2>
+        <h2 id="contact">{t.rich("contact.header")}</h2>
         <ul>
           <li>
             {t.rich("contact.content.phone", {
