@@ -1,0 +1,16 @@
+@use "../../variables";
+
+.greeting {
+  display: block;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.125;
+  padding: 0.375rem 0;
+}
+
+.gradient {
+  background-image: variables.$primary-gradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}

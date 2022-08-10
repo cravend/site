@@ -1,4 +1,4 @@
-import { render } from "../../tests/utils";
+import { render } from "../../../tests/utils";
 import Header from "../Header";
 
 describe("<Header />", () => {

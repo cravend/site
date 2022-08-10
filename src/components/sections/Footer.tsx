@@ -1,8 +1,7 @@
 import { useTranslations } from "next-intl";
 
-import styles from "../styles/modules/Footer.module.scss";
-
-import Link from "./Link";
+import styles from "../../styles/modules/sections/Footer.module.scss";
+import Link from "../Link";
 
 const Footer = () => {
   const t = useTranslations("Footer");
