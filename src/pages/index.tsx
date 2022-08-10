@@ -7,6 +7,7 @@ import Footer from "../components/sections/Footer";
 import Header from "../components/sections/Header";
 import Intro from "../components/sections/Intro";
 import Skills from "../components/sections/Skills";
+import { isLocale } from "../i18n/utils";
 import styles from "../styles/modules/IndexPage.module.scss";
 
 import type { GetStaticProps } from "next";
@@ -34,12 +35,17 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => ({
-  props: {
-    // You can get the messages from anywhere you like. The recommended
-    // pattern is to put them in JSON files separated by language and read
-    // the desired one based on the `locale` received from Next.js.
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-    messages: (await import(`../i18n/translations/${locale!}.json`)).default,
-  },
-});
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const validLocale = isLocale(locale) ? locale : "en";
+  const messages = (await import(
+    `../i18n/translations/${validLocale}.json`
+  )) as { default: IntlMessages };
+  return {
+    props: {
+      // You can get the messages from anywhere you like. The recommended
+      // pattern is to put them in JSON files separated by language and read
+      // the desired one based on the `locale` received from Next.js.
+      messages: messages.default,
+    },
+  };
+};
