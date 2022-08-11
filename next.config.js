@@ -29,7 +29,7 @@ const securityHeaders = [
 module.exports = {
   swcMinify: true,
   i18n: {
-    locales: ["en", "fr"],
+    locales: ["en", "fr", "ar"],
     defaultLocale: "en",
     localeDetection: false,
   },

@@ -72,6 +72,18 @@ exports[`<IndexPage /> renders 1`] = `
             Français
           </a>
         </li>
+        <li>
+          <a
+            class="primary"
+            href="/"
+          >
+            <span
+              dir="rtl"
+            >
+              العربية
+            </span>
+          </a>
+        </li>
       </ul>
     </div>
     <p>

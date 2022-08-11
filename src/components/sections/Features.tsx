@@ -8,6 +8,7 @@ import Link from "../Link";
 const RESUME_MAPPING = {
   en: "/resumes/Dalton Craven Résumé (en).pdf",
   fr: "/resumes/Dalton Craven Résumé (en).pdf",
+  ar: "/resumes/Dalton Craven Résumé (en).pdf",
 } as const;
 
 const Features = () => {
