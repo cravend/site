@@ -1,13 +1,12 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-import profilePic from "../assets/images/dalton-craven.webp";
-import styles from "../styles/modules/Header.module.scss";
-
-import Hero from "./Hero";
+import profilePic from "../../assets/images/dalton-craven.webp";
+import styles from "../../styles/modules/sections/Header.module.scss";
+import Hero from "../Hero";
 
 const Header = () => {
-  const t = useTranslations("Header");
+  const t = useTranslations("sections.Header");
 
   return (
     <Hero isDiagonal>

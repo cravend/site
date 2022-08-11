@@ -1,5 +1,4 @@
-@use '../mixins';
-@use '../variables';
+@use "../../variables";
 
 .background {
   color: variables.$color-light;
