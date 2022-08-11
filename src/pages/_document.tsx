@@ -2,6 +2,8 @@ import crypto from "crypto";
 
 import { Html, Head, Main, NextScript } from "next/document";
 
+import { isLocale, isRtl } from "../i18n/utils";
+
 import type { DocumentProps } from "next/document";
 
 const generateCsp = (
@@ -28,11 +30,12 @@ const generateCsp = (
   return [csp, nonce] as const;
 };
 
-const Document = (props: DocumentProps) => {
+const Document = ({ locale, ...props }: DocumentProps) => {
   const [csp, nonce] = generateCsp(NextScript.getInlineScriptSource(props));
+  const direction = isLocale(locale) && isRtl(locale) ? "rtl" : "ltr";
 
   return (
-    <Html>
+    <Html dir={direction}>
       <Head nonce={nonce}>
         <meta name="color-scheme" content="light dark" />
         <meta httpEquiv="Content-Security-Policy" content={csp} />
