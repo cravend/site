@@ -4,13 +4,21 @@ exports[`<Intro /> renders 1`] = `
 <div>
   <div
     class="container"
+    dir="ltr"
   >
-    <a
-      class="primary"
-      href="/"
-    >
-      Lire en français
-    </a>
+    <strong>
+      Read in:
+    </strong>
+    <ul>
+      <li>
+        <a
+          class="primary"
+          href="/"
+        >
+          Français
+        </a>
+      </li>
+    </ul>
   </div>
   <p>
     <span

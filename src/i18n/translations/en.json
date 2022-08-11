@@ -63,7 +63,12 @@
     }
   },
   "LanguageToggle": {
-    "toggle_locale": "Lire en français"
+    "header": "<strong>Read in:</strong>",
+    "options": {
+      "en": "English",
+      "fr": "Français",
+      "ar": "<rtl>العربية</rtl>"
+    }
   },
   "pages": {
     "Index": {

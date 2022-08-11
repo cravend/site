@@ -11,4 +11,5 @@ export const STANDARD_FORMATS = {
   strong: (child: React.ReactNode) => <strong>{child}</strong>,
   code: (child: React.ReactNode) => <code>{child}</code>,
   ltr: (child: React.ReactNode) => <span dir="ltr">{child}</span>,
+  rtl: (child: React.ReactNode) => <span dir="rtl">{child}</span>,
 };

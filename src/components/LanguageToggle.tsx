@@ -6,14 +6,21 @@ import styles from "../styles/modules/LanguageToggle.module.scss";
 import Link from "./Link";
 
 const LanguageToggle = () => {
-  const [, otherLocale] = useLocale();
+  const [, otherLocales] = useLocale();
   const t = useTranslations("LanguageToggle");
 
   return (
-    <div className={styles.container}>
-      <Link to="/" locale={otherLocale}>
-        {t.rich("toggle_locale")}
-      </Link>
+    <div dir="ltr" className={styles.container}>
+      {t.rich("header")}
+      <ul>
+        {otherLocales.map((locale) => (
+          <li key={locale}>
+            <Link to="/" locale={locale}>
+              {t.rich(`options.${locale}`)}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
