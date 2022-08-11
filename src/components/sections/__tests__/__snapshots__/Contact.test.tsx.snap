@@ -10,9 +10,9 @@ exports[`<Contact /> renders 1`] = `
   <ul>
     <li>
       <strong>
-        American Phone
+        American Phone:
       </strong>
-      : 
+       
       <a
         class="primary"
         href="tel:+15138136421"
@@ -22,9 +22,9 @@ exports[`<Contact /> renders 1`] = `
     </li>
     <li>
       <strong>
-        Email
+        Email:
       </strong>
-      : 
+       
       <a
         class="primary"
         href="mailto:daltoncraven@proton.me"
@@ -34,9 +34,9 @@ exports[`<Contact /> renders 1`] = `
     </li>
     <li>
       <strong>
-        GitHub
+        GitHub:
       </strong>
-      : 
+       
       <a
         class="primary"
         href="https://github.com/cravend"
@@ -46,9 +46,9 @@ exports[`<Contact /> renders 1`] = `
     </li>
     <li>
       <strong>
-        GitLab
+        GitLab:
       </strong>
-      : 
+       
       <a
         class="primary"
         href="https://gitlab.com/cravend"
@@ -58,9 +58,9 @@ exports[`<Contact /> renders 1`] = `
     </li>
     <li>
       <strong>
-        LinkedIn
+        LinkedIn:
       </strong>
-      : 
+       
       <a
         class="primary"
         href="https://www.linkedin.com/in/daltoncraven/"
@@ -70,9 +70,9 @@ exports[`<Contact /> renders 1`] = `
     </li>
     <li>
       <strong>
-        GPG
+        GPG:
       </strong>
-      : 
+       
       <a
         class="primary"
         href="https://github.com/cravend.gpg"

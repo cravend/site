@@ -5,10 +5,10 @@
       "content": {
         "phone": "<strong>الهاتف الأمريكي:</strong> <ltr><Link>+1 513 813 6421</Link></ltr>",
         "email": "<strong>البريد الإلكتروني:</strong> <ltr><Link>daltoncraven@proton.me</Link></ltr>",
-        "github": "<ltr><strong>GitHub:</strong></ltr> <ltr><Link>cravend</Link></ltr>",
-        "gitlab": "<ltr><strong>GitLab:</strong></ltr> <ltr><Link>cravend</Link></ltr>",
-        "linkedin": "<ltr><strong>LinkedIn:</strong></ltr> <ltr><Link>daltoncraven</Link></ltr>",
-        "gpg": "<ltr><strong>GPG:</strong></ltr> <ltr><Link>0xFF3FA75081B3B98C</Link></ltr>"
+        "github": "<strong><ltr>GitHub</ltr>:</strong> <ltr><Link>cravend</Link></ltr>",
+        "gitlab": "<strong><ltr>GitLab</ltr>:</strong> <ltr><Link>cravend</Link></ltr>",
+        "linkedin": "<strong><ltr>LinkedIn</ltr>:</strong> <ltr><Link>daltoncraven</Link></ltr>",
+        "gpg": "<strong><ltr>GPG</ltr>:</strong> <ltr><Link>0xFF3FA75081B3B98C</Link></ltr>"
       }
     },
     "Features": {
@@ -36,7 +36,7 @@
       }
     },
     "Footer": {
-      "text": "©{date, date, ::yyyy} دلتن كرافن | عرض الكود على <ltr><Link>GitHub</Link></ltr>"
+      "text": "<ltr>©</ltr> {date, date, ::yyyy} دلتن كرافن | عرض الكود على <ltr><Link>GitHub</Link></ltr>"
     },
     "Header": {
       "pfp": "صورة الملف الشخصي",
@@ -63,7 +63,7 @@
     }
   },
   "LanguageToggle": {
-    "header": "<ltr><strong>Read in:</strong></ltr>",
+    "header": "<strong><ltr>Read in:</ltr></strong>",
     "options": {
       "en": "<ltr>English</ltr>",
       "fr": "<ltr>Français</ltr>",
@@ -72,7 +72,7 @@
   },
   "pages": {
     "Index": {
-      "title": "الصفحة الرئيسية | دلتن كرافن"
+      "title": "دلتن كرافن | الصفحة الرئيسية"
     }
   }
 }

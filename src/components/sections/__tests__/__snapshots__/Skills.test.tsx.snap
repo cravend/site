@@ -8,21 +8,21 @@ exports[`<Skills /> renders 1`] = `
   <ul>
     <li>
       <strong>
-        Languages (spoken)
+        Languages (spoken):
       </strong>
-      : English, French, American Sign Language (ASL), Arabic
+       English, French, American Sign Language (ASL), Arabic
     </li>
     <li>
       <strong>
-        Languages (tech)
+        Languages (tech):
       </strong>
-      : React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
+       React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
     </li>
     <li>
       <strong>
-        Tools
+        Tools:
       </strong>
-      : Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
+       Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
     </li>
     <li>
       <strong>

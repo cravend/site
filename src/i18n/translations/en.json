@@ -3,12 +3,12 @@
     "Contact": {
       "header": "Contact",
       "content": {
-        "phone": "<strong>American Phone</strong>: <Link>+1 513 813 6421</Link>",
-        "email": "<strong>Email</strong>: <Link>daltoncraven@proton.me</Link>",
-        "github": "<strong>GitHub</strong>: <Link>cravend</Link>",
-        "gitlab": "<strong>GitLab</strong>: <Link>cravend</Link>",
-        "linkedin": "<strong>LinkedIn</strong>: <Link>daltoncraven</Link>",
-        "gpg": "<strong>GPG</strong>: <Link>0xFF3FA75081B3B98C</Link>"
+        "phone": "<strong>American Phone:</strong> <Link>+1 513 813 6421</Link>",
+        "email": "<strong>Email:</strong> <Link>daltoncraven@proton.me</Link>",
+        "github": "<strong>GitHub:</strong> <Link>cravend</Link>",
+        "gitlab": "<strong>GitLab:</strong> <Link>cravend</Link>",
+        "linkedin": "<strong>LinkedIn:</strong> <Link>daltoncraven</Link>",
+        "gpg": "<strong>GPG:</strong> <Link>0xFF3FA75081B3B98C</Link>"
       }
     },
     "Features": {
@@ -49,9 +49,9 @@
     },
     "Skills": {
       "header": "Skills",
-      "languages_spoken": "<strong>Languages (spoken)</strong>: English, French, American Sign Language (ASL), Arabic",
-      "languages_tech": "<strong>Languages (tech)</strong>: React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R",
-      "tools": "<strong>Tools</strong>: Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress",
+      "languages_spoken": "<strong>Languages (spoken):</strong> English, French, American Sign Language (ASL), Arabic",
+      "languages_tech": "<strong>Languages (tech):</strong> React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R",
+      "tools": "<strong>Tools:</strong> Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress",
       "certifications": {
         "header": "Certifications",
         "content": {
@@ -72,7 +72,7 @@
   },
   "pages": {
     "Index": {
-      "title": "Home | Dalton Craven"
+      "title": "Dalton Craven | Home"
     }
   }
 }

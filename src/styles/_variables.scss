@@ -14,3 +14,9 @@ $primary-gradient: linear-gradient(
   $accent-foreground -25%,
   $primary-foreground 110%
 );
+
+$primary-gradient-ar: linear-gradient(
+  -45deg,
+  $accent-foreground -25%,
+  $primary-foreground 110%
+);

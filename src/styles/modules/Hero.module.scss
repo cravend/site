@@ -25,3 +25,17 @@
     height: 14rem;
   }
 }
+
+[dir="rtl"] {
+  .normal {
+    background: variables.$primary-gradient-ar;
+  }
+
+  .diagonal {
+    background: variables.$primary-gradient-ar;
+
+    @media screen and (min-width: variables.$breakpoint-medium) {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 85%);
+    }
+  }
+}
