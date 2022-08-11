@@ -21,7 +21,7 @@ describe("<Link />", () => {
 
     expect(pushMock).toHaveBeenCalledTimes(1);
     expect(pushMock).toHaveBeenLastCalledWith("/test", "/test", {
-      locale: false,
+      locale: undefined,
       scroll: undefined,
       shallow: undefined,
     });

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Intro /> renders 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <a
+      class="primary"
+      href="/"
+    >
+      Lire en français
+    </a>
+  </div>
+  <p>
+    <span
+      class="greeting"
+    >
+      Hello! My name is 
+      <span
+        class="gradient"
+      >
+        Dalton Craven
+      </span>
+      . 
+    </span>
+    It’s hard to introduce myself over the internet, but here’s a little bit about me:
+  </p>
+</div>
+`;
