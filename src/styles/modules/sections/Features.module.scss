@@ -1,0 +1,10 @@
+@use "../../variables";
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: variables.$breakpoint-small) {
+    grid-template-columns: 1fr 1fr;
+  }
+}

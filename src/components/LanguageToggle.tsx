@@ -1,14 +1,18 @@
-import useLocalization from "../i18n/useLocalization";
+import { useTranslations } from "next-intl";
+
+import { useLocale } from "../i18n/hooks";
 import styles from "../styles/modules/LanguageToggle.module.scss";
+
 import Link from "./Link";
 
 const LanguageToggle = () => {
-  const [t, , otherLocale] = useLocalization();
+  const [, otherLocale] = useLocale();
+  const t = useTranslations("LanguageToggle");
 
   return (
     <div className={styles.container}>
       <Link to="/" locale={otherLocale}>
-        {t("toggle_locale")}
+        {t.rich("toggle_locale")}
       </Link>
     </div>
   );

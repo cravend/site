@@ -70,21 +70,18 @@ exports[`<IndexPage /> renders 1`] = `
       <span
         class="greeting"
       >
-        Hello! My name is
-         
+        Hello! My name is 
         <span
           class="gradient"
         >
           Dalton Craven
         </span>
-        .
-         
+        . 
       </span>
-      It’s hard to introduce myself over the internet, but here’s a little bit about me
-      : 
+      It’s hard to introduce myself over the internet, but here’s a little bit about me:
     </p>
     <div
-      class="card_grid"
+      class="grid"
     >
       <div
         class="card"
@@ -95,7 +92,14 @@ exports[`<IndexPage /> renders 1`] = `
           Education
         </h2>
         <p>
-          I’m a junior at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the University Top Scholars.
+          I’m a senior at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the 
+          <a
+            class="primary"
+            href="https://sc.edu/about/offices_and_divisions/undergraduate_admissions/honors_and_scholars_programs/top_scholars/index.php"
+          >
+            University Top Scholars
+          </a>
+          .
         </p>
       </div>
       <div
@@ -107,7 +111,7 @@ exports[`<IndexPage /> renders 1`] = `
           Study Abroad
         </h2>
         <p>
-          I just wrapped up a year-long exchange program at the American University of Paris! I was in France for the entirety of 2021, weathering lockdowns & strikes while gaining valuable life experience. I completed coursework in both computer science & psychology, as well as in French language and culture.
+          I have had multiple study- and work-abroad experiences while at university. I studied for both semesters of 2021 at the American University of Paris, weathering lockdowns & strikes while gaining valuable life experience. While at AUP, I completed coursework in both computer science & psychology, as well as in French language and culture.
         </p>
       </div>
       <div
@@ -119,17 +123,17 @@ exports[`<IndexPage /> renders 1`] = `
           Work
         </h2>
         <p>
-          Summer 2021, I completed my fifth internship: a frontend web developer at
-           
+          In the summer of 2021, in between my two semesters of study abroad, I completed my fifth internship at 
           <a
             class="primary"
             href="https://qantev.com"
           >
             Qantev
           </a>
-          .
-           
-          There, I worked in a React-based development stack, creating new features for our production application. I also helped run a rigorous QA session before shipping a new version of the application. Finally, I learned the basics of back end development (using Python & Pandas), culminating in a month-long new feature that I single-handedly executed.
+          , working primarily as a front-end developer on a React-based application. I also learned Python and Pandas to single-handedly work on the "full stack" of a new feature.
+        </p>
+        <p>
+          I then returned to Qantev during summer 2022, focusing on migrating our codebase from Javascript to Typescript. Over my 3–month period, I coordinated the refactoring of 55% of our files and oversaw the implementation of new TypeScript-specific best practices.
         </p>
       </div>
       <div
@@ -138,10 +142,10 @@ exports[`<IndexPage /> renders 1`] = `
         <h2
           class="heading"
         >
-          Freelancing
+          Freelance
         </h2>
         <p>
-          I also do freelance web development! I work primarily with small businesses (although I’m open for anything), with an emphasis on providing resources and training to ensure long-term functionality.
+          I also do freelance web development! I work primarily with small businesses (although I’m open to other opportunities), with an emphasis on providing resources and training to ensure long-term functionality.
         </p>
         <ul>
           <li>
@@ -185,64 +189,86 @@ exports[`<IndexPage /> renders 1`] = `
             </a>
           </li>
         </ul>
+        <p>
+          To learn more about my work, feel free to visit my 
+          <a
+            class="primary"
+            href="/resumes/Dalton%20Craven%20R%C3%A9sum%C3%A9%20(en).pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            résumé
+          </a>
+           or contact me at the 
+          <a
+            class="primary"
+            href="/#contact"
+          >
+            links below
+          </a>
+          .
+        </p>
       </div>
     </div>
     <h2>
-      Skills & Certifications
+      Skills
     </h2>
     <ul>
       <li>
         <strong>
           Languages (spoken)
-          : 
         </strong>
-        English, French, American Sign Language (ASL)
+        : English, French, American Sign Language (ASL), Arabic
       </li>
       <li>
         <strong>
           Languages (tech)
-          : 
         </strong>
-        React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
+        : React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
       </li>
       <li>
         <strong>
           Tools
-          : 
         </strong>
-        Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
+        : Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
       </li>
       <li>
         <strong>
           Certifications
-          : 
         </strong>
         <ul>
           <li>
-            The Fundamentals of Digital Marketing, Google —
-             
+            The Fundamentals of Digital Marketing, Google — 
             <em>
               Certified April 2020
             </em>
           </li>
           <li>
-            Microsoft Office Specialist (MOS) Master 2016, MOS Word 2016 Expert, MOS Excel 2016 Expert, MOS PowerPoint 2016, MOS Outlook 2016, MOS Access 2016 — 
+            Microsoft Office Specialist (MOS) Master 2016 — 
             <em>
-              Certified Fall 2018
+              Certified fall 2018
+            </em>
+          </li>
+          <li>
+            MOS Word 2016 Expert, MOS Excel 2016 Expert — 
+            <em>
+              Certified fall 2018
             </em>
           </li>
         </ul>
       </li>
     </ul>
-    <h2>
+    <h2
+      id="contact"
+    >
       Contact
     </h2>
     <ul>
       <li>
         <strong>
-          Phone
-          : 
+          American Phone
         </strong>
+        : 
         <a
           class="primary"
           href="tel:+15138136421"
@@ -253,8 +279,8 @@ exports[`<IndexPage /> renders 1`] = `
       <li>
         <strong>
           Email
-          : 
         </strong>
+        : 
         <a
           class="primary"
           href="mailto:daltoncraven@proton.me"
@@ -265,8 +291,8 @@ exports[`<IndexPage /> renders 1`] = `
       <li>
         <strong>
           GitHub
-          : 
         </strong>
+        : 
         <a
           class="primary"
           href="https://github.com/cravend"
@@ -277,8 +303,8 @@ exports[`<IndexPage /> renders 1`] = `
       <li>
         <strong>
           GitLab
-          : 
         </strong>
+        : 
         <a
           class="primary"
           href="https://gitlab.com/cravend"
@@ -289,8 +315,8 @@ exports[`<IndexPage /> renders 1`] = `
       <li>
         <strong>
           LinkedIn
-          : 
         </strong>
+        : 
         <a
           class="primary"
           href="https://www.linkedin.com/in/daltoncraven/"
@@ -301,8 +327,8 @@ exports[`<IndexPage /> renders 1`] = `
       <li>
         <strong>
           GPG
-          : 
         </strong>
+        : 
         <a
           class="primary"
           href="https://github.com/cravend.gpg"

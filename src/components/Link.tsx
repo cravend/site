@@ -1,29 +1,49 @@
 import NextLink from "next/link";
+
 import styles from "../styles/modules/Link.module.scss";
+
 import type { Locale } from "../i18n/config";
-import type { ReactNode } from "react";
+import type { LinkProps as NextLinkProps } from "next/link";
 
 export type LinkProps = {
   to: string;
   isExternal?: boolean;
-  locale?: Locale;
-  ariaLabel?: string;
-  children: ReactNode;
-};
+  openInNewTab?: boolean;
+  locale?: Locale | false | undefined;
+  children: React.ReactNode;
+} & Omit<NextLinkProps, "href">;
 
-const Link = ({ to, isExternal, locale, ariaLabel, children }: LinkProps) => {
+const Link = ({
+  to,
+  isExternal,
+  locale,
+  children,
+  openInNewTab,
+  ...props
+}: LinkProps) => {
   const externalCheck = /^https?:\/\//;
+  const newTabProps = {
+    target: "_blank",
+    rel: "noopener noreferrer",
+  };
   if (isExternal || externalCheck.test(to)) {
     return (
-      <a aria-label={ariaLabel} className={styles.primary} href={to}>
+      <a
+        className={styles.primary}
+        href={to}
+        {...(openInNewTab ? newTabProps : undefined)}
+      >
         {children}
       </a>
     );
   }
   return (
-    <NextLink locale={locale ?? false} href={to}>
+    <NextLink locale={locale} href={to} {...props}>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a aria-label={ariaLabel} className={styles.primary}>
+      <a
+        className={styles.primary}
+        {...(openInNewTab ? newTabProps : undefined)}
+      >
         {children}
       </a>
     </NextLink>
