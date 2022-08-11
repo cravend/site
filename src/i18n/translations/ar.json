@@ -1,0 +1,73 @@
+{
+  "sections": {
+    "Contact": {
+      "header": "للتواصل معي ",
+      "content": {
+        "phone": "<strong>الهاتف الأمريكي</strong>: <Link>+1 513 813 6421</Link>",
+        "email": "<strong>البريد الإلكتروني</strong>: <Link>daltoncraven@proton.me</Link>",
+        "github": "<strong>GitHub</strong><Link>: cravend</Link>",
+        "gitlab": "<strong>GitHub</strong><Link>: cravend</Link>",
+        "linkedin": "<strong>LinkedIn</strong>: <Link>daltoncraven</Link>",
+        "gpg": "<strong>GPG</strong>: <Link>0xFF3FA75081B3B98C</Link>"
+      }
+    },
+    "Features": {
+      "education": {
+        "header": "التعليم",
+        "content": "أنا طالب في جامعة كارولينا الجنوبية حيث أتابع بكالوريوس في علوم الحاسوب مع تخصص في علوم الحاسوب وقاصر في علم النفس. أنا أيضًا حاصل علي منحة McNair كجزء من برنامج المنح الدراسية الأكثر شهرة في UofSC، <Link>University Top Scholars</Link>."
+      },
+      "study_abroad": {
+        "header": "الدراسة في الخارج",
+        "content": "لقد حصلت على العديد من الخبرات في الدراسة والعمل في الخارج أثناء دراستي الجامعية. لقد درست كلا الفصلين الدراسيين لعام 2021 في الجامعة الأمريكية في باريس، حيث تمكنت من التغلب على عمليات الإغلاق والإضرابات مع اكتساب خبرة حياتية قيمة. أثناء عملي في AUP، أكملت الدورات الدراسية في كل من علوم الكمبيوتر وعلم النفس، وكذلك في اللغة والثقافة الفرنسية."
+      },
+      "work": {
+        "header": "الخبرات المهنية",
+        "content": {
+          "intro": "في صيف عام ٢٠٢١، بين فصلي دراستي في الخارج، أكملت تدريبي الخامس في <Link>Qantev</Link>، حيث عملت بشكل أساسي كمطور أمامي على تطبيق قائم على React. تعلمت أيضًا أن Python و Pandas يعملان بمفردهما على «المكدس الكامل» لميزة جديدة.",
+          "update": "عدت إلى Qantev خلال صيف 2022، مع التركيز على ترحيل قاعدة التعليمات البرمجية الخاصة بنا من Javascript إلى Typescript. خلال فترة 3 أشهر، قمت بتنسيق إعادة بيع ٥٥٪ من ملفاتنا وأشرفت على تنفيذ أفضل الممارسات الجديدة الخاصة بـ TypeScript."
+        }
+      },
+      "freelance": {
+        "header": "الخبرات المهنية المستقلة",
+        "content": {
+          "intro": "أقوم أيضًا بتطوير الويب لحسابهم الخاص! أعمل بشكل أساسي مع الشركات الصغيرة (على الرغم من أنني منفتح لى الفرص الأخرى)، مع التركيز على توفير الموارد والتدريب لضمان الأداء الوظيفي على المدى الطويل.",
+          "conclusion": "لمعرفة المزيد عن عملي، لا تترددو في زيارة <Resume>سيرتي الذاتية</Resume> أو الاتصال بي على <Contact>الروابط أدناه</Contact>."
+        }
+      }
+    },
+    "Footer": {
+      "text": "©{date, date, ::yyyy} دلتن كرافن | عرض الكود على <Link>GitHub</Link>"
+    },
+    "Header": {
+      "pfp": "صورة الملف الشخصي",
+      "name": "Dalton Craven",
+      "tagline": "طالب ومطور"
+    },
+    "Intro": {
+      "greeting": "مرحبًا! اسمي <Color>دلتن كرافن</Color>. ",
+      "intro": "من الصعب تقديم نفسي عبر الإنترنت، ولكن هنا القليل عني:"
+    },
+    "Skills": {
+      "header": "المهارات",
+      "languages_spoken": "<strong>اللغات (المنطوقة)</strong>: الإنجليزية، الفرنسية، لغة الإشارة الأمريكية، العربية",
+      "languages_tech": "<strong>اللغات (التكنولوجية)</strong>:  React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R",
+      "tools": "<strong>أدوات</strong>: Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress",
+      "certifications": {
+        "header": "الشهادات",
+        "content": {
+          "0": "The Fundamentals of Digital Marketing, Google — <em>معتمد في أبريل ٢٠٢٠</em>",
+          "1": "Microsoft Office Specialist (MOS) Master 2016 — <em>معتمد خريف ٢٠١٨</em>",
+          "2": "MOS Word 2016 Expert, MOS Excel 2016 Expert —<em>معتمد خريف ٢٠١٨</em>"
+        }
+      }
+    }
+  },
+  "LanguageToggle": {
+    "toggle_locale": "Lire en français"
+  },
+  "pages": {
+    "Index": {
+      "title": "الصفحة الرئيسية | دلتن كرافن"
+    }
+  }
+}
