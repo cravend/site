@@ -2,13 +2,34 @@
 
 .container {
   font-size: 0.875rem;
+  ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    li {
+      padding-left: 1rem;
+      display: inline;
+    }
+  }
   @media screen and (min-width: variables.$breakpoint-small) {
     font-size: 1rem;
     position: absolute;
+    text-align: right;
     top: 1rem;
     right: 1rem;
+    color: variables.$color-light;
     a {
       color: variables.$color-light;
+    }
+    ul {
+      display: block;
+      margin: initial;
+      padding-left: initial;
+      li {
+        padding-left: initial;
+        display: list-item;
+      }
     }
   }
 }

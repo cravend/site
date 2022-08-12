@@ -1,8 +1,8 @@
 import { useLocale as nextIntlUseLocale } from "next-intl";
 import { useRouter } from "next/router";
 
-import { defaultLocale } from "../config";
-import { isLocale, toggleLocale } from "../utils";
+import { defaultLocale, locales } from "../config";
+import { isLocale } from "../utils";
 
 /**
  * @description This function is used to get the current locale.
@@ -26,7 +26,8 @@ const useLocale = () => {
   };
 
   const locale = getLocale();
-  return [locale, toggleLocale(locale)] as const;
+  const otherLocales = locales.filter((l) => l !== locale);
+  return [locale, otherLocales] as const;
 };
 
 export default useLocale;

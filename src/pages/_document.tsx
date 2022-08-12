@@ -1,6 +1,10 @@
 import crypto from "crypto";
 
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from "next/document";
+
+import { isLocale, isRtl } from "../i18n/utils";
+
+import type { DocumentProps } from "next/document";
 
 const generateCsp = (
   scriptSource: string
@@ -26,37 +30,36 @@ const generateCsp = (
   return [csp, nonce] as const;
 };
 
-export default class MyDocument extends Document {
-  override render() {
-    const [csp, nonce] = generateCsp(
-      NextScript.getInlineScriptSource(this.props)
-    );
+const Document = ({ locale, ...props }: DocumentProps) => {
+  const [csp, nonce] = generateCsp(NextScript.getInlineScriptSource(props));
+  const direction = isLocale(locale) && isRtl(locale) ? "rtl" : "ltr";
 
-    return (
-      <Html>
-        <Head nonce={nonce}>
-          <meta name="color-scheme" content="light dark" />
-          <meta httpEquiv="Content-Security-Policy" content={csp} />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="anonymous"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap"
-            rel="stylesheet"
-          />
-          <meta
-            name="description"
-            content="Student & developer, working on the web in Paris, FR. he/him. Click to learn more :-)"
-          />
-        </Head>
-        <body>
-          <Main />
-          <NextScript nonce={nonce} />
-        </body>
-      </Html>
-    );
-  }
-}
+  return (
+    <Html dir={direction}>
+      <Head nonce={nonce}>
+        <meta name="color-scheme" content="light dark" />
+        <meta httpEquiv="Content-Security-Policy" content={csp} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap"
+          rel="stylesheet"
+        />
+        <meta
+          name="description"
+          content="Student & developer, working on the web in Paris, FR. he/him. Click to learn more :-)"
+        />
+      </Head>
+      <body>
+        <Main />
+        <NextScript nonce={nonce} />
+      </body>
+    </Html>
+  );
+};
+
+export default Document;

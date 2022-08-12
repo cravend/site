@@ -3,12 +3,12 @@
     "Contact": {
       "header": "Contact",
       "content": {
-        "phone": "<strong>Numéro américain</strong> : <Link>+1 513 813 6421</Link>",
-        "email": "<strong>Mail</strong> : <Link>daltoncraven@proton.me</Link>",
-        "github": "<strong>GitHub</strong> : <Link>cravend</Link>",
-        "gitlab": "<strong>GitLab</strong> : <Link>cravend</Link>",
-        "linkedin": "<strong>LinkedIn</strong> : <Link>daltoncraven</Link>",
-        "gpg": "<strong>GPG</strong> : <Link>0xFF3FA75081B3B98C</Link>"
+        "phone": "<strong>Numéro américain :</strong> <Link>+1 513 813 6421</Link>",
+        "email": "<strong>Mail :</strong> <Link>daltoncraven@proton.me</Link>",
+        "github": "<strong>GitHub :</strong> <Link>cravend</Link>",
+        "gitlab": "<strong>GitLab :</strong> <Link>cravend</Link>",
+        "linkedin": "<strong>LinkedIn :</strong> <Link>daltoncraven</Link>",
+        "gpg": "<strong>GPG :</strong> <Link>0xFF3FA75081B3B98C</Link>"
       }
     },
     "Features": {
@@ -49,9 +49,9 @@
     },
     "Skills": {
       "header": "Compétences",
-      "languages_spoken": "<strong>Langues (parlées)</strong> : Anglais, Français, Langue des signes américaine (ASL), Arabe",
-      "languages_tech": "<strong>Langues (tech)</strong> : React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R",
-      "tools": "<strong>Outils</strong> : Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress",
+      "languages_spoken": "<strong>Langues (parlées) :</strong> <En>Anglais</En>, <Fr>Français</Fr>, Langue des signes américaine (ASL), <Ar>Arabe</Ar>",
+      "languages_tech": "<strong>Langues (tech) :</strong> React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R",
+      "tools": "<strong>Outils :</strong> Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress",
       "certifications": {
         "header": "Certifications",
         "content": {
@@ -63,11 +63,16 @@
     }
   },
   "LanguageToggle": {
-    "toggle_locale": "Read in English"
+    "header": "<strong>Read in:</strong>",
+    "options": {
+      "en": "English",
+      "fr": "Français",
+      "ar": "<rtl>العربية</rtl>"
+    }
   },
   "pages": {
     "Index": {
-      "title": "Home | Dalton Craven"
+      "title": "Dalton Craven | Home"
     }
   }
 }

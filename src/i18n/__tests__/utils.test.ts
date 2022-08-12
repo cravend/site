@@ -55,6 +55,11 @@ describe("getLocale()", () => {
     } as const;
     expect(getLocale(mockRouter)).toBe("en");
   });
+
+  it("returns the config's defaultLocale if the router is null", () => {
+    expect.assertions(1);
+    expect(getLocale(null)).toBe("en");
+  });
 });
 
 describe("toggleLocale()", () => {

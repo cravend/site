@@ -1,6 +1,556 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<IndexPage /> renders 1`] = `
+exports[`<IndexPage /> renders Arabic text 1`] = `
+<div>
+  <header
+    class="diagonal rtl"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="profile"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="صورة الملف الشخصي"
+            class="pfp"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="text_container"
+      >
+        <h1
+          class="title"
+        >
+          <span
+            dir="ltr"
+          >
+            Dalton Craven
+          </span>
+        </h1>
+        <p
+          class="subtitle"
+        >
+          <b>
+            طالب ومطور
+          </b>
+        </p>
+      </div>
+    </div>
+  </header>
+  <main
+    class="container"
+  >
+    <div
+      class="container"
+      dir="ltr"
+    >
+      <strong>
+        <span
+          dir="ltr"
+        >
+          Read in:
+        </span>
+      </strong>
+      <ul>
+        <li>
+          <a
+            class="primary"
+            href="/"
+          >
+            <span
+              dir="ltr"
+            >
+              English
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="primary"
+            href="/"
+          >
+            <span
+              dir="ltr"
+            >
+              Français
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p>
+      <span
+        class="greeting"
+      >
+        مرحبًا! اسمي 
+        <span
+          class="gradient"
+        >
+          دلتن كرافن
+        </span>
+        . 
+      </span>
+      من الصعب تقديم نفسي عبر الإنترنت، ولكن هنا القليل عني:
+    </p>
+    <div
+      class="grid"
+    >
+      <div
+        class="card"
+      >
+        <h2
+          class="heading"
+        >
+          التعليم
+        </h2>
+        <p>
+          أنا طالب في جامعة كارولينا الجنوبية حيث أتابع بكالوريوس في علوم الحاسوب مع تخصص في علوم الحاسوب وتخصص فرعي في علم النفس. أنا أيضًا حاصل على منحة 
+          <span
+            dir="ltr"
+          >
+            McNair
+          </span>
+           كجزء من برنامج المنح الدراسية الأكثر شهرة في 
+          <span
+            dir="ltr"
+          >
+            UofSC
+          </span>
+          ، 
+          <span
+            dir="ltr"
+          >
+            <a
+              class="primary"
+              href="https://sc.edu/about/offices_and_divisions/undergraduate_admissions/honors_and_scholars_programs/top_scholars/index.php"
+            >
+              University Top Scholars
+            </a>
+          </span>
+          .
+        </p>
+      </div>
+      <div
+        class="card"
+      >
+        <h2
+          class="heading"
+        >
+          الدراسة في الخارج
+        </h2>
+        <p>
+          لقد إكتسبت العديد من الخبرات الدراسية والمهنية في الخارج أثناء دراستي الجامعية. لقد درست كلا الفصلين الدراسيين لعام ٢٠٢١ في الجامعة الأمريكية في باريس، حيث تمكنت من التغلب على عمليات الحجر الصحي والإضرابات مع اكتساب خبرة حياتية قيمة. أثناء عملي في 
+          <span
+            dir="ltr"
+          >
+            AUP
+          </span>
+          ، أكملت دورات دراسيةً في كل من علوم الكمبيوتر وعلم النفس، وكذلك في اللغة والثقافة الفرنسية.
+        </p>
+      </div>
+      <div
+        class="card"
+      >
+        <h2
+          class="heading"
+        >
+          الخبرات المهنية
+        </h2>
+        <p>
+          في صيف عام ٢٠٢١، بين فصلي دراستي في الخارج، أكملت تدريبي الخامس في 
+          <span
+            dir="ltr"
+          >
+            <a
+              class="primary"
+              href="https://qantev.com"
+            >
+              Qantev
+            </a>
+          </span>
+           حيث عملت بشكل أساسي كمطور أمامي على تطبيق قائم على 
+          <span
+            dir="ltr"
+          >
+            React
+          </span>
+          . تعلمت أيضًا البرمجة من خلال 
+          <span
+            dir="ltr"
+          >
+            Python & Pandas
+          </span>
+           كي أقوم بتطوير ميزة جديدة بمفردي.
+        </p>
+        <p>
+          عدت إلى 
+          <span
+            dir="ltr"
+          >
+            Qantev
+          </span>
+           خلال صيف ٢٠٢٢، مع التركيز على ترحيل قاعدة التعليمات البرمجية الخاصة بنا من 
+          <span
+            dir="ltr"
+          >
+            Javascript
+          </span>
+           إلى 
+          <span
+            dir="ltr"
+          >
+            Typescript
+          </span>
+          . خلال فترة ٣ أشهر، قمت بتنسيق إعادة برمجة ٥٥٪ من ملفاتنا وأشرفت على تنفيذ أفضل الممارسات الجديدة الخاصة بـ 
+          <span
+            dir="ltr"
+          >
+            Typescript
+          </span>
+          .
+        </p>
+      </div>
+      <div
+        class="card"
+      >
+        <h2
+          class="heading"
+        >
+          الخبرات المهنية المستقلة
+        </h2>
+        <p>
+          أقوم أيضًا بتطوير الويب كعمل مستقل! أعمل بشكل أساسي مع الشركات الصغيرة (على الرغم من أنني منفتح لى الفرص الأخرى)، مع التركيز على توفير الموارد والتدريب لضمان الأداء الوظيفي على المدى الطويل.
+        </p>
+        <ul>
+          <li>
+            <a
+              class="primary"
+              href="https://crystalclearcontractors.com"
+            >
+              Crystal Clear Contracting
+            </a>
+          </li>
+          <li>
+            <a
+              class="primary"
+              href="https://crystalclearconcrete.com"
+            >
+              Crystal Clear Concrete
+            </a>
+          </li>
+          <li>
+            <a
+              class="primary"
+              href="https://cleancrystalclear.com"
+            >
+              Clean Crystal Clear
+            </a>
+          </li>
+          <li>
+            <a
+              class="primary"
+              href="https://elitepaintcincy.com"
+            >
+              Elite Painting
+            </a>
+          </li>
+          <li>
+            <a
+              class="primary"
+              href="https://elitecontractingcincy.com"
+            >
+              Elite Contracting
+            </a>
+          </li>
+        </ul>
+        <p>
+          لمعرفة المزيد عن عملي، لا تترددو في زيارة 
+          <a
+            class="primary"
+            href="/resumes/Dalton%20Craven%20R%C3%A9sum%C3%A9%20(en).pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            سيرتي الذاتية
+          </a>
+           أو الاتصال بي على 
+          <a
+            class="primary"
+            href="/#contact"
+          >
+            الروابط أدناه
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <h2>
+      المهارات
+    </h2>
+    <ul>
+      <li>
+        <strong>
+          اللغات (المنطوقة):
+        </strong>
+         
+        <a
+          class="primary"
+          href="/"
+        >
+          الإنجليزية
+        </a>
+        ، 
+        <a
+          class="primary"
+          href="/"
+        >
+          الفرنسية
+        </a>
+        ، لغة الإشارة الأمريكية، 
+        <a
+          class="primary"
+          href="/"
+        >
+          العربية
+        </a>
+      </li>
+      <li>
+        <strong>
+          اللغات (التكنولوجية):
+        </strong>
+         
+        <span
+          dir="ltr"
+        >
+          React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
+        </span>
+      </li>
+      <li>
+        <strong>
+          أدوات:
+        </strong>
+         
+        <span
+          dir="ltr"
+        >
+          Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
+        </span>
+      </li>
+      <li>
+        <strong>
+          الشهادات
+        </strong>
+        <ul>
+          <li>
+            <span
+              dir="ltr"
+            >
+              The Fundamentals of Digital Marketing, Google
+            </span>
+             — 
+            <em>
+              معتمد في أبريل ٢٠٢٠
+            </em>
+          </li>
+          <li>
+            <span
+              dir="ltr"
+            >
+              Microsoft Office Specialist (MOS) Master 2016
+            </span>
+             — 
+            <em>
+              معتمد خريف ٢٠١٨
+            </em>
+          </li>
+          <li>
+            <span
+              dir="ltr"
+            >
+              MOS Word 2016 Expert, MOS Excel 2016 Expert
+            </span>
+             — 
+            <em>
+              معتمد خريف ٢٠١٨
+            </em>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2
+      id="contact"
+    >
+      للتواصل معي 
+    </h2>
+    <ul>
+      <li>
+        <strong>
+          الهاتف الأمريكي:
+        </strong>
+         
+        <span
+          dir="ltr"
+        >
+          <a
+            class="primary"
+            href="tel:+15138136421"
+          >
+            +1 513 813 6421
+          </a>
+        </span>
+      </li>
+      <li>
+        <strong>
+          البريد الإلكتروني:
+        </strong>
+         
+        <span
+          dir="ltr"
+        >
+          <a
+            class="primary"
+            href="mailto:daltoncraven@proton.me"
+          >
+            daltoncraven@proton.me
+          </a>
+        </span>
+      </li>
+      <li>
+        <strong>
+          <span
+            dir="ltr"
+          >
+            GitHub
+          </span>
+          :
+        </strong>
+         
+        <span
+          dir="ltr"
+        >
+          <a
+            class="primary"
+            href="https://github.com/cravend"
+          >
+            cravend
+          </a>
+        </span>
+      </li>
+      <li>
+        <strong>
+          <span
+            dir="ltr"
+          >
+            GitLab
+          </span>
+          :
+        </strong>
+         
+        <span
+          dir="ltr"
+        >
+          <a
+            class="primary"
+            href="https://gitlab.com/cravend"
+          >
+            cravend
+          </a>
+        </span>
+      </li>
+      <li>
+        <strong>
+          <span
+            dir="ltr"
+          >
+            LinkedIn
+          </span>
+          :
+        </strong>
+         
+        <span
+          dir="ltr"
+        >
+          <a
+            class="primary"
+            href="https://www.linkedin.com/in/daltoncraven/"
+          >
+            daltoncraven
+          </a>
+        </span>
+      </li>
+      <li>
+        <strong>
+          <span
+            dir="ltr"
+          >
+            GPG
+          </span>
+          :
+        </strong>
+         
+        <span
+          dir="ltr"
+        >
+          <a
+            class="primary"
+            href="https://github.com/cravend.gpg"
+          >
+            0xFF3FA75081B3B98C
+          </a>
+        </span>
+      </li>
+    </ul>
+  </main>
+  <footer
+    class="background"
+  >
+    <div
+      class="container"
+    >
+      <p>
+        <span
+          dir="ltr"
+        >
+          ©
+        </span>
+         ٢٠٢٢ دلتن كرافن | عرض الكود على 
+        <span
+          dir="ltr"
+        >
+          <a
+            class="primary"
+            href="https://github.com/cravend/site"
+          >
+            GitHub
+          </a>
+        </span>
+      </p>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`<IndexPage /> renders English text 1`] = `
 <div>
   <header
     class="diagonal"
@@ -58,13 +608,33 @@ exports[`<IndexPage /> renders 1`] = `
   >
     <div
       class="container"
+      dir="ltr"
     >
-      <a
-        class="primary"
-        href="/"
-      >
-        Lire en français
-      </a>
+      <strong>
+        Read in:
+      </strong>
+      <ul>
+        <li>
+          <a
+            class="primary"
+            href="/"
+          >
+            Français
+          </a>
+        </li>
+        <li>
+          <a
+            class="primary"
+            href="/"
+          >
+            <span
+              dir="rtl"
+            >
+              العربية
+            </span>
+          </a>
+        </li>
+      </ul>
     </div>
     <p>
       <span
@@ -216,21 +786,41 @@ exports[`<IndexPage /> renders 1`] = `
     <ul>
       <li>
         <strong>
-          Languages (spoken)
+          Languages (spoken):
         </strong>
-        : English, French, American Sign Language (ASL), Arabic
+         
+        <a
+          class="primary"
+          href="/"
+        >
+          English
+        </a>
+        , 
+        <a
+          class="primary"
+          href="/"
+        >
+          French
+        </a>
+        , American Sign Language (ASL), 
+        <a
+          class="primary"
+          href="/"
+        >
+          Arabic
+        </a>
       </li>
       <li>
         <strong>
-          Languages (tech)
+          Languages (tech):
         </strong>
-        : React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
+         React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
       </li>
       <li>
         <strong>
-          Tools
+          Tools:
         </strong>
-        : Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
+         Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
       </li>
       <li>
         <strong>
@@ -266,9 +856,9 @@ exports[`<IndexPage /> renders 1`] = `
     <ul>
       <li>
         <strong>
-          American Phone
+          American Phone:
         </strong>
-        : 
+         
         <a
           class="primary"
           href="tel:+15138136421"
@@ -278,9 +868,9 @@ exports[`<IndexPage /> renders 1`] = `
       </li>
       <li>
         <strong>
-          Email
+          Email:
         </strong>
-        : 
+         
         <a
           class="primary"
           href="mailto:daltoncraven@proton.me"
@@ -290,9 +880,9 @@ exports[`<IndexPage /> renders 1`] = `
       </li>
       <li>
         <strong>
-          GitHub
+          GitHub:
         </strong>
-        : 
+         
         <a
           class="primary"
           href="https://github.com/cravend"
@@ -302,9 +892,9 @@ exports[`<IndexPage /> renders 1`] = `
       </li>
       <li>
         <strong>
-          GitLab
+          GitLab:
         </strong>
-        : 
+         
         <a
           class="primary"
           href="https://gitlab.com/cravend"
@@ -314,9 +904,9 @@ exports[`<IndexPage /> renders 1`] = `
       </li>
       <li>
         <strong>
-          LinkedIn
+          LinkedIn:
         </strong>
-        : 
+         
         <a
           class="primary"
           href="https://www.linkedin.com/in/daltoncraven/"
@@ -326,9 +916,9 @@ exports[`<IndexPage /> renders 1`] = `
       </li>
       <li>
         <strong>
-          GPG
+          GPG:
         </strong>
-        : 
+         
         <a
           class="primary"
           href="https://github.com/cravend.gpg"
@@ -346,6 +936,404 @@ exports[`<IndexPage /> renders 1`] = `
     >
       <p>
         © 2022 Dalton Craven | View source on 
+        <a
+          class="primary"
+          href="https://github.com/cravend/site"
+        >
+          GitHub
+        </a>
+      </p>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`<IndexPage /> renders French text 1`] = `
+<div>
+  <header
+    class="diagonal"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="profile"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="Image de profil"
+            class="pfp"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="text_container"
+      >
+        <h1
+          class="title"
+        >
+          Dalton Craven
+        </h1>
+        <p
+          class="subtitle"
+        >
+          <b>
+            Étudiant & développeur
+          </b>
+        </p>
+      </div>
+    </div>
+  </header>
+  <main
+    class="container"
+  >
+    <div
+      class="container"
+      dir="ltr"
+    >
+      <strong>
+        Read in:
+      </strong>
+      <ul>
+        <li>
+          <a
+            class="primary"
+            href="/"
+          >
+            English
+          </a>
+        </li>
+        <li>
+          <a
+            class="primary"
+            href="/"
+          >
+            <span
+              dir="rtl"
+            >
+              العربية
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p>
+      <span
+        class="greeting"
+      >
+        Salut ! Moi c’est 
+        <span
+          class="gradient"
+        >
+          Dalton Craven
+        </span>
+        . 
+      </span>
+      C’est assez compliqué de se présenter sur internet, mais voilà ce que je peux vous dire sur moi :
+    </p>
+    <div
+      class="grid"
+    >
+      <div
+        class="card"
+      >
+        <h2
+          class="heading"
+        >
+          Éducation
+        </h2>
+        <p>
+          Je suis en quatrième et dernière année à l’Université de South Carolina. Je suis en Bachelor d’informatique avec seconde spécialisation en psychologie. Je suis également récipiendaire de la bourse McNair, le plus prestigieux programme de bourses à l’Université de South Carolina, les « 
+          <a
+            class="primary"
+            href="https://sc.edu/about/offices_and_divisions/undergraduate_admissions/honors_and_scholars_programs/top_scholars/index.php"
+          >
+            University Top Scholars
+          </a>
+           ».
+        </p>
+      </div>
+      <div
+        class="card"
+      >
+        <h2
+          class="heading"
+        >
+          Mon temps à l’étranger
+        </h2>
+        <p>
+          J’ai eu plusieurs expériences d’études et de travail à l’étranger pendant mes études. J’ai étudié pendant les deux semestres de l’année 2021 à l’Université américaine de Paris, résistant aux confinements et aux grèves tout en acquérant une expérience de vie précieuse. Pendant mon séjour à l’AUP, j’ai suivi des cours d’informatique et de psychologie, ainsi que des cours de la langue et la culture françaises.
+        </p>
+      </div>
+      <div
+        class="card"
+      >
+        <h2
+          class="heading"
+        >
+          Mes expériences professionnelles
+        </h2>
+        <p>
+          Au cours de l’été 2021, entre mes deux semestres d’études à l’étranger, j’ai effectué mon cinquième stage en tant que développeur front-end chez 
+          <a
+            class="primary"
+            href="https://qantev.com"
+          >
+            Qantev
+          </a>
+          , travaillant principalement en tant que développeur front sur une application basée sur React. J'ai également appris Python et Pandas pour travailler sur la "full stack" d'une nouvelle fonctionnalité.
+        </p>
+        <p>
+          Je suis ensuite retourné à Qantev pendant l'été 2022, pour migrer notre codebase de Javascript à Typescript. Au cours de ma période de trois mois, j'ai coordonné le refactoring de 55 % de nos composants et supervisé la mise en œuvre de nouvelles bonnes pratiques spécifiques à TypeScript.
+        </p>
+      </div>
+      <div
+        class="card"
+      >
+        <h2
+          class="heading"
+        >
+          Mon travail en freelance
+        </h2>
+        <p>
+          Je fais aussi du développement web en freelance ! Je travaille principalement avec des petites entreprises (bien que je sois ouvert à tout), en mettant à disposition des ressources informatiques et en organisant des formation pour assurer une bonne productivité à long terme.
+        </p>
+        <ul>
+          <li>
+            <a
+              class="primary"
+              href="https://crystalclearcontractors.com"
+            >
+              Crystal Clear Contracting
+            </a>
+          </li>
+          <li>
+            <a
+              class="primary"
+              href="https://crystalclearconcrete.com"
+            >
+              Crystal Clear Concrete
+            </a>
+          </li>
+          <li>
+            <a
+              class="primary"
+              href="https://cleancrystalclear.com"
+            >
+              Clean Crystal Clear
+            </a>
+          </li>
+          <li>
+            <a
+              class="primary"
+              href="https://elitepaintcincy.com"
+            >
+              Elite Painting
+            </a>
+          </li>
+          <li>
+            <a
+              class="primary"
+              href="https://elitecontractingcincy.com"
+            >
+              Elite Contracting
+            </a>
+          </li>
+        </ul>
+        <p>
+          Pour en savoir plus sur mon travail, n’hésitez pas à consulter mon 
+          <a
+            class="primary"
+            href="/resumes/Dalton%20Craven%20R%C3%A9sum%C3%A9%20(en).pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            résumé
+          </a>
+           ou à me contacter aux 
+          <a
+            class="primary"
+            href="/#contact"
+          >
+            liens ci-dessous
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <h2>
+      Compétences
+    </h2>
+    <ul>
+      <li>
+        <strong>
+          Langues (parlées) :
+        </strong>
+         
+        <a
+          class="primary"
+          href="/"
+        >
+          Anglais
+        </a>
+        , 
+        <a
+          class="primary"
+          href="/"
+        >
+          Français
+        </a>
+        , Langue des signes américaine (ASL), 
+        <a
+          class="primary"
+          href="/"
+        >
+          Arabe
+        </a>
+      </li>
+      <li>
+        <strong>
+          Langues (tech) :
+        </strong>
+         React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R
+      </li>
+      <li>
+        <strong>
+          Outils :
+        </strong>
+         Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress
+      </li>
+      <li>
+        <strong>
+          Certifications
+        </strong>
+        <ul>
+          <li>
+            The Fundamentals of Digital Marketing, Google — 
+            <em>
+              Certifié en avril 2020
+            </em>
+          </li>
+          <li>
+            Microsoft Office Specialist (MOS) Master 2016 — 
+            <em>
+              Certifié à l’automne 2018
+            </em>
+          </li>
+          <li>
+            MOS Word 2016 Expert, MOS Excel 2016 Expert, MOS PowerPoint 2016 — 
+            <em>
+              Certifié à l’automne 2018
+            </em>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2
+      id="contact"
+    >
+      Contact
+    </h2>
+    <ul>
+      <li>
+        <strong>
+          Numéro américain :
+        </strong>
+         
+        <a
+          class="primary"
+          href="tel:+15138136421"
+        >
+          +1 513 813 6421
+        </a>
+      </li>
+      <li>
+        <strong>
+          Mail :
+        </strong>
+         
+        <a
+          class="primary"
+          href="mailto:daltoncraven@proton.me"
+        >
+          daltoncraven@proton.me
+        </a>
+      </li>
+      <li>
+        <strong>
+          GitHub :
+        </strong>
+         
+        <a
+          class="primary"
+          href="https://github.com/cravend"
+        >
+          cravend
+        </a>
+      </li>
+      <li>
+        <strong>
+          GitLab :
+        </strong>
+         
+        <a
+          class="primary"
+          href="https://gitlab.com/cravend"
+        >
+          cravend
+        </a>
+      </li>
+      <li>
+        <strong>
+          LinkedIn :
+        </strong>
+         
+        <a
+          class="primary"
+          href="https://www.linkedin.com/in/daltoncraven/"
+        >
+          daltoncraven
+        </a>
+      </li>
+      <li>
+        <strong>
+          GPG :
+        </strong>
+         
+        <a
+          class="primary"
+          href="https://github.com/cravend.gpg"
+        >
+          0xFF3FA75081B3B98C
+        </a>
+      </li>
+    </ul>
+  </main>
+  <footer
+    class="background"
+  >
+    <div
+      class="container"
+    >
+      <p>
+        © 2022 Dalton Craven | Voir le code sur 
         <a
           class="primary"
           href="https://github.com/cravend/site"

@@ -10,7 +10,7 @@ describe("<Link />", () => {
   });
 
   it("pushes to another page when clicked", () => {
-    expect.hasAssertions();
+    expect.assertions(2);
     const LINK_TEXT = "Hello, world!";
     const pushMock = jest.fn();
 
@@ -78,6 +78,36 @@ describe("<Link />", () => {
     expect(screen.getByRole("link", { name: LINK_TEXT })).toHaveAttribute(
       "href",
       "/"
+    );
+  });
+
+  it("opens an internal link in a new tab when `openInNewTab` is passed", () => {
+    expect.assertions(1);
+    const LINK_TEXT = "Hello, world!";
+    render(
+      <Link to="/" openInNewTab>
+        {LINK_TEXT}
+      </Link>
+    );
+
+    expect(screen.getByRole("link", { name: LINK_TEXT })).toHaveAttribute(
+      "target",
+      "_blank"
+    );
+  });
+
+  it("opens an external link in a new tab when `openInNewTab` is passed", () => {
+    expect.assertions(1);
+    const LINK_TEXT = "Hello, world!";
+    render(
+      <Link to="https://google.com" openInNewTab>
+        {LINK_TEXT}
+      </Link>
+    );
+
+    expect(screen.getByRole("link", { name: LINK_TEXT })).toHaveAttribute(
+      "target",
+      "_blank"
     );
   });
 
