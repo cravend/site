@@ -24,6 +24,18 @@ describe("<Header />", () => {
     expect(container).toMatchSnapshot();
   });
 
+  it("renders the diagonal in the opposite direction when a language is RTL", () => {
+    expect.assertions(1);
+    const CHILD_TEXT = "Hello, world!";
+    const { container } = render(
+      <Hero>
+        <p>{CHILD_TEXT}</p>
+      </Hero>,
+      { router: { locale: "ar" } }
+    );
+    expect(container).toMatchSnapshot();
+  });
+
   it("displays children", () => {
     expect.assertions(1);
     const CHILD_TEXT = "Hello, world!";

@@ -18,6 +18,18 @@ exports[`<Header /> renders 1`] = `
 </div>
 `;
 
+exports[`<Header /> renders the diagonal in the opposite direction when a language is RTL 1`] = `
+<div>
+  <header
+    class="normal rtl"
+  >
+    <p>
+      Hello, world!
+    </p>
+  </header>
+</div>
+`;
+
 exports[`<Header /> renders with a diagonal when isDiagonal is true 1`] = `
 <div>
   <header

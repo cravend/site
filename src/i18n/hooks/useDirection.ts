@@ -1,6 +1,6 @@
 import { isRtl } from "../utils";
 
-import useLocale from "./useLocale";
+import { useLocale } from ".";
 
 const useDirection = () => {
   const [locale] = useLocale();

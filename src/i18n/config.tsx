@@ -6,10 +6,8 @@ export const defaultLocale = locales[0];
 export const RTL_LOCALES: readonly Locale[] = ["ar"] as const;
 
 export const STANDARD_FORMATS = {
-  p: (child: React.ReactNode) => <p>{child}</p>,
   em: (child: React.ReactNode) => <em>{child}</em>,
   strong: (child: React.ReactNode) => <strong>{child}</strong>,
-  code: (child: React.ReactNode) => <code>{child}</code>,
   ltr: (child: React.ReactNode) => <span dir="ltr">{child}</span>,
   rtl: (child: React.ReactNode) => <span dir="rtl">{child}</span>,
 };

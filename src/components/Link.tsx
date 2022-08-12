@@ -22,17 +22,15 @@ const Link = ({
   ...props
 }: LinkProps) => {
   const externalCheck = /^https?:\/\//;
-  const newTabProps = {
-    target: "_blank",
-    rel: "noopener noreferrer",
-  };
+  const newTabProps =
+    openInNewTab &&
+    ({
+      target: "_blank",
+      rel: "noopener noreferrer",
+    } as const);
   if (isExternal || externalCheck.test(to)) {
     return (
-      <a
-        className={styles.primary}
-        href={to}
-        {...(openInNewTab ? newTabProps : undefined)}
-      >
+      <a className={styles.primary} href={to} {...newTabProps}>
         {children}
       </a>
     );
@@ -40,10 +38,7 @@ const Link = ({
   return (
     <NextLink locale={locale} href={to} {...props}>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a
-        className={styles.primary}
-        {...(openInNewTab ? newTabProps : undefined)}
-      >
+      <a className={styles.primary} {...newTabProps}>
         {children}
       </a>
     </NextLink>
