@@ -312,7 +312,27 @@ exports[`<IndexPage /> renders Arabic text 1`] = `
         <strong>
           اللغات (المنطوقة):
         </strong>
-         الإنجليزية، الفرنسية، لغة الإشارة الأمريكية، العربية
+         
+        <a
+          class="primary"
+          href="/"
+        >
+          الإنجليزية
+        </a>
+        ، 
+        <a
+          class="primary"
+          href="/"
+        >
+          الفرنسية
+        </a>
+        ، لغة الإشارة الأمريكية، 
+        <a
+          class="primary"
+          href="/"
+        >
+          العربية
+        </a>
       </li>
       <li>
         <strong>
@@ -768,7 +788,27 @@ exports[`<IndexPage /> renders English text 1`] = `
         <strong>
           Languages (spoken):
         </strong>
-         English, French, American Sign Language (ASL), Arabic
+         
+        <a
+          class="primary"
+          href="/"
+        >
+          English
+        </a>
+        , 
+        <a
+          class="primary"
+          href="/"
+        >
+          French
+        </a>
+        , American Sign Language (ASL), 
+        <a
+          class="primary"
+          href="/"
+        >
+          Arabic
+        </a>
       </li>
       <li>
         <strong>
@@ -1146,7 +1186,27 @@ exports[`<IndexPage /> renders French text 1`] = `
         <strong>
           Langues (parlées) :
         </strong>
-         Anglais, Français, Langue des signes américaine (ASL), Arabe
+         
+        <a
+          class="primary"
+          href="/"
+        >
+          Anglais
+        </a>
+        , 
+        <a
+          class="primary"
+          href="/"
+        >
+          Français
+        </a>
+        , Langue des signes américaine (ASL), 
+        <a
+          class="primary"
+          href="/"
+        >
+          Arabe
+        </a>
       </li>
       <li>
         <strong>

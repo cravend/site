@@ -49,7 +49,7 @@
     },
     "Skills": {
       "header": "المهارات",
-      "languages_spoken": "<strong>اللغات (المنطوقة):</strong> الإنجليزية، الفرنسية، لغة الإشارة الأمريكية، العربية",
+      "languages_spoken": "<strong>اللغات (المنطوقة):</strong> <En>الإنجليزية</En>، <Fr>الفرنسية</Fr>، لغة الإشارة الأمريكية، <Ar>العربية</Ar>",
       "languages_tech": "<strong>اللغات (التكنولوجية):</strong> <ltr>React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R</ltr>",
       "tools": "<strong>أدوات:</strong> <ltr>Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress</ltr>",
       "certifications": {

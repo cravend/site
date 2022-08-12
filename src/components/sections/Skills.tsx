@@ -1,12 +1,32 @@
 import { useTranslations } from "next-intl";
 
+import Link from "../Link";
+
 const Skills = () => {
   const t = useTranslations("sections.Skills");
   return (
     <>
       <h2>{t.rich("header")}</h2>
       <ul>
-        <li>{t.rich("languages_spoken")}</li>
+        <li>
+          {t.rich("languages_spoken", {
+            En: (children) => (
+              <Link to="/" locale="en">
+                {children}
+              </Link>
+            ),
+            Fr: (children) => (
+              <Link to="/" locale="fr">
+                {children}
+              </Link>
+            ),
+            Ar: (children) => (
+              <Link to="/" locale="ar">
+                {children}
+              </Link>
+            ),
+          })}
+        </li>
         <li>{t.rich("languages_tech")}</li>
         <li>{t.rich("tools")}</li>
         <li>

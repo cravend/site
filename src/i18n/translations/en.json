@@ -49,7 +49,7 @@
     },
     "Skills": {
       "header": "Skills",
-      "languages_spoken": "<strong>Languages (spoken):</strong> English, French, American Sign Language (ASL), Arabic",
+      "languages_spoken": "<strong>Languages (spoken):</strong> <En>English</En>, <Fr>French</Fr>, American Sign Language (ASL), <Ar>Arabic</Ar>",
       "languages_tech": "<strong>Languages (tech):</strong> React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R",
       "tools": "<strong>Tools:</strong> Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress",
       "certifications": {

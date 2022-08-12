@@ -10,7 +10,27 @@ exports[`<Skills /> renders 1`] = `
       <strong>
         Languages (spoken):
       </strong>
-       English, French, American Sign Language (ASL), Arabic
+       
+      <a
+        class="primary"
+        href="/"
+      >
+        English
+      </a>
+      , 
+      <a
+        class="primary"
+        href="/"
+      >
+        French
+      </a>
+      , American Sign Language (ASL), 
+      <a
+        class="primary"
+        href="/"
+      >
+        Arabic
+      </a>
     </li>
     <li>
       <strong>
