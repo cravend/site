@@ -1,128 +1,60 @@
 import { screen, render, fireEvent } from "../../tests/utils";
 import LanguageToggle from "../LanguageToggle";
 
-describe('<LanguageToggle /> { locale: "en" }', () => {
-  it("renders", () => {
-    expect.assertions(1);
-    const { container } = render(<LanguageToggle />, {
-      router: { locale: "en" },
+const cases = [
+  {
+    locale: "en",
+    others: [
+      { keyword: "French", link: "Français", locale: "fr" },
+      { keyword: "Arabic", link: "العربية", locale: "ar" },
+    ],
+  },
+  {
+    locale: "fr",
+    others: [
+      { keyword: "English", link: "English", locale: "en" },
+      { keyword: "Arabic", link: "العربية", locale: "ar" },
+    ],
+  },
+  {
+    locale: "ar",
+    others: [
+      { keyword: "English", link: "English", locale: "en" },
+      { keyword: "French", link: "Français", locale: "fr" },
+    ],
+  },
+] as const;
+
+describe.each(cases)(
+  '<LanguageToggle /> { locale: "$locale" }',
+  ({ locale, others: baseOthers }) => {
+    const others = [...baseOthers];
+    it("renders", () => {
+      expect.assertions(1);
+      const { container } = render(<LanguageToggle />, {
+        router: { locale },
+      });
+      expect(container).toMatchSnapshot();
     });
-    expect(container).toMatchSnapshot();
-  });
 
-  it("displays a link to read in French", () => {
-    expect.assertions(1);
-    render(<LanguageToggle />, { router: { locale: "en" } });
-    expect(screen.getByRole("link", { name: "Français" })).toBeInTheDocument();
-  });
-
-  it("displays a link to read in Arabic", () => {
-    expect.assertions(1);
-    render(<LanguageToggle />, { router: { locale: "en" } });
-    expect(screen.getByRole("link", { name: "العربية" })).toBeInTheDocument();
-  });
-
-  it("routes to French", () => {
-    expect.assertions(2);
-    const pushMock = jest.fn();
-    render(<LanguageToggle />, { router: { locale: "en", push: pushMock } });
-
-    fireEvent.click(screen.getByRole("link", { name: "Français" }));
-    expect(pushMock).toHaveBeenCalledTimes(1);
-    expect(pushMock).toHaveBeenLastCalledWith("/", "/", { locale: "fr" });
-  });
-
-  it("routes to Arabic", () => {
-    expect.assertions(2);
-    const pushMock = jest.fn();
-    render(<LanguageToggle />, { router: { locale: "en", push: pushMock } });
-
-    fireEvent.click(screen.getByRole("link", { name: "العربية" }));
-    expect(pushMock).toHaveBeenCalledTimes(1);
-    expect(pushMock).toHaveBeenLastCalledWith("/", "/", { locale: "ar" });
-  });
-});
-
-describe('<LanguageToggle /> { locale: "fr" }', () => {
-  it("renders", () => {
-    expect.assertions(1);
-    const { container } = render(<LanguageToggle />, {
-      router: { locale: "fr" },
+    it.each(others)("displays a link to read in $keyword", ({ link }) => {
+      expect.assertions(1);
+      render(<LanguageToggle />, { router: { locale } });
+      expect(screen.getByRole("link", { name: link })).toBeInTheDocument();
     });
-    expect(container).toMatchSnapshot();
-  });
 
-  it("displays a link to read in English", () => {
-    expect.assertions(1);
-    render(<LanguageToggle />, { router: { locale: "fr" } });
-    expect(screen.getByRole("link", { name: "English" })).toBeInTheDocument();
-  });
+    it.each(others)("routes to $keyword", ({ link, locale: otherLocale }) => {
+      expect.assertions(2);
+      const pushMock = jest.fn();
+      render(<LanguageToggle />, {
+        router: { locale, push: pushMock },
+      });
 
-  it("displays a link to read in Arabic", () => {
-    expect.assertions(1);
-    render(<LanguageToggle />, { router: { locale: "fr" } });
-    expect(screen.getByRole("link", { name: "العربية" })).toBeInTheDocument();
-  });
-
-  it("routes to English", () => {
-    expect.assertions(2);
-    const pushMock = jest.fn();
-    render(<LanguageToggle />, { router: { locale: "fr", push: pushMock } });
-
-    fireEvent.click(screen.getByRole("link", { name: "English" }));
-    expect(pushMock).toHaveBeenCalledTimes(1);
-    expect(pushMock).toHaveBeenLastCalledWith("/", "/", { locale: "en" });
-  });
-
-  it("routes to Arabic", () => {
-    expect.assertions(2);
-    const pushMock = jest.fn();
-    render(<LanguageToggle />, { router: { locale: "fr", push: pushMock } });
-
-    fireEvent.click(screen.getByRole("link", { name: "العربية" }));
-    expect(pushMock).toHaveBeenCalledTimes(1);
-    expect(pushMock).toHaveBeenLastCalledWith("/", "/", { locale: "ar" });
-  });
-});
-
-describe('<LanguageToggle /> { locale: "ar" }', () => {
-  it("renders", () => {
-    expect.assertions(1);
-    const { container } = render(<LanguageToggle />, {
-      router: { locale: "fr" },
+      fireEvent.click(screen.getByRole("link", { name: link }));
+      expect(pushMock).toHaveBeenCalledTimes(1);
+      expect(pushMock).toHaveBeenLastCalledWith("/", "/", {
+        locale: otherLocale,
+      });
     });
-    expect(container).toMatchSnapshot();
-  });
-
-  it("displays a link to read in English", () => {
-    expect.assertions(1);
-    render(<LanguageToggle />, { router: { locale: "ar" } });
-    expect(screen.getByRole("link", { name: "English" })).toBeInTheDocument();
-  });
-
-  it("displays a link to read in French", () => {
-    expect.assertions(1);
-    render(<LanguageToggle />, { router: { locale: "ar" } });
-    expect(screen.getByRole("link", { name: "Français" })).toBeInTheDocument();
-  });
-
-  it("routes to English", () => {
-    expect.assertions(2);
-    const pushMock = jest.fn();
-    render(<LanguageToggle />, { router: { locale: "ar", push: pushMock } });
-
-    fireEvent.click(screen.getByRole("link", { name: "English" }));
-    expect(pushMock).toHaveBeenCalledTimes(1);
-    expect(pushMock).toHaveBeenLastCalledWith("/", "/", { locale: "en" });
-  });
-
-  it("routes to Arabic", () => {
-    expect.assertions(2);
-    const pushMock = jest.fn();
-    render(<LanguageToggle />, { router: { locale: "ar", push: pushMock } });
-
-    fireEvent.click(screen.getByRole("link", { name: "Français" }));
-    expect(pushMock).toHaveBeenCalledTimes(1);
-    expect(pushMock).toHaveBeenLastCalledWith("/", "/", { locale: "fr" });
-  });
-});
+  }
+);

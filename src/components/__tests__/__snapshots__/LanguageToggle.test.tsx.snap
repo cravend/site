@@ -7,7 +7,11 @@ exports[`<LanguageToggle /> { locale: "ar" } renders 1`] = `
     dir="ltr"
   >
     <strong>
-      Read in:
+      <span
+        dir="ltr"
+      >
+        Read in:
+      </span>
     </strong>
     <ul>
       <li>
@@ -15,7 +19,11 @@ exports[`<LanguageToggle /> { locale: "ar" } renders 1`] = `
           class="primary"
           href="/"
         >
-          English
+          <span
+            dir="ltr"
+          >
+            English
+          </span>
         </a>
       </li>
       <li>
@@ -24,9 +32,9 @@ exports[`<LanguageToggle /> { locale: "ar" } renders 1`] = `
           href="/"
         >
           <span
-            dir="rtl"
+            dir="ltr"
           >
-            العربية
+            Français
           </span>
         </a>
       </li>

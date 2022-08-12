@@ -1,59 +1,47 @@
+import translationsAr from "../i18n/translations/ar.json";
+import translationsEn from "../i18n/translations/en.json";
+import translationsFr from "../i18n/translations/fr.json";
 import IndexPage, { getStaticProps } from "../pages/index";
 import { render } from "../tests/utils";
 
+const cases = [
+  { language: "English", langCode: "en", translations: translationsEn },
+  { language: "French", langCode: "fr", translations: translationsFr },
+  { language: "Arabic", langCode: "ar", translations: translationsAr },
+] as const;
+
 describe("<IndexPage />", () => {
-  it("renders English text", () => {
+  it.each(cases)("renders $language text", ({ langCode }) => {
     expect.assertions(1);
-    const { container } = render(<IndexPage />, { router: { locale: "en" } });
-    expect(container).toMatchSnapshot();
-  });
-
-  it("renders French text", () => {
-    expect.assertions(1);
-    const { container } = render(<IndexPage />, { router: { locale: "fr" } });
-    expect(container).toMatchSnapshot();
-  });
-
-  it("renders Arabic text", () => {
-    expect.assertions(1);
-    const { container } = render(<IndexPage />, { router: { locale: "ar" } });
+    const { container } = render(<IndexPage />, {
+      router: { locale: langCode },
+    });
     expect(container).toMatchSnapshot();
   });
 });
 
 describe("getStaticProps()", () => {
-  it("returns English translations when the locale is `en`", () => {
+  it.each(cases)(
+    "returns $language translations when the locale is `$langCode`",
+    async ({ langCode, translations }) => {
+      expect.assertions(1);
+      await expect(getStaticProps({ locale: langCode })).resolves.toStrictEqual(
+        { props: { messages: translations } }
+      );
+    }
+  );
+
+  it("returns English translations when the locale is invalid", async () => {
     expect.assertions(1);
-    expect(getStaticProps({ locale: "en" })).toStrictEqual(
-      import("../i18n/translations/en.json")
-    );
+    await expect(getStaticProps({ locale: "unknown" })).resolves.toStrictEqual({
+      props: { messages: translationsEn },
+    });
   });
 
-  it("returns French translations when the locale is `fr`", () => {
+  it("returns English translations when the locale is undefined", async () => {
     expect.assertions(1);
-    expect(getStaticProps({ locale: "fr" })).toStrictEqual(
-      import("../i18n/translations/fr.json")
-    );
-  });
-
-  it("returns Arabic translations when the locale is `ar`", () => {
-    expect.assertions(1);
-    expect(getStaticProps({ locale: "ar" })).toStrictEqual(
-      import("../i18n/translations/ar.json")
-    );
-  });
-
-  it("returns Arabic translations when the locale is invalid", () => {
-    expect.assertions(1);
-    expect(getStaticProps({ locale: "unknown" })).toStrictEqual(
-      import("../i18n/translations/ar.json")
-    );
-  });
-
-  it("returns English translations when the locale is undefined", () => {
-    expect.assertions(1);
-    expect(getStaticProps({})).toStrictEqual(
-      import("../i18n/translations/ar.json")
-    );
+    await expect(getStaticProps({})).resolves.toStrictEqual({
+      props: { messages: translationsEn },
+    });
   });
 });
