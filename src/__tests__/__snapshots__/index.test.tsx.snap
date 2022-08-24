@@ -106,7 +106,7 @@ exports[`<IndexPage /> renders Arabic text 1`] = `
         <span
           class="gradient"
         >
-          دلتن كرافن
+          دالتون كرافن
         </span>
         . 
       </span>
@@ -533,7 +533,7 @@ exports[`<IndexPage /> renders Arabic text 1`] = `
         >
           ©
         </span>
-         ٢٠٢٢ دلتن كرافن | عرض الكود على 
+         ٢٠٢٢ دالتون كرافن | عرض الكود على 
         <span
           dir="ltr"
         >

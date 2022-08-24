@@ -36,7 +36,7 @@
       }
     },
     "Footer": {
-      "text": "<ltr>©</ltr> {date, date, ::yyyy} دلتن كرافن | عرض الكود على <ltr><Link>GitHub</Link></ltr>"
+      "text": "<ltr>©</ltr> {date, date, ::yyyy} دالتون كرافن | عرض الكود على <ltr><Link>GitHub</Link></ltr>"
     },
     "Header": {
       "pfp": "صورة الملف الشخصي",
@@ -44,7 +44,7 @@
       "tagline": "طالب ومطور"
     },
     "Intro": {
-      "greeting": "مرحبًا! اسمي <Color>دلتن كرافن</Color>. ",
+      "greeting": "مرحبًا! اسمي <Color>دالتون كرافن</Color>. ",
       "intro": "من الصعب تقديم نفسي عبر الإنترنت، ولكن هنا القليل عني:"
     },
     "Skills": {
@@ -72,7 +72,7 @@
   },
   "pages": {
     "Index": {
-      "title": "دلتن كرافن | الصفحة الرئيسية"
+      "title": "دالتون كرافن | الصفحة الرئيسية"
     }
   }
 }
