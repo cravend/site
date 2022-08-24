@@ -66,5 +66,8 @@
       "@commitlint/config-conventional"
     ]
   },
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.2.2",
+  "volta": {
+    "node": "17.9.1"
+  }
 }
