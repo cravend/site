@@ -15,28 +15,18 @@ exports[`<LanguageToggle /> { locale: "ar" } renders 1`] = `
     </strong>
     <ul>
       <li>
-        <a
-          class="primary"
-          href="/"
+        <span
+          dir="ltr"
         >
-          <span
-            dir="ltr"
-          >
-            English
-          </span>
-        </a>
+          English
+        </span>
       </li>
       <li>
-        <a
-          class="primary"
-          href="/"
+        <span
+          dir="ltr"
         >
-          <span
-            dir="ltr"
-          >
-            Français
-          </span>
-        </a>
+          Français
+        </span>
       </li>
     </ul>
   </div>
@@ -55,23 +45,17 @@ exports[`<LanguageToggle /> { locale: "en" } renders 1`] = `
     <ul>
       <li>
         <a
-          class="primary"
           href="/"
         >
           Français
         </a>
       </li>
       <li>
-        <a
-          class="primary"
-          href="/"
+        <span
+          dir="rtl"
         >
-          <span
-            dir="rtl"
-          >
-            العربية
-          </span>
-        </a>
+          العربية
+        </span>
       </li>
     </ul>
   </div>
@@ -90,23 +74,17 @@ exports[`<LanguageToggle /> { locale: "fr" } renders 1`] = `
     <ul>
       <li>
         <a
-          class="primary"
           href="/"
         >
           English
         </a>
       </li>
       <li>
-        <a
-          class="primary"
-          href="/"
+        <span
+          dir="rtl"
         >
-          <span
-            dir="rtl"
-          >
-            العربية
-          </span>
-        </a>
+          العربية
+        </span>
       </li>
     </ul>
   </div>

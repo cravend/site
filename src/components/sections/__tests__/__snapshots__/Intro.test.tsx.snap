@@ -12,23 +12,17 @@ exports[`<Intro /> renders 1`] = `
     <ul>
       <li>
         <a
-          class="primary"
           href="/"
         >
           Français
         </a>
       </li>
       <li>
-        <a
-          class="primary"
-          href="/"
+        <span
+          dir="rtl"
         >
-          <span
-            dir="rtl"
-          >
-            العربية
-          </span>
-        </a>
+          العربية
+        </span>
       </li>
     </ul>
   </div>
