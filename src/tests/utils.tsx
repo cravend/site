@@ -2,8 +2,8 @@ import {
   renderHook as defaultRenderHook,
   render as defaultRender,
 } from "@testing-library/react";
-import { NextIntlProvider } from "next-intl";
 import { RouterContext } from "next/dist/shared/lib/router-context";
+import { NextIntlProvider } from "next-intl";
 import { useMemo } from "react";
 
 import { STANDARD_FORMATS } from "../i18n/config";
