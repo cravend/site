@@ -533,7 +533,7 @@ exports[`<IndexPage /> renders Arabic text 1`] = `
         >
           ©
         </span>
-         ٢٠٢٢ دالتون كرافن | عرض الكود على 
+         ٢٠٢٣ دالتون كرافن | عرض الكود على 
         <span
           dir="ltr"
         >
@@ -935,7 +935,7 @@ exports[`<IndexPage /> renders English text 1`] = `
       class="container"
     >
       <p>
-        © 2022 Dalton Craven | View source on 
+        © 2023 Dalton Craven | View source on 
         <a
           class="primary"
           href="https://github.com/cravend/site"
@@ -1333,7 +1333,7 @@ exports[`<IndexPage /> renders French text 1`] = `
       class="container"
     >
       <p>
-        © 2022 Dalton Craven | Voir le code sur 
+        © 2023 Dalton Craven | Voir le code sur 
         <a
           class="primary"
           href="https://github.com/cravend/site"
