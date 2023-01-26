@@ -1,5 +1,5 @@
-import { useLocale as nextIntlUseLocale } from "next-intl";
 import { useRouter } from "next/router";
+import { useLocale as nextIntlUseLocale } from "next-intl";
 
 import { defaultLocale, locales } from "../config";
 import { isLocale } from "../utils";

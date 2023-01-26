@@ -1,5 +1,5 @@
-import { useTranslations } from "next-intl";
 import Head from "next/head";
+import { useTranslations } from "next-intl";
 
 import Contact from "../components/sections/Contact";
 import Features from "../components/sections/Features";
