@@ -36,11 +36,14 @@ const Link = ({
     );
   }
   return (
-    <NextLink locale={locale} href={to} {...props}>
-      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a className={styles.primary} {...newTabProps}>
-        {children}
-      </a>
+    <NextLink
+      locale={locale}
+      href={to}
+      className={styles.primary}
+      {...props}
+      {...newTabProps}
+    >
+      {children}
     </NextLink>
   );
 };
