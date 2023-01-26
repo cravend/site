@@ -1,5 +1,5 @@
-import { NextIntlProvider } from "next-intl";
 import { useRouter } from "next/router";
+import { NextIntlProvider } from "next-intl";
 import { useEffect } from "react";
 
 import { STANDARD_FORMATS } from "../i18n/config";

@@ -1,5 +1,5 @@
-import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import profilePic from "../../assets/images/dalton-craven.webp";
 import styles from "../../styles/modules/sections/Header.module.scss";
