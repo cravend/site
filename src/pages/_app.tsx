@@ -7,8 +7,12 @@ import { isRtl, isLocale } from "../i18n/utils";
 import "../styles/global.scss";
 
 import type { AppProps } from "next/app";
+import type { AbstractIntlMessages } from "next-intl";
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({
+  Component,
+  pageProps,
+}: AppProps<{ messages: AbstractIntlMessages }>) => {
   const router = useRouter();
   const { locale } = router;
   const direction = isLocale(locale) && isRtl(locale) ? "rtl" : "ltr";
