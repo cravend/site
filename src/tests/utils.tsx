@@ -49,6 +49,7 @@ const mockRouter: CustomRouter = {
   reload: jest.fn(),
   back: jest.fn(),
   prefetch: jest.fn(),
+  forward: jest.fn(),
   beforePopState: jest.fn(),
   locale: "en" as const,
   events: {
