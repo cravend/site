@@ -2,4 +2,4 @@
 
 This site was built with Next and TypeScript and is hosted on Vercel.
 
-To remix, fork the repository, run `yarn` to install dependencies, then run `yarn dev` to start a development environment.
+To remix, fork the repository, run `pnpm install` to install dependencies, then run `pnpm dev` to start a development environment.
