@@ -1,0 +1,78 @@
+{
+  "sections": {
+    "Contact": {
+      "header": "Contact",
+      "content": {
+        "phone": "<strong>Numéro américain :</strong> <Link>+1 513 813 6421</Link>",
+        "email": "<strong>Mail :</strong> <Link>daltoncraven@proton.me</Link>",
+        "github": "<strong>GitHub :</strong> <Link>cravend</Link>",
+        "gitlab": "<strong>GitLab :</strong> <Link>cravend</Link>",
+        "linkedin": "<strong>LinkedIn :</strong> <Link>daltoncraven</Link>",
+        "gpg": "<strong>GPG :</strong> <Link>0xFF3FA75081B3B98C</Link>"
+      }
+    },
+    "Features": {
+      "education": {
+        "header": "Éducation",
+        "content": "Je suis en quatrième et dernière année à l’Université de South Carolina. Je suis en Bachelor d’informatique avec seconde spécialisation en psychologie. Je suis également récipiendaire de la bourse McNair, le plus prestigieux programme de bourses à l’Université de South Carolina, les « <Link>University Top Scholars</Link> »."
+      },
+      "study_abroad": {
+        "header": "Mon temps à l’étranger",
+        "content": "J’ai eu plusieurs expériences d’études et de travail à l’étranger pendant mes études. J’ai étudié pendant les deux semestres de l’année 2021 à l’Université américaine de Paris, résistant aux confinements et aux grèves tout en acquérant une expérience de vie précieuse. Pendant mon séjour à l’AUP, j’ai suivi des cours d’informatique et de psychologie, ainsi que des cours de la langue et la culture françaises."
+      },
+      "work": {
+        "header": "Mes expériences professionnelles",
+        "content": {
+          "intro": "Au cours de l’été 2021, entre mes deux semestres d’études à l’étranger, j’ai effectué mon cinquième stage en tant que développeur front-end chez <Link>Qantev</Link>, travaillant principalement en tant que développeur front sur une application basée sur React. J'ai également appris Python et Pandas pour travailler sur la \"full stack\" d'une nouvelle fonctionnalité.",
+          "update": "Je suis ensuite retourné à Qantev pendant l'été 2022, pour migrer notre codebase de Javascript à Typescript. Au cours de ma période de trois mois, j'ai coordonné le refactoring de 55 % de nos composants et supervisé la mise en œuvre de nouvelles bonnes pratiques spécifiques à TypeScript."
+        }
+      },
+      "freelance": {
+        "header": "Mon travail en freelance",
+        "content": {
+          "intro": "Je fais aussi du développement web en freelance ! Je travaille principalement avec des petites entreprises (bien que je sois ouvert à tout), en mettant à disposition des ressources informatiques et en organisant des formation pour assurer une bonne productivité à long terme.",
+          "conclusion": "Pour en savoir plus sur mon travail, n’hésitez pas à consulter mon <Resume>résumé</Resume> ou à me contacter aux <Contact>liens ci-dessous</Contact>."
+        }
+      }
+    },
+    "Footer": {
+      "text": "© {date, date, ::yyyy} Dalton Craven | Voir le code sur <Link>GitHub</Link>"
+    },
+    "Header": {
+      "pfp": "Image de profil",
+      "name": "Dalton Craven",
+      "tagline": "Étudiant & développeur"
+    },
+    "Intro": {
+      "greeting": "Salut ! Moi c’est <Color>Dalton Craven</Color>. ",
+      "intro": "C’est assez compliqué de se présenter sur internet, mais voilà ce que je peux vous dire sur moi :"
+    },
+    "Skills": {
+      "header": "Compétences",
+      "languages_spoken": "<strong>Langues (parlées) :</strong> <En>Anglais</En>, <Fr>Français</Fr>, Langue des signes américaine (ASL), <Ar>Arabe</Ar>",
+      "languages_tech": "<strong>Langues (tech) :</strong> React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R",
+      "tools": "<strong>Outils :</strong> Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress",
+      "certifications": {
+        "header": "Certifications",
+        "content": {
+          "0": "The Fundamentals of Digital Marketing, Google — <em>Certifié en avril 2020</em>",
+          "1": "Microsoft Office Specialist (MOS) Master 2016 — <em>Certifié à l’automne 2018</em>",
+          "2": "MOS Word 2016 Expert, MOS Excel 2016 Expert, MOS PowerPoint 2016 — <em>Certifié à l’automne 2018</em>"
+        }
+      }
+    }
+  },
+  "LanguageToggle": {
+    "header": "<strong>Read in:</strong>",
+    "options": {
+      "en": "English",
+      "fr": "Français",
+      "ar": "<rtl>العربية</rtl>"
+    }
+  },
+  "pages": {
+    "Index": {
+      "title": "Dalton Craven | Home"
+    }
+  }
+}

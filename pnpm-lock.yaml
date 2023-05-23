@@ -24,6 +24,9 @@ devDependencies:
   autoprefixer:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.23)
+  client-only:
+    specifier: 0.0.1
+    version: 0.0.1
   eslint:
     specifier: 8.41.0
     version: 8.41.0
@@ -31,14 +34,17 @@ devDependencies:
     specifier: 13.4.3
     version: 13.4.3(eslint@8.41.0)(typescript@5.0.4)
   eslint-config-prettier:
-    specifier: ^8.8.0
+    specifier: 8.8.0
     version: 8.8.0(eslint@8.41.0)
   eslint-plugin-prettier:
-    specifier: ^4.2.1
+    specifier: 4.2.1
     version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.41.0)(prettier@2.8.8)
   postcss:
     specifier: 8.4.23
     version: 8.4.23
+  server-only:
+    specifier: 0.0.1
+    version: 0.0.1
   tailwindcss:
     specifier: 3.3.2
     version: 3.3.2
@@ -632,7 +638,6 @@ packages:
 
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
-    dev: false
 
   /color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -2376,6 +2381,10 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: true
+
+  /server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
     dev: true
 
   /shebang-command@2.0.0:
