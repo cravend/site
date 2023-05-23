@@ -1,5 +1,5 @@
 import { Locale, dir } from "@/lib/i18n/setup";
-import "./globals.css";
+// import "./globals.css";
 import { Atkinson_Hyperlegible } from "next/font/google";
 
 const atkinsonHyperlegible = Atkinson_Hyperlegible({
@@ -21,7 +21,6 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { lang: Locale };
 }) {
-  const test = dir[params.lang];
   return (
     <html lang={params.lang} dir={dir[params.lang]}>
       <body className={atkinsonHyperlegible.className}>{children}</body>

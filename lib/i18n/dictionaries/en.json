@@ -1,78 +1,20 @@
 {
-  "sections": {
-    "Contact": {
-      "header": "Contact",
-      "content": {
-        "phone": "<strong>American Phone:</strong> <Link>+1 513 813 6421</Link>",
-        "email": "<strong>Email:</strong> <Link>daltoncraven@proton.me</Link>",
-        "github": "<strong>GitHub:</strong> <Link>cravend</Link>",
-        "gitlab": "<strong>GitLab:</strong> <Link>cravend</Link>",
-        "linkedin": "<strong>LinkedIn:</strong> <Link>daltoncraven</Link>",
-        "gpg": "<strong>GPG:</strong> <Link>0xFF3FA75081B3B98C</Link>"
-      }
-    },
-    "Features": {
-      "education": {
-        "header": "Education",
-        "content": "I’m a senior at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the <Link>University Top Scholars</Link>."
-      },
-      "study_abroad": {
-        "header": "Study Abroad",
-        "content": "I have had multiple study- and work-abroad experiences while at university. I studied for both semesters of 2021 at the American University of Paris, weathering lockdowns & strikes while gaining valuable life experience. While at AUP, I completed coursework in both computer science & psychology, as well as in French language and culture."
-      },
-      "work": {
-        "header": "Work",
-        "content": {
-          "intro": "In the summer of 2021, in between my two semesters of study abroad, I completed my fifth internship at <Link>Qantev</Link>, working primarily as a front-end developer on a React-based application. I also learned Python and Pandas to single-handedly work on the \"full stack\" of a new feature.",
-          "update": "I then returned to Qantev during summer 2022, focusing on migrating our codebase from Javascript to Typescript. Over my 3–month period, I coordinated the refactoring of 55% of our files and oversaw the implementation of new TypeScript-specific best practices."
-        }
-      },
-      "freelance": {
-        "header": "Freelance",
-        "content": {
-          "intro": "I also do freelance web development! I work primarily with small businesses (although I’m open to other opportunities), with an emphasis on providing resources and training to ensure long-term functionality.",
-          "conclusion": "To learn more about my work, feel free to visit my <Resume>résumé</Resume> or contact me at the <Contact>links below</Contact>."
-        }
-      }
-    },
-    "Footer": {
-      "text": "© {date, date, ::yyyy} Dalton Craven | View source on <Link>GitHub</Link>"
-    },
-    "Header": {
-      "pfp": "Profile picture",
-      "name": "Dalton Craven",
-      "tagline": "Student & Developer"
-    },
-    "Intro": {
-      "greeting": "Hello! My name is <Color>Dalton Craven</Color>. ",
-      "intro": "It’s hard to introduce myself over the internet, but here’s a little bit about me:"
-    },
-    "Skills": {
-      "header": "Skills",
-      "languages_spoken": "<strong>Languages (spoken):</strong> <En>English</En>, <Fr>French</Fr>, American Sign Language (ASL), <Ar>Arabic</Ar>",
-      "languages_tech": "<strong>Languages (tech):</strong> React, GraphQL, Java, HTML, CSS, JavaScript, Visual Basic .NET, C++, PHP, SQL, Python, R",
-      "tools": "<strong>Tools:</strong> Next, Git, GitHub, GitLab, Gatsby, cPanel, WHM, Flask, Django, Linux, DigitalOcean, AWS, Netlify, WordPress",
-      "certifications": {
-        "header": "Certifications",
-        "content": {
-          "0": "The Fundamentals of Digital Marketing, Google — <em>Certified April 2020</em>",
-          "1": "Microsoft Office Specialist (MOS) Master 2016 — <em>Certified fall 2018</em>",
-          "2": "MOS Word 2016 Expert, MOS Excel 2016 Expert — <em>Certified fall 2018</em>"
-        }
-      }
-    }
-  },
-  "LanguageToggle": {
-    "header": "<strong>Read in:</strong>",
+  "nav": {
+    "intro": "Read in:",
     "options": {
       "en": "English",
       "fr": "Français",
-      "ar": "<rtl>العربية</rtl>"
+      "ar": "العربية"
     }
   },
-  "pages": {
-    "Index": {
-      "title": "Dalton Craven | Home"
+  "header": {
+    "intro": {
+      "title": "Dalton Craven",
+      "subtitle": "Software Engineer"
     }
+  },
+  "main": {
+    "welcome": "Hello! My name is Dalton Craven!",
+    "content": "It’s hard to introduce myself over the internet, but here’s a little bit about me:"
   }
 }

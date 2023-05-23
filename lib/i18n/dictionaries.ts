@@ -5,9 +5,9 @@ export const dictionaries = {
   en: () =>
     import("@/lib/i18n/dictionaries/en.json").then((module) => module.default),
   fr: () =>
-    import("@/lib/i18n/dictionaries/fr.json").then((module) => module.default),
+    import("@/lib/i18n/dictionaries/en.json").then((module) => module.default),
   ar: () =>
-    import("@/lib/i18n/dictionaries/ar.json").then((module) => module.default),
+    import("@/lib/i18n/dictionaries/en.json").then((module) => module.default),
 } satisfies Record<Locale, unknown>;
 
 function isLocale(locale: unknown): locale is Locale {
