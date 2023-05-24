@@ -19,6 +19,7 @@
     "content": "It’s hard to introduce myself over the internet, but here’s a little bit about me:"
   },
   "Features": {
+    "header": "About Me",
     "education": {
       "header": "Education",
       "content": "I’m a senior at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the <Link>University Top Scholars</Link>."
@@ -31,7 +32,7 @@
       "header": "Work",
       "content": {
         "intro": "In the summer of 2021, in between my two semesters of study abroad, I completed my fifth internship at <Link>Qantev</Link>, working primarily as a front-end developer on a React-based application. I also learned Python and Pandas to single-handedly work on the \"full stack\" of a new feature.",
-        "update": "I then returned to Qantev during summer 2022, focusing on migrating our codebase from Javascript to Typescript. Over my 3–month period, I coordinated the refactoring of 55% of our files and oversaw the implementation of new TypeScript-specific best practices."
+        "conclusion": "I then returned to Qantev during summer 2022, focusing on migrating our codebase from Javascript to Typescript. Over my 3–month period, I coordinated the refactoring of 55% of our files and oversaw the implementation of new TypeScript-specific best practices."
       }
     },
     "freelance": {

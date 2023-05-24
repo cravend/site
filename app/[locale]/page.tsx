@@ -1,4 +1,4 @@
-import Header from "@/components/sections/Header";
+import { Header, Features } from "@/components/sections";
 import { useTranslations } from "next-intl";
 
 export default function Home() {
@@ -16,6 +16,7 @@ export default function Home() {
         <p>
           <span>{t("welcome")}</span> {t("content")}
         </p>
+        <Features />
       </main>
     </>
   );
