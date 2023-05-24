@@ -1,13 +1,13 @@
 ---
 import { t, astroI18n } from "astro-i18n";
-import BaseLayout from "../layouts/BaseLayout.astro";
 import Features from "../components/features/Features.astro";
 import Welcome from "../components/Welcome.astro";
+import HeroLayout from "../layouts/HeroLayout.astro";
 
 astroI18n.init(Astro);
 ---
 
-<BaseLayout title={t("title")}>
+<HeroLayout title={t("title")}>
   <Welcome />
   <Features />
-</BaseLayout>
+</HeroLayout>

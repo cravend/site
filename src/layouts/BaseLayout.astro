@@ -1,5 +1,4 @@
 ---
-import Header from "../components/Header.astro";
 import { astroI18n } from "astro-i18n";
 import "@fontsource/atkinson-hyperlegible";
 
@@ -17,18 +16,14 @@ const dir = astroI18n.langCode === "ar" ? "rtl" : "ltr";
 <html lang={astroI18n.langCode} dir={dir}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content="Dalton Craven personal website." />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
-    <Header />
-    <hr />
-    <main>
-      <slot />
-    </main>
+    <slot />
     <style is:global>
       @layer base {
         body {
