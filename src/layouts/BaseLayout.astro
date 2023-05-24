@@ -22,7 +22,7 @@ const dir = astroI18n.langCode === "ar" ? "rtl" : "ltr";
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="no-css">
     <slot />
     <style is:global>
       @layer base {
@@ -50,7 +50,7 @@ const dir = astroI18n.langCode === "ar" ? "rtl" : "ltr";
         }
       }
 
-      .disable-css {
+      .no-css {
         all: initial;
       }
     </style>

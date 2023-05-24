@@ -1,0 +1,23 @@
+---
+---
+
+<button id="toggleStyleButton" disabled>Toggle CSS</button>
+
+<script>
+  // Get a reference to the button element
+  const toggleButton = document.getElementById(
+    "toggleStyleButton"
+  ) as HTMLButtonElement;
+
+  // Enable the button
+  toggleButton.disabled = false;
+
+  // Add a click event listener to the button
+  toggleButton.addEventListener("click", function () {
+    // Get a reference to the body element
+    const body = document.body;
+
+    // Toggle the 'no-css' class on the body element
+    body.classList.toggle("no-css");
+  });
+</script>
