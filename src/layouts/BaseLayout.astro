@@ -34,7 +34,6 @@ const dir = astroI18n.langCode === "ar" ? "rtl" : "ltr";
       body {
         color: #222;
         background: #fff;
-        font: 100% system-ui;
       }
       a {
         color: #0033cc;
@@ -49,6 +48,10 @@ const dir = astroI18n.langCode === "ar" ? "rtl" : "ltr";
         body a {
           color: #809fff;
         }
+      }
+
+      .disable-css {
+        all: initial;
       }
     </style>
   </body>
