@@ -7,7 +7,7 @@
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
-		"build": "astro build",
+		"build": "astro check && tsc && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
 		"i18n:install": "astro-i18n install",
@@ -20,6 +20,9 @@
 		"astro": "^2.5.5",
 		"astro-i18n": "^1.8.1",
 		"tailwindcss": "^3.0.24"
+	},
+	"devDependencies": {
+		"typescript": "5.0.4"
 	},
 	"volta": {
 		"node": "17.9.1"
