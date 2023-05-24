@@ -1,20 +1,24 @@
 {
-  "name": "com.daltoncraven",
-  "type": "module",
-  "version": "5.0.0",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^2.4.1"
-  },
-  "volta": {
-    "node": "17.9.1"
-  }
+	"name": "com.daltoncraven",
+	"type": "module",
+	"version": "5.0.0",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"i18n:install": "astro-i18n install",
+		"i18n:sync": "astro-i18n sync",
+		"i18n:extract:keys": "astro-i18n extract:keys"
+	},
+	"dependencies": {
+		"astro": "^2.5.5",
+		"astro-i18n": "^1.8.1"
+	},
+	"volta": {
+		"node": "17.9.1"
+	}
 }
