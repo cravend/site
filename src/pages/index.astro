@@ -1,52 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import { astroI18n, t, l } from "astro-i18n";
+import { astroI18n, t } from "astro-i18n";
+import Features from "../components/features/Features.astro";
 
 astroI18n.init(Astro);
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
-    <h1>Welcome to <span class="text-gradient">{t("header.title")}</span></h1>
-    <p>current lang: {t("header.lang")}</p>
-    <ul>
-      <li>
-        <a href={l("/", {}, "en")}>en</a>
-      </li>
-      <li>
-        <a href={l("/", {}, "fr")}>fr</a>
-      </li>
-      <li>
-        <a href={l("/", {}, "ar")}>ar</a>
-      </li>
-    </ul>
-    <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-    </p>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
-      />
-      <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-    </ul>
-  </main>
+  <p>
+    <span>{t("main.welcome")}</span>
+    {t("main.content")}
+  </p>
+  <Features />
 </Layout>
