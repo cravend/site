@@ -1,13 +1,22 @@
 import "server-only";
-import { Locale } from "@/lib/i18n/setup";
+import { Locale } from "@/lib/i18n/constants";
 
 export const dictionaries = {
   en: () =>
-    import("@/lib/i18n/dictionaries/en.json").then((module) => module.default),
+    import("@/lib/i18n/dictionaries/en.json").then((module) => ({
+      ...module.default,
+      lang: "en",
+    })),
   fr: () =>
-    import("@/lib/i18n/dictionaries/en.json").then((module) => module.default),
+    import("@/lib/i18n/dictionaries/en.json").then((module) => ({
+      ...module.default,
+      lang: "fr",
+    })),
   ar: () =>
-    import("@/lib/i18n/dictionaries/en.json").then((module) => module.default),
+    import("@/lib/i18n/dictionaries/en.json").then((module) => ({
+      ...module.default,
+      lang: "ar",
+    })),
 } satisfies Record<Locale, unknown>;
 
 function isLocale(locale: unknown): locale is Locale {
@@ -16,12 +25,10 @@ function isLocale(locale: unknown): locale is Locale {
   return locale in dictionaries;
 }
 
-function getLocale(locale: unknown, defaultLocale: Locale) {
-  if (isLocale(locale)) return locale;
-
+export function getLocale(locale: unknown, defaultLocale: Locale) {
   return isLocale(locale) ? locale : defaultLocale;
 }
 
-export function getDictionary(lang: string | Locale) {
-  return dictionaries[getLocale(lang, "en")]();
+export function getDictionary(locale: Locale) {
+  return dictionaries[locale]();
 }
