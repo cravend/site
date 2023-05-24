@@ -6,7 +6,7 @@ import Features from "../components/features/Features.astro";
 astroI18n.init(Astro);
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={t("title")}>
   <p>
     <span>{t("main.welcome")}</span>
     {t("main.content")}
