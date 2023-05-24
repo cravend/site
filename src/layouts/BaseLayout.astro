@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import { astroI18n } from "astro-i18n";
+import "@fontsource/atkinson-hyperlegible";
 
 astroI18n.init(Astro);
 export interface Props {
@@ -28,5 +29,12 @@ const dir = astroI18n.langCode === "ar" ? "rtl" : "ltr";
     <main>
       <slot />
     </main>
+    <style is:global>
+      @layer base {
+        body {
+          font-family: Atkinson Hyperlegible, system-ui, sans-serif;
+        }
+      }
+    </style>
   </body>
 </html>
