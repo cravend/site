@@ -15,8 +15,10 @@
 		"i18n:extract:keys": "astro-i18n extract:keys"
 	},
 	"dependencies": {
+		"@astrojs/tailwind": "^3.1.3",
 		"astro": "^2.5.5",
-		"astro-i18n": "^1.8.1"
+		"astro-i18n": "^1.8.1",
+		"tailwindcss": "^3.0.24"
 	},
 	"volta": {
 		"node": "17.9.1"
