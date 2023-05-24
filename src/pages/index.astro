@@ -1,15 +1,13 @@
 ---
+import { t, astroI18n } from "astro-i18n";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { astroI18n, t } from "astro-i18n";
 import Features from "../components/features/Features.astro";
+import Welcome from "../components/Welcome.astro";
 
 astroI18n.init(Astro);
 ---
 
 <BaseLayout title={t("title")}>
-  <p>
-    <span>{t("main.welcome")}</span>
-    {t("main.content")}
-  </p>
+  <Welcome />
   <Features />
 </BaseLayout>
