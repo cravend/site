@@ -6,8 +6,8 @@ export default defineAstroI18nConfig({
 	showDefaultLangCode: false,
 	translations: {
 		"en": "src/i18n/en.json",
-		"fr": "src/i18n/en.json",
-		"ar": "src/i18n/en.json",
+		"fr": "src/i18n/fr.json",
+		"ar": "src/i18n/ar.json",
 	},
 	routeTranslations: {},
 })

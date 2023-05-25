@@ -1,0 +1,54 @@
+{
+    "header": {
+        "name": "دالتون كرافن",
+        "nav": {
+            "about": "عني",
+            "projects": "المشاريع",
+            "skills": "المهارات",
+            "hobbies": "الهوايات",
+            "contact": "الاتصال"
+        }
+    },
+    "sections": {
+        "about": {
+            "header": "عني",
+            "content": "مرحبا! اسمي دالتون كرافن. أنا مهندس برمجيات وخريج حديث من جامعة كارولينا الجنوبية. أنا مؤيد كبير لتقنيات الوصول إلى الويب وتقنيات التوطين لضمان بقاء الويب مفتوحًا للجميع."
+        },
+        "journey": {
+            "header": "رحلتي",
+            "content1": "لقد كنت دائمًا مفتونًا بالتكنولوجيا والطريقة التي يمكن استخدامها لحل المشكلات. تعرفت على عالم علوم الكمبيوتر في المدرسة الثانوية من خلال <a href='https://hackclub.com'>Hack Club</a>, شبكة من منظمات البرمجة التي يديرها الطلاب. ثم تابعت دراسة علوم الكمبيوتر النظرية والتطبيقية في جامعة كارولينا الجنوبية، حيث تخرجت بأعلى الشهادات مع بكالوريوس في علوم الكمبيوتر.",
+            "content2": "خلال وقتي في USC، كان لدي الفرصة للدراسة في الخارج في باريس والتدريب في <a href='https://qantev.com'>Qantev</a>, ناشئة تكنولوجية فرنسية. كانت هذه التجارب ذات قيمة كبيرة في تشكيل نظرتي للعالم وتوسيع آفاقي. استطعت تجربة ثقافة جديدة، تعلم لغة جديدة، وصنع أصدقاء مدى الحياة. كما اكتسبت تقديرًا أعمق لأهمية التوطين والوصول في تطوير البرمجيات.",
+            "content3": "أنا حاليًا عائد إلى باريس حيث أعمل كمهندس برمجيات كامل الاستقلالية في Qantev، حيث أساعد في بناء منصة ستثور على الطريقة التي تدير بها شركات التأمين بياناتها. أنا أيضًا أعمل على بعض المشاريع الشخصية، بما في ذلك موقع ويب لهوايتي في التصوير ومجموعة أدوات للرقص الباليه."
+        },
+        "projects": {
+            "header": "المشاريع",
+            "content1": {
+                "title": "Wordification: طريقة جديدة لتعليم أنماط الإملاء الإنجليزية",
+                "description": "Wordification هو مجموعة من الألعاب عبر الإنترنت مصممة لتعليم الإملاء من خلال ربط الأصوات والرسوم البيانية، مما يشجع الطلاب على تعلم قواعد الإملاء الصوتية بدلاً من حفظ قوائم الإملاء الثابتة. Wordification حاليًا في مرحلة الإثبات المفهومي، ولكن فريقنا يتطلع بشوق إلى إجراء تجارب في العالم الحقيقي، تمت مراجعتها من قبل الأقران مع الطلاب قريبًا. قدمنا مؤخرًا ورقة بحثية إلى ورقة حول Wordification إلى <a href='https://www.american-cse.org/csce2023/conferences-FECS'>المؤتمر الدولي التاسع عشر للتعليم: علوم الكمبيوتر وهندسة الكمبيوتر</a>، التي تم قبولها للنشر - نحن متحمسون لتقديم عملنا في يوليو. Wordification مبني على Redwood و Typescript، وهو <a href='https://github.com/wordification/app'>مرئي على GitHub</a>."
+            },
+            "content2": {
+                "title": "DKMS: ميزات وسائل التواصل الاجتماعي لـ Spotify",
+                "description": "لمشروعي النهائي، قادت فريقًا من خمسة أشخاص في تصميم وتنفيذ تطبيق فريد - تطبيق يثري تجربة Spotify من خلال دمج ميزات وسائل التواصل الاجتماعي. نظرًا لحجم العمل الكبير، توليت أدوارًا متعددة - مطور، مدير devops، وscrum master. كان المنتج النهائي تطبيق ويب كامل الاستقلالية مبني على Next.js، Typescript، Firestore، وSpotify Web SDK. بعض الميزات الرئيسية تضمنت القدرة على تحميل المحتوى ديناميكيًا، توصيات مخصصة بناءً على نشاط الاستماع للمستخدم، وتحليل الصوت للأغاني، الألبومات، الفنانين، والقوائم التشغيل. المشروع <a href='https://dkms.vercel.app'>منشور على Vercel</a>، والكود <a href='https://github.com/sccapstone/dkms'>مرئي على GitHub</a>."
+            }
+        },
+        "skills": {
+            "header": "المهارات",
+            "content1": "<strong>اللغات (المحكية):</strong> <a href='/'>الإنجليزية</a>, <a href='/fr'>الفرنسية</a>, <a href='/ar'>العربية</a>, لغة الإشارة الأمريكية (ASL)",
+            "content2": "<strong>اللغات (التقنية):</strong> TypeScript, JavaScript, GraphQL, Python, Java, C++, HTML, CSS, Visual Basic .NET, PHP, SQL",
+            "content3": "<strong>الأطر:</strong> <abbr title='هذا ما استخدمته لهذا الموقع!'>Astro</abbr>, React, Next, Redwood, Gatsby, WordPress",
+            "content4": "<strong>الشهادات:</strong> أساسيات التسويق الرقمي، Google - <em>معتمد في أبريل 2020</em>, متخصص Microsoft Office (MOS) Master 2016 - <em>معتمد في خريف 2018</em>, MOS Word 2016 Expert, MOS Excel 2016 Expert - <em>معتمد في خريف 2018</em>"
+        },
+        "contact": {
+            "header": "اتصل بي",
+            "content1": "<strong>الهاتف الأمريكي:</strong> <a href='tel:+15138136421'>+1 513 813 6421</a>",
+            "content2": "<strong>البريد الإلكتروني:</strong> <a href='mailto:daltoncraven@proton.me'> daltoncraven@proton.me</a>",
+            "content3": "<strong>GitHub:</strong> <a href='https://github.com/cravend'>cravend</a>",
+            "content4": "<strong>GitLab:</strong> <a href='https://gitlab.com/cravend'>cravend</a>",
+            "content5": "<strong>LinkedIn:</strong> <a href='https://linkedin.com/in/daltoncraven'>daltoncraven</a>",
+            "content6": "<strong>GPG:</strong> <a href='https://github.com/cravend.gpg'>0xFF3FA75081B3B98C</a>"
+        }
+    },
+    "footer": {
+        "content": "© 2023 دالتون كرافن"
+    }
+}

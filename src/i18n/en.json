@@ -1,42 +1,54 @@
 {
-    "title": "Dalton Craven | Home",
     "header": {
-        "intro": {
-            "title": "Dalton Craven",
-            "subtitle": "Software Engineer"
-        },
+        "name": "Dalton Craven",
         "nav": {
-            "intro": "Read in:",
-            "options": {
-                "en": "English",
-                "fr": "Français",
-                "ar": "<rtl>العربية</rtl>"
+            "about": "About",
+            "projects": "Projects",
+            "skills": "Skills",
+            "hobbies": "Hobbies",
+            "contact": "Contact"
+        }
+    },
+    "sections": {
+        "about": {
+            "header": "About Me",
+            "content": "Hi! My name is Dalton Craven. I'm a software engineer and recent graduate of the University of South Carolina. I'm a big proponent of web accessibility and localization techniques to ensure that the web stays open for all."
+        },
+        "journey": {
+            "header": "My Journey",
+            "content1": "I've always been fascinated by technology and the way it can be used to solve problems. I was first introduced to the world of computer science in high school through <a href='https://hackclub.com'>Hack Club</a>, a network of student-run programming organizations. I then went on to study both theoretical and applied computer science at the University of South Carolina, where I graduated summa cum laude with a B.S.C.S. in Computer Science.",
+            "content2": "During my time at USC, I had the opportunity to study abroad in Paris and intern at <a href='https://qantev.com'>Qantev</a>, a French tech start-up. These experiences were invaluable in shaping my worldview and broadening my horizons. I was able to experience a new culture, learn a new language, and make lifelong friends. I also gained a deeper appreciation for the importance of localization and accessibility in software development.",
+            "content3": "I'm currently back in Paris working as a full-stack software engineer at Qantev, where I'm helping to build a platform that will revolutionize the way insurance companies manage their data. I'm also working on a few personal projects, including a website for my photography hobby and a toolkit for ballroom dance."
+        },
+        "projects": {
+            "header": "Projects",
+            "content1": {
+                "title": "Wordification: A New Way of Teaching English Spelling Patterns",
+                "description": "Wordification is a set of online games designed to teach spelling through the linkage of phonemes and graphemes, encouraging students to learn spelling rules phonetically rather than memorizing static spelling lists. Wordification is currently in the proof-of-concept stage, but our team is eagerly looking forward to conducting real-world, peer-reviewed trials with students soon. We recently submitted a research paper to a paper about Wordification to the <a href='https://www.american-cse.org/csce2023/conferences-FECS'>19<sup>th</sup> International Conference on Frontiers in Education: Computer Science & Computer Engineering</a>, which was accepted for publication — we're excited about presenting our work ths July. Wordification is built with Redwood and Typescript, and is <a href='https://github.com/wordification/app'>visible on GitHub</a>."
+            },
+            "content2": {
+                "title": "DKMS: Social Media Features for Spotify",
+                "description": "For my senior capstone project, I led a team of five in designing and implementing a unique application — one that enriches the Spotify experience by integrating social media features. Given the significant workload, I assumed multiple roles — developer, devops manager, and scrum master. The final product was a full-stack web application built with Next.js, Typescript, Firestore, and the Spotify Web SDK. Some key features included the ability to dynamically load content, tailored recommendations based on a user's listening activity, and audio analysis of songs, albums, artists, and playlists. The project is <a href='https://dkms.vercel.app'>deployed on Vercel</a>, and the code is <a href='https://github.com/sccapstone/dkms'>visible on GitHub</a>."
             }
+        },
+        "skills": {
+            "header": "Skills",
+            "content1": "<strong>Languages (spoken):</strong> <a href='/'>English</a>, <a href='/fr'>French</a>, <a href='/ar'>Arabic</a>, American Sign Language (ASL)",
+            "content2": "<strong>Languages (tech):</strong> TypeScript, JavaScript, GraphQL, Python, Java, C++, HTML, CSS, Visual Basic .NET, PHP, SQL",
+            "content3": "<strong>Frameworks:</strong> <abbr title='That's what I used for this site!'>Astro</abbr>, React, Next, Redwood, Gatsby, WordPress",
+            "content4": "<strong>Certifications:</strong> The Fundamentals of Digital Marketing, Google — <em>Certified April 2020</em>, Microsoft Office Specialist (MOS) Master 2016 — <em>Certified fall 2018</em>, MOS Word 2016 Expert, MOS Excel 2016 Expert — <em>Certified fall 2018</em>"
+        },
+        "contact": {
+            "header": "Contact Me",
+            "content1": "<strong>American Phone:</strong> <a href='tel:+15138136421'>+1 513 813 6421</a>",
+            "content2": "<strong>Email:</strong> <a href='mailto:daltoncraven@proton.me'> daltoncraven@proton.me</a>",
+            "content3": "<strong>GitHub:</strong> <a href='https://github.com/cravend'>cravend</a>",
+            "content4": "<strong>GitLab:</strong> <a href='https://gitlab.com/cravend'>cravend</a>",
+            "content5": "<strong>LinkedIn:</strong> <a href='https://linkedin.com/in/daltoncraven'>daltoncraven</a>",
+            "content6": "<strong>GPG:</strong> <a href='https://github.com/cravend.gpg'>0xFF3FA75081B3B98C</a>"
         }
     },
-    "main": {
-        "welcome": "Hello! My name is Dalton Craven!",
-        "content": "It’s hard to introduce myself over the internet, but here’s a little bit about me:"
-    },
-    "Features": {
-        "header": "About Me",
-        "education": {
-            "header": "Education",
-            "firstParagraph": "I’m a senior at the University of South Carolina. I’m pursuing a Bachelor of Science in Computer Science with a major in computer science and a minor in psychology (weird, right?). I’m also a McNair Scholar as part of UofSC’s most prestigious scholarship program, the <a href='https://sc.edu/about/offices_and_divisions/undergraduate_admissions/honors_and_scholars_programs/top_scholars/index.php'>University Top Scholars</a>."
-        },
-        "study_abroad": {
-            "header": "Study Abroad",
-            "firstParagraph": "I have had multiple study- and work-abroad experiences while at university. I studied for both semesters of 2021 at the American University of Paris, weathering lockdowns & strikes while gaining valuable life experience. While at AUP, I completed coursework in both computer science & psychology, as well as in French language and culture."
-        },
-        "work": {
-            "header": "Work",
-            "firstParagraph": "In the summer of 2021, in between my two semesters of study abroad, I completed my fifth internship at <a href='https://qantev.com'>Qantev</a>, working primarily as a front-end developer on a React-based application. I also learned Python and Pandas to single-handedly work on the \"full stack\" of a new feature.",
-            "secondParagraph": "I then returned to Qantev during summer 2022, focusing on migrating our codebase from Javascript to Typescript. Over my 3–month period, I coordinated the refactoring of 55% of our files and oversaw the implementation of new TypeScript-specific best practices."
-        },
-        "freelance": {
-            "header": "Freelance",
-            "firstParagraph": "I also do freelance web development! I work primarily with small businesses (although I’m open to other opportunities), with an emphasis on providing resources and training to ensure long-term functionality.",
-            "secondParagraph": "To learn more about my work, feel free to visit my <a href='/resume.pdf'>résumé</a> or contact me at the <a href='#contact'>links below</a>."
-        }
+    "footer": {
+        "content": "© 2023 Dalton Craven"
     }
 }

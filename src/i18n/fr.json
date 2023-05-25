@@ -1,0 +1,54 @@
+{
+    "header": {
+        "name": "Dalton Craven",
+        "nav": {
+            "about": "À propos",
+            "projects": "Projets",
+            "skills": "Compétences",
+            "hobbies": "Passions",
+            "contact": "Contact"
+        }
+    },
+    "sections": {
+        "about": {
+            "header": "Qui suis-je ?",
+            "content": "Salut ! Je suis Dalton Craven, ingénieur logiciel et fraîchement diplômé de l'Université de Caroline du Sud. Je suis un grand partisan de l'accessibilité web et des techniques de localisation pour que le web reste accessible à tous."
+        },
+        "journey": {
+            "header": "Mon parcours",
+            "content1": "La technologie m'a toujours fasciné, surtout sa capacité à résoudre des problèmes. J'ai découvert le monde de l'informatique au lycée grâce à <a href='https://hackclub.com'>Hack Club</a>, un réseau d'organisations de programmation dirigées par des étudiants. Par la suite, j'ai étudié l'informatique théorique et appliquée à l'Université de Caroline du Sud, où j'ai obtenu mon B.S.C.S. en informatique avec la plus grande distinction.",
+            "content2": "Lors de mes études à l'USC, j'ai eu l'opportunité d'étudier à l'étranger à Paris et de faire un stage chez <a href='https://qantev.com'>Qantev</a>, une start-up technologique française. Ces expériences ont été essentielles pour élargir ma vision du monde. J'ai pu découvrir une nouvelle culture, apprendre une nouvelle langue et me faire des amis pour la vie. J'ai également pris conscience de l'importance de la localisation et de l'accessibilité dans le développement logiciel.",
+            "content3": "Je suis actuellement de retour à Paris en tant qu'ingénieur logiciel full-stack chez Qantev, où je contribue à la construction d'une plateforme qui révolutionnera la façon dont les compagnies d'assurance gèrent leurs données. Je travaille également sur quelques projets personnels, dont un site web pour ma passion de la photographie et une boîte à outils pour la danse de salon."
+        },
+        "projects": {
+            "header": "Mes projets",
+            "content1": {
+                "title": "Wordification : Une nouvelle approche pour enseigner les règles d'orthographe en anglais",
+                "description": "Wordification est un ensemble de jeux en ligne conçus pour enseigner l'orthographe en liant les phonèmes et les graphèmes, encourageant les élèves à apprendre les règles d'orthographe de manière phonétique plutôt que de mémoriser des listes d'orthographe statiques. Wordification est actuellement au stade de preuve de concept, mais notre équipe est impatiente de mener des essais en conditions réelles et évalués par des pairs avec des élèves prochainement. Nous avons récemment soumis un article de recherche sur Wordification à la <a href='https://www.american-cse.org/csce2023/conferences-FECS'>19ème conférence internationale sur les frontières de l'éducation : informatique et ingénierie informatique</a>, qui a été accepté pour publication - nous sommes impatients de présenter notre travail en juillet. Wordification est construit avec Redwood et Typescript, et est <a href='https://github.com/wordification/app'>visible sur GitHub</a>."
+            },
+            "content2": {
+                "title": "DKMS : Des fonctionnalités de réseaux sociaux pour Spotify",
+                "description": "Pour mon projet de fin d'études, j'ai dirigé une équipe de cinq personnes pour concevoir et mettre en œuvre une application unique - une application qui enrichit l'expérience Spotify en intégrant des fonctionnalités de réseaux sociaux. Compte tenu de la charge de travail importante, j'ai assumé plusieurs rôles - développeur, gestionnaire devops et scrum master. Le produit final était une application web full-stack construite avec Next.js, Typescript, Firestore et le Spotify Web SDK. Parmi les principales fonctionnalités, citons la possibilité de charger dynamiquement du contenu, des recommandations personnalisées en fonction de l'activité d'écoute de l'utilisateur et l'analyse audio de chansons, d'albums, d'artistes et de playlists. Le projet est <a href='https://dkms.vercel.app'>déployé sur Vercel</a>, et le code est <a href='https://github.com/sccapstone/dkms'>visible sur GitHub</a>."
+            }
+        },
+        "skills": {
+            "header": "Mes compétences",
+            "content1": "<strong>Langues parlées :</strong> <a href='/'>Anglais</a>, <a href='/fr'>Français</a>, <a href='/ar'>Arabe</a>, Langue des Signes Américaine (ASL)",
+            "content2": "<strong>Langages informatiques :</strong> TypeScript, JavaScript, GraphQL, Python, Java, C++, HTML, CSS, Visual Basic .NET, PHP, SQL",
+            "content3": "<strong>Frameworks :</strong> <abbr title='C&apos;est ce que j&apos;ai utilisé pour ce site !'>Astro</abbr>, React, Next, Redwood, Gatsby, WordPress",
+            "content4": "<strong>Certifications :</strong> Les fondamentaux du marketing numérique, Google - <em>Certifié en avril 2020</em>, Spécialiste Microsoft Office (MOS) Master 2016 - <em>Certifié à l'automne 2018</em>, MOS Word 2016 Expert, MOS Excel 2016 Expert - <em>Certifié à l'automne 2018</em>"
+        },
+        "contact": {
+            "header": "Me contacter",
+            "content1": "<strong>Téléphone américain :</strong> <a href='tel:+15138136421'>+1 513 813 6421</a>",
+            "content2": "<strong>Email :</strong> <a href='mailto:daltoncraven@proton.me'> daltoncraven@proton.me</a>",
+            "content3": "<strong>GitHub :</strong> <a href='https://github.com/cravend'>cravend</a>",
+            "content4": "<strong>GitLab :</strong> <a href='https://gitlab.com/cravend'>cravend</a>",
+            "content5": "<strong>LinkedIn :</strong> <a href='https://linkedin.com/in/daltoncraven'>daltoncraven</a>",
+            "content6": "<strong>GPG :</strong> <a href='https://github.com/cravend.gpg'>0xFF3FA75081B3B98C</a>"
+        }
+    },
+    "footer": {
+        "content": "© 2023 Dalton Craven"
+    }
+}

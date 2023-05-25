@@ -5,9 +5,9 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"dev": "astro dev",
+		"dev": "astro-i18n sync && astro dev",
 		"start": "astro dev",
-		"build": "astro check && tsc && astro build",
+		"build": "astro-i18n sync && astro check && tsc && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
 		"i18n:install": "astro-i18n install",
