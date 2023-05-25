@@ -1,5 +1,4 @@
 ---
-import Header from "../components/Header.astro";
 import { astroI18n } from "astro-i18n";
 import "@fontsource/atkinson-hyperlegible";
 
@@ -23,12 +22,8 @@ const dir = astroI18n.langCode === "ar" ? "rtl" : "ltr";
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
-    <Header />
-    <hr />
-    <main>
-      <slot />
-    </main>
+  <body class="no-css">
+    <slot />
     <style is:global>
       @layer base {
         body {
@@ -39,7 +34,6 @@ const dir = astroI18n.langCode === "ar" ? "rtl" : "ltr";
       body {
         color: #222;
         background: #fff;
-        font: 100% system-ui;
       }
       a {
         color: #0033cc;
@@ -54,6 +48,10 @@ const dir = astroI18n.langCode === "ar" ? "rtl" : "ltr";
         body a {
           color: #809fff;
         }
+      }
+
+      .no-css {
+        all: initial;
       }
     </style>
   </body>

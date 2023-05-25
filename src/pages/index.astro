@@ -1,13 +1,193 @@
 ---
-import { t, astroI18n } from "astro-i18n";
-import Features from "../components/features/Features.astro";
-import Welcome from "../components/Welcome.astro";
-import HeroLayout from "../layouts/HeroLayout.astro";
-
-astroI18n.init(Astro);
+import ToggleStyleButton from "../components/ToggleStyleButton.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { l } from "astro-i18n";
 ---
 
-<HeroLayout title={t("title")}>
-  <Welcome />
-  <Features />
-</HeroLayout>
+<BaseLayout title="Dalton Craven | Scaffold">
+  <header>
+    <h1>Dalton Craven</h1>
+    <ToggleStyleButton />
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! My name is Dalton Craven. I'm a software engineer and recent graduate
+      of the University of South Carolina. I'm a big proponent of web
+      accessibility and localization techniques to ensure that the web stays
+      open for all.
+    </p>
+
+    <section id="journey">
+      <h3>My Journey</h3>
+      <p>
+        I've always been fascinated by technology and the way it can be used to
+        solve problems. I was first introduced to the world of computer science
+        in high school through <a href="https://hackclub.com">Hack Club</a>, a
+        network of student-run programming organizations. I then went on to
+        study both theoretical and applied computer science at the University of
+        South Carolina, where I graduated summa cum laude with a B.S.C.S. in
+        Computer Science.
+      </p>
+      <p>
+        During my time at USC, I had the opportunity to study abroad in Paris
+        and intern at <a href="https://qantev.com">Qantev</a>, a French tech
+        start-up. These experiences were invaluable in shaping my worldview and
+        broadening my horizons. I was able to experience a new culture, learn a
+        new language, and make lifelong friends. I also gained a deeper
+        appreciation for the importance of localization and accessibility in
+        software development.
+      </p>
+      <p>
+        I'm currently back in Paris working as a full-stack software engineer at
+        Qantev, where I'm helping to build a platform that will revolutionize
+        the way insurance companies manage their data. I'm also working on a few
+        personal projects, including a website for my photography hobby and a
+        toolkit for ballroom dance.
+      </p>
+    </section>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div>
+      <h3>Wordification: A New Way of Teaching English Spelling Patterns</h3>
+
+      <p>
+        Wordification is a set of online games designed to teach spelling
+        through the linkage of phonemes and graphemes, encouraging students to
+        learn spelling rules phonetically rather than memorizing static spelling
+        lists. Wordification is currently in the proof-of-concept stage, but our
+        team is eagerly looking forward to conducting real-world, peer-reviewed
+        trials with students soon. We recently submitted a research paper to a
+        paper about Wordification to the <a
+          href="https://www.american-cse.org/csce2023/conferences-FECS"
+          >19<sup>th</sup> International Conference on Frontiers in Education: Computer
+          Science & Computer Engineering</a
+        >, which was accepted for publication — we're excited about presenting
+        our work ths July. Wordification is built with Redwood and Typescript,
+        and is <a href="https://github.com/wordification/app"
+          >visible on GitHub</a
+        >.
+      </p>
+    </div>
+    <div>
+      <h3>DKMS: Social Media Features for Spotify</h3>
+
+      <p>
+        For my senior capstone project, I led a team of five in designing and
+        implementing a unique application — one that enriches the Spotify
+        experience by integrating social media features. Given the significant
+        workload, I assumed multiple roles — developer, devops manager, and
+        scrum master. The final product was a full-stack web application built
+        with Next.js, Typescript, Firestore, and the Spotify Web SDK. Some key
+        features included the ability to dynamically load content, tailored
+        recommendations based on a user's listening activity, and audio analysis
+        of songs, albums, artists, and playlists. The project is <a
+          href="https://dkms.vercel.app">deployed on Vercel</a
+        >, and the code is
+        <a href="https://github.com/sccapstone/dkms">visible on GitHub</a>.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>
+        <strong>Languages (spoken):</strong>
+        <a href={l(Astro.url.pathname, {}, "en")}>English</a>,
+        <a href={l(Astro.url.pathname, {}, "fr")}>French</a>,
+        <a href={l(Astro.url.pathname, {}, "ar")}>Arabic</a>, American Sign
+        Language (ASL)
+      </li>
+      <li>
+        <strong>Languages (tech):</strong> TypeScript, JavaScript, GraphQL, Python,
+        Java, C++, HTML, CSS, Visual Basic .NET, PHP, SQL
+      </li>
+      <li>
+        <strong>Frameworks:</strong>
+        <abbr title="That's what I used for this site!">Astro</abbr>, React,
+        Next, Redwood, Gatsby, WordPress
+      </li>
+      <li>
+        <strong>Certifications:</strong>
+        <ul>
+          <li>
+            The Fundamentals of Digital Marketing, Google — <em
+              >Certified April 2020</em
+            >
+          </li>
+          <li>
+            Microsoft Office Specialist (MOS) Master 2016 — <em
+              >Certified fall 2018</em
+            >
+          </li>
+          <li>
+            MOS Word 2016 Expert, MOS Excel 2016 Expert — <em
+              >Certified fall 2018</em
+            >
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- If you're reading this: is a hobbies section too much? -->
+  <!-- <section id="hobbies">
+    <h2>Hobbies</h2>
+    <div>
+      <h3>Film Photography</h3>
+      <p>My experiences and what I love about film photography.</p>
+      <p>Maybe a photo gallery?</p>
+    </div>
+    <div>
+      <h3>Social & Ballroom Dancing</h3>
+      <p>My experiences and what I love about dancing.</p>
+    </div>
+  </section> -->
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <ul>
+      <li>
+        <strong>American Phone:</strong>
+        <a href="tel:+15138136421">+1 513 813 6421</a>
+      </li>
+      <li>
+        <strong>Email:</strong>
+        <a href="mailto:daltoncraven@proton.me"> daltoncraven@proton.me</a>
+      </li>
+      <li>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/cravend">cravend</a>
+      </li>
+      <li>
+        <strong>GitLab:</strong>
+        <a href="https://gitlab.com/cravend">cravend</a>
+      </li>
+      <li>
+        <strong>LinkedIn:</strong>
+        <a href="https://linkedin.com/in/daltoncraven">daltoncraven</a>
+      </li>
+      <li>
+        <strong>GPG:</strong>
+        <a href="https://github.com/cravend.gpg">0xFF3FA75081B3B98C</a>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2023 Dalton Craven</p>
+  </footer>
+</BaseLayout>
