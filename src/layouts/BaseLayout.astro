@@ -21,37 +21,7 @@ const dir = astroI18n.langCode === "ar" ? "rtl" : "ltr";
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="no-css">
+  <body>
     <slot />
-    <style is:global>
-      @layer base {
-        body {
-          font-family: Atkinson Hyperlegible, system-ui, sans-serif;
-        }
-      }
-
-      body {
-        color: #222;
-        background: #fff;
-      }
-      a {
-        color: #0033cc;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          color: #eee;
-          background: #121212;
-        }
-
-        body a {
-          color: #809fff;
-        }
-      }
-
-      .no-css {
-        all: revert;
-      }
-    </style>
   </body>
 </html>
