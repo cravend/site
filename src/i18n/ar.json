@@ -1,12 +1,18 @@
 {
     "header": {
         "name": "دالتون كرافن",
+        "skip": "Skip to content",
         "nav": {
             "about": "عني",
             "projects": "المشاريع",
             "skills": "المهارات",
             "hobbies": "الهوايات",
             "contact": "الاتصال"
+        },
+        "languages": {
+            "en": "English",
+            "fr": "French",
+            "ar": "Arabic"
         }
     },
     "sections": {

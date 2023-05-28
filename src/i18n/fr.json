@@ -1,12 +1,18 @@
 {
     "header": {
         "name": "Dalton Craven",
+        "skip": "Skip to content",
         "nav": {
             "about": "À propos",
             "projects": "Projets",
             "skills": "Compétences",
             "hobbies": "Passions",
             "contact": "Contact"
+        },
+        "languages": {
+            "en": "English",
+            "fr": "French",
+            "ar": "Arabic"
         }
     },
     "sections": {
