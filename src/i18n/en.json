@@ -7,7 +7,8 @@
             "projects": "Projects",
             "skills": "Skills",
             "hobbies": "Hobbies",
-            "contact": "Contact"
+            "contact": "Contact",
+            "github": "GitHub"
         },
         "languages": {
             "en": "English",

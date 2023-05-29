@@ -3,14 +3,17 @@ import { astroI18n, t, l } from "astro-i18n";
 const otherCodes = astroI18n.langCodes.filter((l) => l !== astroI18n.langCode);
 ---
 
-<ul>
-  {
-    otherCodes.map((code) => (
-      <li>
-        <a href={l(Astro.url.pathname, {}, code)}>
-          {t(`header.languages.${code}`)}
-        </a>
-      </li>
-    ))
-  }
-</ul>
+<p>
+  Read in:
+  <ul role="list" class="list-disc list-inside">
+    {
+      otherCodes.map((code) => (
+        <li>
+          <a href={l(Astro.url.pathname, {}, code)}>
+            {t(`header.languages.${code}`)}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</p>

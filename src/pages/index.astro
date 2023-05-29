@@ -1,72 +1,54 @@
 ---
-import NavigationMenu from "../components/NavigationMenu.astro";
-import TranslationMenu from "../components/TranslationMenu.astro";
-import BaseLayout from "../layouts/BaseLayout.astro";
 import { astroI18n, t } from "astro-i18n";
+import HeroLayout from "../layouts/HeroLayout.astro";
 
 astroI18n.init(Astro);
 ---
 
-<BaseLayout title="Dalton Craven | Home">
-  <header>
-    <a
-      href="#main"
-      class="transition left-0 bg-primary text-primary-content absolute p-3 m-3 -translate-y-16 focus:translate-y-0"
-      >Skip to content</a
-    >
-    <h1>{t("header.name")}</h1>
-    <TranslationMenu />
-    <NavigationMenu />
-  </header>
+<HeroLayout title="Dalton Craven | Home">
+  <section id="about">
+    <h2>{t("sections.about.header")}</h2>
+    <p set:html={t("sections.about.content")} />
+  </section>
 
-  <main id="main">
-    <section id="about">
-      <h2>{t("sections.about.header")}</h2>
-      <p set:html={t("sections.about.content")} />
-    </section>
+  <section id="journey">
+    <h2>{t("sections.journey.header")}</h2>
+    <p set:html={t("sections.journey.content1")} />
+    <p set:html={t("sections.journey.content2")} />
+    <p set:html={t("sections.journey.content3")} />
+  </section>
 
-    <section id="journey">
-      <h2>{t("sections.journey.header")}</h2>
-      <p set:html={t("sections.journey.content1")} />
-      <p set:html={t("sections.journey.content2")} />
-      <p set:html={t("sections.journey.content3")} />
-    </section>
+  <section id="projects">
+    <h2>{t("sections.projects.header")}</h2>
+    <div>
+      <h3>{t("sections.projects.content1.title")}</h3>
+      <p set:html={t("sections.projects.content1.description")} />
+    </div>
+    <div>
+      <h3>{t("sections.projects.content2.title")}</h3>
+      <p set:html={t("sections.projects.content2.description")} />
+    </div>
+  </section>
 
-    <section id="projects">
-      <h2>{t("sections.projects.header")}</h2>
-      <div>
-        <h3>{t("sections.projects.content1.title")}</h3>
-        <p set:html={t("sections.projects.content1.description")} />
-      </div>
-      <div>
-        <h3>{t("sections.projects.content2.title")}</h3>
-        <p set:html={t("sections.projects.content2.description")} />
-      </div>
-    </section>
+  <section id="skills">
+    <h2>{t("sections.skills.header")}</h2>
+    <ul>
+      <li set:html={t("sections.skills.content1")} />
+      <li set:html={t("sections.skills.content2")} />
+      <li set:html={t("sections.skills.content3")} />
+      <li set:html={t("sections.skills.content4")} />
+    </ul>
+  </section>
 
-    <section id="skills">
-      <h2>{t("sections.skills.header")}</h2>
-      <ul>
-        <li set:html={t("sections.skills.content1")} />
-        <li set:html={t("sections.skills.content2")} />
-        <li set:html={t("sections.skills.content3")} />
-        <li set:html={t("sections.skills.content4")} />
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>{t("sections.contact.header")}</h2>
-      <ul>
-        <li set:html={t("sections.contact.content1")} />
-        <li set:html={t("sections.contact.content2")} />
-        <li set:html={t("sections.contact.content3")} />
-        <li set:html={t("sections.contact.content4")} />
-        <li set:html={t("sections.contact.content5")} />
-        <li set:html={t("sections.contact.content6")} />
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>{t("footer.content")}</p>
-  </footer>
-</BaseLayout>
+  <section id="contact">
+    <h2>{t("sections.contact.header")}</h2>
+    <ul>
+      <li set:html={t("sections.contact.content1")} />
+      <li set:html={t("sections.contact.content2")} />
+      <li set:html={t("sections.contact.content3")} />
+      <li set:html={t("sections.contact.content4")} />
+      <li set:html={t("sections.contact.content5")} />
+      <li set:html={t("sections.contact.content6")} />
+    </ul>
+  </section>
+</HeroLayout>
