@@ -6,7 +6,6 @@
 	"private": true,
 	"scripts": {
 		"dev": "astro-i18n sync && astro dev",
-		"start": "astro dev",
 		"build": "astro-i18n sync && astro check && tsc && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
