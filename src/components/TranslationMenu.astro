@@ -4,11 +4,12 @@ const otherCodes = astroI18n.langCodes.filter((l) => l !== astroI18n.langCode);
 ---
 
 <p>
-  Read in <a
+  {t("header.languages.intro")}
+  <a
     class="underline"
     href={l(Astro.url.pathname, {}, otherCodes[0])}
     set:html={t(`header.languages.${otherCodes[0]}`)}
-  /> or <a
+  />{t("header.languages.or")}<a
     class="underline"
     href={l(Astro.url.pathname, {}, otherCodes[1])}
     set:html={t(`header.languages.${otherCodes[1]}`)}

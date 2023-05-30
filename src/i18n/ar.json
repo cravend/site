@@ -11,8 +11,10 @@
             "github": "GitHub"
         },
         "languages": {
-            "en": "الإنجليزية",
-            "fr": "الفرنسية",
+            "intro": "اقرأ باللغة ",
+            "or": " و",
+            "en": "<span dir='ltr'>English</span>",
+            "fr": "<span dir='ltr'>Français</span>",
             "ar": "العربية"
         }
     },

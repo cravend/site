@@ -11,9 +11,11 @@
             "github": "GitHub"
         },
         "languages": {
+            "intro": "Read in ",
+            "or": " or ",
             "en": "English",
-            "fr": "French",
-            "ar": "Arabic"
+            "fr": "Français",
+            "ar": "<span dir='rtl'>العربية</span>"
         }
     },
     "sections": {
