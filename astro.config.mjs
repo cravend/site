@@ -8,6 +8,5 @@ import image from "@astrojs/image";
 export default defineConfig({
   integrations: [i18n(), image({
     serviceentrypoint: '@astrojs/image/sharp'
-  })]
-  // integrations: [i18n(), tailwind(), image()]
+  }), tailwind()]
 });
