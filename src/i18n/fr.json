@@ -29,12 +29,14 @@
         },
         "projects": {
             "header": "Mes projets",
-            "content1": {
+            "wordification": {
                 "title": "Wordification : Une nouvelle approche pour enseigner les règles d'orthographe en anglais",
+                "alt": "Capture d'écran de la page de jeu de Wordification. Six phonèmes potentiels sont affichés sous forme de boutons. De plus, le jeu comporte une barre de progression et un bouton \"réécouter l'audio\".",
                 "description": "Wordification est un ensemble de jeux en ligne conçus pour enseigner l'orthographe en liant les phonèmes et les graphèmes, encourageant les élèves à apprendre les règles d'orthographe de manière phonétique plutôt que de mémoriser des listes d'orthographe statiques. Wordification est actuellement au stade de preuve de concept, mais notre équipe est impatiente de mener des essais en conditions réelles et évalués par des pairs avec des élèves prochainement. Nous avons récemment soumis un article de recherche sur Wordification à la <a href='https://www.american-cse.org/csce2023/conferences-FECS'>19ème conférence internationale sur les frontières de l'éducation : informatique et ingénierie informatique</a>, qui a été accepté pour publication - nous sommes impatients de présenter notre travail en juillet. Wordification est construit avec Redwood et Typescript, et est <a href='https://github.com/wordification/app'>visible sur GitHub</a>."
             },
-            "content2": {
+            "dkms": {
                 "title": "DKMS : Des fonctionnalités de réseaux sociaux pour Spotify",
+                "alt": "Capture d'écran de la page de profil de DKMS. Cette page montre la photo de profil d'un utilisateur, son nom d'affichage, et les chansons et artistes qu'il écoute le plus.",
                 "description": "Pour mon projet de fin d'études, j'ai dirigé une équipe de cinq personnes pour concevoir et mettre en œuvre une application unique - une application qui enrichit l'expérience Spotify en intégrant des fonctionnalités de réseaux sociaux. Compte tenu de la charge de travail importante, j'ai assumé plusieurs rôles - développeur, gestionnaire devops et scrum master. Le produit final était une application web full-stack construite avec Next.js, Typescript, Firestore et le Spotify Web SDK. Parmi les principales fonctionnalités, citons la possibilité de charger dynamiquement du contenu, des recommandations personnalisées en fonction de l'activité d'écoute de l'utilisateur et l'analyse audio de chansons, d'albums, d'artistes et de playlists. Le projet est <a href='https://dkms.vercel.app'>déployé sur Vercel</a>, et le code est <a href='https://github.com/sccapstone/dkms'>visible sur GitHub</a>."
             }
         },

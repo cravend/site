@@ -1,5 +1,9 @@
 ---
 import { astroI18n, t } from "astro-i18n";
+import { Image } from "@astrojs/image/components";
+import dkmsScreenshot from "../images/projects/dkms.png";
+import wordificationScreenshot from "../images/projects/wordification.png";
+
 import HeroLayout from "../layouts/HeroLayout.astro";
 
 astroI18n.init(Astro);
@@ -21,12 +25,22 @@ astroI18n.init(Astro);
   <section id="projects">
     <h2>{t("sections.projects.header")}</h2>
     <div>
-      <h3>{t("sections.projects.content1.title")}</h3>
-      <p set:html={t("sections.projects.content1.description")} />
+      <h3>{t("sections.projects.wordification.title")}</h3>
+      <Image
+        src={wordificationScreenshot}
+        height={512}
+        alt={t("sections.projects.wordification.alt")}
+      />
+      <p set:html={t("sections.projects.wordification.description")} />
     </div>
     <div>
-      <h3>{t("sections.projects.content2.title")}</h3>
-      <p set:html={t("sections.projects.content2.description")} />
+      <h3>{t("sections.projects.dkms.title")}</h3>
+      <Image
+        src={dkmsScreenshot}
+        height={512}
+        alt={t("sections.projects.dkms.alt")}
+      />
+      <p set:html={t("sections.projects.dkms.description")} />
     </div>
   </section>
 

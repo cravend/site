@@ -29,12 +29,14 @@
         },
         "projects": {
             "header": "Projects",
-            "content1": {
+            "wordification": {
                 "title": "Wordification: A New Way of Teaching English Spelling Patterns",
+                "alt": "Screenshot of the game page from Wordification. Six potential phonemes are shown as buttons. Additionally, the game has a progress bar and a \"replay audio\" button.",
                 "description": "Wordification is a set of online games designed to teach spelling through the linkage of phonemes and graphemes, encouraging students to learn spelling rules phonetically rather than memorizing static spelling lists. Wordification is currently in the proof-of-concept stage, but our team is eagerly looking forward to conducting real-world, peer-reviewed trials with students soon. We recently submitted a research paper to a paper about Wordification to the <a href='https://www.american-cse.org/csce2023/conferences-FECS'>19<sup>th</sup> International Conference on Frontiers in Education: Computer Science & Computer Engineering</a>, which was accepted for publication — we're excited about presenting our work ths July. Wordification is built with Redwood and Typescript, and is <a href='https://github.com/wordification/app'>visible on GitHub</a>."
             },
-            "content2": {
+            "dkms": {
                 "title": "DKMS: Social Media Features for Spotify",
+                "alt": "Screenshot of the profile page from DKMS. This page shows a user's profile picture, display name, and the songs and artists that they most listen to.",
                 "description": "For my senior capstone project, I led a team of five in designing and implementing a unique application — one that enriches the Spotify experience by integrating social media features. Given the significant workload, I assumed multiple roles — developer, devops manager, and scrum master. The final product was a full-stack web application built with Next.js, Typescript, Firestore, and the Spotify Web SDK. Some key features included the ability to dynamically load content, tailored recommendations based on a user's listening activity, and audio analysis of songs, albums, artists, and playlists. The project is <a href='https://dkms.vercel.app'>deployed on Vercel</a>, and the code is <a href='https://github.com/sccapstone/dkms'>visible on GitHub</a>."
             }
         },
