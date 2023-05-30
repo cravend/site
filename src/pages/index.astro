@@ -7,6 +7,22 @@ import wordificationScreenshot from "../images/projects/wordification.png";
 import HeroLayout from "../layouts/HeroLayout.astro";
 
 astroI18n.init(Astro);
+
+const PROJECTS = [
+  {
+    title: t("sections.projects.wordification.title"),
+    screenshot: wordificationScreenshot,
+    alt: t("sections.projects.wordification.alt"),
+    description: t("sections.projects.wordification.description"),
+  },
+  {
+    title: t("sections.projects.dkms.title"),
+    screenshot: dkmsScreenshot,
+    alt: t("sections.projects.dkms.alt"),
+    description: t("sections.projects.dkms.description"),
+  },
+];
+// const PROJECTS: typeof PROJECTS_old = [];
 ---
 
 <HeroLayout title="Dalton Craven | Home">
@@ -25,29 +41,48 @@ astroI18n.init(Astro);
   <section id="projects">
     <h2 class="font-bold text-3xl">{t("sections.projects.header")}</h2>
     <ul class="grid md:grid-cols-2 gap-4">
-      <li>
-        <h3 class="text-xl">
-          {t("sections.projects.wordification.title")}
-        </h3>
-        <Image
-          src={wordificationScreenshot}
-          height={512}
-          alt={t("sections.projects.wordification.alt")}
-        />
-        <p
-          class="text-sm"
-          set:html={t("sections.projects.wordification.description")}
-        />
-      </li>
-      <li>
-        <h3 class="text-xl">{t("sections.projects.dkms.title")}</h3>
-        <Image
-          src={dkmsScreenshot}
-          height={512}
-          alt={t("sections.projects.dkms.alt")}
-        />
-        <p class="text-sm" set:html={t("sections.projects.dkms.description")} />
-      </li>
+      <!-- {
+        PROJECTS.map((project) => (
+          <li class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <Image
+              claass="object-cover w-full h-64"
+              src={project.screenshot}
+              height={512}
+              alt={project.alt}
+            />
+
+            <div class="p-6">
+              <div>
+                <h3 class="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white">
+                  {project.title}
+                </h3>
+                <p
+                  class="mt-2 text-sm text-gray-600 dark:text-gray-400"
+                  set:html={project.description}
+                />
+              </div>
+            </div>
+          </li>
+        ))
+      } -->
+      {
+        PROJECTS.map((project) => (
+          <li class="bg-stone-50 text-stone-700 rounded-lg shadow-xl">
+            <h3
+              class="py-2 px-4 font-bold tracking-wide text-center bg-stone-700 text-stone-50 rounded-t-lg uppercase"
+              set:html={project.title}
+            />
+            <Image
+              class="object-cover"
+              src={project.screenshot}
+              height={512}
+              alt={project.alt}
+            />
+
+            <p class="px-3 py-2" set:html={project.description} />
+          </li>
+        ))
+      }
     </ul>
   </section>
 
