@@ -42,9 +42,9 @@ const PROJECTS = [
     <ul class="grid md:grid-cols-2 gap-4">
       {
         PROJECTS.map((project) => (
-          <li class="bg-stone-50 text-stone-700 rounded-lg shadow-xl">
+          <li class="bg-stone-50 text-stone-700 dark:bg-stone-900 dark:text-stone-50 rounded-lg shadow-xl">
             <h3
-              class="py-2 px-4 font-bold tracking-wide text-center bg-stone-700 text-stone-50 rounded-t-lg uppercase"
+              class="py-2 px-4 font-bold tracking-wide text-center bg-stone-700 dark:bg-stone-900 text-stone-50 rounded-t-lg uppercase"
               set:html={project.title}
             />
             <Image
