@@ -11,41 +11,48 @@ astroI18n.init(Astro);
 
 <HeroLayout title="Dalton Craven | Home">
   <section id="about">
-    <h2>{t("sections.about.header")}</h2>
+    <h2 class="font-bold text-3xl">{t("sections.about.header")}</h2>
     <p set:html={t("sections.about.content")} />
   </section>
 
   <section id="journey">
-    <h2>{t("sections.journey.header")}</h2>
+    <h2 class="font-bold text-3xl">{t("sections.journey.header")}</h2>
     <p set:html={t("sections.journey.content1")} />
     <p set:html={t("sections.journey.content2")} />
     <p set:html={t("sections.journey.content3")} />
   </section>
 
   <section id="projects">
-    <h2>{t("sections.projects.header")}</h2>
-    <div>
-      <h3>{t("sections.projects.wordification.title")}</h3>
-      <Image
-        src={wordificationScreenshot}
-        height={512}
-        alt={t("sections.projects.wordification.alt")}
-      />
-      <p set:html={t("sections.projects.wordification.description")} />
-    </div>
-    <div>
-      <h3>{t("sections.projects.dkms.title")}</h3>
-      <Image
-        src={dkmsScreenshot}
-        height={512}
-        alt={t("sections.projects.dkms.alt")}
-      />
-      <p set:html={t("sections.projects.dkms.description")} />
-    </div>
+    <h2 class="font-bold text-3xl">{t("sections.projects.header")}</h2>
+    <ul class="grid md:grid-cols-2 gap-4">
+      <li>
+        <h3 class="text-xl">
+          {t("sections.projects.wordification.title")}
+        </h3>
+        <Image
+          src={wordificationScreenshot}
+          height={512}
+          alt={t("sections.projects.wordification.alt")}
+        />
+        <p
+          class="text-sm"
+          set:html={t("sections.projects.wordification.description")}
+        />
+      </li>
+      <li>
+        <h3 class="text-xl">{t("sections.projects.dkms.title")}</h3>
+        <Image
+          src={dkmsScreenshot}
+          height={512}
+          alt={t("sections.projects.dkms.alt")}
+        />
+        <p class="text-sm" set:html={t("sections.projects.dkms.description")} />
+      </li>
+    </ul>
   </section>
 
   <section id="skills">
-    <h2>{t("sections.skills.header")}</h2>
+    <h2 class="font-bold text-3xl">{t("sections.skills.header")}</h2>
     <ul>
       <li set:html={t("sections.skills.spokenLanguages")} />
       <li set:html={t("sections.skills.techLanguages")} />
@@ -55,7 +62,7 @@ astroI18n.init(Astro);
   </section>
 
   <section id="contact">
-    <h2>{t("sections.contact.header")}</h2>
+    <h2 class="font-bold text-3xl">{t("sections.contact.header")}</h2>
     <ul>
       <li set:html={t("sections.contact.americanPhone")} />
       <li set:html={t("sections.contact.email")} />

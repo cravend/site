@@ -4,16 +4,13 @@ const otherCodes = astroI18n.langCodes.filter((l) => l !== astroI18n.langCode);
 ---
 
 <p>
-  Read in:
-  <ul role="list" class="list-disc list-inside">
-    {
-      otherCodes.map((code) => (
-        <li>
-          <a href={l(Astro.url.pathname, {}, code)}>
-            {t(`header.languages.${code}`)}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+  Read in <a
+    class="underline"
+    href={l(Astro.url.pathname, {}, otherCodes[0])}
+    set:html={t(`header.languages.${otherCodes[0]}`)}
+  /> or <a
+    class="underline"
+    href={l(Astro.url.pathname, {}, otherCodes[1])}
+    set:html={t(`header.languages.${otherCodes[1]}`)}
+  />
 </p>
