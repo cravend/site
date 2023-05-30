@@ -1,7 +1,7 @@
 {
     "header": {
         "name": "دالتون كرافن",
-        "skip": "Skip to content",
+        "skip": "تخطي إلى المحتوى",
         "nav": {
             "about": "عني",
             "projects": "المشاريع",
@@ -42,19 +42,19 @@
         },
         "skills": {
             "header": "المهارات",
-            "content1": "<strong>اللغات (المحكية):</strong> <a href='/'>الإنجليزية</a>, <a href='/fr'>الفرنسية</a>, <a href='/ar'>العربية</a>, لغة الإشارة الأمريكية (ASL)",
-            "content2": "<strong>اللغات (التقنية):</strong> TypeScript, JavaScript, GraphQL, Python, Java, C++, HTML, CSS, Visual Basic .NET, PHP, SQL",
-            "content3": "<strong>الأطر:</strong> <abbr title='هذا ما استخدمته لهذا الموقع!'>Astro</abbr>, React, Next, Redwood, Gatsby, WordPress",
-            "content4": "<strong>الشهادات:</strong> أساسيات التسويق الرقمي، Google - <em>معتمد في أبريل 2020</em>, متخصص Microsoft Office (MOS) Master 2016 - <em>معتمد في خريف 2018</em>, MOS Word 2016 Expert, MOS Excel 2016 Expert - <em>معتمد في خريف 2018</em>"
+            "spokenLanguages": "<strong>اللغات (المحكية):</strong> <a href='/'>الإنجليزية</a>, <a href='/fr'>الفرنسية</a>, <a href='/ar'>العربية</a>, لغة الإشارة الأمريكية (ASL)",
+            "techLanguages": "<strong>اللغات (التقنية):</strong> TypeScript, JavaScript, GraphQL, Python, Java, C++, HTML, CSS, Visual Basic .NET, PHP, SQL",
+            "frameworks": "<strong>الأطر:</strong> <abbr title='هذا ما استخدمته لهذا الموقع!'>Astro</abbr>, React, Next, Redwood, Gatsby, WordPress",
+            "certifications": "<strong>الشهادات:</strong> أساسيات التسويق الرقمي، Google - <em>معتمد في أبريل 2020</em>, متخصص Microsoft Office (MOS) Master 2016 - <em>معتمد في خريف 2018</em>, MOS Word 2016 Expert, MOS Excel 2016 Expert - <em>معتمد في خريف 2018</em>"
         },
         "contact": {
             "header": "اتصل بي",
-            "content1": "<strong>الهاتف الأمريكي:</strong> <a href='tel:+15138136421'>+1 513 813 6421</a>",
-            "content2": "<strong>البريد الإلكتروني:</strong> <a href='mailto:daltoncraven@proton.me'> daltoncraven@proton.me</a>",
-            "content3": "<strong>GitHub:</strong> <a href='https://github.com/cravend'>cravend</a>",
-            "content4": "<strong>GitLab:</strong> <a href='https://gitlab.com/cravend'>cravend</a>",
-            "content5": "<strong>LinkedIn:</strong> <a href='https://linkedin.com/in/daltoncraven'>daltoncraven</a>",
-            "content6": "<strong>GPG:</strong> <a href='https://github.com/cravend.gpg'>0xFF3FA75081B3B98C</a>"
+            "americanPhone": "<strong>الهاتف الأمريكي:</strong> <a href='tel:+15138136421'>+1 513 813 6421</a>",
+            "email": "<strong>البريد الإلكتروني:</strong> <a href='mailto:daltoncraven@proton.me'> daltoncraven@proton.me</a>",
+            "github": "<strong>GitHub:</strong> <a href='https://github.com/cravend'>cravend</a>",
+            "gitlab": "<strong>GitLab:</strong> <a href='https://gitlab.com/cravend'>cravend</a>",
+            "linkedin": "<strong>LinkedIn:</strong> <a href='https://linkedin.com/in/daltoncraven'>daltoncraven</a>",
+            "gpg": "<strong>GPG:</strong> <a href='https://github.com/cravend.gpg'>0xFF3FA75081B3B98C</a>"
         }
     },
     "footer": {
