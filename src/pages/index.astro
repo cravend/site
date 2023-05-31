@@ -1,8 +1,10 @@
 ---
 import { astroI18n, t } from "astro-i18n";
-import { Image } from "@astrojs/image/components";
-import dkmsScreenshot from "../images/projects/dkms.png";
-import wordificationScreenshot from "../images/projects/wordification.png";
+import dkmsScreenshot from "../assets/projects/dkms.png";
+import dkmsDarkScreenshot from "../assets/projects/dkms-dark.png";
+import wordificationScreenshot from "../assets/projects/wordification.png";
+import wordificationDarkScreenshot from "../assets/projects/wordification-dark.png";
+import { Image } from "astro:assets";
 
 import HeroLayout from "../layouts/HeroLayout.astro";
 
@@ -12,12 +14,14 @@ const PROJECTS = [
   {
     title: t("sections.projects.wordification.title"),
     screenshot: wordificationScreenshot,
+    darkScreenshot: wordificationDarkScreenshot,
     alt: t("sections.projects.wordification.alt"),
     description: t("sections.projects.wordification.description"),
   },
   {
     title: t("sections.projects.dkms.title"),
     screenshot: dkmsScreenshot,
+    darkScreenshot: dkmsDarkScreenshot,
     alt: t("sections.projects.dkms.alt"),
     description: t("sections.projects.dkms.description"),
   },
@@ -47,13 +51,13 @@ const PROJECTS = [
               class="py-2 px-4 font-bold tracking-wide text-center bg-stone-700 dark:bg-stone-900 text-stone-50 rounded-t-lg uppercase"
               set:html={project.title}
             />
-            <Image
-              class="object-cover"
-              src={project.screenshot}
-              height={512}
-              alt={project.alt}
-            />
-
+            <picture>
+              <source
+                srcset={project.darkScreenshot.src}
+                media="(prefers-color-scheme: dark)"
+              />
+              <Image src={project.screenshot} alt={project.alt} />
+            </picture>
             <p class="px-3 py-2" set:html={project.description} />
           </li>
         ))
