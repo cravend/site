@@ -26,7 +26,7 @@
         "journey": {
             "header": "My Journey",
             "content1": "I've always been fascinated by technology and the way it can be used to solve problems. I was first introduced to the world of computer science in high school through <a href='https://hackclub.com'>Hack Club</a>, a network of student-run programming organizations. I then went on to study both theoretical and applied computer science at the University of South Carolina, where I graduated summa cum laude with a B.S.C.S. in Computer Science.",
-            "content2": "During my time at USC, I had the opportunity to study abroad in Paris and intern at <a href='https://qantev.com'>Qantev</a>, a French tech start-up. These experiences were invaluable in shaping my worldview and broadening my horizons. I was able to experience a new culture, learn a new language, and make lifelong friends. I also gained a deeper appreciation for the importance of localization and accessibility in software development.",
+            "content2": "During my time at USC, I had the opportunity to study abroad in Paris and intern at <a href='https://qantev.com'>Qantev</a>, a French tech startup. These experiences were invaluable in shaping my worldview and broadening my horizons. I was able to experience a new culture, learn a new language, and make lifelong friends. I also gained a deeper appreciation for the importance of localization and accessibility in software development.",
             "content3": "I'm currently back in Paris working as a full-stack software engineer at Qantev, where I'm helping to build a platform that will revolutionize the way insurance companies manage their data."
         },
         "projects": {
