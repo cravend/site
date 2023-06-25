@@ -1,6 +1,6 @@
 {
     "header": {
-        "name": "دالتون كرافن",
+        "name": "Dalton Craven",
         "skip": "تخطي إلى المحتوى",
         "nav": {
             "about": "عني",
@@ -44,7 +44,7 @@
         },
         "skills": {
             "header": "المهارات",
-            "spokenLanguages": "<strong>اللغات (المحكية):</strong> <a href='/'>الإنجليزية</a>, <a href='/fr'>الفرنسية</a>, <a href='/ar'>العربية</a>, اللغة الأمريكية للإشارة (ASL)",
+            "spokenLanguages": "<strong>اللغات (المحكية):</strong> <a href='/' class='underline'>الإنجليزية</a>, <a href='/fr/' class='underline'>الفرنسية</a>, العربية, اللغة الأمريكية للإشارة (ASL)",
             "techLanguages": "<strong>اللغات (التقنية):</strong> TypeScript, JavaScript, GraphQL, Python, Java, C++, HTML, CSS, Visual Basic .NET, PHP, SQL",
             "frameworks": "<strong>الأطُر:</strong> <abbr title='هذا ما استخدمته لهذا الموقع!'>Astro</abbr>, React, Next, Redwood, Gatsby, WordPress",
             "certifications": "<strong>الشهادات:</strong> أساسيات التسويق الرقمي، Google — <em>معتمد في أبريل 2020</em>, Microsoft Office Specialist (MOS) Master 2016 — <em>معتمد في خريف 2018</em>, MOS Word 2016 Expert, MOS Excel 2016 Expert — <em>معتمد في خريف 2018</em>"
