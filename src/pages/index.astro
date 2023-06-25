@@ -30,25 +30,31 @@ const PROJECTS = [
 
 <HeroLayout title="Dalton Craven | Home">
   <section id="about">
-    <h2 class="font-bold text-3xl">{t("sections.about.header")}</h2>
+    <h2 class="font-bold text-3xl text-rose-700">
+      {t("sections.about.header")}
+    </h2>
     <p set:html={t("sections.about.content")} />
   </section>
 
   <section id="journey">
-    <h2 class="font-bold text-3xl">{t("sections.journey.header")}</h2>
+    <h2 class="font-bold text-3xl text-rose-700">
+      {t("sections.journey.header")}
+    </h2>
     <p set:html={t("sections.journey.content1")} />
     <p set:html={t("sections.journey.content2")} />
     <p set:html={t("sections.journey.content3")} />
   </section>
 
   <section id="projects">
-    <h2 class="font-bold text-3xl">{t("sections.projects.header")}</h2>
+    <h2 class="font-bold text-3xl text-rose-700">
+      {t("sections.projects.header")}
+    </h2>
     <ul class="grid md:grid-cols-2 gap-4">
       {
         PROJECTS.map((project) => (
-          <li class="bg-stone-50 text-stone-700 dark:bg-stone-900 dark:text-stone-50 rounded-lg shadow-xl">
+          <li class="rounded-lg shadow-xl bg-stone-600 text-stone-50">
             <h3
-              class="py-2 px-4 font-bold tracking-wide text-center bg-stone-700 dark:bg-stone-900 text-stone-50 rounded-t-lg uppercase"
+              class="py-2 px-4 font-bold tracking-wide text-center rounded-t-lg uppercase bg-rose-800"
               set:html={project.title}
             />
             <picture>
@@ -66,18 +72,22 @@ const PROJECTS = [
   </section>
 
   <section id="skills">
-    <h2 class="font-bold text-3xl">{t("sections.skills.header")}</h2>
-    <ul>
+    <h2 class="font-bold text-3xl text-rose-700">
+      {t("sections.skills.header")}
+    </h2>
+    <ul class="list-disc list-inside">
       <li set:html={t("sections.skills.spokenLanguages")} />
       <li set:html={t("sections.skills.techLanguages")} />
       <li set:html={t("sections.skills.frameworks")} />
-      <li set:html={t("sections.skills.certifications")} />
+      {/* <li set:html={t("sections.skills.certifications")} /> */}
     </ul>
   </section>
 
   <section id="contact">
-    <h2 class="font-bold text-3xl">{t("sections.contact.header")}</h2>
-    <ul>
+    <h2 class="font-bold text-3xl text-rose-700">
+      {t("sections.contact.header")}
+    </h2>
+    <ul class="list-disc list-inside">
       <li set:html={t("sections.contact.americanPhone")} />
       <li set:html={t("sections.contact.email")} />
       <li set:html={t("sections.contact.github")} />
