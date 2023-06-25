@@ -44,7 +44,7 @@
         },
         "skills": {
             "header": "Skills",
-            "spokenLanguages": "<strong>Languages (spoken):</strong> English, <a href='/fr/' class='underline'>French</a>, <a href='/ar/' class='underline'>Arabic</a>, American Sign Language (ASL)",
+            "spokenLanguages": "<strong>Languages (spoken):</strong> English, <a href='/fr/'>French</a>, <a href='/ar/'>Arabic</a>, American Sign Language (ASL)",
             "techLanguages": "<strong>Languages (tech):</strong> TypeScript, JavaScript, GraphQL, Python, Java, C++, HTML, CSS, Visual Basic .NET, PHP, SQL",
             "frameworks": "<strong>Frameworks:</strong> <abbr title='That&apos;s what I used for this site!'>Astro</abbr>, React, Next, Redwood, Gatsby, WordPress",
             "certifications": "<strong>Certifications:</strong> The Fundamentals of Digital Marketing, Google — <em>Certified April 2020</em>, Microsoft Office Specialist (MOS) Master 2016 — <em>Certified fall 2018</em>, MOS Word 2016 Expert, MOS Excel 2016 Expert — <em>Certified fall 2018</em>"
