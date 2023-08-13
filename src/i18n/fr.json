@@ -11,8 +11,8 @@
             "github": "GitHub"
         },
         "languages": {
-            "intro": "Lire en ",
-            "or": " ou ",
+            "intro": "Read in ",
+            "or": " or ",
             "en": "English",
             "fr": "Français",
             "ar": "<span dir='rtl'>العربية</span>"
@@ -44,7 +44,7 @@
         },
         "skills": {
             "header": "Mes compétences",
-            "spokenLanguages": "<strong>Langues parlées :</strong> <a href='/'>Anglais</a>, Français, <a href='/ar/'>Arabe</a>, Langue des Signes Américaine (ASL)",
+            "spokenLanguages": "<strong>Langues parlées :</strong> <a href='/'>Anglais</a>, Français, Arabe, Langue des Signes Américaine (ASL)",
             "techLanguages": "<strong>Langages informatiques :</strong> TypeScript, JavaScript, GraphQL, Python, Java, C++, HTML, CSS, Visual Basic .NET, PHP, SQL",
             "frameworks": "<strong>Frameworks :</strong> <abbr title='C&apos;est ce que j&apos;ai utilisé pour ce site !'>Astro</abbr>, React, Next, Redwood, Gatsby, WordPress",
             "certifications": "<strong>Certifications :</strong> Les fondamentaux du marketing numérique, Google - <em>Certifié en avril 2020</em>, Spécialiste Microsoft Office (MOS) Master 2016 - <em>Certifié à l'automne 2018</em>, MOS Word 2016 Expert, MOS Excel 2016 Expert - <em>Certifié à l'automne 2018</em>"
