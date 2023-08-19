@@ -30,14 +30,14 @@ const PROJECTS = [
 
 <HeroLayout title="Dalton Craven | Home">
   <section id="about">
-    <h2 class="font-bold text-3xl text-orange-600 dark:text-orange-300">
+    <h2 class="font-bold text-3xl text-[#E56106] dark:text-orange-300">
       {t("sections.about.header")}
     </h2>
     <p set:html={t("sections.about.content")} />
   </section>
 
   <section id="journey">
-    <h2 class="font-bold text-3xl text-orange-600 dark:text-orange-300">
+    <h2 class="font-bold text-3xl text-[#E56106] dark:text-orange-300">
       {t("sections.journey.header")}
     </h2>
     <p class="pb-2" set:html={t("sections.journey.content1")} />
@@ -46,7 +46,7 @@ const PROJECTS = [
   </section>
 
   <section id="projects">
-    <h2 class="font-bold text-3xl text-orange-600 dark:text-orange-300">
+    <h2 class="font-bold text-3xl text-[#E56106] dark:text-orange-300">
       {t("sections.projects.header")}
     </h2>
     <ul class="grid md:grid-cols-2 gap-4 md:gap-12 pt-2">
@@ -56,9 +56,9 @@ const PROJECTS = [
             class:list={[
               "rounded-lg transition shadow-md border",
               "flex flex-col",
-              "bg-stone-50",
+              "bg-orange-50",
               "dark:bg-stone-800 dark:border-stone-700",
-              // "hover:shadow-orange-300 hover:border-orange-300",
+              // "hover:shadow-orange-300 hover:border-[#E56106]",
             ]}
           >
             <h3
@@ -87,7 +87,7 @@ const PROJECTS = [
   </section>
 
   <section id="skills">
-    <h2 class="font-bold text-3xl text-orange-600 dark:text-orange-300">
+    <h2 class="font-bold text-3xl text-[#E56106] dark:text-orange-300">
       {t("sections.skills.header")}
     </h2>
     <ul class="list-disc list-inside">
@@ -99,7 +99,7 @@ const PROJECTS = [
   </section>
 
   <section id="contact">
-    <h2 class="font-bold text-3xl text-orange-600 dark:text-orange-300">
+    <h2 class="font-bold text-3xl text-[#E56106] dark:text-orange-300">
       {t("sections.contact.header")}
     </h2>
     <ul class="list-disc list-inside">
