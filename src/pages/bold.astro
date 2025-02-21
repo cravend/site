@@ -1,0 +1,327 @@
+---
+import "@/styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dalton Craven - Full-Stack Software Engineer</title>
+  </head>
+  <body
+    class="bg-background text-content selection:bg-primary font-sans selection:text-white"
+  >
+    <!-- Hero Section -->
+    <section class="bg-primary/5 flex items-center md:min-h-[90vh]">
+      <div class="container mx-auto px-4 py-10">
+        <h1 class="mb-6 text-6xl font-black md:text-8xl">
+          Dalton
+          <span class="text-primary">Craven</span>
+        </h1>
+        <h2 class="mb-8 text-3xl font-bold md:text-4xl">
+          Full-Stack Software Engineer
+        </h2>
+        <p class="text-content-secondary max-w-2xl text-xl md:text-2xl">
+          I'm all about modern tools, efficient workflows, and creating
+          accessible digital experiences.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-10 md:py-20" id="about">
+      <div class="container mx-auto px-6">
+        <h2 class="mb-4 text-6xl font-bold tracking-tight md:mb-12">About</h2>
+        <div class="grid gap-4 md:grid-cols-2 md:gap-20">
+          <div>
+            <p class="mb-8 text-2xl leading-relaxed">
+              I'm a software engineer based in Paris, France, with experience in
+              building high-performance web applications using modern
+              frameworks. Having led a greenfield Next.js 13 project, I thrive
+              on pushing boundaries and implementing the latest in front-end
+              technology.
+            </p>
+            <p class="text-2xl leading-relaxed">
+              Whether working independently or collaborating across squads, I
+              consistently aim to elevate both user experiences and development
+              workflows.
+            </p>
+          </div>
+          <div class="flex flex-col justify-center gap-4 md:gap-8">
+            <div class="bg-primary rounded-2xl p-8 text-white">
+              <h3 class="mb-4 text-3xl font-bold">Location</h3>
+              <p class="text-2xl font-light">Paris, France</p>
+            </div>
+            <div class="border-primary rounded-2xl border-4 p-8">
+              <h3 class="mb-4 text-3xl font-bold">Languages</h3>
+              <p class="text-2xl font-light">English, French, ASL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-primary py-10 md:py-32" id="skills">
+      <div class="container mx-auto px-6">
+        <h2 class="mb-4 text-6xl font-bold tracking-tight text-white md:mb-12">
+          Skills & Expertise
+        </h2>
+        <div class="grid gap-4 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+          <div class="bg-background rounded-lg p-6">
+            <h3 class="text-primary mb-4 text-xl font-semibold">Front-End</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                React & Next.js 13
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                TypeScript
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                Tailwind
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                Astro
+              </li>
+            </ul>
+          </div>
+          <div class="bg-background rounded-lg p-6">
+            <h3 class="text-primary mb-4 text-xl font-semibold">Back-End</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                Django
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                Starlette
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                REST API Design
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                tRPC
+              </li>
+            </ul>
+          </div>
+          <div class="bg-background rounded-lg p-6">
+            <h3 class="text-primary mb-4 text-xl font-semibold">Tooling</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                Vite
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                CI/CD
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                Performance Optimization
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                Testing
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="p-8 rounded-2xl bg-white/10 backdrop-blur">
+            <h3 class="text-3xl font-bold mb-8">Back-End</h3>
+            <ul class="space-y-4 text-xl">
+              <li class="flex items-center">
+                <span class="w-3 h-3 bg-white rounded-full mr-4"></span>
+                Django
+              </li>
+              <li class="flex items-center">
+                <span class="w-3 h-3 bg-white rounded-full mr-4"></span>
+                Starlette
+              </li>
+              <li class="flex items-center">
+                <span class="w-3 h-3 bg-white rounded-full mr-4"></span>
+                REST API Design
+              </li>
+              <li class="flex items-center">
+                <span class="w-3 h-3 bg-white rounded-full mr-4"></span>
+                tRPC
+              </li>
+            </ul>
+          </div>
+          <div class="p-8 rounded-2xl bg-white/10 backdrop-blur">
+            <h3 class="text-3xl font-bold mb-8">Tooling</h3>
+            <ul class="space-y-4 text-xl">
+              <li class="flex items-center">
+                <span class="w-3 h-3 bg-white rounded-full mr-4"></span>
+                Vite
+              </li>
+              <li class="flex items-center">
+                <span class="w-3 h-3 bg-white rounded-full mr-4"></span>
+                CI/CD
+              </li>
+              <li class="flex items-center">
+                <span class="w-3 h-3 bg-white rounded-full mr-4"></span>
+                Performance Optimization
+              </li>
+              <li class="flex items-center">
+                <span class="w-3 h-3 bg-white rounded-full mr-4"></span>
+                Testing
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-10 md:py-32" id="experience">
+      <div class="container mx-auto px-6">
+        <h2 class="mb-4 text-6xl font-bold tracking-tight md:mb-12">
+          Professional Experience
+        </h2>
+        <div class="border-primary relative ml-4 border-l-2 pl-8">
+          <div>
+            <div class="bg-primary absolute -left-[9px] h-4 w-4 rounded-full">
+            </div>
+            <h3 class="mb-2 text-2xl font-bold">Software Engineer @ Qantev</h3>
+            <p class="text-content-secondary mb-4">1.5 Years</p>
+            <div class="space-y-4">
+              <p class="leading-relaxed">
+                Focused on building a modern, multilingual SaaS product from the
+                ground up.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <span class="bg-primary mt-2 mr-2 h-2 w-2 rounded-full"
+                  ></span>
+                  <span
+                    >Front-End Leadership: Introduced and championed Next.js 13
+                    with React Server Components</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="bg-primary mt-2 mr-2 h-2 w-2 rounded-full"
+                  ></span>
+                  <span
+                    >Modern Tooling: Implemented Vite for faster builds and
+                    streamlined CI/CD</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="bg-primary mt-2 mr-2 h-2 w-2 rounded-full"
+                  ></span>
+                  <span
+                    >Design System & Accessibility: Adopted Ant Design tokens
+                    and custom hooks</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-primary py-10 md:py-32" id="services">
+      <div class="container mx-auto px-6">
+        <h2 class="mb-4 text-6xl font-bold tracking-tight text-white md:mb-12">
+          Services
+        </h2>
+        <div class="grid gap-12 md:grid-cols-2">
+          <div class="bg-background border-primary/20 rounded-lg border p-8">
+            <h3 class="text-primary mb-4 text-2xl font-bold">Freelancing</h3>
+            <p class="mb-6 text-lg leading-relaxed">
+              Available for projects involving modern front-end architecture,
+              React Server Components, or WordPress site development.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                Small Business Marketing Sites
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                React Applications
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                Performance Optimization
+              </li>
+            </ul>
+          </div>
+          <div class="bg-background border-primary/20 rounded-lg border p-8">
+            <h3 class="text-primary mb-4 text-2xl font-bold">Consulting</h3>
+            <p class="mb-6 text-lg leading-relaxed">
+              Offering expertise in modern web development practices and
+              architecture decisions.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                Technical Architecture
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                Code Reviews
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary mr-2 h-2 w-2 rounded-full"></span>
+                Team Training
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-10 md:py-32" id="contact">
+      <div class="container mx-auto max-w-4xl px-6">
+        <h2 class="mb-4 text-center text-6xl font-bold tracking-tight md:mb-6">
+          Let's Connect
+        </h2>
+        <p
+          class="text-content-secondary mx-auto mb-4 max-w-2xl text-center text-xl font-light md:text-2xl"
+        >
+          Feel free to reach out if you'd like to chat about a project, discuss
+          open roles, or simply say hello!
+        </p>
+        <div class="flex flex-wrap justify-center gap-6">
+          <a
+            href="https://linkedin.com"
+            class="bg-primary border-primary hover:bg-primary/90 rounded-2xl border-4 px-8 py-3 font-bold text-white transition-colors"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/cravend"
+            class="bg-background text-content border-primary hover:bg-primary/5 rounded-2xl border-4 px-8 py-3 font-bold transition-colors"
+          >
+            GitHub
+          </a>
+          <a
+            href="/resume.pdf"
+            class="bg-background text-content border-primary hover:bg-primary/5 rounded-2xl border-4 px-8 py-3 font-bold transition-colors"
+          >
+            Résumé
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-primary bg-primary/5 border-t-4 py-12">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-content-secondary text-xl">
+          © {new Date().getFullYear()} Dalton Craven. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
