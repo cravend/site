@@ -13,7 +13,9 @@ import NavigationItem from "@/components/navigation-item.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dalton Craven - Full-Stack Software Engineer</title>
   </head>
-  <body class="bg-background text-content border-primary border-y-4 font-sans">
+  <body
+    class="bg-background text-content border-primary border-y-4 font-sans text-pretty"
+  >
     <a class="sr-only" href="#main">Skip to main content</a>
     <section
       class="bg-primary/10 text-content flex h-[calc(100vh-216px)] flex-1 items-center sm:h-[calc(100vh-76px)]"
@@ -291,20 +293,29 @@ import NavigationItem from "@/components/navigation-item.astro";
         <ul
           class="mx-auto grid max-w-max grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6"
         >
-          <li
-            class="bg-primary text-background hover:bg-primary-dark col-span-full rounded-lg px-8 py-3 font-semibold transition-colors sm:col-span-1"
-          >
-            <a href="/resume.pdf">Résumé</a>
+          <li class="col-span-full sm:col-span-1">
+            <a
+              href="/resume.pdf"
+              class="bg-primary text-background hover:bg-primary-dark inline-block w-full rounded-lg px-8 py-3 font-semibold transition-colors"
+            >
+              Résumé
+            </a>
           </li>
-          <li
-            class="text-content border-primary hover:bg-primary/10 bg-background rounded-lg border px-8 py-3 font-semibold transition-colors"
-          >
-            <a href="https://github.com">GitHub</a>
+          <li>
+            <a
+              href="https://github.com"
+              class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold transition-colors"
+            >
+              GitHub
+            </a>
           </li>
-          <li
-            class="text-content border-primary hover:bg-primary/10 bg-background rounded-lg border px-8 py-3 font-semibold transition-colors"
-          >
-            <a href="https://linkedin.com">LinkedIn</a>
+          <li>
+            <a
+              href="https://linkedin.com"
+              class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold transition-colors"
+            >
+              LinkedIn
+            </a>
           </li>
         </ul>
       </div>
