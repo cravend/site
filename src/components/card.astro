@@ -3,14 +3,16 @@ interface Props {
   title: string;
   id?: string;
   variant?: "base" | "secondary";
+  className?: string;
 }
-const { title, id, variant = "base" } = Astro.props;
+const { title, id, variant = "base", className } = Astro.props;
 ---
 
 <div
   class:list={[
     "border-primary/20 rounded-lg border p-4 md:p-6",
     variant === "base" ? "bg-background" : "bg-background-secondary",
+    className,
   ]}
   id={id}
 >

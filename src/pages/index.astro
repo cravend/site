@@ -13,7 +13,7 @@ import NavigationItem from "@/components/navigation-item.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Personal website of Dalton Craven, full-stack software engineer based in Paris, France."
+      content="Full-stack software engineer in Paris specializing in React, TypeScript and web accessibility. I develop to transcend barriers and empower audiences."
     />
     <meta name="theme-color" content="#FF5733" />
     <title>Dalton Craven - Full-Stack Software Engineer</title>
@@ -34,8 +34,8 @@ import NavigationItem from "@/components/navigation-item.astro";
           Full-Stack Software Engineer
         </h2>
         <p class="text-content max-w-2xl text-xl md:text-2xl">
-          I'm all about modern tools, efficient workflows, and creating
-          accessible digital experiences.
+          Crafting human-centered software solutions to develop a web that's
+          inclusive, accessible, and open to all.
         </p>
       </div>
     </section>
@@ -55,22 +55,28 @@ import NavigationItem from "@/components/navigation-item.astro";
 
     <main id="main" class="sm:scroll-m-[76px]">
       <Section title="About" id="about" variant="secondary">
-        <div class="grid gap-12 md:grid-cols-2">
-          <div class="flex flex-col justify-center gap-6 text-lg">
+        <div class="grid gap-6 md:grid-cols-3 md:gap-12">
+          <div class="flex flex-col justify-center gap-6 text-lg md:col-span-2">
             <p>
-              I'm a software engineer based in Paris, France, with experience in
-              building high-performance web applications using modern
-              frameworks. Having led a greenfield Next.js 13 project, I thrive
-              on pushing boundaries and implementing the latest in front-end
-              technology.
+              I believe that coding is about creating meaningful experiences
+              that empower people &mdash; regardless of how they communicate or
+              where they come from. I've developed with a wide-ranging toolkit
+              (TypeScript, React, Python, and more) but my core focus remains
+              the same: building products that don't exclude users due to
+              language or ability.
             </p>
             <p>
-              Whether working independently or collaborating across squads, I
-              consistently aim to elevate both user experiences and development
-              workflows.
+              That's why I'm drawn to localization and accessibility &mdash; two
+              areas where small changes can have an enormous impact. Influenced
+              by my background in English, French, and American Sign Language,
+              I'm convinced that a truly equitable internet must speak the
+              user's language in every sense. By pushing for accessible
+              standards and “de-Englishing” the web, I hope to help shape a
+              future where technology actually reflects the diversity of its
+              users.
             </p>
           </div>
-          <div class="grid grid-cols-2 gap-2 md:grid-cols-1 md:gap-6">
+          <div class="grid grid-cols-2 gap-2 md:grid-cols-1 md:gap-4">
             <Card title="Location">
               <p>Paris, France</p>
             </Card>
@@ -80,6 +86,42 @@ import NavigationItem from "@/components/navigation-item.astro";
                 <li>French</li>
                 <li>ASL</li>
               </ol>
+            </Card>
+            <Card title="Links" className="col-span-full">
+              <ul class="marker:text-primary list-inside list-disc">
+                <li>
+                  <a
+                    href="mailto:daltoncraven@proton.me"
+                    class="hover:decoration-primary focus:decoration-primary ml-[-0.25rem] p-1 underline underline-offset-2"
+                  >
+                    Email
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/daltoncraven/"
+                    class="hover:decoration-primary focus:decoration-primary ml-[-0.25rem] p-1 underline underline-offset-2"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/cravend"
+                    class="hover:decoration-primary focus:decoration-primary ml-[-0.25rem] p-1 underline underline-offset-2"
+                  >
+                    GitHub
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/resume.pdf"
+                    class="hover:decoration-primary focus:decoration-primary ml-[-0.25rem] p-1 underline underline-offset-2"
+                  >
+                    Résumé
+                  </a>
+                </li>
+              </ul>
             </Card>
           </div>
         </div>
@@ -137,8 +179,8 @@ import NavigationItem from "@/components/navigation-item.astro";
                 times, leading to an 8x speed increase
               </li>
               <li>
-                Collaborated with product/design and data science teams to set
-                milestones and ensure on-time feature deliveries
+                Worked in an Agile environment, delivering features iteratively
+                and collaborating with product/design teams
               </li>
             </ul>
           </TimelineItem>
@@ -232,28 +274,31 @@ import NavigationItem from "@/components/navigation-item.astro";
 
       <Section title="Skills & Expertise" id="skills" variant="secondary">
         <div class="grid gap-4 md:grid-cols-3 md:gap-6">
-          <Card title="Front">
+          <Card title="My Favorites">
             <ul class="marker:text-primary list-inside list-disc">
-              <li>React & Next.js 13</li>
               <li>TypeScript</li>
+              <li>React</li>
               <li>Tailwind</li>
-              <li>Astro</li>
+              <li>React Query</li>
+              <li>Next.js (app + pages)</li>
             </ul>
           </Card>
-          <Card title="Back">
+          <Card title="Code">
             <ul class="marker:text-primary list-inside list-disc">
-              <li>Django</li>
-              <li>Starlette</li>
-              <li>REST API Design</li>
               <li>tRPC</li>
+              <li>GraphQL</li>
+              <li>Django</li>
+              <li>SQL</li>
+              <li>Starlette</li>
             </ul>
           </Card>
           <Card title="Tooling">
             <ul class="marker:text-primary list-inside list-disc">
-              <li>Vite</li>
-              <li>CI/CD</li>
-              <li>Performance Optimization</li>
-              <li>Testing</li>
+              <li>Git & GitHub</li>
+              <li>CircleCI</li>
+              <li>AWS</li>
+              <li>Docker</li>
+              <li>Linux</li>
             </ul>
           </Card>
         </div>
@@ -262,32 +307,60 @@ import NavigationItem from "@/components/navigation-item.astro";
       <Section title="Services" id="services">
         <div class="grid gap-4 sm:grid-cols-2 md:gap-6">
           <Card variant="secondary" title="Freelancing">
-            <p class="mb-6 text-lg">
-              Available for projects involving modern front-end architecture,
-              React Server Components, or WordPress site development.
+            <p class="mb-6 text-lg text-balance">
+              Ready to launch your next digital project that is not just
+              functional, but welcoming to all users? By weaving together
+              localization, accessibility, and modern frameworks, I can create a
+              product that will truly resonate with a global audience.
             </p>
             <ul class="marker:text-primary list-inside list-disc">
-              <li>Small Business Marketing Sites</li>
-              <li>React Applications</li>
-              <li>Performance Optimization</li>
+              <li>
+                <span class="font-bold">Full-stack app development</span> using React,
+                Next.js, and TypeScript
+              </li>
+              <li>
+                <span class="font-bold">
+                  Localization & internationalization strategies
+                </span>
+                for multilingual support
+              </li>
+              <li>
+                <span class="font-bold">Accessibility-first design</span>
+                to meet and exceed WCAG standards
+              </li>
             </ul>
           </Card>
           <Card variant="secondary" title="Consulting">
             <p class="mb-6 text-lg">
-              Offering expertise in modern web development practices and
-              architecture decisions.
+              Looking to refine your existing digital platform or strategize
+              your next big move? I offer guidance on maximizing your app's
+              usability and global impact, drawing on experience with diverse
+              tech stacks and accessibility best practices.
             </p>
             <ul class="marker:text-primary list-inside list-disc">
-              <li>Technical Architecture</li>
-              <li>Code Reviews</li>
-              <li>Team Training</li>
+              <li>
+                <span class="font-bold">
+                  Architecture assessments & recommendations
+                </span>
+                for scalable solutions
+              </li>
+              <li>
+                <span class="font-bold">
+                  Accessibility & localization reviews
+                </span>
+                to make your product truly global
+              </li>
+              <li>
+                <span class="font-bold">Team mentorship</span> on front-end best
+                practices, tooling, and workflows
+              </li>
             </ul>
           </Card>
         </div>
       </Section>
     </main>
 
-    <section class="bg-background-secondary py-20" id="contact">
+    <section class="bg-background-secondary py-12" id="contact">
       <div class="container mx-auto px-4 text-center">
         <h2 class="mb-8 text-4xl font-bold">Let's Connect</h2>
         <p class="mx-auto mb-12 text-xl text-balance">
@@ -295,14 +368,22 @@ import NavigationItem from "@/components/navigation-item.astro";
           open roles, or simply say hello!
         </p>
         <ul
-          class="mx-auto grid max-w-max grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6"
+          class="mx-auto grid max-w-max grid-cols-2 gap-4 sm:grid-cols-4 md:gap-6"
         >
-          <li class="col-span-full sm:col-span-1">
+          <li>
             <a
-              href="/resume.pdf"
+              href="mailto:daltoncraven@proton.me"
               class="bg-primary text-background hover:bg-primary-dark inline-block w-full rounded-lg px-8 py-3 font-semibold"
             >
-              Résumé
+              Email
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/daltoncraven/"
+              class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
+            >
+              LinkedIn
             </a>
           </li>
           <li>
@@ -315,10 +396,10 @@ import NavigationItem from "@/components/navigation-item.astro";
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/daltoncraven/"
+              href="/resume.pdf"
               class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
             >
-              LinkedIn
+              Résumé
             </a>
           </li>
         </ul>
@@ -329,8 +410,9 @@ import NavigationItem from "@/components/navigation-item.astro";
         <a
           href="https://github.com/cravend/site"
           class="hover:decoration-primary focus:decoration-primary p-2 underline underline-offset-2"
-          >View source code</a
         >
+          View source code
+        </a>
       </p>
     </footer>
   </body>
