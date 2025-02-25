@@ -1,0 +1,230 @@
+---
+import { Image } from "astro:assets";
+import profilePicture from "@/images/pic.jpg";
+import Card from "@/components/old/card.astro";
+import ListItem from "@/components/old/list-item.astro";
+import "@/styles/global.css";
+import TimelineItem from "@/components/timeline-item.astro";
+---
+
+<!doctype html>
+<html lang="en" class="bg-primary">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dalton Craven - Full-Stack Software Engineer</title>
+  </head>
+  <body
+    class="text-content selection:bg-primary bg-background border-primary border-y-4 p-4 font-sans selection:text-white"
+  >
+    <a class="sr-only" href="#main"> Skip to main content </a>
+    <header>
+      <nav class="sr-only">
+        <ul>
+          <li><a href="#biography">Biography</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </nav>
+      <section
+        class="container mx-auto flex flex-col items-center gap-4 py-4 md:flex-row-reverse"
+        id="biography"
+      >
+        <div class="flex-1">
+          <h1 class="pb-2 text-6xl font-black">
+            Dalton <span class="text-primary">Craven</span>
+          </h1>
+          <p class="text-2xl">Full-stack software engineer</p>
+          <div class="my-2 border-b md:my-12"></div>
+          <p>
+            I'm all about modern tools, efficient workflows, and creating
+            accessible digital experiences. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+          </p>
+        </div>
+        <Image
+          class="border-primary/5 w-64 rounded-2xl border-4 dark:border-white"
+          src={profilePicture}
+          alt="Princess Diana"
+          loading="eager"
+        />
+      </section>
+    </header>
+
+    <main id="main" class="container mx-auto grid grid-cols-3 gap-4 py-4">
+      <div
+        class="col-span-full flex flex-col gap-4 md:col-span-1 print:col-span-full"
+      >
+        <Card title="Contact" id="contact">
+          <ul>
+            <ListItem>
+              <a
+                class="hover:decoration-primary underline underline-offset-2"
+                href="https://www.linkedin.com/in/daltoncraven/">LinkedIn</a
+              >
+            </ListItem>
+            <ListItem>
+              <a
+                class="hover:decoration-primary underline underline-offset-2"
+                href="https://www.github.com/cravend">GitHub</a
+              >
+            </ListItem>
+            <ListItem>
+              <a
+                class="hover:decoration-primary underline underline-offset-2"
+                href="/resume.pdf">Résumé</a
+              >
+            </ListItem>
+          </ul>
+        </Card>
+        <Card title="Languages" id="languages">
+          <ol>
+            <ListItem>English: native</ListItem>
+            <ListItem>French: fluent</ListItem>
+            <ListItem>ASL: conversational</ListItem>
+          </ol>
+        </Card>
+        <Card title="Skills & expertise" id="skills">
+          <ul>
+            <li class="pb-4">
+              <span class="text-primary font-bold">Web</span>
+              <ul>
+                <ListItem>React</ListItem>
+                <ListItem>Next.js</ListItem>
+                <ListItem>Typescript</ListItem>
+                <ListItem>Tailwind</ListItem>
+                <ListItem>Astro</ListItem>
+              </ul>
+            </li>
+            <li class="pb-4">
+              <span class="text-primary font-bold">Server</span>
+              <ul>
+                <ListItem>Django</ListItem>
+                <ListItem>Starlette</ListItem>
+                <ListItem>REST API design</ListItem>
+                <ListItem>tRPC</ListItem>
+                <ListItem>React server components</ListItem>
+                <ListItem>Server actions & route handlers</ListItem>
+              </ul>
+            </li>
+            <li>
+              <span class="text-primary font-bold">Tooling</span>
+              <ul>
+                <ListItem>Vite</ListItem>
+                <ListItem>CircleCI</ListItem>
+                <ListItem>Cypress</ListItem>
+                <ListItem>Storybook</ListItem>
+              </ul>
+            </li>
+          </ul>
+        </Card>
+      </div>
+      <div
+        class="col-span-full grid grid-cols-2 gap-4 md:col-span-2 print:col-span-full"
+      >
+        <Card
+          title="Experience"
+          id="experience"
+          primary
+          className="col-span-full"
+        >
+          <ol>
+            <TimelineItem subtitle="June 2023 to Present | Paris, France">
+              <Fragment slot="title">
+                Software Engineer @ <a
+                  class="hover:decoration-primary underline underline-offset-2"
+                  href="https://qantev.com">Qantev</a
+                >
+              </Fragment>
+              <p class="pb-1">
+                Focused on building a modern, multilingual SaaS product from the
+                ground up.
+              </p>
+              <ul class="pb-4">
+                <ListItem>
+                  Front-End Leadership: Introduced and championed Next.js 13
+                  with React Server Components
+                </ListItem>
+                <ListItem>
+                  Modern Tooling: Implemented Vite for faster builds and
+                  streamlined CI/CD
+                </ListItem>
+                <ListItem>
+                  Design System & Accessibility: Adopted Ant Design tokens and
+                  custom hooks
+                </ListItem>
+              </ul>
+            </TimelineItem>
+            <TimelineItem
+              subtitle="Graduated: May 2023 | Columbia, SC, United States"
+            >
+              <Fragment slot="title">
+                Bachelor of Science in Computer Science @ The University of
+                South Carolina
+              </Fragment>
+              <p class="pb-1">
+                I pursued a degree in computer science with a focus on software
+                engineering and web development. Through UofSC, I was able to
+                engage in a world-class education. I was a member of the
+                University of South Carolina Honors College (the nation's top
+                public honors program), and was also a Top Scholar -- the
+                university's most prestigious merit-based scholarship cohort.
+              </p>
+              <ul>
+                <ListItem>
+                  Research: I conducted two research projects, one in the field
+                  of linguistics and one in the field of computer science.
+                </ListItem>
+                <ListItem>
+                  Bullet point 2: Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit.
+                </ListItem>
+                <ListItem>
+                  Bullet point 3: Sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </ListItem>
+              </ul>
+            </TimelineItem>
+          </ol>
+        </Card>
+
+        <Card
+          title="Freelancing"
+          id="freelancing"
+          className="print:col-span-full"
+        >
+          <p>
+            Available for projects involving front-end architecture, React
+            Server Components, or WordPress site development. Feel free to reach
+            out to discuss how I can help.
+          </p>
+          <ul>
+            <ListItem>Small business marketing sites</ListItem>
+            <ListItem>React applications</ListItem>
+            <ListItem>Performance optimization</ListItem>
+          </ul>
+        </Card>
+
+        <Card
+          title="Consulting"
+          id="consulting"
+          className="print:col-span-full"
+        >
+          <p>
+            Offering expertise in modern web development practices and
+            architecture decisions.
+          </p>
+          <ul>
+            <ListItem>Technical architecturing</ListItem>
+            <ListItem>Code reviews</ListItem>
+            <ListItem>Team trainings</ListItem>
+          </ul>
+        </Card>
+      </div>
+    </main>
+  </body>
+</html>

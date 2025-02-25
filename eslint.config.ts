@@ -10,6 +10,19 @@ export default tseslint.config(
   ...tseslint.configs.strict,
   ...eslintPluginAstro.configs.recommended,
   ...eslintPluginAstro.configs["jsx-a11y-strict"],
-  { rules: { "arrow-body-style": ["error", "as-needed"] } },
+  {
+    rules: {
+      "arrow-body-style": ["error", "as-needed"],
+      "astro/jsx-a11y/no-redundant-roles": [
+        "error",
+        {
+          nav: ["navigation"],
+          ol: ["list"],
+          ul: ["list"],
+          li: ["listitem"],
+        },
+      ],
+    },
+  },
   eslintConfigPrettier,
 );

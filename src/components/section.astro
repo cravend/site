@@ -1,19 +1,24 @@
 ---
 interface Props {
+  id: string;
   title: string;
-  id?: string;
   variant?: "base" | "secondary";
 }
+
 const { title, id, variant = "base" } = Astro.props;
 ---
 
-<div
+<section
   class:list={[
-    "border-primary/20 rounded-lg border p-4 md:p-6",
+    "py-12",
     variant === "base" ? "bg-background" : "bg-background-secondary",
   ]}
   id={id}
 >
-  <h3 class="text-primary mb-1 text-xl font-semibold md:mb-4">{title}</h3>
-  <slot />
-</div>
+  <div class="container mx-auto px-4">
+    <h2 class="mb-6 text-4xl font-bold">
+      {title}
+    </h2>
+    <slot />
+  </div>
+</section>
