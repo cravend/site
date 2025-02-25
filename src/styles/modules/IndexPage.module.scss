@@ -1,8 +1,0 @@
-@use "../mixins";
-@use "../variables";
-
-.container {
-  @include mixins.container-copy;
-  margin: 0 auto;
-  padding: 1rem;
-}

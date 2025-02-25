@@ -1,0 +1,328 @@
+---
+import TimelineItem from "@/components/timeline-item.astro";
+import Section from "@/components/section.astro";
+import "@/styles/global.css";
+import Card from "@/components/card.astro";
+import NavigationItem from "@/components/navigation-item.astro";
+---
+
+<!doctype html>
+<html lang="en" class="bg-primary">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal website of Dalton Craven, full-stack software engineer based in Paris, France."
+    />
+    <meta name="theme-color" content="#FF5733" />
+    <title>Dalton Craven - Full-Stack Software Engineer</title>
+  </head>
+  <body
+    class="bg-background text-content border-primary border-y-4 font-sans text-pretty"
+  >
+    <a class="sr-only" href="#main">Skip to main content</a>
+    <section
+      class="bg-primary/10 text-content flex h-[calc(100vh-216px)] flex-1 items-center sm:h-[calc(100vh-76px)]"
+    >
+      <div class="container mx-auto flex flex-col gap-6 px-4 py-20">
+        <h1 class="text-6xl font-extrabold md:text-8xl">
+          Dalton
+          <span class="text-primary">Craven</span>
+        </h1>
+        <h2 class="text-3xl font-bold md:text-4xl">
+          Full-Stack Software Engineer
+        </h2>
+        <p class="text-content max-w-2xl text-xl md:text-2xl">
+          I'm all about modern tools, efficient workflows, and creating
+          accessible digital experiences.
+        </p>
+      </div>
+    </section>
+    <nav
+      class="bg-background border-primary top-0 z-10 border-b-4 shadow-xs sm:sticky"
+    >
+      <ul
+        class="marker:text-primary list-inside list-disc px-4 py-2 sm:flex sm:list-none sm:p-0"
+      >
+        <NavigationItem href="#about" title="About" />
+        <NavigationItem href="#experience" title="Experience" />
+        <NavigationItem href="#skills" title="Skills" />
+        <NavigationItem href="#services" title="Services" />
+        <NavigationItem href="#contact" title="Contact" />
+      </ul>
+    </nav>
+
+    <main id="main" class="sm:scroll-m-[76px]">
+      <Section title="About" id="about" variant="secondary">
+        <div class="grid gap-12 md:grid-cols-2">
+          <div class="flex flex-col justify-center gap-6 text-lg">
+            <p>
+              I'm a software engineer based in Paris, France, with experience in
+              building high-performance web applications using modern
+              frameworks. Having led a greenfield Next.js 13 project, I thrive
+              on pushing boundaries and implementing the latest in front-end
+              technology.
+            </p>
+            <p>
+              Whether working independently or collaborating across squads, I
+              consistently aim to elevate both user experiences and development
+              workflows.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 md:grid-cols-1 md:gap-6">
+            <Card title="Location">
+              <p>Paris, France</p>
+            </Card>
+            <Card title="Languages">
+              <ol class="marker:text-primary list-inside list-disc">
+                <li>English</li>
+                <li>French</li>
+                <li>ASL</li>
+              </ol>
+            </Card>
+          </div>
+        </div>
+      </Section>
+
+      <Section title="Experience" id="experience">
+        <ol role="list">
+          <TimelineItem subtitle="November 2024 – Present | Paris, France">
+            <Fragment slot="title">
+              Lead Frontend Engineer @
+              <a
+                class="hover:decoration-primary underline underline-offset-2"
+                href="https://qantev.com">Qantev</a
+              >
+            </Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>
+                Leading a greenfield project from architecture to implementation
+                using TypeScript, Next.js, Zod, and Prisma
+              </li>
+              <li>
+                Architecting OAuth flows, roles, and permissions to ensure data
+                security between customers
+              </li>
+              <li>
+                Designing OAuth flows, roles, and RBAC to ensure data security
+                in a multi-tenancy architecture
+              </li>
+              <li>
+                Leveraging React Server Components to reduce complexity by
+                replacing the API layer
+              </li>
+            </ul>
+          </TimelineItem>
+
+          <TimelineItem subtitle="June 2023 – November 2024 | Paris, France">
+            <Fragment slot="title">
+              Software Engineer @
+              <a
+                class="hover:decoration-primary underline underline-offset-2"
+                href="https://qantev.com">Qantev</a
+              >
+            </Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>
+                Built core features for a production application, integrating a
+                React front with a Django API server
+              </li>
+              <li>
+                Modernized key parts of a legacy codebase by removing obsolete
+                modules, reducing technical debt
+              </li>
+              <li>
+                Proactively addressed developer experience issues such as build
+                times, leading to an 8x speed increase
+              </li>
+              <li>
+                Collaborated with product/design and data science teams to set
+                milestones and ensure on-time feature deliveries
+              </li>
+            </ul>
+          </TimelineItem>
+
+          <TimelineItem subtitle="May 2022 – August 2022 | Paris, France">
+            <Fragment slot="title">
+              Frontend Developer @
+              <a
+                class="hover:decoration-primary underline underline-offset-2"
+                href="https://qantev.com">Qantev</a
+              >
+            </Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>
+                Rewrote approximately 45% of the code from JavaScript to
+                TypeScript to catch bugs early and improve maintainability
+              </li>
+              <li>
+                Simplified API calls by replacing custom utilities with TanStack
+                Query
+              </li>
+            </ul>
+          </TimelineItem>
+
+          <TimelineItem subtitle="June 2021 – September 2021 | Paris, France">
+            <Fragment slot="title">
+              Software Engineering Intern @
+              <a
+                class="hover:decoration-primary underline underline-offset-2"
+                href="https://qantev.com">Qantev</a
+              >
+            </Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>
+                Integrated into the French work culture within a seed-round
+                startup
+              </li>
+              <li>
+                Refactored existing code to meet elevated code safety standards
+                and executed a rigorous QA session
+              </li>
+              <li>Developed a full-stack module to empower sales demos</li>
+            </ul>
+          </TimelineItem>
+
+          <TimelineItem subtitle="May 2020 – August 2020 | Covington, KY, USA">
+            <Fragment slot="title">
+              Software Development Intern @ Cloverleaf
+            </Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>
+                Worked as part of an agile development team to create new
+                functionality for a production application
+              </li>
+              <li>
+                Followed company procedures on feature contribution, legacy code
+                refactoring, and documentation
+              </li>
+            </ul>
+          </TimelineItem>
+
+          <TimelineItem subtitle="December 2019 – May 2020 | Columbia, SC, USA">
+            <Fragment slot="title">
+              UNIX Teaching Assistant @ University of South Carolina
+            </Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>
+                Instructed students on the fundamentals of Linux and UNIX, Bash
+                scripting, and terminal commands
+              </li>
+              <li>
+                Led 8 sections of lab (Monday–Thursday, 2 times per day), with a
+                total reach of 250 students
+              </li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem subtitle="August 2019 – May 2023 | Columbia, SC, USA">
+            <Fragment slot="title">
+              Bachelor of Science in Computer Science @ University of South
+              Carolina
+            </Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>South Carolina Honors College</li>
+              <li>Cumulative GPA: 3.95 | President's List (Eight Semesters)</li>
+              <li>McNair Scholar, University Top Scholars Program</li>
+              <li>Provost Scholar, National Merit Scholarship Program</li>
+            </ul>
+          </TimelineItem>
+        </ol>
+      </Section>
+
+      <Section title="Skills & Expertise" id="skills" variant="secondary">
+        <div class="grid gap-4 md:grid-cols-3 md:gap-6">
+          <Card title="Front">
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>React & Next.js 13</li>
+              <li>TypeScript</li>
+              <li>Tailwind</li>
+              <li>Astro</li>
+            </ul>
+          </Card>
+          <Card title="Back">
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>Django</li>
+              <li>Starlette</li>
+              <li>REST API Design</li>
+              <li>tRPC</li>
+            </ul>
+          </Card>
+          <Card title="Tooling">
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>Vite</li>
+              <li>CI/CD</li>
+              <li>Performance Optimization</li>
+              <li>Testing</li>
+            </ul>
+          </Card>
+        </div>
+      </Section>
+
+      <Section title="Services" id="services">
+        <div class="grid gap-4 sm:grid-cols-2 md:gap-6">
+          <Card variant="secondary" title="Freelancing">
+            <p class="mb-6 text-lg">
+              Available for projects involving modern front-end architecture,
+              React Server Components, or WordPress site development.
+            </p>
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>Small Business Marketing Sites</li>
+              <li>React Applications</li>
+              <li>Performance Optimization</li>
+            </ul>
+          </Card>
+          <Card variant="secondary" title="Consulting">
+            <p class="mb-6 text-lg">
+              Offering expertise in modern web development practices and
+              architecture decisions.
+            </p>
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>Technical Architecture</li>
+              <li>Code Reviews</li>
+              <li>Team Training</li>
+            </ul>
+          </Card>
+        </div>
+      </Section>
+    </main>
+
+    <footer class="bg-background-secondary py-20" id="contact">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="mb-8 text-4xl font-bold">Let's Connect</h2>
+        <p class="mx-auto mb-12 text-xl text-balance">
+          Feel free to reach out if you'd like to chat about a project, discuss
+          open roles, or simply say hello!
+        </p>
+        <ul
+          class="mx-auto grid max-w-max grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6"
+        >
+          <li class="col-span-full sm:col-span-1">
+            <a
+              href="/resume.pdf"
+              class="bg-primary text-background hover:bg-primary-dark inline-block w-full rounded-lg px-8 py-3 font-semibold transition-colors"
+            >
+              Résumé
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com"
+              class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold transition-colors"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com"
+              class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold transition-colors"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
