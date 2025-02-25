@@ -3,6 +3,7 @@ import TimelineItem from "@/components/timeline-item.astro";
 import Section from "@/components/section.astro";
 import "@/styles/global.css";
 import Card from "@/components/card.astro";
+import NavigationItem from "@/components/navigation-item.astro";
 ---
 
 <!doctype html>
@@ -13,8 +14,10 @@ import Card from "@/components/card.astro";
     <title>Dalton Craven - Full-Stack Software Engineer</title>
   </head>
   <body class="bg-background text-content border-primary border-y-4 font-sans">
-    <!-- Hero Section -->
-    <section class="bg-primary/10 text-content flex min-h-screen items-center">
+    <a class="sr-only" href="#main">Skip to main content</a>
+    <section
+      class="bg-primary/10 text-content flex h-[calc(100vh-216px)] flex-1 items-center sm:h-[calc(100vh-76px)]"
+    >
       <div class="container mx-auto flex flex-col gap-6 px-4 py-20">
         <h1 class="text-6xl font-extrabold md:text-8xl">
           Dalton
@@ -29,171 +32,183 @@ import Card from "@/components/card.astro";
         </p>
       </div>
     </section>
+    <nav
+      class="bg-background border-primary top-0 z-10 border-b-4 shadow-xs sm:sticky"
+    >
+      <ul
+        role="navigation"
+        class="marker:text-primary list-inside list-disc px-4 py-2 sm:flex sm:list-none"
+      >
+        <NavigationItem href="#about" title="About" />
+        <NavigationItem href="#experience" title="Experience" />
+        <NavigationItem href="#skills" title="Skills" />
+        <NavigationItem href="#services" title="Services" />
+        <NavigationItem href="#contact" title="Contact" />
+      </ul>
+    </nav>
 
-    <!-- About Section -->
-    <Section title="About" id="about" variant="secondary">
-      <div class="grid gap-12 md:grid-cols-2">
-        <div class="flex flex-col justify-center gap-6 text-lg">
-          <p>
-            I'm a software engineer based in Paris, France, with experience in
-            building high-performance web applications using modern frameworks.
-            Having led a greenfield Next.js 13 project, I thrive on pushing
-            boundaries and implementing the latest in front-end technology.
-          </p>
-          <p>
-            Whether working independently or collaborating across squads, I
-            consistently aim to elevate both user experiences and development
-            workflows.
-          </p>
+    <main id="main">
+      <Section title="About" id="about" variant="secondary">
+        <div class="grid gap-12 md:grid-cols-2">
+          <div class="flex flex-col justify-center gap-6 text-lg">
+            <p>
+              I'm a software engineer based in Paris, France, with experience in
+              building high-performance web applications using modern
+              frameworks. Having led a greenfield Next.js 13 project, I thrive
+              on pushing boundaries and implementing the latest in front-end
+              technology.
+            </p>
+            <p>
+              Whether working independently or collaborating across squads, I
+              consistently aim to elevate both user experiences and development
+              workflows.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 md:grid-cols-1 md:gap-6">
+            <Card title="Location">
+              <p>Paris, France</p>
+            </Card>
+            <Card title="Languages">
+              <ol class="marker:text-primary list-inside list-disc">
+                <li>English</li>
+                <li>French</li>
+                <li>ASL</li>
+              </ol>
+            </Card>
+          </div>
         </div>
-        <div class="grid grid-cols-2 gap-2 md:grid-cols-1 md:gap-6">
-          <Card title="Location">
-            <p>Paris, France</p>
-          </Card>
-          <Card title="Languages">
+      </Section>
+
+      <Section title="Experience" id="experience">
+        <ol role="list">
+          <TimelineItem subtitle="June 2023 to Present | Paris, France">
+            <Fragment slot="title">
+              Software Engineer @ <a
+                class="hover:decoration-primary underline underline-offset-2"
+                href="https://qantev.com">Qantev</a
+              >
+            </Fragment>
+            <p class="pb-1">
+              Focused on building a modern, multilingual SaaS product from the
+              ground up.
+            </p>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>
+                Front-End Leadership: Introduced and championed Next.js 13 with
+                React Server Components
+              </li>
+              <li>
+                Modern Tooling: Implemented Vite for faster builds and
+                streamlined CI/CD
+              </li>
+              <li>
+                Design System & Accessibility: Adopted Ant Design tokens and
+                custom hooks
+              </li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem
+            subtitle="Graduated: May 2023 | Columbia, SC, United States"
+          >
+            <Fragment slot="title">
+              Bachelor of Science in Computer Science @ The University of South
+              Carolina
+            </Fragment>
+            <p class="pb-1">
+              I pursued a degree in computer science with a focus on software
+              engineering and web development. Through UofSC, I was able to
+              engage in a world-class education. I was a member of the
+              University of South Carolina Honors College (the nation's top
+              public honors program), and was also a Top Scholar -- the
+              university's most prestigious merit-based scholarship cohort.
+            </p>
             <ul class="marker:text-primary list-inside list-disc">
-              <li>English</li>
-              <li>French</li>
-              <li>ASL</li>
+              <li>
+                Research: I conducted two research projects, one in the field of
+                linguistics and one in the field of computer science.
+              </li>
+              <li>
+                Bullet point 2: Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit.
+              </li>
+              <li>
+                Bullet point 3: Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </li>
+            </ul>
+          </TimelineItem>
+        </ol>
+      </Section>
+
+      <Section title="Skills & Expertise" id="skills" variant="secondary">
+        <div class="grid gap-4 md:grid-cols-3 md:gap-6">
+          <Card title="Front">
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>React & Next.js 13</li>
+              <li>TypeScript</li>
+              <li>Tailwind</li>
+              <li>Astro</li>
+            </ul>
+          </Card>
+          <Card title="Back">
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>Django</li>
+              <li>Starlette</li>
+              <li>REST API Design</li>
+              <li>tRPC</li>
+            </ul>
+          </Card>
+          <Card title="Tooling">
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>Vite</li>
+              <li>CI/CD</li>
+              <li>Performance Optimization</li>
+              <li>Testing</li>
             </ul>
           </Card>
         </div>
-      </div>
-    </Section>
+      </Section>
 
-    <!-- Experience Section -->
-    <Section title="Experience" id="experience">
-      <ol role="list">
-        <TimelineItem subtitle="June 2023 to Present | Paris, France">
-          <Fragment slot="title">
-            Software Engineer @ <a
-              class="hover:decoration-primary underline underline-offset-2"
-              href="https://qantev.com">Qantev</a
-            >
-          </Fragment>
-          <p class="pb-1">
-            Focused on building a modern, multilingual SaaS product from the
-            ground up.
-          </p>
-          <ul class="marker:text-primary list-inside list-disc pb-4">
-            <li>
-              Front-End Leadership: Introduced and championed Next.js 13 with
-              React Server Components
-            </li>
-            <li>
-              Modern Tooling: Implemented Vite for faster builds and streamlined
-              CI/CD
-            </li>
-            <li>
-              Design System & Accessibility: Adopted Ant Design tokens and
-              custom hooks
-            </li>
-          </ul>
-        </TimelineItem>
-        <TimelineItem
-          subtitle="Graduated: May 2023 | Columbia, SC, United States"
-        >
-          <Fragment slot="title">
-            Bachelor of Science in Computer Science @ The University of South
-            Carolina
-          </Fragment>
-          <p class="pb-1">
-            I pursued a degree in computer science with a focus on software
-            engineering and web development. Through UofSC, I was able to engage
-            in a world-class education. I was a member of the University of
-            South Carolina Honors College (the nation's top public honors
-            program), and was also a Top Scholar -- the university's most
-            prestigious merit-based scholarship cohort.
-          </p>
-          <ul class="marker:text-primary list-inside list-disc">
-            <li>
-              Research: I conducted two research projects, one in the field of
-              linguistics and one in the field of computer science.
-            </li>
-            <li>
-              Bullet point 2: Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit.
-            </li>
-            <li>
-              Bullet point 3: Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </li>
-          </ul>
-        </TimelineItem>
-      </ol>
-    </Section>
+      <Section title="Services" id="services">
+        <div class="grid gap-4 sm:grid-cols-2 md:gap-6">
+          <Card variant="secondary" title="Freelancing">
+            <p class="mb-6 text-lg">
+              Available for projects involving modern front-end architecture,
+              React Server Components, or WordPress site development.
+            </p>
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>Small Business Marketing Sites</li>
+              <li>React Applications</li>
+              <li>Performance Optimization</li>
+            </ul>
+          </Card>
+          <Card variant="secondary" title="Consulting">
+            <p class="mb-6 text-lg">
+              Offering expertise in modern web development practices and
+              architecture decisions.
+            </p>
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>Technical Architecture</li>
+              <li>Code Reviews</li>
+              <li>Team Training</li>
+            </ul>
+          </Card>
+        </div>
+      </Section>
+    </main>
 
-    <!-- Skills Section -->
-    <Section title="Skills & Expertise" id="skills" variant="secondary">
-      <div class="grid gap-4 md:grid-cols-3 md:gap-6">
-        <Card title="Front">
-          <ul class="marker:text-primary list-inside list-disc">
-            <li>React & Next.js 13</li>
-            <li>TypeScript</li>
-            <li>Tailwind</li>
-            <li>Astro</li>
-          </ul>
-        </Card>
-        <Card title="Back">
-          <ul class="marker:text-primary list-inside list-disc">
-            <li>Django</li>
-            <li>Starlette</li>
-            <li>REST API Design</li>
-            <li>tRPC</li>
-          </ul>
-        </Card>
-        <Card title="Tooling">
-          <ul class="marker:text-primary list-inside list-disc">
-            <li>Vite</li>
-            <li>CI/CD</li>
-            <li>Performance Optimization</li>
-            <li>Testing</li>
-          </ul>
-        </Card>
-      </div>
-    </Section>
-
-    <!-- Services Section -->
-    <Section title="Services" id="services">
-      <div class="grid gap-4 md:grid-cols-2 md:gap-6">
-        <Card variant="secondary" title="Freelancing">
-          <p class="mb-6 text-lg">
-            Available for projects involving modern front-end architecture,
-            React Server Components, or WordPress site development.
-          </p>
-          <ul class="marker:text-primary list-inside list-disc">
-            <li>Small Business Marketing Sites</li>
-            <li>React Applications</li>
-            <li>Performance Optimization</li>
-          </ul>
-        </Card>
-        <Card variant="secondary" title="Consulting">
-          <p class="mb-6 text-lg">
-            Offering expertise in modern web development practices and
-            architecture decisions.
-          </p>
-          <ul class="marker:text-primary list-inside list-disc">
-            <li>Technical Architecture</li>
-            <li>Code Reviews</li>
-            <li>Team Training</li>
-          </ul>
-        </Card>
-      </div>
-    </Section>
-
-    <!-- Contact Section -->
-    <section class="bg-background-secondary py-20" id="contact">
+    <footer class="bg-background-secondary py-20" id="contact">
       <div class="container mx-auto px-4 text-center">
         <h2 class="mb-8 text-4xl font-bold">Let's Connect</h2>
-        <p class="mx-auto mb-12 max-w-2xl text-xl">
+        <p class="mx-auto mb-12 text-xl text-balance">
           Feel free to reach out if you'd like to chat about a project, discuss
           open roles, or simply say hello!
         </p>
         <ul
-          class="mx-auto grid max-w-max grid-cols-2 gap-4 md:grid-cols-3 md:gap-6"
+          class="mx-auto grid max-w-max grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6"
         >
           <li
-            class="bg-primary text-background hover:bg-primary-dark col-span-full rounded-lg px-8 py-3 font-semibold transition-colors md:col-span-1"
+            class="bg-primary text-background hover:bg-primary-dark col-span-full rounded-lg px-8 py-3 font-semibold transition-colors sm:col-span-1"
           >
             <a href="/resume.pdf">Résumé</a>
           </li>
@@ -209,6 +224,6 @@ import Card from "@/components/card.astro";
           </li>
         </ul>
       </div>
-    </section>
+    </footer>
   </body>
 </html>

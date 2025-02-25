@@ -10,7 +10,7 @@ const { title, id, variant = "base" } = Astro.props;
 
 <section
   class:list={[
-    "py-12",
+    "py-12 sm:scroll-m-[76px]",
     variant === "base" ? "bg-background" : "bg-background-secondary",
   ]}
   id={id}
