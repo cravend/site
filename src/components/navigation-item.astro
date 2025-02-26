@@ -2,11 +2,12 @@
 interface Props {
   title: string;
   href: string;
+  className?: string;
 }
-const { href, title } = Astro.props;
+const { href, title, className } = Astro.props;
 ---
 
-<li>
+<li class={className}>
   <a
     class="hover:decoration-primary focus:decoration-primary inline-block py-2 underline underline-offset-2 sm:p-4"
     href={href}

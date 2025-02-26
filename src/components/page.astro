@@ -1,0 +1,440 @@
+---
+import TimelineItem from "@/components/timeline-item.astro";
+import Section from "@/components/section.astro";
+import "@/styles/global.css";
+import Card from "@/components/card.astro";
+import NavigationItem from "@/components/navigation-item.astro";
+import { useTranslations } from "@/lib/i18n";
+
+interface Props {
+  lang: "en" | "fr";
+}
+
+const { lang } = Astro.props;
+
+const t = useTranslations(lang);
+---
+
+<!doctype html>
+<html lang={lang} class="bg-primary">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={t("meta.description")} />
+    <meta name="theme-color" content="#FF5733" />
+    <link
+      rel="canonical"
+      href={lang === "en"
+        ? "https://daltoncraven.com"
+        : "https://daltoncraven.com/fr"}
+    />
+    <link rel="alternate" href="https://daltoncraven.com/fr" hreflang="fr" />
+    <link rel="alternate" href="https://daltoncraven.com" hreflang="en" />
+
+    <title>{t("meta.title")}</title>
+  </head>
+  <body
+    class="bg-background text-content border-primary border-y-4 font-sans text-pretty"
+  >
+    <a class="sr-only" href="#main">{t("nav.skip")}</a>
+    <section
+      class="bg-accent dark:bg-background-secondary text-content flex h-[calc(100vh-216px)] flex-1 items-center sm:h-[calc(100vh-76px)]"
+    >
+      <div class="container mx-auto flex flex-col gap-6 px-4 py-20">
+        <h1 class="text-6xl font-extrabold md:text-8xl">
+          Dalton <span class="text-primary">Craven</span>
+        </h1>
+        <h2 class="text-3xl font-bold md:text-4xl">{t("hero.title")}</h2>
+        <p class="text-content max-w-2xl text-xl md:text-2xl">
+          {t("hero.tagline")}
+        </p>
+      </div>
+    </section>
+    <nav
+      class="bg-background border-primary top-0 z-10 border-b-4 shadow-xs sm:sticky"
+    >
+      <ul
+        class="marker:text-primary w-full list-inside list-disc px-4 py-2 sm:flex sm:list-none sm:px-2"
+      >
+        <NavigationItem href="#about" title={t("nav.about")} />
+        <NavigationItem href="#experience" title={t("nav.experience")} />
+        <NavigationItem href="#skills" title={t("nav.skills")} />
+        <NavigationItem href="#services" title={t("nav.services")} />
+        <NavigationItem href="#contact" title={t("nav.contact")} />
+        <NavigationItem
+          href={`/${lang === "en" ? "fr" : ""}`}
+          title={t("nav.languageToggle")}
+          className="md:ml-auto"
+        />
+      </ul>
+    </nav>
+    <main id="main" class="sm:scroll-m-[76px]">
+      <Section title={t("section.about.title")} id="about" variant="secondary">
+        <div class="grid gap-6 md:grid-cols-3 md:gap-12">
+          <div class="flex flex-col justify-center gap-6 text-lg md:col-span-2">
+            <p>{t("section.about.paragraph1")}</p>
+            <p>{t("section.about.paragraph2")}</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 md:grid-cols-1 md:gap-4">
+            <Card title={t("section.about.location.title")}>
+              <p>Paris, France</p>
+            </Card>
+            <Card title={t("section.about.languages.title")}>
+              <ol class="marker:text-primary list-inside list-disc">
+                <li>{t("section.about.languages.english")}</li>
+                <li>{t("section.about.languages.french")}</li>
+                <li>{t("section.about.languages.asl")}</li>
+              </ol>
+            </Card>
+            <Card
+              title={t("section.about.links.title")}
+              className="col-span-full"
+            >
+              <ul class="marker:text-primary list-inside list-disc">
+                <li>
+                  <a
+                    href="mailto:daltoncraven@proton.me"
+                    class="hover:decoration-primary focus:decoration-primary ml-[-0.25rem] p-1 underline underline-offset-2"
+                  >
+                    {t("section.about.links.email")}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/daltoncraven/"
+                    class="hover:decoration-primary focus:decoration-primary ml-[-0.25rem] p-1 underline underline-offset-2"
+                  >
+                    {t("section.about.links.linkedin")}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/cravend"
+                    class="hover:decoration-primary focus:decoration-primary ml-[-0.25rem] p-1 underline underline-offset-2"
+                  >
+                    {t("section.about.links.github")}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/resume.pdf"
+                    class="hover:decoration-primary focus:decoration-primary ml-[-0.25rem] p-1 underline underline-offset-2"
+                  >
+                    {t("section.about.links.resume")}
+                  </a>
+                </li>
+              </ul>
+            </Card>
+          </div>
+        </div>
+      </Section>
+
+      <Section title={t("section.experience.title")} id="experience">
+        <ol role="list">
+          <TimelineItem subtitle={t("experience.item1.subtitle")}>
+            <Fragment slot="title">{t("experience.item1.title")}</Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>{t("experience.item1.point1")}</li>
+              <li>{t("experience.item1.point2")}</li>
+              <li>{t("experience.item1.point3")}</li>
+              <li>{t("experience.item1.point4")}</li>
+            </ul>
+          </TimelineItem>
+
+          <TimelineItem subtitle={t("experience.item2.subtitle")}>
+            <Fragment slot="title">{t("experience.item2.title")}</Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>{t("experience.item2.point1")}</li>
+              <li>{t("experience.item2.point2")}</li>
+              <li>{t("experience.item2.point3")}</li>
+              <li>{t("experience.item2.point4")}</li>
+            </ul>
+          </TimelineItem>
+
+          <TimelineItem subtitle={t("experience.item3.subtitle")}>
+            <Fragment slot="title">{t("experience.item3.title")}</Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>{t("experience.item3.point1")}</li>
+              <li>{t("experience.item3.point2")}</li>
+            </ul>
+          </TimelineItem>
+
+          <TimelineItem subtitle={t("experience.item4.subtitle")}>
+            <Fragment slot="title">{t("experience.item4.title")}</Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>{t("experience.item4.point1")}</li>
+              <li>{t("experience.item4.point2")}</li>
+              <li>{t("experience.item4.point3")}</li>
+            </ul>
+          </TimelineItem>
+
+          <TimelineItem subtitle={t("experience.item5.subtitle")}>
+            <Fragment slot="title">{t("experience.item5.title")}</Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>{t("experience.item5.point1")}</li>
+              <li>{t("experience.item5.point2")}</li>
+            </ul>
+          </TimelineItem>
+
+          <TimelineItem subtitle={t("experience.item6.subtitle")}>
+            <Fragment slot="title">{t("experience.item6.title")}</Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>{t("experience.item6.point1")}</li>
+              <li>{t("experience.item6.point2")}</li>
+            </ul>
+          </TimelineItem>
+
+          <TimelineItem subtitle={t("experience.item7.subtitle")}>
+            <Fragment slot="title">{t("experience.item7.title")}</Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              <li>{t("experience.item7.point1")}</li>
+              <li>{t("experience.item7.point2")}</li>
+              <li>{t("experience.item7.point3")}</li>
+              <li>{t("experience.item7.point4")}</li>
+            </ul>
+          </TimelineItem>
+        </ol>
+      </Section>
+
+      <Section
+        title={t("section.skills.title")}
+        id="skills"
+        variant="secondary"
+      >
+        <div class="grid gap-4 md:grid-cols-3 md:gap-6">
+          <Card title={t("section.skills.favorites.title")}>
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>{t("section.skills.favorites.item1")}</li>
+              <li>{t("section.skills.favorites.item2")}</li>
+              <li>{t("section.skills.favorites.item3")}</li>
+              <li>{t("section.skills.favorites.item4")}</li>
+              <li>{t("section.skills.favorites.item5")}</li>
+            </ul>
+          </Card>
+          <Card title={t("section.skills.code.title")}>
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>{t("section.skills.code.item1")}</li>
+              <li>{t("section.skills.code.item2")}</li>
+              <li>{t("section.skills.code.item3")}</li>
+              <li>{t("section.skills.code.item4")}</li>
+              <li>{t("section.skills.code.item5")}</li>
+            </ul>
+          </Card>
+          <Card title={t("section.skills.tooling.title")}>
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>{t("section.skills.tooling.item1")}</li>
+              <li>{t("section.skills.tooling.item2")}</li>
+              <li>{t("section.skills.tooling.item3")}</li>
+              <li>{t("section.skills.tooling.item4")}</li>
+              <li>{t("section.skills.tooling.item5")}</li>
+            </ul>
+          </Card>
+        </div>
+      </Section>
+
+      <Section title={t("section.services.title")} id="services">
+        <div class="grid gap-4 sm:grid-cols-2 md:gap-6">
+          <Card
+            variant="secondary"
+            title={t("section.services.freelancing.title")}
+          >
+            <p class="mb-6 text-lg text-balance">
+              {t("section.services.freelancing.description")}
+            </p>
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>
+                <span class="font-bold"
+                  >{t("section.services.freelancing.point1.keyword")}</span
+                >{" "}{t("section.services.freelancing.point1.text")}
+              </li>
+              <li>
+                <span class="font-bold"
+                  >{t("section.services.freelancing.point2.keyword")}</span
+                >{" "}{t("section.services.freelancing.point2.text")}
+              </li>
+              <li>
+                <span class="font-bold"
+                  >{t("section.services.freelancing.point3.keyword")}</span
+                >{" "}{t("section.services.freelancing.point3.text")}
+              </li>
+            </ul>
+          </Card>
+          <Card
+            variant="secondary"
+            title={t("section.services.consulting.title")}
+          >
+            <p class="mb-6 text-lg">
+              {t("section.services.consulting.description")}
+            </p>
+            <ul class="marker:text-primary list-inside list-disc">
+              <li>
+                <span class="font-bold"
+                  >{t("section.services.consulting.point1.keyword")}</span
+                >{" "}{t("section.services.consulting.point1.text")}
+              </li>
+              <li>
+                <span class="font-bold"
+                  >{t("section.services.consulting.point2.keyword")}</span
+                >{" "}{t("section.services.consulting.point2.text")}
+              </li>
+              <li>
+                <span class="font-bold"
+                  >{t("section.services.consulting.point3.keyword")}</span
+                >{" "}{t("section.services.consulting.point3.text")}
+              </li>
+            </ul>
+          </Card>
+        </div>
+      </Section>
+    </main>
+
+    <section class="bg-background-secondary py-12" id="contact">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="mb-8 text-4xl font-bold">{t("section.contact.title")}</h2>
+        <p class="mx-auto mb-12 text-xl text-balance">
+          {t("section.contact.description")}
+        </p>
+        <ul
+          class="mx-auto grid max-w-max grid-cols-2 gap-4 sm:grid-cols-4 md:gap-6"
+        >
+          <li>
+            <a
+              href="mailto:daltoncraven@proton.me"
+              class="text-content border-primary hover:bg-accent bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
+            >
+              {t("section.contact.email")}
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/daltoncraven/"
+              class="text-content border-primary hover:bg-accent bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
+            >
+              {t("section.contact.linkedin")}
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/cravend"
+              class="text-content border-primary hover:bg-accent bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
+            >
+              {t("section.contact.github")}
+            </a>
+          </li>
+          <li>
+            <a
+              href="/resume.pdf"
+              class="text-content border-primary hover:bg-accent bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
+            >
+              {t("section.contact.resume")}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <p class="text-content container mx-auto p-2 text-center text-sm">
+        {t("footer.lastBuiltAt")}
+        {new Date().toLocaleString(lang)}.
+        <a
+          href="https://github.com/cravend/site"
+          class="hover:decoration-primary focus:decoration-primary p-2 underline underline-offset-2"
+        >
+          {t("footer.viewSource")}</a
+        >
+        <button
+          id="toggleTheme"
+          class="hover:decoration-primary focus:decoration-primary cursor-pointer p-2 underline underline-offset-2"
+        >
+          {t("footer.themeToggle")}
+        </button>
+      </p>
+      <script>
+        const lang = document.documentElement.lang === "fr" ? "fr" : "en";
+        const themeToggleButton = document.querySelector("#toggleTheme");
+
+        const THEMES = {
+          green: {
+            "--color-primary": "var(--color-lime-700)",
+            "--color-accent": "var(--color-lime-50)",
+          },
+          blue: {
+            "--color-primary": "var(--color-cyan-700)",
+            "--color-accent": "var(--color-cyan-50)",
+          },
+          purple: {
+            "--color-primary": "var(--color-purple-700)",
+            "--color-accent": "var(--color-purple-50)",
+          },
+          orange: {
+            "--color-primary": "var(--color-orange-700)",
+            "--color-accent": "var(--color-orange-50)",
+          },
+          "arc theme": {
+            "--color-primary": "var(--arc-palette-foregroundPrimary)",
+            "--color-accent": "var(--arc-palette-background)",
+          },
+        } as const;
+
+        type Theme = keyof typeof THEMES;
+
+        if (themeToggleButton) {
+          let currentTheme: Theme = "orange";
+
+          const NEXT_THEME: Record<Theme, Theme> = {
+            orange: "purple",
+            "arc theme": "purple",
+            purple: "blue",
+            blue: "green",
+            green: "orange",
+          };
+
+          const THEME_LABELS = (
+            {
+              en: {
+                orange: "Set theme to orange",
+                purple: "Set theme to purple",
+                blue: "Set theme to blue",
+                green: "Set theme to green",
+                "arc theme": "Set theme to arc theme",
+              },
+              fr: {
+                orange: "Définir le thème sur orange",
+                purple: "Définir le thème sur violet",
+                blue: "Définir le thème sur bleu",
+                green: "Définir le thème sur vert",
+                "arc theme": "Définir le thème sur le thème arc",
+              },
+            } as const
+          )[lang];
+
+          setTimeout(() => {
+            if (
+              getComputedStyle(document.documentElement).getPropertyValue(
+                "--arc-palette-background",
+              )
+            ) {
+              NEXT_THEME.orange = "arc theme";
+            }
+
+            themeToggleButton.textContent =
+              THEME_LABELS[NEXT_THEME[currentTheme]];
+          }, 1000);
+          themeToggleButton.textContent =
+            THEME_LABELS[NEXT_THEME[currentTheme]];
+
+          themeToggleButton.addEventListener("click", () => {
+            currentTheme = NEXT_THEME[currentTheme];
+
+            Object.entries(THEMES[currentTheme]).forEach(([key, value]) => {
+              document.documentElement.style.setProperty(key, value);
+            });
+
+            themeToggleButton.textContent =
+              THEME_LABELS[NEXT_THEME[currentTheme]];
+          });
+        }
+      </script>
+    </footer>
+  </body>
+</html>
