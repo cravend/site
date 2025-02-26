@@ -5,7 +5,8 @@ import "@/styles/global.css";
 import Card from "@/components/card.astro";
 import NavigationItem from "@/components/navigation-item.astro";
 import { useTranslations } from "@/lib/i18n";
-
+import Analytics from "@vercel/analytics/astro";
+import SpeedInsights from "@vercel/speed-insights/astro";
 interface Props {
   lang: "en" | "fr";
 }
@@ -436,5 +437,7 @@ const t = useTranslations(lang);
         }
       </script>
     </footer>
+    <Analytics />
+    <SpeedInsights />
   </body>
 </html>
