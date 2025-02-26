@@ -335,7 +335,7 @@ const t = useTranslations(lang);
     <footer>
       <p class="text-content container mx-auto p-2 text-center text-sm">
         {t("footer.lastBuiltAt")}
-        {new Date().toLocaleString(lang)}.
+        {new Date().toLocaleString(lang, { timeZoneName: "short" })}.
         <a
           href="https://github.com/cravend/site"
           class="hover:decoration-primary focus:decoration-primary p-2 underline underline-offset-2"
