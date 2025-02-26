@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: rgb(255 255 255);
-  --color-background-secondary: rgb(250 250 250);
-  --color-primary: rgb(255, 87, 51);
-  --color-primary-dark: rgb(245, 45, 0);
-  --color-content: rgb(15, 15, 15);
+  --color-primary: var(--color-orange-600);
+  --color-accent: var(--color-orange-50);
+
+  --color-background: var(--color-stone-50);
+  --color-background-secondary: var(--color-stone-100);
+  --color-content: var(--color-stone-900);
 }
 
 :root {
   @variant dark {
-    --color-background: rgb(15, 15, 15);
-    --color-background-secondary: rgb(26, 26, 26);
-    --color-primary: rgb(255, 87, 51);
-    --color-primary-dark: rgb(245, 45, 0);
-    --color-content: rgb(245, 245, 245);
+    --color-accent: var(--color-orange-900);
+    --color-background: var(--color-stone-800);
+    --color-background-secondary: var(--color-stone-900);
+    --color-content: var(--color-stone-50);
   }
   :focus-visible {
     outline: 3px solid var(--color-background);

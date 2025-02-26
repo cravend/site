@@ -23,7 +23,7 @@ import NavigationItem from "@/components/navigation-item.astro";
   >
     <a class="sr-only" href="#main">Skip to main content</a>
     <section
-      class="bg-primary/10 text-content flex h-[calc(100vh-216px)] flex-1 items-center sm:h-[calc(100vh-76px)]"
+      class="bg-accent dark:bg-background-secondary text-content flex h-[calc(100vh-216px)] flex-1 items-center sm:h-[calc(100vh-76px)]"
     >
       <div class="container mx-auto flex flex-col gap-6 px-4 py-20">
         <h1 class="text-6xl font-extrabold md:text-8xl">
@@ -158,13 +158,7 @@ import NavigationItem from "@/components/navigation-item.astro";
           </TimelineItem>
 
           <TimelineItem subtitle="June 2023 – November 2024 | Paris, France">
-            <Fragment slot="title">
-              Software Engineer @
-              <a
-                class="hover:decoration-primary focus:decoration-primary ml-[-0.25rem] p-1 underline underline-offset-2"
-                href="https://qantev.com">Qantev</a
-              >
-            </Fragment>
+            <Fragment slot="title"> Software Engineer @ Qantev</Fragment>
             <ul class="marker:text-primary list-inside list-disc pb-4">
               <li>
                 Built core features for a production application, integrating a
@@ -186,13 +180,7 @@ import NavigationItem from "@/components/navigation-item.astro";
           </TimelineItem>
 
           <TimelineItem subtitle="May 2022 – August 2022 | Paris, France">
-            <Fragment slot="title">
-              Frontend Developer @
-              <a
-                class="hover:decoration-primary focus:decoration-primary ml-[-0.25rem] p-1 underline underline-offset-2"
-                href="https://qantev.com">Qantev</a
-              >
-            </Fragment>
+            <Fragment slot="title"> Frontend Developer @ Qantev </Fragment>
             <ul class="marker:text-primary list-inside list-disc pb-4">
               <li>
                 Rewrote approximately 45% of the code from JavaScript to
@@ -207,11 +195,7 @@ import NavigationItem from "@/components/navigation-item.astro";
 
           <TimelineItem subtitle="June 2021 – September 2021 | Paris, France">
             <Fragment slot="title">
-              Software Engineering Intern @
-              <a
-                class="hover:decoration-primary focus:decoration-primary ml-[-0.25rem] p-1 underline underline-offset-2"
-                href="https://qantev.com">Qantev</a
-              >
+              Software Engineering Intern @ Qantev
             </Fragment>
             <ul class="marker:text-primary list-inside list-disc pb-4">
               <li>
@@ -373,7 +357,7 @@ import NavigationItem from "@/components/navigation-item.astro";
           <li>
             <a
               href="mailto:daltoncraven@proton.me"
-              class="bg-primary text-background hover:bg-primary-dark inline-block w-full rounded-lg px-8 py-3 font-semibold"
+              class="text-content border-primary hover:bg-accent bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
             >
               Email
             </a>
@@ -381,7 +365,7 @@ import NavigationItem from "@/components/navigation-item.astro";
           <li>
             <a
               href="https://www.linkedin.com/in/daltoncraven/"
-              class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
+              class="text-content border-primary hover:bg-accent bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
             >
               LinkedIn
             </a>
@@ -389,7 +373,7 @@ import NavigationItem from "@/components/navigation-item.astro";
           <li>
             <a
               href="https://github.com/cravend"
-              class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
+              class="text-content border-primary hover:bg-accent bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
             >
               GitHub
             </a>
@@ -397,7 +381,7 @@ import NavigationItem from "@/components/navigation-item.astro";
           <li>
             <a
               href="/resume.pdf"
-              class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
+              class="text-content border-primary hover:bg-accent bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
             >
               Résumé
             </a>
@@ -412,9 +396,76 @@ import NavigationItem from "@/components/navigation-item.astro";
           href="https://github.com/cravend/site"
           class="hover:decoration-primary focus:decoration-primary p-2 underline underline-offset-2"
         >
-          View source code
-        </a>
+          View source code</a
+        >
+        <button
+          id="toggleTheme"
+          class="hover:decoration-primary focus:decoration-primary cursor-pointer p-2 underline underline-offset-2"
+        >
+          Set color to green
+        </button>
       </p>
+      <script>
+        const themeToggleButton = document.querySelector("#toggleTheme");
+
+        const THEMES = {
+          green: {
+            "--color-primary": "var(--color-lime-700)",
+            "--color-accent": "var(--color-lime-50)",
+          },
+          blue: {
+            "--color-primary": "var(--color-cyan-700)",
+            "--color-accent": "var(--color-cyan-50)",
+          },
+          purple: {
+            "--color-primary": "var(--color-purple-700)",
+            "--color-accent": "var(--color-purple-50)",
+          },
+          orange: {
+            "--color-primary": "var(--color-orange-700)",
+            "--color-accent": "var(--color-orange-50)",
+          },
+          "arc theme": {
+            "--color-primary": "var(--arc-palette-foregroundPrimary)",
+            "--color-accent": "var(--arc-palette-background)",
+          },
+        } as const;
+
+        type Theme = keyof typeof THEMES;
+
+        if (themeToggleButton) {
+          let currentTheme: Theme = "orange";
+
+          const NEXT_THEME: Record<Theme, Theme> = {
+            orange: "purple",
+            "arc theme": "purple",
+            purple: "blue",
+            blue: "green",
+            green: "orange",
+          };
+
+          setTimeout(function () {
+            const isArc = !!getComputedStyle(
+              document.documentElement,
+            ).getPropertyValue("--arc-palette-background");
+            if (isArc) {
+              NEXT_THEME.orange = "arc theme";
+            }
+
+            themeToggleButton.textContent = `Set color to ${NEXT_THEME[currentTheme]}`;
+          }, 1000);
+
+          themeToggleButton.addEventListener("click", () => {
+            currentTheme = NEXT_THEME[currentTheme];
+
+            Object.entries(THEMES[currentTheme]).forEach(([key, value]) => {
+              document.documentElement.style.setProperty(key, value);
+            });
+
+            themeToggleButton.textContent = `Set color to ${NEXT_THEME[currentTheme]}`;
+          });
+        }
+      </script>
     </footer>
   </body>
 </html>
