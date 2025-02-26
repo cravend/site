@@ -36,10 +36,8 @@ export const TRANSLATIONS = {
     "experience.item1.point1":
       "Leading a greenfield project from architecture to implementation using TypeScript, Next.js, Zod, and Prisma",
     "experience.item1.point2":
-      "Architecting OAuth flows, roles, and permissions to ensure data security between customers",
-    "experience.item1.point3":
       "Designing OAuth flows, roles, and RBAC to ensure data security in a multi-tenancy architecture",
-    "experience.item1.point4":
+    "experience.item1.point3":
       "Leveraging React Server Components to reduce complexity by replacing the API layer",
 
     "experience.item2.title": "Software Engineer @ Qantev",
@@ -194,11 +192,9 @@ export const TRANSLATIONS = {
     "experience.item1.point1":
       "Diriger un projet greenfield de l'architecture à la mise en œuvre en utilisant TypeScript, Next.js, Zod et Prisma",
     "experience.item1.point2":
-      "Concevoir des flux OAuth, des rôles et des permissions pour garantir la sécurité des données entre les clients",
+      "Concevoir des flows OAuth, des rôles et une gestion des accès basée sur les rôles (RBAC) pour assurer la sécurité des données dans une architecture multi-locataire",
     "experience.item1.point3":
-      "Concevoir des flux OAuth, des rôles et une gestion des accès basée sur les rôles (RBAC) pour assurer la sécurité des données dans une architecture multi-locataire",
-    "experience.item1.point4":
-      "Exploiter les composants serveur de React pour réduire la complexité en remplaçant la couche API",
+      "Exploiter les composants serveur de React pour réduire la complexité en remplaçant une API",
 
     "experience.item2.title": "Software Engineer @ Qantev",
     "experience.item2.subtitle": "Juin 2023 – Novembre 2024 | Paris, France",
