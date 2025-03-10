@@ -39,7 +39,7 @@ const t = useTranslations(lang);
   >
     <a class="sr-only" href="#main">{t("nav.skip")}</a>
     <section
-      class="bg-accent dark:bg-background-secondary text-content flex h-[calc(100vh-216px)] flex-1 items-center sm:h-[calc(100vh-76px)]"
+      class="bg-primary/10 dark:bg-background-secondary text-content flex h-[calc(100vh-216px)] flex-1 items-center sm:h-[calc(100vh-76px)]"
     >
       <div class="container mx-auto flex flex-col gap-6 px-4 py-20">
         <h1 class="text-6xl font-extrabold md:text-8xl">
@@ -231,7 +231,7 @@ const t = useTranslations(lang);
           <li>
             <a
               href="mailto:daltoncraven@proton.me"
-              class="text-content border-primary hover:bg-accent bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
+              class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
             >
               {t("section.contact.email")}
             </a>
@@ -239,7 +239,7 @@ const t = useTranslations(lang);
           <li>
             <a
               href="https://www.linkedin.com/in/daltoncraven/"
-              class="text-content border-primary hover:bg-accent bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
+              class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
             >
               {t("section.contact.linkedin")}
             </a>
@@ -247,7 +247,7 @@ const t = useTranslations(lang);
           <li>
             <a
               href="https://github.com/cravend"
-              class="text-content border-primary hover:bg-accent bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
+              class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
             >
               {t("section.contact.github")}
             </a>
@@ -255,7 +255,7 @@ const t = useTranslations(lang);
           <li>
             <a
               href="/resume.pdf"
-              class="text-content border-primary hover:bg-accent bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
+              class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
             >
               {t("section.contact.resume")}
             </a>
@@ -287,23 +287,18 @@ const t = useTranslations(lang);
         const THEMES = {
           green: {
             "--color-primary": "var(--color-lime-700)",
-            "--color-accent": "var(--color-lime-50)",
           },
           blue: {
             "--color-primary": "var(--color-cyan-700)",
-            "--color-accent": "var(--color-cyan-50)",
           },
           purple: {
-            "--color-primary": "var(--color-purple-700)",
-            "--color-accent": "var(--color-purple-50)",
+            "--color-primary": "var(--color-purple-600)",
           },
           orange: {
             "--color-primary": "var(--color-orange-700)",
-            "--color-accent": "var(--color-orange-50)",
           },
           "arc theme": {
             "--color-primary": "var(--arc-palette-foregroundPrimary)",
-            "--color-accent": "var(--arc-palette-background)",
           },
         } as const;
 
