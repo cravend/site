@@ -32,65 +32,54 @@ export const TRANSLATIONS = {
     "section.experience.title": "Experience",
     "experience.item1.title": "Lead Frontend Engineer @ Qantev",
     "experience.item1.subtitle": "November 2024 – Present | Paris, France",
-    "experience.item1.point1":
+    "experience.item1.points": [
       "Leading a greenfield project from architecture to implementation using TypeScript, Next.js, Zod, and Prisma",
-    "experience.item1.point2":
       "Designing OAuth flows, roles, and RBAC to ensure data security in a multi-tenancy architecture",
-    "experience.item1.point3":
       "Leveraging React Server Components to reduce complexity by replacing the API layer",
-
+    ],
     "experience.item2.title": "Software Engineer @ Qantev",
     "experience.item2.subtitle": "June 2023 – November 2024 | Paris, France",
-    "experience.item2.point1":
+    "experience.item2.points": [
       "Built core features for a production application, integrating a React front with a Django API server",
-    "experience.item2.point2":
       "Modernized key parts of a legacy codebase by removing obsolete modules, reducing technical debt",
-    "experience.item2.point3":
       "Proactively addressed developer experience issues such as build times, leading to an 8x speed increase",
-    "experience.item2.point4":
       "Worked in an Agile environment, delivering features iteratively and collaborating with product/design teams",
-
+    ],
     "experience.item3.title": "Frontend Developer @ Qantev",
     "experience.item3.subtitle": "May 2022 – August 2022 | Paris, France",
-    "experience.item3.point1":
+    "experience.item3.points": [
       "Rewrote approximately 45% of the code from JavaScript to TypeScript to catch bugs early and improve maintainability",
-    "experience.item3.point2":
       "Simplified API calls by replacing custom utilities with TanStack Query",
-
+    ],
     "experience.item4.title": "Software Engineering Intern @ Qantev",
     "experience.item4.subtitle": "June 2021 – September 2021 | Paris, France",
-    "experience.item4.point1":
+    "experience.item4.points": [
       "Integrated into the French work culture within a seed-round startup",
-    "experience.item4.point2":
       "Refactored existing code to meet elevated code safety standards and executed a rigorous QA session",
-    "experience.item4.point3":
       "Developed a full-stack module to empower sales demos",
-
+    ],
     "experience.item5.title": "Software Development Intern @ Cloverleaf",
     "experience.item5.subtitle": "May 2020 – August 2020 | Covington, KY, USA",
-    "experience.item5.point1":
+    "experience.item5.points": [
       "Worked as part of an agile development team to create new functionality for a production application",
-    "experience.item5.point2":
       "Followed company procedures on feature contribution, legacy code refactoring, and documentation",
-
+    ],
     "experience.item6.title":
       "UNIX Teaching Assistant @ University of South Carolina",
     "experience.item6.subtitle": "December 2019 – May 2020 | Columbia, SC, USA",
-    "experience.item6.point1":
+    "experience.item6.points": [
       "Instructed students on the fundamentals of Linux and UNIX, Bash scripting, and terminal commands",
-    "experience.item6.point2":
       "Led 8 sections of lab (Monday–Thursday, 2 times per day), with a total reach of 250 students",
-
+    ],
     "experience.item7.title":
       "Bachelor of Science in Computer Science @ University of South Carolina",
     "experience.item7.subtitle": "August 2019 – May 2023 | Columbia, SC, USA",
-    "experience.item7.point1": "South Carolina Honors College",
-    "experience.item7.point2":
+    "experience.item7.points": [
+      "South Carolina Honors College",
       "Cumulative GPA: 3.95 | President's List (Eight Semesters)",
-    "experience.item7.point3":
       "McNair Scholar, University Top Scholars Program",
-    "experience.item7.point4":
       "Provost Scholar, National Merit Scholarship Program",
+    ],
 
     "section.skills.title": "Skills & Expertise",
     "section.skills.favorites.title": "My Favorites",
@@ -159,65 +148,54 @@ export const TRANSLATIONS = {
     "section.experience.title": "Expérience",
     "experience.item1.title": "Lead Frontend Engineer @ Qantev",
     "experience.item1.subtitle": "Novembre 2024 – Présent | Paris, France",
-    "experience.item1.point1":
+    "experience.item1.points": [
       "Diriger un projet greenfield de l'architecture à la mise en œuvre en utilisant TypeScript, Next.js, Zod et Prisma",
-    "experience.item1.point2":
       "Concevoir des flows OAuth, des rôles et une gestion des accès basée sur les rôles (RBAC) pour assurer la sécurité des données dans une architecture multi-locataire",
-    "experience.item1.point3":
       "Exploiter les composants serveur de React pour réduire la complexité en remplaçant une API",
-
+    ],
     "experience.item2.title": "Software Engineer @ Qantev",
     "experience.item2.subtitle": "Juin 2023 – Novembre 2024 | Paris, France",
-    "experience.item2.point1":
+    "experience.item2.points": [
       "Développé des fonctionnalités essentielles pour une application en production, intégrant un front-end React avec un serveur API Django",
-    "experience.item2.point2":
       "Modernisé des parties clés d'une base de code héritée en supprimant des modules obsolètes, réduisant ainsi la dette technique",
-    "experience.item2.point3":
       "Résolu de manière proactive des problèmes liés à l'expérience développeur, tels que les temps de compilation, menant à une augmentation de la vitesse par 8",
-    "experience.item2.point4":
       "Travaillé dans un environnement Agile, en livrant des fonctionnalités de manière itérative et en collaborant avec les équipes produit/design",
-
+    ],
     "experience.item3.title": "Frontend Developer @ Qantev",
     "experience.item3.subtitle": "Mai 2022 – Août 2022 | Paris, France",
-    "experience.item3.point1":
+    "experience.item3.points": [
       "Réécrit environ 45% du code de JavaScript à TypeScript pour détecter les bugs tôt et améliorer la maintenabilité",
-    "experience.item3.point2":
       "Simplifié les appels API en remplaçant des utilitaires personnalisés par TanStack Query",
-
+    ],
     "experience.item4.title": "Software Engineering Intern @ Qantev",
     "experience.item4.subtitle": "Juin 2021 – Septembre 2021 | Paris, France",
-    "experience.item4.point1":
+    "experience.item4.points": [
       "Intégré à la culture de travail française au sein d'une startup en phase de démarrage (seed-round)",
-    "experience.item4.point2":
       "Refactorisé le code existant pour répondre à des normes de sécurité de code élevées et mené une session de contrôle qualité rigoureuse",
-    "experience.item4.point3":
       "Développé un module full-stack pour dynamiser les démonstrations commerciales",
-
+    ],
     "experience.item5.title": "Software Development Intern @ Cloverleaf",
     "experience.item5.subtitle": "Mai 2020 – Août 2020 | Covington, KY, USA",
-    "experience.item5.point1":
+    "experience.item5.points": [
       "Travaillé au sein d'une équipe de développement agile pour créer de nouvelles fonctionnalités pour une application en production",
-    "experience.item5.point2":
       "Suivi les procédures de l'entreprise pour la contribution de nouvelles fonctionnalités, la refactorisation du code hérité et la documentation",
-
+    ],
     "experience.item6.title":
       "UNIX Teaching Assistant @ University of South Carolina",
     "experience.item6.subtitle": "Décembre 2019 – Mai 2020 | Columbia, SC, USA",
-    "experience.item6.point1":
+    "experience.item6.points": [
       "Enseigné aux étudiants les bases de Linux et UNIX, la programmation en Bash et les commandes du terminal",
-    "experience.item6.point2":
       "Animé 8 sections de laboratoire (du lundi au jeudi, 2 fois par jour), atteignant un total de 250 étudiants",
-
+    ],
     "experience.item7.title":
       "Bachelor's of Science in Computer Science @ University of South Carolina",
     "experience.item7.subtitle": "Août 2019 – Mai 2023 | Columbia, SC, USA",
-    "experience.item7.point1": "South Carolina Honors College",
-    "experience.item7.point2":
+    "experience.item7.points": [
+      "South Carolina Honors College",
       "Moyenne cumulative : 3,95 | Liste du Président (huit semestres)",
-    "experience.item7.point3":
       "Boursier McNair, Programme des meilleurs étudiants de l'université",
-    "experience.item7.point4":
       "Boursier du Provost, Programme national de bourses au mérite",
+    ],
 
     "section.skills.title": "Compétences & Expertise",
     "section.skills.favorites.title": "Mes favoris",

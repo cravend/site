@@ -134,62 +134,49 @@ const t = useTranslations(lang);
           <TimelineItem subtitle={t("experience.item1.subtitle")}>
             <Fragment slot="title">{t("experience.item1.title")}</Fragment>
             <ul class="marker:text-primary list-inside list-disc pb-4">
-              <li>{t("experience.item1.point1")}</li>
-              <li>{t("experience.item1.point2")}</li>
-              <li>{t("experience.item1.point3")}</li>
+              {t("experience.item1.points").map((point) => <li>{point}</li>)}
             </ul>
           </TimelineItem>
 
           <TimelineItem subtitle={t("experience.item2.subtitle")}>
             <Fragment slot="title">{t("experience.item2.title")}</Fragment>
             <ul class="marker:text-primary list-inside list-disc pb-4">
-              <li>{t("experience.item2.point1")}</li>
-              <li>{t("experience.item2.point2")}</li>
-              <li>{t("experience.item2.point3")}</li>
-              <li>{t("experience.item2.point4")}</li>
+              {t("experience.item2.points").map((point) => <li>{point}</li>)}
             </ul>
           </TimelineItem>
 
           <TimelineItem subtitle={t("experience.item3.subtitle")}>
             <Fragment slot="title">{t("experience.item3.title")}</Fragment>
             <ul class="marker:text-primary list-inside list-disc pb-4">
-              <li>{t("experience.item3.point1")}</li>
-              <li>{t("experience.item3.point2")}</li>
+              {t("experience.item3.points").map((point) => <li>{point}</li>)}
             </ul>
           </TimelineItem>
 
           <TimelineItem subtitle={t("experience.item4.subtitle")}>
             <Fragment slot="title">{t("experience.item4.title")}</Fragment>
             <ul class="marker:text-primary list-inside list-disc pb-4">
-              <li>{t("experience.item4.point1")}</li>
-              <li>{t("experience.item4.point2")}</li>
-              <li>{t("experience.item4.point3")}</li>
+              {t("experience.item4.points").map((point) => <li>{point}</li>)}
             </ul>
           </TimelineItem>
 
           <TimelineItem subtitle={t("experience.item5.subtitle")}>
             <Fragment slot="title">{t("experience.item5.title")}</Fragment>
             <ul class="marker:text-primary list-inside list-disc pb-4">
-              <li>{t("experience.item5.point1")}</li>
-              <li>{t("experience.item5.point2")}</li>
+              {t("experience.item5.points").map((point) => <li>{point}</li>)}
             </ul>
           </TimelineItem>
 
           <TimelineItem subtitle={t("experience.item6.subtitle")}>
             <Fragment slot="title">{t("experience.item6.title")}</Fragment>
             <ul class="marker:text-primary list-inside list-disc pb-4">
-              <li>{t("experience.item6.point1")}</li>
-              <li>{t("experience.item6.point2")}</li>
+              {t("experience.item6.points").map((point) => <li>{point}</li>)}
             </ul>
           </TimelineItem>
 
           <TimelineItem subtitle={t("experience.item7.subtitle")}>
             <Fragment slot="title">{t("experience.item7.title")}</Fragment>
             <ul class="marker:text-primary list-inside list-disc pb-4">
-              <li>{t("experience.item7.point1")}</li>
-              <li>{t("experience.item7.point2")}</li>
-              <li>{t("experience.item7.point3")}</li>
-              <li>{t("experience.item7.point4")}</li>
+              {t("experience.item7.points").map((point) => <li>{point}</li>)}
             </ul>
           </TimelineItem>
         </ol>
