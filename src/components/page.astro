@@ -60,7 +60,6 @@ const t = useTranslations(lang);
         <NavigationItem href="#about" title={t("nav.about")} />
         <NavigationItem href="#experience" title={t("nav.experience")} />
         <NavigationItem href="#skills" title={t("nav.skills")} />
-        <NavigationItem href="#services" title={t("nav.services")} />
         <NavigationItem href="#contact" title={t("nav.contact")} />
         <NavigationItem
           href={`/${lang === "en" ? "fr" : ""}`}
@@ -231,64 +230,9 @@ const t = useTranslations(lang);
           </Card>
         </div>
       </Section>
-
-      <Section title={t("section.services.title")} id="services">
-        <div class="grid gap-4 sm:grid-cols-2 md:gap-6">
-          <Card
-            variant="secondary"
-            title={t("section.services.freelancing.title")}
-          >
-            <p class="mb-6 text-lg text-balance">
-              {t("section.services.freelancing.description")}
-            </p>
-            <ul class="marker:text-primary list-inside list-disc">
-              <li>
-                <span class="font-bold"
-                  >{t("section.services.freelancing.point1.keyword")}</span
-                >{" "}{t("section.services.freelancing.point1.text")}
-              </li>
-              <li>
-                <span class="font-bold"
-                  >{t("section.services.freelancing.point2.keyword")}</span
-                >{" "}{t("section.services.freelancing.point2.text")}
-              </li>
-              <li>
-                <span class="font-bold"
-                  >{t("section.services.freelancing.point3.keyword")}</span
-                >{" "}{t("section.services.freelancing.point3.text")}
-              </li>
-            </ul>
-          </Card>
-          <Card
-            variant="secondary"
-            title={t("section.services.consulting.title")}
-          >
-            <p class="mb-6 text-lg">
-              {t("section.services.consulting.description")}
-            </p>
-            <ul class="marker:text-primary list-inside list-disc">
-              <li>
-                <span class="font-bold"
-                  >{t("section.services.consulting.point1.keyword")}</span
-                >{" "}{t("section.services.consulting.point1.text")}
-              </li>
-              <li>
-                <span class="font-bold"
-                  >{t("section.services.consulting.point2.keyword")}</span
-                >{" "}{t("section.services.consulting.point2.text")}
-              </li>
-              <li>
-                <span class="font-bold"
-                  >{t("section.services.consulting.point3.keyword")}</span
-                >{" "}{t("section.services.consulting.point3.text")}
-              </li>
-            </ul>
-          </Card>
-        </div>
-      </Section>
     </main>
 
-    <section class="bg-background-secondary py-12" id="contact">
+    <section class="py-12" id="contact">
       <div class="container mx-auto px-4 text-center">
         <h2 class="mb-8 text-4xl font-bold">{t("section.contact.title")}</h2>
         <p class="mx-auto mb-12 text-xl text-balance">

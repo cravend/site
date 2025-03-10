@@ -10,7 +10,6 @@ export const TRANSLATIONS = {
     "nav.about": "About",
     "nav.experience": "Experience",
     "nav.skills": "Skills",
-    "nav.services": "Services",
     "nav.contact": "Contact",
     "nav.languageToggle": "Lire en français",
 
@@ -115,34 +114,6 @@ export const TRANSLATIONS = {
     "section.skills.tooling.item4": "Docker",
     "section.skills.tooling.item5": "Linux",
 
-    "section.services.title": "Services",
-    "section.services.freelancing.title": "Freelancing",
-    "section.services.freelancing.description":
-      "Ready to launch your next digital project that is not just functional, but welcoming to all users? By weaving together localization, accessibility, and modern frameworks, I can create a product that will truly resonate with a global audience.",
-    "section.services.freelancing.point1.keyword": "Full-stack app development",
-    "section.services.freelancing.point1.text":
-      "using React, Next.js, and TypeScript",
-    "section.services.freelancing.point2.keyword":
-      "Localization & internationalization strategies",
-    "section.services.freelancing.point2.text": "for multilingual support",
-    "section.services.freelancing.point3.keyword": "Accessibility-first design",
-    "section.services.freelancing.point3.text":
-      "to meet and exceed WCAG standards",
-
-    "section.services.consulting.title": "Consulting",
-    "section.services.consulting.description":
-      "Looking to refine your existing digital platform or strategize your next big move? I offer guidance on maximizing your app's usability and global impact, drawing on experience with diverse tech stacks and accessibility best practices.",
-    "section.services.consulting.point1.keyword":
-      "Architecture assessments & recommendations",
-    "section.services.consulting.point1.text": "for scalable solutions",
-    "section.services.consulting.point2.keyword":
-      "Accessibility & localization reviews",
-    "section.services.consulting.point2.text":
-      "to make your product truly global",
-    "section.services.consulting.point3.keyword": "Team mentorship",
-    "section.services.consulting.point3.text":
-      "on front-end best practices, tooling, and workflows",
-
     "section.contact.title": "Let's Connect",
     "section.contact.description":
       "Feel free to reach out if you'd like to chat about a project, discuss open roles, or simply say hello!",
@@ -166,7 +137,6 @@ export const TRANSLATIONS = {
     "nav.about": "À propos",
     "nav.experience": "Expérience",
     "nav.skills": "Compétences",
-    "nav.services": "Services",
     "nav.contact": "Contact",
     "nav.languageToggle": "Read in English",
 
@@ -270,36 +240,6 @@ export const TRANSLATIONS = {
     "section.skills.tooling.item3": "AWS",
     "section.skills.tooling.item4": "Docker",
     "section.skills.tooling.item5": "Linux",
-
-    "section.services.title": "Services",
-    "section.services.freelancing.title": "Freelance",
-    "section.services.freelancing.description":
-      "Prêt à lancer votre prochain projet digital qui n'est pas seulement fonctionnel, mais aussi accueillant pour tous les utilisateurs ? En combinant localisation, accessibilité et frameworks modernes, je peux créer un produit qui résonnera véritablement auprès d'une audience mondiale.",
-    "section.services.freelancing.point1.keyword":
-      "Développement d'applications full-stack",
-    "section.services.freelancing.point1.text":
-      "avec React, Next.js, et TypeScript",
-    "section.services.freelancing.point2.keyword":
-      "Stratégies de localisation et d'internationalisation",
-    "section.services.freelancing.point2.text": "pour un support multilingue",
-    "section.services.freelancing.point3.keyword":
-      "Design axé sur l'accessibilité",
-    "section.services.freelancing.point3.text":
-      "pour respecter et dépasser les normes WCAG",
-
-    "section.services.consulting.title": "Consulting",
-    "section.services.consulting.description":
-      "Vous cherchez à améliorer votre plateforme digitale existante ou à planifier votre prochaine grande initiative ? Je propose des conseils pour maximiser l'utilisabilité de votre application et son impact global, fort de mon expérience avec divers tech stacks et meilleures pratiques en matière d'accessibilité.",
-    "section.services.consulting.point1.keyword":
-      "Évaluations et recommandations d'architecture",
-    "section.services.consulting.point1.text": "pour des solutions évolutives",
-    "section.services.consulting.point2.keyword":
-      "Audits d'accessibilité et de localisation",
-    "section.services.consulting.point2.text":
-      "pour rendre votre produit global",
-    "section.services.consulting.point3.keyword": "Mentorat d'équipe",
-    "section.services.consulting.point3.text":
-      "sur les meilleures pratiques front-end, les outils et les workflows",
 
     "section.contact.title": "Entrons en contact",
     "section.contact.description":
