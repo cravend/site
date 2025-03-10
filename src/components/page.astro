@@ -22,7 +22,7 @@ const t = useTranslations(lang);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={t("meta.description")} />
-    <meta name="theme-color" content="#FF5733" />
+    <meta name="theme-color" content="oklch(0.646 0.222 41.116)" />
     <link
       rel="canonical"
       href={lang === "en"
@@ -285,21 +285,11 @@ const t = useTranslations(lang);
         const themeToggleButton = document.querySelector("#toggleTheme");
 
         const THEMES = {
-          green: {
-            "--color-primary": "var(--color-lime-700)",
-          },
-          blue: {
-            "--color-primary": "var(--color-cyan-700)",
-          },
-          purple: {
-            "--color-primary": "var(--color-purple-600)",
-          },
-          orange: {
-            "--color-primary": "var(--color-orange-700)",
-          },
-          "arc theme": {
-            "--color-primary": "var(--arc-palette-foregroundPrimary)",
-          },
+          green: { primary: "oklch(0.532 0.157 131.589)" },
+          blue: { primary: "oklch(0.52 0.105 223.128)" },
+          purple: { primary: "oklch(0.558 0.288 302.321)" },
+          orange: { primary: "oklch(0.646 0.222 41.116)" },
+          "arc theme": { primary: "var(--arc-palette-foregroundPrimary)" },
         } as const;
 
         type Theme = keyof typeof THEMES;
@@ -352,9 +342,13 @@ const t = useTranslations(lang);
           themeToggleButton.addEventListener("click", () => {
             currentTheme = NEXT_THEME[currentTheme];
 
-            Object.entries(THEMES[currentTheme]).forEach(([key, value]) => {
-              document.documentElement.style.setProperty(key, value);
-            });
+            document.documentElement.style.setProperty(
+              "--color-primary",
+              THEMES[currentTheme].primary,
+            );
+            document
+              .querySelector('meta[name="theme-color"]')
+              ?.setAttribute("content", THEMES[currentTheme].primary);
 
             themeToggleButton.textContent =
               THEME_LABELS[NEXT_THEME[currentTheme]];
