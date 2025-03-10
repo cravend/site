@@ -14,6 +14,8 @@ interface Props {
 const { lang } = Astro.props;
 
 const t = useTranslations(lang);
+
+const RESUME_LINK = "CRAVEN%20Dalton%20R%C3%A9sum%C3%A9.pdf";
 ---
 
 <!doctype html>
@@ -117,7 +119,7 @@ const t = useTranslations(lang);
                 </li>
                 <li>
                   <a
-                    href="/resume.pdf"
+                    href={RESUME_LINK}
                     class="hover:decoration-primary focus:decoration-primary ml-[-0.25rem] p-1 underline underline-offset-2"
                   >
                     {t("section.about.links.resume")}
@@ -254,7 +256,7 @@ const t = useTranslations(lang);
           </li>
           <li>
             <a
-              href="/resume.pdf"
+              href={RESUME_LINK}
               class="text-content border-primary hover:bg-primary/10 bg-background inline-block w-full rounded-lg border px-8 py-3 font-semibold"
             >
               {t("section.contact.resume")}
