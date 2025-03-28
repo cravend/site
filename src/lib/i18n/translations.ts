@@ -111,7 +111,7 @@ export const TRANSLATIONS = {
     "section.contact.github": "GitHub",
     "section.contact.resume": "Résumé",
 
-    "footer.lastBuiltAt": "Last built at",
+    "footer.lastBuiltAt": "Last built with Astro at",
     "footer.viewSource": "View source code",
     "footer.themeToggle": "Set theme to purple",
   },
@@ -227,7 +227,7 @@ export const TRANSLATIONS = {
     "section.contact.github": "GitHub",
     "section.contact.resume": "CV",
 
-    "footer.lastBuiltAt": "Dernière build le",
+    "footer.lastBuiltAt": "Dernière build avec Astro le",
     "footer.viewSource": "Voir le source",
     "footer.themeToggle": "Définir le thème en violet",
   },
