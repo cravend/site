@@ -31,11 +31,11 @@ export const TRANSLATIONS = {
 
     "section.experience.title": "Experience",
     "experience.item1.title": "Lead Frontend Engineer @ Qantev",
-    "experience.item1.subtitle": "November 2024 – Present | Paris, France",
+    "experience.item1.subtitle": "November 2024 – March 2025 | Paris, France",
     "experience.item1.points": [
-      "Leading a greenfield project from architecture to implementation using TypeScript, Next.js, Zod, and Prisma",
-      "Designing OAuth flows, roles, and RBAC to ensure data security in a multi-tenancy architecture",
-      "Leveraging React Server Components to reduce complexity by replacing the API layer",
+      "Led a greenfield project from architecture to implementation using TypeScript, Next.js, Zod, and Prisma",
+      "Designed OAuth flows, roles, and RBAC to ensure data security in a multi-tenancy architecture",
+      "Leveraged React Server Components to reduce complexity by replacing the API layer",
     ],
     "experience.item2.title": "Software Engineer @ Qantev",
     "experience.item2.subtitle": "June 2023 – November 2024 | Paris, France",
@@ -147,11 +147,11 @@ export const TRANSLATIONS = {
 
     "section.experience.title": "Expérience",
     "experience.item1.title": "Lead Frontend Engineer @ Qantev",
-    "experience.item1.subtitle": "Novembre 2024 – Présent | Paris, France",
+    "experience.item1.subtitle": "Novembre 2024 – Mars 2025 | Paris, France",
     "experience.item1.points": [
-      "Diriger un projet greenfield de conception à développement en utilisant TypeScript, Next.js, Zod et Prisma",
-      "Concevoir des flows OAuth et une gestion des accès basée sur les rôles (RBAC) pour assurer la sécurité des données dans une architecture multi-tenant",
-      "Exploiter les React Server Components pour réduire la complexité en remplaçant les API",
+      "Dirigé un projet greenfield de conception à développement en utilisant TypeScript, Next.js, Zod et Prisma",
+      "Conçu des flows OAuth et une gestion des accès basée sur les rôles (RBAC) pour assurer la sécurité des données dans une architecture multi-tenant",
+      "Exploité les React Server Components pour réduire la complexité en remplaçant les API",
     ],
     "experience.item2.title": "Software Engineer @ Qantev",
     "experience.item2.subtitle": "Juin 2023 – Novembre 2024 | Paris, France",
