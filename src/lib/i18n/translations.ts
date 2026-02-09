@@ -22,7 +22,8 @@ export const TRANSLATIONS = {
     "section.about.languages.title": "Languages",
     "section.about.languages.english": "English",
     "section.about.languages.french": "French",
-    "section.about.languages.asl": "ASL",
+    "section.about.languages.italian": "Italian",
+    "section.about.languages.asl": "American Sign Language",
     "section.about.links.title": "Links",
     "section.about.links.email": "Email",
     "section.about.links.linkedin": "LinkedIn",
@@ -30,51 +31,61 @@ export const TRANSLATIONS = {
     "section.about.links.resume": "Résumé",
 
     "section.experience.title": "Experience",
-    "experience.item1.title": "Lead Frontend Engineer @ Qantev",
-    "experience.item1.subtitle": "November 2024 – March 2025 | Paris, France",
+    "experience.item1.title":
+      "Founding Engineer @ Stealth | AI-Powered Finance System of Action",
+    "experience.item1.subtitle": "October 2025 – Present | Paris, France",
     "experience.item1.points": [
+      "First technical employee at an enterprise fintech startup focusing on improving manual accounting workflows",
+      "Making core technical decisions on AI integration, data modeling, and frontend architecture",
+      "Building foundational product architecture using TanStack Start, Vercel AI SDK, Drizzle, shadcn and Tailwind",
+      "Researching trust and verifiability in an AI-assisted workflow (AIUX) through design partner exchanges",
+      "Establishing code quality practices that have supported team growth from 1 to 5 engineers in 2 months",
+    ],
+    "experience.item2.title": "Lead Frontend Engineer @ Qantev",
+    "experience.item2.subtitle": "November 2024 – March 2025 | Paris, France",
+    "experience.item2.points": [
       "Led a greenfield project from architecture to implementation using TypeScript, Next.js, Zod, and Prisma",
       "Designed OAuth flows, roles, and RBAC to ensure data security in a multi-tenancy architecture",
       "Leveraged React Server Components to reduce complexity by replacing the API layer",
     ],
-    "experience.item2.title": "Software Engineer @ Qantev",
-    "experience.item2.subtitle": "June 2023 – November 2024 | Paris, France",
-    "experience.item2.points": [
+    "experience.item3.title": "Software Engineer @ Qantev",
+    "experience.item3.subtitle": "June 2023 – November 2024 | Paris, France",
+    "experience.item3.points": [
       "Built core features for a production application, integrating a React front with a Django API server",
       "Modernized key parts of a legacy codebase by removing obsolete modules, reducing technical debt",
       "Proactively addressed developer experience issues such as build times, leading to an 8x speed increase",
       "Worked in an Agile environment, delivering features iteratively and collaborating with product/design teams",
     ],
-    "experience.item3.title": "Frontend Developer @ Qantev",
-    "experience.item3.subtitle": "May 2022 – August 2022 | Paris, France",
-    "experience.item3.points": [
+    "experience.item4.title": "Frontend Developer @ Qantev",
+    "experience.item4.subtitle": "May 2022 – August 2022 | Paris, France",
+    "experience.item4.points": [
       "Rewrote approximately 45% of the code from JavaScript to TypeScript to catch bugs early and improve maintainability",
       "Simplified API calls by replacing custom utilities with TanStack Query",
     ],
-    "experience.item4.title": "Software Engineering Intern @ Qantev",
-    "experience.item4.subtitle": "June 2021 – September 2021 | Paris, France",
-    "experience.item4.points": [
+    "experience.item5.title": "Software Engineering Intern @ Qantev",
+    "experience.item5.subtitle": "June 2021 – September 2021 | Paris, France",
+    "experience.item5.points": [
       "Integrated into the French work culture within a seed-round startup",
       "Refactored existing code to meet elevated code safety standards and executed a rigorous QA session",
       "Developed a full-stack module to empower sales demos",
     ],
-    "experience.item5.title": "Software Development Intern @ Cloverleaf",
-    "experience.item5.subtitle": "May 2020 – August 2020 | Covington, KY, USA",
-    "experience.item5.points": [
+    "experience.item6.title": "Software Development Intern @ Cloverleaf",
+    "experience.item6.subtitle": "May 2020 – August 2020 | Covington, KY, USA",
+    "experience.item6.points": [
       "Worked as part of an agile development team to create new functionality for a production application",
       "Followed company procedures on feature contribution, legacy code refactoring, and documentation",
     ],
-    "experience.item6.title":
+    "experience.item7.title":
       "UNIX Teaching Assistant @ University of South Carolina",
-    "experience.item6.subtitle": "December 2019 – May 2020 | Columbia, SC, USA",
-    "experience.item6.points": [
+    "experience.item7.subtitle": "December 2019 – May 2020 | Columbia, SC, USA",
+    "experience.item7.points": [
       "Instructed students on the fundamentals of Linux and UNIX, Bash scripting, and terminal commands",
       "Led 8 sections of lab (Monday–Thursday, 2 times per day), with a total reach of 250 students",
     ],
-    "experience.item7.title":
+    "experience.item8.title":
       "Bachelor of Science in Computer Science @ University of South Carolina",
-    "experience.item7.subtitle": "August 2019 – May 2023 | Columbia, SC, USA",
-    "experience.item7.points": [
+    "experience.item8.subtitle": "August 2019 – May 2023 | Columbia, SC, USA",
+    "experience.item8.points": [
       "South Carolina Honors College",
       "Cumulative GPA: 3.95 | President's List (Eight Semesters)",
       "McNair Scholar, University Top Scholars Program",
@@ -86,7 +97,7 @@ export const TRANSLATIONS = {
     "section.skills.favorites.item1": "TypeScript",
     "section.skills.favorites.item2": "React",
     "section.skills.favorites.item3": "Tailwind",
-    "section.skills.favorites.item4": "React Query",
+    "section.skills.favorites.item4": "TanStack (Query, Start)",
     "section.skills.favorites.item5": "Next.js (app + pages)",
 
     "section.skills.code.title": "Code",
@@ -138,6 +149,7 @@ export const TRANSLATIONS = {
     "section.about.languages.title": "Langues",
     "section.about.languages.english": "Anglais",
     "section.about.languages.french": "Français",
+    "section.about.languages.italian": "Italien",
     "section.about.languages.asl": "Langue des signes américaine",
     "section.about.links.title": "Liens",
     "section.about.links.email": "Mail",
@@ -146,51 +158,61 @@ export const TRANSLATIONS = {
     "section.about.links.resume": "CV",
 
     "section.experience.title": "Expérience",
-    "experience.item1.title": "Lead Frontend Engineer @ Qantev",
-    "experience.item1.subtitle": "Novembre 2024 – Mars 2025 | Paris, France",
+    "experience.item1.title":
+      "Founding Engineer @ Stealth | Système de comptabilité propulsé par l'IA",
+    "experience.item1.subtitle": "Octobre 2025 – Présent | Paris, France",
     "experience.item1.points": [
+      "Premier employé technique dans une startup fintech B2B visant à améliorer les flux de travail comptables manuels",
+      "Prise de décisions techniques clés sur l'intégration de l'IA, la modélisation des données et l'architecture frontend",
+      "Construction de l'architecture produit fondatrice avec TanStack Start, Vercel AI SDK, Drizzle, shadcn et Tailwind",
+      "Recherche sur la confiance et la vérifiabilité dans un workflow assisté par l'IA (AIUX) via des échanges avec des design partners",
+      "Mise en place de pratiques de qualité de code ayant soutenu la croissance de l'équipe de 1 à 5 ingénieurs en 2 mois",
+    ],
+    "experience.item2.title": "Lead Frontend Engineer @ Qantev",
+    "experience.item2.subtitle": "Novembre 2024 – Mars 2025 | Paris, France",
+    "experience.item2.points": [
       "Dirigé un projet greenfield de conception à développement en utilisant TypeScript, Next.js, Zod et Prisma",
       "Conçu des flows OAuth et une gestion des accès basée sur les rôles (RBAC) pour assurer la sécurité des données dans une architecture multi-tenant",
       "Exploité les React Server Components pour réduire la complexité en remplaçant les API",
     ],
-    "experience.item2.title": "Software Engineer @ Qantev",
-    "experience.item2.subtitle": "Juin 2023 – Novembre 2024 | Paris, France",
-    "experience.item2.points": [
+    "experience.item3.title": "Software Engineer @ Qantev",
+    "experience.item3.subtitle": "Juin 2023 – Novembre 2024 | Paris, France",
+    "experience.item3.points": [
       "Développé des fonctionnalités essentielles pour une application en production, intégrant un front-end React avec un serveur API Django",
       "Modernisé des parties clés d'une base de code legacy en supprimant des modules obsolètes, réduisant ainsi la dette technique",
       "Résolu de manière proactive des problèmes liés à l'expérience développeur, tels que les temps de compilation, menant à une augmentation de 8x de la vitesse",
       "Travaillé dans un environnement Agile, en développant des fonctionnalités de manière itérative et en collaborant avec les équipes produit/design",
     ],
-    "experience.item3.title": "Frontend Developer @ Qantev",
-    "experience.item3.subtitle": "Mai 2022 – Août 2022 | Paris, France",
-    "experience.item3.points": [
+    "experience.item4.title": "Frontend Developer @ Qantev",
+    "experience.item4.subtitle": "Mai 2022 – Août 2022 | Paris, France",
+    "experience.item4.points": [
       "Portage environ 45% du code de JavaScript à TypeScript pour détecter les bugs plus tôt et améliorer la maintenabilité",
       "Simplifié les appels API en remplaçant des fonctions internes par TanStack Query",
     ],
-    "experience.item4.title": "Software Engineering Intern @ Qantev",
-    "experience.item4.subtitle": "Juin 2021 – Septembre 2021 | Paris, France",
-    "experience.item4.points": [
+    "experience.item5.title": "Software Engineering Intern @ Qantev",
+    "experience.item5.subtitle": "Juin 2021 – Septembre 2021 | Paris, France",
+    "experience.item5.points": [
       "Intégré à la culture de travail française au sein d'une startup en phase de démarrage / seed-round",
       "Refactorisé le code existant pour adhérer aux normes de sécurité de code élevées et mené une session de QA rigoureuse",
       "Développé un module full-stack pour dynamiser les démonstrations commerciales",
     ],
-    "experience.item5.title": "Software Development Intern @ Cloverleaf",
-    "experience.item5.subtitle": "Mai 2020 – Août 2020 | Covington, KY, USA",
-    "experience.item5.points": [
+    "experience.item6.title": "Software Development Intern @ Cloverleaf",
+    "experience.item6.subtitle": "Mai 2020 – Août 2020 | Covington, KY, USA",
+    "experience.item6.points": [
       "Travaillé au sein d'une équipe de développement agile pour créer de nouvelles fonctionnalités pour une application en production",
       "Suivi les procédures de l'entreprise pour la contribution de nouvelles fonctionnalités, la refactorisation du code legacy et la documentation",
     ],
-    "experience.item6.title":
+    "experience.item7.title":
       "UNIX Teaching Assistant @ University of South Carolina",
-    "experience.item6.subtitle": "Décembre 2019 – Mai 2020 | Columbia, SC, USA",
-    "experience.item6.points": [
+    "experience.item7.subtitle": "Décembre 2019 – Mai 2020 | Columbia, SC, USA",
+    "experience.item7.points": [
       "Enseigné aux étudiants les bases de Linux et UNIX, la programmation en Bash et les commandes du terminal",
       "Animé 8 sections de laboratoire, atteignant un total de 250 étudiants",
     ],
-    "experience.item7.title":
+    "experience.item8.title":
       "Bachelor's of Science in Computer Science @ University of South Carolina",
-    "experience.item7.subtitle": "Août 2019 – Mai 2023 | Columbia, SC, USA",
-    "experience.item7.points": [
+    "experience.item8.subtitle": "Août 2019 – Mai 2023 | Columbia, SC, USA",
+    "experience.item8.points": [
       "South Carolina Honors College",
       "Moyenne cumulative : 3,95/4,00 | Mention très bien (huit semestres)",
       "Boursier McNair, Programme des meilleurs étudiants de l'université",
@@ -202,7 +224,7 @@ export const TRANSLATIONS = {
     "section.skills.favorites.item1": "TypeScript",
     "section.skills.favorites.item2": "React",
     "section.skills.favorites.item3": "Tailwind",
-    "section.skills.favorites.item4": "React Query",
+    "section.skills.favorites.item4": "TanStack (Query, Start)",
     "section.skills.favorites.item5": "Next.js (app + pages)",
 
     "section.skills.code.title": "Code",
