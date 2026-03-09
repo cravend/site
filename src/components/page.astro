@@ -15,9 +15,9 @@ const { lang } = Astro.props;
 
 const t = useTranslations(lang);
 
-const RESUME_LINK = "CRAVEN%20Dalton%20Resume.pdf";
+const RESUME_LINK = "resume.pdf";
 ---
-  
+
 <!doctype html>
 <html lang={lang} class="bg-primary">
   <head>
@@ -85,6 +85,7 @@ const RESUME_LINK = "CRAVEN%20Dalton%20Resume.pdf";
               <ol class="marker:text-primary list-inside list-disc">
                 <li>{t("section.about.languages.english")}</li>
                 <li>{t("section.about.languages.french")}</li>
+                <li>{t("section.about.languages.italian")}</li>
                 <li>{t("section.about.languages.asl")}</li>
               </ol>
             </Card>
@@ -179,6 +180,13 @@ const RESUME_LINK = "CRAVEN%20Dalton%20Resume.pdf";
             <Fragment slot="title">{t("experience.item7.title")}</Fragment>
             <ul class="marker:text-primary list-inside list-disc pb-4">
               {t("experience.item7.points").map((point) => <li>{point}</li>)}
+            </ul>
+          </TimelineItem>
+
+          <TimelineItem subtitle={t("experience.item8.subtitle")}>
+            <Fragment slot="title">{t("experience.item8.title")}</Fragment>
+            <ul class="marker:text-primary list-inside list-disc pb-4">
+              {t("experience.item8.points").map((point) => <li>{point}</li>)}
             </ul>
           </TimelineItem>
         </ol>
