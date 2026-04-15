@@ -215,7 +215,7 @@ export const TRANSLATIONS = {
     "experience.item8.points": [
       "South Carolina Honors College",
       "Moyenne cumulative : 3,95/4,00 | President's List (huit semestres)",
-      "Boursier McNair, Programme des meilleurs étudiants de l'université",
+      "Boursier McNair, programme Top Scholars de l'université",
       "Boursier du Provost, Programme national de bourses au mérite",
     ],
 
