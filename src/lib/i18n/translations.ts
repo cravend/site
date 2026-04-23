@@ -129,7 +129,7 @@ export const TRANSLATIONS = {
   fr: {
     "meta.title": "Dalton Craven - Ingénieur Logiciel Full-Stack",
     "meta.description":
-      "Ingénieur logiciel full-stack à Paris spécialisé en React, TypeScript et accessibilité web. Je développe pour transcender les barrières et donner du pouvoir aux utilisateurs.",
+      "Ingénieur logiciel full-stack à Paris spécialisé en React, TypeScript et accessibilité web. Je développe pour dépasser les barrières et rendre la technologie accessible à tous.",
     "hero.title": "Ingénieur Logiciel Full-Stack",
     "hero.tagline":
       "Créer des solutions logicielles centrées sur l'humain pour développer un web inclusif, accessible et ouvert à tous.",
@@ -142,9 +142,9 @@ export const TRANSLATIONS = {
 
     "section.about.title": "À propos",
     "section.about.paragraph1":
-      "Je crois que programmer consiste à créer des expériences significatives qui autonomisent les personnes — quelle que soit leur manière de communiquer ou leur origine. J'ai développé avec une vaste gamme d'outils (TypeScript, React, Python, et plus encore), mais mon objectif principal reste le même : concevoir des produits qui n'excluent pas les utilisateurs en raison de la langue ou de leurs capacités.",
+      "Je crois que coder, c'est créer des expériences porteuses de sens qui donnent à chacun les moyens d'agir — peu importe sa façon de communiquer ou d'où il vient. J'ai travaillé avec un large éventail d'outils (TypeScript, React, Python, et bien d'autres), mais mon objectif reste le même : concevoir des produits qui n'excluent personne en raison de la langue ou de leurs capacités.",
     "section.about.paragraph2":
-      "C'est pourquoi je suis attiré par la localisation et l'accessibilité — deux domaines où de petits changements peuvent avoir un impact considérable. Influencé par mon expérience multilingue, je suis convaincu qu'un internet véritablement équitable doit parler la langue de l'utilisateur à tous les niveaux. En promouvant des normes accessibles et en désanglicisant le web, j'espère contribuer à créer un futur où la technologie reflète véritablement la diversité de ses utilisateurs.",
+      "C'est pourquoi la localisation et l'accessibilité m'attirent — deux domaines où de petits changements peuvent avoir un impact considérable. Marqué par ma pratique de l'anglais, du français et de la langue des signes américaine, je suis convaincu qu'un internet véritablement équitable doit parler la langue de l'utilisateur dans tous les sens du terme. En promouvant les standards d'accessibilité et en décentrant le web de l'anglais, j'espère contribuer à un avenir où la technologie reflète réellement la diversité de ses utilisateurs.",
     "section.about.location.title": "Localisation",
     "section.about.languages.title": "Langues",
     "section.about.languages.english": "Anglais",
@@ -159,41 +159,41 @@ export const TRANSLATIONS = {
 
     "section.experience.title": "Expérience",
     "experience.item1.title":
-      "Founding Engineer @ Stealth | Système de comptabilité propulsé par l'IA",
+      "Founding Engineer @ Stealth | Plateforme financière propulsée par l'IA",
     "experience.item1.subtitle": "Octobre 2025 – Présent | Paris, France",
     "experience.item1.points": [
-      "Premier employé technique dans une startup fintech B2B visant à améliorer les flux de travail comptables manuels",
+      "Premier employé technique dans une startup fintech entreprise visant à améliorer les processus comptables manuels",
       "Prise de décisions techniques clés sur l'intégration de l'IA, la modélisation des données et l'architecture frontend",
-      "Construction de l'architecture produit fondatrice avec TanStack Start, Vercel AI SDK, Drizzle, shadcn et Tailwind",
+      "Construction de l'architecture produit fondamentale avec TanStack Start, Vercel AI SDK, Drizzle, shadcn et Tailwind",
       "Recherche sur la confiance et la vérifiabilité dans un workflow assisté par l'IA (AIUX) via des échanges avec des design partners",
       "Mise en place de pratiques de qualité de code ayant soutenu la croissance de l'équipe de 1 à 5 ingénieurs en 2 mois",
     ],
     "experience.item2.title": "Lead Frontend Engineer @ Qantev",
     "experience.item2.subtitle": "Novembre 2024 – Mars 2025 | Paris, France",
     "experience.item2.points": [
-      "Dirigé un projet greenfield de conception à développement en utilisant TypeScript, Next.js, Zod et Prisma",
-      "Conçu des flows OAuth et une gestion des accès basée sur les rôles (RBAC) pour assurer la sécurité des données dans une architecture multi-tenant",
-      "Exploité les React Server Components pour réduire la complexité en remplaçant les API",
+      "Dirigé un projet greenfield de l'architecture à la mise en production avec TypeScript, Next.js, Zod et Prisma",
+      "Conçu des flux OAuth et une gestion des accès basée sur les rôles (RBAC) pour assurer la sécurité des données dans une architecture multi-tenant",
+      "Tiré parti des React Server Components pour réduire la complexité en remplaçant la couche API",
     ],
     "experience.item3.title": "Software Engineer @ Qantev",
     "experience.item3.subtitle": "Juin 2023 – Novembre 2024 | Paris, France",
     "experience.item3.points": [
       "Développé des fonctionnalités essentielles pour une application en production, intégrant un front-end React avec un serveur API Django",
       "Modernisé des parties clés d'une base de code legacy en supprimant des modules obsolètes, réduisant ainsi la dette technique",
-      "Résolu de manière proactive des problèmes liés à l'expérience développeur, tels que les temps de compilation, menant à une augmentation de 8x de la vitesse",
-      "Travaillé dans un environnement Agile, en développant des fonctionnalités de manière itérative et en collaborant avec les équipes produit/design",
+      "Pris en charge de manière proactive des problèmes d'expérience développeur, notamment les temps de build, aboutissant à une vitesse multipliée par 8",
+      "Travaillé dans un environnement Agile, en livrant des fonctionnalités de manière itérative et en collaborant avec les équipes produit et design",
     ],
     "experience.item4.title": "Frontend Developer @ Qantev",
     "experience.item4.subtitle": "Mai 2022 – Août 2022 | Paris, France",
     "experience.item4.points": [
-      "Portage environ 45% du code de JavaScript à TypeScript pour détecter les bugs plus tôt et améliorer la maintenabilité",
-      "Simplifié les appels API en remplaçant des fonctions internes par TanStack Query",
+      "Réécrit environ 45 % du code de JavaScript vers TypeScript afin de détecter les bugs en amont et améliorer la maintenabilité",
+      "Simplifié les appels API en remplaçant des utilitaires internes par TanStack Query",
     ],
     "experience.item5.title": "Software Engineering Intern @ Qantev",
     "experience.item5.subtitle": "Juin 2021 – Septembre 2021 | Paris, France",
     "experience.item5.points": [
-      "Intégré à la culture de travail française au sein d'une startup en phase de démarrage / seed-round",
-      "Refactorisé le code existant pour adhérer aux normes de sécurité de code élevées et mené une session de QA rigoureuse",
+      "Intégré à la culture de travail française au sein d'une startup en phase d'amorçage",
+      "Refactorisé le code existant pour respecter des standards de fiabilité de code élevés et effectué une session de QA rigoureuse",
       "Développé un module full-stack pour dynamiser les démonstrations commerciales",
     ],
     "experience.item6.title": "Software Development Intern @ Cloverleaf",
@@ -206,16 +206,16 @@ export const TRANSLATIONS = {
       "UNIX Teaching Assistant @ University of South Carolina",
     "experience.item7.subtitle": "Décembre 2019 – Mai 2020 | Columbia, SC, USA",
     "experience.item7.points": [
-      "Enseigné aux étudiants les bases de Linux et UNIX, la programmation en Bash et les commandes du terminal",
-      "Animé 8 sections de laboratoire, atteignant un total de 250 étudiants",
+      "Enseigné aux étudiants les fondamentaux de Linux et UNIX, le scripting Bash et les commandes du terminal",
+      "Animé 8 sections de laboratoire (lundi–jeudi, 2 fois par jour), touchant un total de 250 étudiants",
     ],
     "experience.item8.title":
-      "Bachelor's of Science in Computer Science @ University of South Carolina",
+      "Bachelor of Science in Computer Science @ University of South Carolina",
     "experience.item8.subtitle": "Août 2019 – Mai 2023 | Columbia, SC, USA",
     "experience.item8.points": [
       "South Carolina Honors College",
-      "Moyenne cumulative : 3,95/4,00 | Mention très bien (huit semestres)",
-      "Boursier McNair, Programme des meilleurs étudiants de l'université",
+      "Moyenne cumulative : 3,95/4,00 | President's List (huit semestres)",
+      "Boursier McNair, programme Top Scholars de l'université",
       "Boursier du Provost, Programme national de bourses au mérite",
     ],
 
@@ -249,8 +249,8 @@ export const TRANSLATIONS = {
     "section.contact.github": "GitHub",
     "section.contact.resume": "CV",
 
-    "footer.lastBuiltAt": "Dernière build avec Astro le",
-    "footer.viewSource": "Voir le source",
+    "footer.lastBuiltAt": "Compilé avec Astro le",
+    "footer.viewSource": "Voir le code source",
     "footer.themeToggle": "Définir le thème en violet",
   },
 } as const;
